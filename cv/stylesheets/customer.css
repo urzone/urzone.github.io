@@ -1,0 +1,66 @@
+.download-icon {
+    position: relative;
+    background-color: #0088cc;
+    top: 0px;
+    opacity: 1;
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgOTguODMgOTguODMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDk4LjgzIDk4LjgzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTYxLjg5LDcyLjUxNmgtMy45NjZWNDYuMTAzYzAtMS45OTQtMS42MDktMy42MDQtMy41OTgtMy42MDRoLTkuODE5Yy0xLjk4NiwwLTMuNTk4LDEuNjExLTMuNTk4LDMuNjA0djI2LjQxM2gtMy45NzIgICAgYy0wLjkwOCwwLTEuNzM2LDAuNTMzLTIuMTE4LDEuMzU0Yy0wLjM4OCwwLjgyNy0wLjI0OSwxLjgwMiwwLjMzNSwyLjQ5OGwxMC42MjksMTIuNDk1YzAuOTA4LDEuMDY2LDIuMjM2LDEuNjgsMy42MzEsMS42OCAgICBjMS40LDAsMi43My0wLjYxMywzLjYzNi0xLjY4bDEwLjYyMi0xMi40OTVjMC41OTItMC42OTYsMC43MjUtMS42NzEsMC4zNDItMi40OThDNjMuNjMzLDczLjA0OSw2Mi44MDQsNzIuNTE2LDYxLjg5LDcyLjUxNnoiIGZpbGw9IiMwMDg4Y2MiLz4KCQk8cGF0aCBkPSJNNzkuMDQzLDIzLjQxN2MtMC43MDEtMC4wNTgtMS4zNDQtMC40MTctMS43NjItMC45ODJjLTQuMDI2LTUuNDUzLTEwLjQ5Ni04LjgxOC0xNy4zNzctOC44MTggICAgYy0wLjQzOCwwLTAuODc3LDAuMDEzLTEuMzE2LDAuMDRjLTAuNTgyLDAuMDM2LTEuMTU0LTAuMTM4LTEuNjE4LTAuNDg5Yy00LjE4OC0zLjE2NS05LjI2NC00Ljg4LTE0LjU4MS00Ljg4ICAgIGMtOS41MjEsMC0xNy45NzEsNS41MjItMjEuOTEsMTMuODgyYy0wLjM1MiwwLjc0Ni0xLjA1NywxLjI2NC0xLjg3MywxLjM3N0M4LjEwOSwyNS4wMDUsMCwzNC4wNCwwLDQ0LjkzMSAgICBDMCw1Ni44MzQsOS42ODUsNjYuNTIsMjEuNTksNjYuNTJoMTUuMzE5di04LjUwNkgyMS41OWMtNy4yMTQsMC0xMy4wODMtNS44NjktMTMuMDgzLTEzLjA4M2MwLTcuMjE1LDUuODY5LTEzLjA4MywxMy4wODMtMTMuMDgzICAgIGMwLjM2NCwwLDAuNzIzLDAuMDI5LDEuMDgsMC4wNThjMi4wNzksMC4xNiwzLjk2MS0xLjE4OCw0LjQ2Ny0zLjIwNGMxLjc1OS03LjAxMSw4LjAzMi0xMS45MDgsMTUuMjUyLTExLjkwOCAgICBjNC4xMjUsMCw4LjAyOSwxLjU5MywxMC45OTMsNC40ODVjMS4wMTUsMC45ODksMi40NTIsMS40MDgsMy44MzgsMS4xMmMwLjg4My0wLjE4MywxLjc4Ni0wLjI3NiwyLjY4NS0wLjI3NiAgICBjNS4wNTEsMCw5LjU2MiwyLjgzOSwxMS43NzEsNy40MWMwLjc3NSwxLjYwNywyLjQ3NSwyLjU2NSw0LjI1MiwyLjM4MmMwLjQ0MS0wLjA0NCwwLjg4NC0wLjA2NiwxLjMxMi0wLjA2NiAgICBjNy4yMTUsMCwxMy4wODQsNS44NjksMTMuMDg0LDEzLjA4M2MwLDcuMjEzLTUuODY5LDEzLjA4My0xMy4wODQsMTMuMDgzSDYxLjkyNHY4LjUwNkg3Ny4yNGMxMS45MDQsMCwyMS41OS05LjY4NiwyMS41OS0yMS41ODcgICAgQzk4LjgzLDMzLjYzNCw5MC4xMDcsMjQuMzM1LDc5LjA0MywyMy40MTd6IiBmaWxsPSIjMDA4OGNjIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==")no-repeat left center;
+    background-size: 16px;
+}
+
+
+body {
+    background: #c1c1c1;
+    color: #000000; /*#001f2f;*/
+    font-size: 14px;
+    font-family: 'Josefin Sans', 'Georgia', serif, sans-serif;
+    font-weight: normal;
+    line-height: 20px
+}
+
+p {
+    font-size:16px;
+    margin-bottom: 20px;
+    line-height: 25px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Josefin Sans', 'Georgia';
+    color: #001f2f;
+
+}
+
+strong {
+    color: #000000;
+    font-weight: ;
+}
+
+.logo {
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.mute {
+    color: inherit;
+}
+.fa-icon-color {
+    color: #0079b9;
+}
+
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('fonts/JosefinSans.eot?#iefix') format('embedded-opentype'),  url('fonts/JosefinSans.woff') format('woff'), url('fonts/JosefinSans.ttf')  format('truetype'), url('fonts/JosefinSans.svg#JosefinSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*============================
+balloon.css  https://github.com/urzone/balloon.css/blob/master/balloon.css
+==============================*/

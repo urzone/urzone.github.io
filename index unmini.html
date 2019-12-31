@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="google-site-verification" content="8H1x27NnePVJbxZNl-eqxRxKAHJmxQugvNVFtsyPRYA" />
+    <title>XiaO</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://urz.one/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://urz.one/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://urz.one/icons/favicon-16x16.png">
+<link rel="manifest" href="https://urz.one/icons/manifest.json">
+<link rel="mask-icon" href="https://urz.one/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="https://urz.one/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="https://urz.one/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="https://urz.one/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+</head>
+
+<body>
+    <div class="vi">
+        <div class="sidebar">
+            <div class="header">
+                <h1 class="animate-init" align="center">XiaO<img src="favicon.svg" alt="@UTB" style="width:28px;height:28px;"></h1>
+                <div class="quote">
+                    <p class="quote-text animate-init">Be the change you wanna See in the world</p>
+                    <p class="quote-author animate-init"> — Mahatma Gandhi</p>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="blog/" class="animate-init" target="_blank"><i class="animate-init"></i> Blog </a>
+                <a href="blog/notes/" class="animate-init" target="_blank"><i class="animate-init"></i> Notes</a>
+                <a href="cv/" class="animate-init" target="_blank"><i class="animate-init"></i> C.V.</a>
+                <a href="https://urz.one/blog/files/FB944B8B.asc" class="animate-init" target="_blank"><i class=" animate-init"></i> PGP Key</a>
+                <!-- <a href="mailto:a@urz.one" class="animate-init" target="_blank"><i class="animate-init"></i> Mail</a>    -->
+            </div>
+            <br>
+            <div id="avatar" class="animate-init"></div>
+            <div class="location"><i class="location-icon animate-init"></i> <span class="location-text animate-init">Czech Republic</span></div>
+        </div>
+        <div class="content"> <span class="close">close</span></div>
+    </div>
+    <script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            function e() {
+                var e = $.Deferred(),
+                    i = $(".animate-init"),
+                    n = i.size();
+                return i.each(function(i, c) {
+                    o++, $(c).delay(i * a).animate(t), n - 1 === i && e.resolve()
+                }), e.promise()
+            }
+
+            function i() {
+                $(".location-icon").delay(o * a).animate({
+                    opacity: 1,
+                    top: 0
+                }).promise().done(n)
+            }
+
+            function n() {}
+            var o = 1,
+                a = 200,
+                t = {
+                    opacity: 1,
+                    top: 0
+                };
+            $("h1").animate(t).promise().pipe(e).pipe(i)
+        })
+    </script>
+</body>
+
+</html>

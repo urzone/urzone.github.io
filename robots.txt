@@ -1,0 +1,9 @@
+# robotstxt.org
+
+User-agent: *
+Disallow: /images/
+Disallow: /blog/img/
+Disallow: /blog/images/
+
+
+Sitemap: https://urz.one/blog/sitemap.xml
