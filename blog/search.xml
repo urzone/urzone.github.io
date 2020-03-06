@@ -142,7 +142,7 @@
   <entry>
     <title><![CDATA[加上我吧，在你的手机主页面]]></title>
     <url>%2Fblog%2F170629%2F</url>
-    <content type="text"><![CDATA[对我笑吧，就像你我初次见面；对我说吧，即使誓言明天就变；想起我吧，在你感到变老的那一年； new APlayer({ element: document.getElementById("aplayer1"), narrow: false, autoplay: false, showlrc: 0, music: { title: "只有我", author: "张过年", url: "/blog/music/只有我.mp3", pic: "/blog/music/default.jpg", } }); 加上我吧，在你的手机主页面：Step 1. 打开手机浏览器，譬如 Safari，在网页地址栏输入网址urz.one (You are the one);Step 2. 点击 Action 按钮；Step 3. 点击 add to Home Screen 按钮；]]></content>
+    <content type="text"><![CDATA[对我笑吧，就像你我初次见面；对我说吧，即使誓言明天就变；想起我吧，在你感到变老的那一年； new APlayer({ element: document.getElementById("aplayer2"), narrow: false, autoplay: false, showlrc: 0, music: { title: "只有我", author: "张过年", url: "/blog/music/只有我.mp3", pic: "/blog/music/default.jpg", } }); 加上我吧，在你的手机主页面：Step 1. 打开手机浏览器，譬如 Safari，在网页地址栏输入网址urz.one (You are the one);Step 2. 点击 Action 按钮；Step 3. 点击 add to Home Screen 按钮；]]></content>
       <categories>
         <category>Tools</category>
       </categories>
@@ -155,7 +155,7 @@
   <entry>
     <title><![CDATA[如果我可以叫她“向阳花“]]></title>
     <url>%2Fblog%2F170625%2F</url>
-    <content type="text"><![CDATA[天气太热吗？我流鼻血了。 姐姐说，是肘子吃的。 是么？ 我知道，人是会慢慢改变的。当我猛然意识到这句话的时候，一些东西好像已经改变了。以前常听老人们说，当你明白一件事情的时候，可能已经晚了。以前一直不太明白为什么晚了，后来慢慢知道了，可能是因为再也回不去了。 容貌的改变，是岁月走过身体后留下的脚印，而对于性格，则是在心上。而遗憾的是，我们并不知道岁月脚步的深浅和落脚点，可能这就是走肾和走心的差别了。 曾听人说，如果孤独的人愿意回头，焦躁的人愿意等候，内向的人愿意开口，也许这就是爱情最真实的样子。我不知道这是不是爱情最真实的样子，但是我知道，岁月一定是踩在了他的心上。 我自己来说，一直觉得自己是喜欢安然自处的，无论身在哪里，即使现在正处在距离母国几千公里之外。其实内心而言，我是一个不太喜欢说话的人，如果可以，我更愿意这样把他们记录下来，而不是要对谁说起。然而，朋友却说，每次见我，话都好多。 我也不知道从哪一天开始，自己更愿意去接触很多不一样的事情了，比如说，一个人去很远的地方旅行。一直以来，我都觉得，一个人的远行，没有陪伴，并没有什么意义。然而，我现在觉得，它可能是另外一种修行。想起曾在某个回家的夜晚，写给自己的一个 list: To live, to love, to travel, to embrace tomorrow（去生活，去爱，去经历，去拥抱未来）。 我想，以上两点，已经充分地说明了我最开始说的话，“我知道，人是会慢慢改变的”。只是，我并不知道，这是一个开始，还是一个结束。有时候，人是会害怕结束的，其中一个可能的原因是，结束意味着切断了一部分旧的自我。 而此时此刻，我仿佛觉得，自己进入了一种近乎游离的状态，脑海里闪现的是别人的视角，然后从头到脚打量了一遍自己，觉得自己确实又没有几斤几两。（所以，又何德何能。） 姐姐说的对，离开终究是好的。 而于我，或许只有这样子的打量，才会让我，并不那么难过。 new APlayer({ element: document.getElementById("aplayer2"), narrow: false, autoplay: false, showlrc: 0, music: { title: "一人", author: "七修远", url: "/blog/music/一人.mp3", pic: "/blog/music/一人.jpg", } });]]></content>
+    <content type="text"><![CDATA[天气太热吗？我流鼻血了。 姐姐说，是肘子吃的。 是么？ 我知道，人是会慢慢改变的。当我猛然意识到这句话的时候，一些东西好像已经改变了。以前常听老人们说，当你明白一件事情的时候，可能已经晚了。以前一直不太明白为什么晚了，后来慢慢知道了，可能是因为再也回不去了。 容貌的改变，是岁月走过身体后留下的脚印，而对于性格，则是在心上。而遗憾的是，我们并不知道岁月脚步的深浅和落脚点，可能这就是走肾和走心的差别了。 曾听人说，如果孤独的人愿意回头，焦躁的人愿意等候，内向的人愿意开口，也许这就是爱情最真实的样子。我不知道这是不是爱情最真实的样子，但是我知道，岁月一定是踩在了他的心上。 我自己来说，一直觉得自己是喜欢安然自处的，无论身在哪里，即使现在正处在距离母国几千公里之外。其实内心而言，我是一个不太喜欢说话的人，如果可以，我更愿意这样把他们记录下来，而不是要对谁说起。然而，朋友却说，每次见我，话都好多。 我也不知道从哪一天开始，自己更愿意去接触很多不一样的事情了，比如说，一个人去很远的地方旅行。一直以来，我都觉得，一个人的远行，没有陪伴，并没有什么意义。然而，我现在觉得，它可能是另外一种修行。想起曾在某个回家的夜晚，写给自己的一个 list: To live, to love, to travel, to embrace tomorrow（去生活，去爱，去经历，去拥抱未来）。 我想，以上两点，已经充分地说明了我最开始说的话，“我知道，人是会慢慢改变的”。只是，我并不知道，这是一个开始，还是一个结束。有时候，人是会害怕结束的，其中一个可能的原因是，结束意味着切断了一部分旧的自我。 而此时此刻，我仿佛觉得，自己进入了一种近乎游离的状态，脑海里闪现的是别人的视角，然后从头到脚打量了一遍自己，觉得自己确实又没有几斤几两。（所以，又何德何能。） 姐姐说的对，离开终究是好的。 而于我，或许只有这样子的打量，才会让我，并不那么难过。 new APlayer({ element: document.getElementById("aplayer1"), narrow: false, autoplay: false, showlrc: 0, music: { title: "一人", author: "七修远", url: "/blog/music/一人.mp3", pic: "/blog/music/一人.jpg", } });]]></content>
       <categories>
         <category>Prose</category>
       </categories>
@@ -374,11 +374,11 @@
         <category>Lab</category>
       </categories>
       <tags>
-        <tag>Boltzmann sigmoid</tag>
         <tag>CMC</tag>
+        <tag>373 / 384</tag>
+        <tag>Boltzmann sigmoid</tag>
         <tag>Pyrene</tag>
         <tag>Polarity</tag>
-        <tag>373 / 384</tag>
         <tag>solubility</tag>
       </tags>
   </entry>
@@ -408,11 +408,11 @@
         <category>Lab</category>
       </categories>
       <tags>
-        <tag>CMC</tag>
-        <tag>373 / 384</tag>
         <tag>pyrene</tag>
         <tag>fluorescence</tag>
+        <tag>CMC</tag>
         <tag>Boltzmann</tag>
+        <tag>373 / 384</tag>
       </tags>
   </entry>
   <entry>
@@ -656,6 +656,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Dendrimers]]></title>
+    <url>%2Fblog%2F131128%2F</url>
+    <content type="text"><![CDATA[DendrimersDendrimers 由核心 (Initiator core)，内部的多个支化官能团 (Interior) 和外部的表面基团 (Exterior) 三部分组成 Main Features高度支化的结构 + 独特的单分散性特点： 结构规整，分子结构精确; 相对分子质量可以控制; 具有大量的表面功能团; 高度的几何对称性; 球形分子外挤内松，分子内存在空腔并可调节。 e.g.: 聚甲基丙烯酸甲酯 聚苯乙烯 聚乙炔 聚苯 聚噻吩 聚芴 聚对苯乙炔 聚对苯乙炔 聚硅氧烷 聚氧杂降冰片烯（polyoxanorbornene） 聚乙烯亚胺 SynthesiseCarboxylic acid and phenol terminated water soluble dendrimers were synthesised to establish their utility in drug delivery as well as conducting chemical reactions in their interiors. This might allow researchers to attach both targeting molecules and drug molecules to the same dendrimer, which could reduce negative side effects of medications on healthy cells. U.S. Dow Chemical Company — Dr. Tomalia South Florida University — Prof. Newkome Cornell University — J.M.J.Frechet Lab.]]></content>
+      <categories>
+        <category>Lab</category>
+      </categories>
+      <tags>
+        <tag>Dendrimers</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[仪器分析的基本原理及谱图表示方法]]></title>
     <url>%2Fblog%2F131129%2F</url>
     <content type="text"><![CDATA[紫外吸收光谱 UV 分析原理：吸收紫外光能量，引起分子中电子能级的跃迁 谱图的表示：相对吸收光能量随吸收光波长的变化 提供的信息：吸收峰的位置、强度和形状，提供分子中不同电子结构的信息 荧光光谱法 FS 分析原理：被电磁辐射激发后，从最低单线激发态回到单线基态，发射荧光 谱图的表示方法：发射的荧光能量随光波长的变化 提供的信息：荧光效率和寿命，提供分子中不同电子结构的信息 红外吸收光谱法 IR 分析原理：吸收红外光能量，引起具有偶极矩变化的分子的振动、转动能级跃 谱图的表示方法：相对透射光能量随透射光频率变化 提供的信息：峰的位置、强度和形状，提供功能团或化学键的特征振动频率 红外吸收光谱法 IR 分析原理：吸收红外光能量，引起具有偶极矩变化的分子的振动、转动能级跃迁 谱图的表示方法：相对透射光能量随透射光频率变化 提供的信息：峰的位置、强度和形状，提供功能团或化学键的特征振动频率 拉曼光谱法 Ram 分析原理：吸收光能后，引起具有极化率变化的分子振动，产生拉曼散射 谱图的表示方法：散射光能量随拉曼位移的变化 提供的信息：峰的位置、强度和形状，提供功能团或化学键的特征振动频率 核磁共振波谱法 NMR 分析原理：在外磁场中，具有核磁矩的原子核，吸收射频能量，产生核自旋能级的跃迁 谱图的表示方法：吸收光能量随化学位移的变化 提供的信息：峰的化学位移、强度、裂分数和偶合常数，提供核的数目、所处化学环境和几何构型的信息 电子顺磁共振波谱法 ESR 分析原理：在外磁场中，分子中未成对电子吸收射频能量，产生电子自旋能级跃迁 谱图的表示方法：吸收光能量或微分能量随磁场强度变化 提供的信息：谱线位置、强度、裂分数目和超精细分裂常数，提供未成对电子密度、分子键特性及几何构型信息 质谱分析法 MS 分析原理：分子在真空中被电子轰击，形成离子，通过电磁场按不同m/e分离 谱图的表示方法：以棒图形式表示离子的相对峰度随m/e的变化 提供的信息：分子离子及碎片离子的质量数及其相对峰度，提供分子量，元素组成及结构的信息 气相色谱法 GC 分析原理：样品中各组分在流动相和固定相之间，由于分配系数不同而分离 谱图的表示方法：柱后流出物浓度随保留值的变化 提供的信息：峰的保留值与组分热力学参数有关，是定性依据；峰面积与组分含量有关 反气相色谱法 IGC 分析原理：探针分子保留值的变化取决于它和作为固定相的聚合物样品之间的相互作用力 谱图的表示方法：探针分子比保留体积的对数值随柱温倒数的变化曲线 提供的信息：探针分子保留值与温度的关系提供聚合物的热力学参数 裂解气相色谱法 PGC 分析原理：高分子材料在一定条件下瞬间裂解，可获得具有一定特征的碎片 谱图的表示方法：柱后流出物浓度随保留值的变化 提供的信息：谱图的指纹性或特征碎片峰，表征聚合物的化学结构和几何构型 凝胶色谱法 GPC 分析原理：样品通过凝胶柱时，按分子的流体力学体积不同进行分离，大分子先流出 谱图的表示方法：柱后流出物浓度随保留值的变化 提供的信息：高聚物的平均分子量及其分布 热重法 TG 分析原理：在控温环境中，样品重量随温度或时间变化 谱图的表示方法：样品的重量分数随温度或时间的变化曲线 提供的信息：曲线陡降处为样品失重区，平台区为样品的热稳定区 热差分析 DTA 分析原理：样品与参比物处于同一控温环境中，由于二者导热系数不同产生温差，记录温度随环境温度或时间的变化 谱图的表示方法：温差随环境温度或时间的变化曲线 提供的信息：提供聚合物热转变温度及各种热效应的信息 示差扫描量热分析 DSC 分析原理：样品与参比物处于同一控温环境中，记录维持温差为零时，所需能量随环境温度或时间的变化 谱图的表示方法：热量或其变化率随环境温度或时间的变化曲线 提供的信息：提供聚合物热转变温度及各种热效应的信息 静态热―力分析 TMA 分析原理：样品在恒力作用下产生的形变随温度或时间变化 谱图的表示方法：样品形变值随温度或时间变化曲线 提供的信息：热转变温度和力学状态 动态热―力分析 DMA 分析原理：样品在周期性变化的外力作用下产生的形变随温度的变化 谱图的表示方法：模量或tgδ随温度变化曲线 提供的信息：热转变温度模量和tgδ 透射电子显微术 TEM 分析原理：高能电子束穿透试样时发生散射、吸收、干涉和衍射，使得在相平面形成衬度，显示出图象 谱图的表示方法：质厚衬度象、明场衍衬象、暗场衍衬象、晶格条纹象、和分子象 提供的信息：晶体形貌、分子量分布、微孔尺寸分布、多相结构和晶格与缺陷等 扫描电子显微术 SEM 分析原理：用电子技术检测高能电子束与样品作用时产生二次电子、背散射电子、吸收电子、X射线等并放大成象 谱图的表示方法：背散射象、二次电子象、吸收电流象、元素的线分布和面分布等 提供的信息：断口形貌、表面显微结构、薄膜内部的显微结构、微区元素分析与定量元素分析等 原子吸收 AAS原理：通过原子化器将待测试样原子化，待测原子吸收待测元素空心阴极灯的光，从而使用检测器检测到的能量变低，从而得到吸光度。吸光度与待测元素的浓度成正比。 电感耦合高频等离子体 ICP (Inductive coupling high frequency plasma)原理：利用氩等离子体产生的高温使用试样完全分解形成激发态的原子和离子，由于激发态的原子和离子不稳定，外层电子会从激发态向低的能级跃迁，因此发射出特征的谱线。通过光栅等分光后，利用检测器检测特定波长的强度，光的强度与待测元素浓度成正比。 X 射线衍射即XRD (X-ray diffraction) X射线是原子内层电子在高速运动电子的轰击下跃迁而产生的光辐射，主要有连续X射线和特征X射线两种。晶体可被用作X光的光栅，这些很大数目的原子或离子/分子所产生的相干散射将会发生光的干涉作用，从而影响散射的X射线的强度增强或减弱。由于大量原子散射波的叠加，互相干涉而产生最大强度的光束称为X射线的衍射线。 满足衍射条件，可应用布拉格公式：2dsinθ=λ。应用已知波长的X射线来测量θ角，从而计算出晶面间距d，这是用于X射线结构分析；另一个是应用已知d的晶体来测量θ角，从而计算出特征X射线的波长，进而可在已有资料查出试样中所含的元素。 高效毛细管电泳（high performance capillary electrophoresis，HPCE） CZE的基本原理 HPLC选用的毛细管一般内径约为 50μm (20～200 μm), 外径为 375 μm，有效长度 50cm (7 - 100 cm)。毛细管两端分别浸入两分开的缓冲液中，同时两缓冲液中分别插入连有高压电源的电极，该电压使得分析样品沿毛细管迁移，当分离样品通过检测器时，可对样品进行分析处理。HPLC进样一般采用电动力学进样（低电压）或流体力学进样（压力或抽吸）两种方式。在毛细管电泳系统中，带电溶质在电场作用下发生定向迁移，其表观迁移速度是溶质迁移速度与溶液电渗流速度的矢量和。所谓电渗是指在高电压作用下，双电层中的水合阴离子引起流体整体地朝负极方向移动的现象；电泳是指在电解质溶液中，带电粒子在电场作用下，以不同的速度向其所带电荷相反方向迁移的现象。溶质的迁移速度由其所带电荷数和分子量大小决定，另外还受缓冲液的组成、性质、pH 值等多种因素影响。带正电荷的组份沿毛细管壁形成有机双层向负极移动，带负电荷的组分被分配至毛细管近中区域，在电场作用下向正极移动。与此同时，缓冲液的电渗流向负极移动，其作用超过电泳，最终导致带正电荷、中性电荷、负电荷的组份依次通过检测器。 MECC的基本原理 MECC 是在 CZE 基础上使用表面活性剂来充当胶束相，以胶束增溶作为分配原理，溶质在水相、胶束相中的分配系数不同，在电场作用下，毛细管中溶液的电渗流和胶束的电泳，使胶束和水相有不同的迁移速度，同时待分离物质在水相和胶束相中被多次分配，在电渗流和这种分配过程的双重作用下得以分离。MECC 是电泳技术与色谱法的结合，适合同时分离分析中性和带电的样品分子。 扫描隧道显微镜（STM）扫描隧道显微镜（STM）的基本原理是利用量子理论中的隧道效应。将原子线度的极细探针和被研究物质的表面作为两个电极，当样品与针尖的距离非常接近时（通常小于1nm），在外加电场的作用下，电子会穿过两个电极之间的势垒流向另一电极。这种现象即是隧道效应。 原子力显微镜 AFM (Atomic Force Microscopy )原子力显微镜的工作原理就是将探针装在一弹性微悬臂的一端，微悬臂的另一端固定，当探针在样品表面扫描时，探针与样品表面原子间的排斥力会使得微悬臂轻微变形，这样，微悬臂的轻微变形就可以作为探针和样品间排斥力的直接量度。一束激光经微悬臂的背面反射到光电检测器，可以精确测量微悬臂的微小变形，这样就实现了通过检测样品与探针之间的原子排斥力来反映样品表面形貌和其他表面结构。 俄歇电子能谱学 AES (Auger electron spectroscopy)俄歇电子能谱基本原理：入射电子束和物质作用，可以激发出原子的内层电子。外层电子向内层跃迁过程中所释放的能量，可能以X光的形式放出，即产生特征X射线，也可能又使核外另一电子激发成为自由电子，这种自由电子就是俄歇电子。对于一个原子来说,激发态原子在释放能量时只能进行一种发射：特征X射线或俄歇电子。原子序数大的元素，特征X射线的发射几率较大，原子序数小的元素，俄歇电子发射几率较大，当原子序数为33时，两种发射几率大致相等。因此，俄歇电子能谱适用于轻元素的分析。]]></content>
@@ -694,17 +705,6 @@
         <tag>STM</tag>
         <tag>AFM</tag>
         <tag>AES</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Dendrimers]]></title>
-    <url>%2Fblog%2F131128%2F</url>
-    <content type="text"><![CDATA[DendrimersDendrimers 由核心 (Initiator core)，内部的多个支化官能团 (Interior) 和外部的表面基团 (Exterior) 三部分组成 Main Features高度支化的结构 + 独特的单分散性特点： 结构规整，分子结构精确; 相对分子质量可以控制; 具有大量的表面功能团; 高度的几何对称性; 球形分子外挤内松，分子内存在空腔并可调节。 e.g.: 聚甲基丙烯酸甲酯 聚苯乙烯 聚乙炔 聚苯 聚噻吩 聚芴 聚对苯乙炔 聚对苯乙炔 聚硅氧烷 聚氧杂降冰片烯（polyoxanorbornene） 聚乙烯亚胺 SynthesiseCarboxylic acid and phenol terminated water soluble dendrimers were synthesised to establish their utility in drug delivery as well as conducting chemical reactions in their interiors. This might allow researchers to attach both targeting molecules and drug molecules to the same dendrimer, which could reduce negative side effects of medications on healthy cells. U.S. Dow Chemical Company — Dr. Tomalia South Florida University — Prof. Newkome Cornell University — J.M.J.Frechet Lab.]]></content>
-      <categories>
-        <category>Lab</category>
-      </categories>
-      <tags>
-        <tag>Dendrimers</tag>
       </tags>
   </entry>
   <entry>
@@ -893,8 +893,8 @@
         <category>Prose</category>
       </categories>
       <tags>
-        <tag>南京</tag>
         <tag>樱花</tag>
+        <tag>南京</tag>
       </tags>
   </entry>
   <entry>

@@ -908,10 +908,10 @@
     <updated>2019-05-12T09:04:05.000Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>对我笑吧，就像你我初次见面；<br>对我说吧，即使誓言明天就变；<br>想起我吧，在你感到变老的那一年；</p>
-<div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer1"),
+				element: document.getElementById("aplayer2"),
 				narrow: false,
 				autoplay: false,
 				showlrc: 0,
@@ -930,10 +930,10 @@
     <summary type="html">
     
       &lt;p&gt;对我笑吧，就像你我初次见面；&lt;br&gt;对我说吧，即使誓言明天就变；&lt;br&gt;想起我吧，在你感到变老的那一年；&lt;/p&gt;
-&lt;div id=&quot;aplayer1&quot; class=&quot;aplayer&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;aplayer2&quot; class=&quot;aplayer&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;
 		&lt;script&gt;
 			new APlayer({
-				element: document.getElementById(&quot;aplayer1&quot;),
+				element: document.getElementById(&quot;aplayer2&quot;),
 				narrow: false,
 				autoplay: false,
 				showlrc: 0,
@@ -982,10 +982,10 @@
 <p>而此时此刻，我仿佛觉得，自己进入了一种近乎游离的状态，脑海里闪现的是别人的视角，然后从头到脚打量了一遍自己，觉得自己确实又没有几斤几两。<del>（所以，又何德何能。）</del></p>
 <p>姐姐说的对，离开终究是好的。</p>
 <p>而于我，或许只有这样子的打量，才会让我，并不那么难过。</p>
-<div id="aplayer2" class="aplayer" style="margin-bottom: 20px;"></div>
+<div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
 			new APlayer({
-				element: document.getElementById("aplayer2"),
+				element: document.getElementById("aplayer1"),
 				narrow: false,
 				autoplay: false,
 				showlrc: 0,
