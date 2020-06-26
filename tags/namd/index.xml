@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NAMD on XiaO | 缄默之语</title>
+    <link>/tags/namd/</link>
+    <description>Recent content in NAMD on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/namd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>分子动力学</title>
+      <link>/cn/2020-06-05/molecular-dynamics-gromacs-namd/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-05/molecular-dynamics-gromacs-namd/</guid>
+      <description>分子动力学（Molecular dynamics） 分子动力学是依靠计算机来模拟分子、原子体系运动的多体模拟方法。通过对分子、原子在一定时间内运</description>
+    </item>
+    
+  </channel>
+</rss>

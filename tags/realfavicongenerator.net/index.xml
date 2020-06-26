@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>realfavicongenerator.net on XiaO | 缄默之语</title>
+    <link>/tags/realfavicongenerator.net/</link>
+    <description>Recent content in realfavicongenerator.net on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/realfavicongenerator.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为你的网站添加 Logo</title>
+      <link>/cn/2020-04-25/generating-favicons-for-your-website/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-25/generating-favicons-for-your-website/</guid>
+      <description>Real Favicon Generator 提供了一个免费的网站 Logo 生成器，让网页 Logo 添加变得很简单。只需要几步，咱们走着。 上传一张用作 Logo 的图片 上传一张用作网站 Logo 的图片，格式可以是 PNG,</description>
+    </item>
+    
+  </channel>
+</rss>

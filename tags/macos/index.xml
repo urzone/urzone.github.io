@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS on XiaO | 缄默之语</title>
+    <link>/tags/macos/</link>
+    <description>Recent content in MacOS on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>旧制度留下的遗产有好有坏</title>
+      <link>/cn/2020-05-11/command-line-tools/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-11/command-line-tools/</guid>
+      <description>对跟随近七年的老爷机进行系统升级后，发现旧款软件在 MacOS Catalina 下无法打开。而偶然又在词典里看到这样一个例句，很有意思。 The old system has left a mixed legacy. 旧制度留下的遗</description>
+    </item>
+    
+  </channel>
+</rss>

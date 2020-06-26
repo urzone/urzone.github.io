@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Rstudio 下增添复制的问题 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="Rstudio 下增添复制的问题 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="记录一个剪贴板的复制问题。
+从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有当前复制的内容，又有前一次复制的内容，而后粘贴到其他地方的时候，总会以（A/B）的形式出现。这个问题困扰了我好一阵子。
+偶然在这本帖子中发现，其实很多朋友遇到过类似的问题。故而猜测，引发我上述问题的，大有可能也和自己系统中某个 &amp;hellip;">
+      <meta property="og:description" content="记录一个剪贴板的复制问题。
+从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有当前复制的内容，又有前一次复制的内容，而后粘贴到其他地方的时候，总会以（A/B）的形式出现。这个问题困扰了我好一阵子。
+偶然在这本帖子中发现，其实很多朋友遇到过类似的问题。故而猜测，引发我上述问题的，大有可能也和自己系统中某个 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Rstudio 下增添复制的问题</h1>
+
+
+<h3>XiaO / 
+2020-05-13</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>记录一个剪贴板的复制问题。</p>
+<p>从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有当前复制的内容，又有前一次复制的内容，而后粘贴到其他地方的时候，总会以（A/B）的形式出现。这个问题困扰了我好一阵子。</p>
+<p>偶然在<a href="https://www.v2ex.com/t/487003">这本帖子</a>中发现，其实很多朋友遇到过类似的问题。故而猜测，引发我上述问题的，大有可能也和自己系统中某个带有剪贴板管理功能的软件有关。</p>
+<p>早前一直使用 Alfred，其实它的剪贴板管理一直没怎么使用。于是试探一下，简单粗暴地直接杀了 Alfred，而后在 Rstudio 中尝试复制粘贴功能，一切都正常了。这感觉就像悟空终于给了唠叨个没完的唐僧一棒，整个世界都清静了一样。</p>
+<p>而后打开 Alfred，找到起剪贴板管理功能，其实问题也刚好出现在这里。如下图所示：</p>
+<p><img src="/media/image/cn-2020-05-13.png" alt=""></p>
+<p>自上而下：</p>
+<ul>
+<li>第一个功能，合并剪贴板。快速增添所选文字到上一次复制的内容后面，其定义的快捷键为 保持按住 <code>⌘</code> 的同时，连续按两次 <code>C</code> 键；</li>
+<li>第二个功能，将多次复制后的合并内容，发送回系统剪贴板，并用 <code>⌘ + v</code> 进行粘贴；</li>
+<li>第三个功能，选择合并条目的分隔形式；</li>
+<li>第四个功能，进行增添操作的时候，会播放提示音。</li>
+</ul>
+<p>原本在其他程序中，需要<strong>连续快速按两次</strong> <code>C</code> 以进行增添操作。但是，在 Rstudio 中，即使两次复制之间间隔的已有明显的时长，依然会进行增添操作。</p>
+<p>所以，当下的解决办法:</p>
+<ul>
+<li>或者取消 <strong>将多次复制后的全部内容发送回系统剪贴板</strong>的功能。如此，需要获得多次复制结果的时候，则打开 Alfred 的剪贴板历史记录，重新选择；如果仅需要当前复制内容的时候，就直接 <code>⌘ + v</code> ；</li>
+<li>或者让 Alfred 忽略 Rstudio 中的复制。</li>
+</ul>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-05-12/poet-li-qingzhao/">李清照</a></span>
+  <span class="nav-next"><a href="/cn/2020-05-13/pymol-installing-setting/">PyMOL 的安装、球棍模型设置与图片输出</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-05-12\/poet-li-qingzhao\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-05-13\/pymol-installing-setting\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

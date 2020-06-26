@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogdown on XiaO | 缄默之语</title>
+    <link>/tags/blogdown/</link>
+    <description>Recent content in blogdown on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用 R 进行绘图与写作</title>
+      <link>/cn/2020-06-07/r-rstudio/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-07/r-rstudio/</guid>
+      <description>安装 R，RStudio 与 pandoc brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc : Terminal 中启动 R 后提示 During startup - Warning messages: 1: Setting LC_COLLATE failed, using &amp;quot;C&amp;quot; 2: Setting LC_TIME failed,</description>
+    </item>
+    
+  </channel>
+</rss>

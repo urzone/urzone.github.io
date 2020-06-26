@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>HPLC 之峰高与面积 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="HPLC 之峰高与面积 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="给电子基一般都是临位和对位导向，吸电子基一般都是间位导向，除了卤素。
+">
+      <meta property="og:description" content="给电子基一般都是临位和对位导向，吸电子基一般都是间位导向，除了卤素。
+">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+<script>
+(function(u, c) {
+  var d = document, t = 'script', o = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  o.src = u;
+  if (c) { o.addEventListener('load', function (e) { c(e); }); }
+  s.parentNode.insertBefore(o, s);
+})('//cdn.jsdelivr.net/npm/pangu@4.0.5/dist/browser/pangu.min.js', function() {
+  pangu.spacingPage();
+});
+</script>
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>HPLC 之峰高与面积</h1>
+
+
+<h3>XiaO / 
+2014-04-25</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="hplc---紫外检测">HPLC - 紫外检测</h3>
+<ul>
+<li>一浓度固定的供试液，采用 HPLC 紫外检测，当进样量加倍时，峰高、峰面积如何变化？</li>
+<li>在线性范围以内：进样量加倍，因为紫外检测器属于摩尔型检测器，理论上峰面积会加倍，如果把峰当作三角形来计算的话，底边（峰宽不变）不变的时候，峰高确实会高一倍；但是实际上面积是大一倍，实际峰高只会高一些，不到一倍，因为峰型的影响因素很多，峰宽也会改变。线性范围以外没有实际讨论意义。</li>
+</ul>
+<h3 id="hplc---ms">HPLC - MS</h3>
+<ul>
+<li>当采用HPLC-MS检测时，进样量加倍，峰高、峰面积如何变化？当进样量不变，分流比改变时，峰高、峰面积如何变化？</li>
+<li>MS检测器是检测离子数的，也是摩尔型检测器，理论上跟上面的是一样的。实际上MS检测器所受的影响因素更多，比如离子化效率、真空度等等，实际所得到的峰高增加值也不到一倍，峰面积增加值应该增加一倍左右，但通常峰面积增加值不到一倍。</li>
+<li>当分流比改变，比如1/10改成1/100，那就应该是峰面积缩小十倍了，但是实际峰面积缩小不到10倍，可能9倍。峰高会缩小的倍数更少。</li>
+</ul>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>动物清洁等级</li>
+<li>阳性对照</li>
+<li>空白对照</li>
+</ul>
+<h3 id="推电子基团">推电子基团</h3>
+<ul>
+<li>强:<br>
+-NH2 -NHR -NR2
+-OH
+-O-</li>
+<li>中:<br>
+-NHCOCH3 -NHCOR
+-OCH3 -OR</li>
+<li>弱:
+-CH3 -C2H5 -R
+-C6H5</li>
+</ul>
+<h3 id="吸电子基团">吸电子基团:</h3>
+<ul>
+<li>强:
+-NO2
+-NR3+
+-CF3, -CCl3</li>
+<li>中:
+-CN
+-SO3H
+-CO2H, -CO2R
+-CHO, -COR</li>
+<li>弱:
+-F	-Cl	-Br	-I</li>
+</ul>
+<p>给电子基一般都是临位和对位导向，吸电子基一般都是间位导向，除了卤素。</p>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2014-04-22/ligusticum-wallichii-golden-cornus/">大川芎方 &#43; 左金方</a></span>
+  <span class="nav-next"><a href="/cn/2014-05-07/what-you-said/">你说</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2014-04-22\/ligusticum-wallichii-golden-cornus\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2014-05-07\/what-you-said\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

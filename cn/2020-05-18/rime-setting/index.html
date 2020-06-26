@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>更新 Rime 配置 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="更新 Rime 配置 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下：
+[&amp;hellip;] 某惯用小鹤双拼 &#43; 系统英文输入法。
+[&amp;hellip;] brew cask install squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：/Users/xiao/Library/Rime/，其中文件 &amp;hellip;">
+      <meta property="og:description" content="现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下：
+[&amp;hellip;] 某惯用小鹤双拼 &#43; 系统英文输入法。
+[&amp;hellip;] brew cask install squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：/Users/xiao/Library/Rime/，其中文件 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>更新 Rime 配置</h1>
+
+
+<h3>XiaO / 
+2020-05-18</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>现在越来越觉得，好像做什么事情都需要理由。那好吧，<strong>某</strong>使用 Rime 的理由如下：</p>
+<ul>
+<li>个人隐私（相对现在流行的云词典输入法而言）；</li>
+<li><strong>一劳</strong>永逸（相对它的学习成本与备份迁移而言）；</li>
+<li>关于词库，自己养一段时间就形成自己的词库了；</li>
+<li>关于习惯，这是个好东西，如果不用转换输入法；</li>
+</ul>
+<p><strong>某</strong>惯用<strong>小鹤双拼 + 系统英文输入法</strong>。</p>
+<h3 id="安装">安装</h3>
+<pre><code>brew cask install squirrel
+</code></pre><h3 id="rime-配置文件httpsgithubcomrimehomewikirimewithschemata-说明-1httpsblogdwxiomy-rime-说明-2httpswwwdreamxucominstall-config-squirrel">Rime <a href="https://github.com/rime/home/wiki/RimeWithSchemata">配置文件</a> <a href="https://blog.dwx.io/my-rime/">说明 1</a> <a href="https://www.dreamxu.com/install-config-squirrel/">说明 2</a></h3>
+<p>配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：<code>/Users/xiao/Library/Rime/</code>，其中文件结构如下：</p>
+<pre><code>├── default.custom.yaml # 全局配置
+├── squirrel.custom.yaml # 外观定制
+
+├── custom_phrase.txt # 个人短语定制
+
+├── double_pinyin_flypy.schema.yaml # &lt;方案标识&gt;.schema.yaml - 预设输入方案
+├── double_pinyin_flypy.custom.yaml # &lt;方案标识&gt;.custom.yaml - 用户对预设输入方案的定制信息
+
+# &lt;词库名&gt;.dict.yaml - 词库
+├── luna_pinyin.dict.yaml # 主词库
+├── luna_pinyin.extended.dict.yaml # 副词库 -
+├── luna_pinyin.cn_en.dict.yaml # 副词库 - 中英文混合短语
+├── luna_pinyin.hanyu.dict.yaml # 副词库 - 汉语大词典
+├── luna_pinyin.poetry.dict.yaml # 副词库 - 唐诗宋词、千家集、楚辞、诗经
+├── luna_pinyin.sgmain.dict.yaml # 副词库 - 电脑软件分类、计算机术语、全国省地市区县地名、穴位、西药药名、经典小说、音乐专业词库、网络流行新词
+
+├── installation.yaml # 安装信息
+├── user.yaml # 用户状态信息
+├── build # 部署输入方案时产生文件所在的文件夹
+
+# &lt;词库名&gt;.userdb
+└── luna_pinyin.userdb # 记录用户用字习惯中的文件夹（自动生成）
+</code></pre><h3 id="全局配置-defaultcustomyaml">全局配置 (default.custom.yaml)</h3>
+<pre><code># default.custom.yaml, 全局生效
+patch:
+  schema_list:
+    - schema: double_pinyin_flypy # 小鹤双拼
+  switcher/hotkeys:
+    - F4
+  switcher/save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    # - zh_hans
+    # - emoji_suggestion
+  menu/page_size: 5 # 定制每页候选数
+  # 更改切换中西文的快捷键
+  ascii_composer:
+    good_old_caps_lock: false
+    switch_key:
+      Shift_L: noop
+      Shift_R: noop
+      Control_L: noop
+      Control_R: noop
+      Caps_Lock: commit_code
+      Eisu_toggle: clear
+</code></pre><h3 id="外观配置httpsplacelessnetblogrime-squirrel-customization-2019-squirrelcustomyaml-"><a href="https://placeless.net/blog/rime-squirrel-customization-2019">外观配置</a> (squirrel.custom.yaml )</h3>
+<pre><code>patch:
+  style:
+    color_scheme: mojave_dark
+
+  preset_color_schemes:
+    mojave_dark:
+      name: &quot;沙漠夜／Mojave Dark&quot;
+      author: &quot;xiehuc &lt;xiehuc@gmail.com&gt;&quot;
+      alpha: 0.9
+      horizontal: true # 候选窗横向显示
+      inline_preedit: true
+      candidate_format: &quot;%c %@ &quot;
+      corner_radius: 5
+      hilited_corner_radius: 0
+      border_height: 6
+      border_width: 12
+      border_color_width: 0
+      font_face: PingFangSC # 预选栏文字字体
+      font_point: 16
+      label_font_point: 12  #预选栏数字大小
+      text_color: 0xffffff
+      back_color: 0x1e1e1e
+      label_color: 0x888785
+      border_color: 0x717171
+      candidate_text_color: 0xffffff
+      hilited_text_color: 0xffffff
+      hilited_back_color: 0x1e1e1e
+      hilited_candidate_text_color: 0xffffff
+      # hilited_candidate_back_color: 0xcb5d00
+      hilited_candidate_label_color: 0x888785
+      comment_text_color: 0xdedddd
+
+  # app_options: {}
+  &quot;app_options/com.apple.Terminal&quot;: # 设置特定软件中默认西文输入
+      ascii_mode: true
+</code></pre><h3 id="扩展词库httpsbintraycomrime-acadictionariesluna_pinyindict"><a href="https://bintray.com/rime-aca/dictionaries/luna_pinyin.dict">扩展词库</a></h3>
+<ul>
+<li>设置主词库。在 <code>*&lt;方案标识&gt;.custom.yaml</code> 中将 <code>translator/dictionary</code> 的值设置为主词库的名字即可：</li>
+</ul>
+<pre><code>patch:
+  translator/dictionary: luna_pinyin
+</code></pre><ul>
+<li>添加副词库。<code>luna_pinyin.dict.yaml</code> 文件，在其中引入自己需要的副词库：</li>
+</ul>
+<pre><code># luna_pinyin.dict.yaml
+---
+name: luna_pinyin
+version: &quot;2020.05.18&quot;
+sort: by_weight
+use_preset_vocabulary: true
+# 如下为自己的词典引入明月拼音扩展词库
+import_tables:
+  - luna_pinyin.extended
+  - luna_pinyin.hanyu
+  - luna_pinyin.poetry
+  - luna_pinyin.cn_en
+  - luna_pinyin.sgmain
+...
+</code></pre><ul>
+<li>
+<p><a href="https://www.jianshu.com/p/cffc0ea094a7">制作副词库</a></p>
+<ul>
+<li><a href="https://github.com/studyzy/imewlconverter/releases">深蓝词库转换 for windows</a></li>
+<li>繁简转换：<a href="https://github.com/BYVoid/OpenCC">OpenCC</a></li>
+</ul>
+</li>
+</ul>
+<pre><code>brew install opencc
+opencc -h # 帮助信息
+</code></pre><h3 id="rime-输入法-使-xí-用-guàn-说-yǎng-明-chénghttpsgithubcomrimehomewikiuserguide">Rime 输入法 <a href="https://github.com/rime/home/wiki/UserGuide">使 (xí) 用 (guàn) 说 (yǎng) 明 (chéng)</a></h3>
+<ul>
+<li>中英文混合输入，当需要输入英文的时候：
+<ul>
+<li>或用 Caps Lock 键切换到大写英文状态，输入英文的第一个大写字母后，再次 Caps Lock 键取消大写锁定，继续输入英文并用空格或者回车键上屏；</li>
+<li>或用 <code>shift + 字母按键</code> 输入所需要英文的首字母，而后直接字母按键输入小写英文，最后空格或者回车键上屏。</li>
+</ul>
+</li>
+<li>输入编码后，如果不需要候选字而是希望输入码对应的键盘字符直接上屏，可使用回车键（Return）</li>
+<li>删除误上屏的错词（调节词频）：选字光标（用上、下键）移到要删除的用户词组上，<code>Shift + Fn + Delete</code> 键删除即可；</li>
+<li>Escape 键 清空未完成的输入；</li>
+<li>关闭 Rime 的中英文切换，Rime 仅用于中文输入以及临时英文输入。完全英文输入则使用系统自带英文输入法；</li>
+</ul>
+<h3 id="rime-输入法备份">Rime 输入法备份</h3>
+<p>多台电脑及不同系统之间同步用户词典和用户设定的备份，可编辑用户文件夹下的 <code>installation.yaml</code> ，添加 <code>sync_dir: ''</code> 语句，并补充上相应的同步位置即可：</p>
+<pre><code>sync_dir: '/Users/xiao/RimeSync/'
+</code></pre><ul>
+<li><code>installation.yaml</code> 文件中，每套 Rime 会随机生成一个 UUID 作为标识。不同 installation ID 可区分来自不同机器/系统的用户词典。可用小写字母、数字、横线和下划线自定义该 ID：</li>
+</ul>
+<pre><code>installation_id: 'Rime-setting-mac-xiao'
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-05-17/tinytex-tinytex/">撞大运之 tinytex 安装  LaTeX 发行版 TinyTeX</a></span>
+  <span class="nav-next"><a href="/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/">组合拳之视频下载与处理</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-05-17\/tinytex-tinytex\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-05-19\/mac-youtube-dl-aria2-ffmpeg\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

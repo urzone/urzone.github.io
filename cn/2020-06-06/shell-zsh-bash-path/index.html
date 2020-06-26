@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>关于人机交互的 shell - XiaO | 缄默之语</title>
+    <meta property="og:title" content="关于人机交互的 shell - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="使用某个编程语言编写的源代码，其执行方式可以是：编译成新代码执行或通过解释器解释执行。
+编译器：将使用 A 语言编写的源代码编译成 B 语言后，再执行 B 语言；
+解释器：即直接执行使用 A 语言编写的源代码；（解释器的内部是一个编译器加一个虚拟机，编译器把输入语言编译成中间语言，虚拟机直接执行中间语言。）
+[&amp;hellip;] shell 是一个命令行解释器，是一层套在机器外用于人机交互的壳。其 &amp;hellip;">
+      <meta property="og:description" content="使用某个编程语言编写的源代码，其执行方式可以是：编译成新代码执行或通过解释器解释执行。
+编译器：将使用 A 语言编写的源代码编译成 B 语言后，再执行 B 语言；
+解释器：即直接执行使用 A 语言编写的源代码；（解释器的内部是一个编译器加一个虚拟机，编译器把输入语言编译成中间语言，虚拟机直接执行中间语言。）
+[&amp;hellip;] shell 是一个命令行解释器，是一层套在机器外用于人机交互的壳。其 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>关于人机交互的 shell</h1>
+
+
+<h3>XiaO / 
+2020-06-06</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="编译与解释">编译与解释</h3>
+<p>使用某个编程语言编写的源代码，其执行方式可以是：<strong>编译成新代码执行</strong>或<strong>通过解释器解释执行</strong>。</p>
+<p>编译器：将使用 A 语言编写的源代码编译成 B 语言后，再执行 B 语言；<br>
+解释器：即直接执行使用 A 语言编写的源代码；（解释器的内部是一个编译器加一个虚拟机，编译器把输入语言编译成中间语言，虚拟机直接执行中间语言。）</p>
+<h3 id="shell">shell</h3>
+<p>shell 是一个命令行解释器，是一层套在机器外用于人机交互的壳。其具体作用是用户输入一条命令，shell 就立即解释执行一条。</p>
+<p>只要是人与电脑之间交互的接口，就可以称为 shell，不局限于系统、语言、操作方式和表现方式。比如我们在 terminal 或者 iterm2 中输入命令，叫 command-line interface (CLI)；在屏幕上点击，叫 graphical user interface (GUI)</p>
+<h3 id="terminal-or-iterm2">Terminal or iTerm2</h3>
+<p>Terminal 或者 iTerm2，是一个程序，shell 运行于其中。</p>
+<ul>
+<li><a href="https://gist.github.com/poopsplat/7195274">Mac Terminal Cheat Sheet</a></li>
+<li><a href="https://justinyan.me/post/3726">终端 Terminal 中运键如飞</a></li>
+</ul>
+<h3 id="shell-的-login-与-non-login">shell 的 login 与 non-login</h3>
+<p>login shell 是指登录系统后所获得的顶层 shell，比如 ssh 登录，登录完后得到一个 login shell；<br>
+non-login shell：登录桌面电脑后，在 terminal 中直接打开的 shell。</p>
+<h3 id="shell-解释器类型httpszellwkcomblogbash-zsh-fish">shell <a href="https://zellwk.com/blog/bash-zsh-fish/">解释器类型</a></h3>
+<p>shell 解释器有 sh、bash、ksh、csh 和 zsh 等。macOS 中默认安装了以上所有类型。只要一门语言有解释器，就可以作为 shell 使用。</p>
+<p>macOS 的默认 shell 为 zsh，推荐插件</p>
+<pre><code>brew install zsh-autosuggestions # 根据历史记录建议
+brew install zsh-syntax-highlighting # 语法高亮
+brew install powerline-go # https://github.com/justjanne/powerline-go
+</code></pre><h3 id="shell-配置文件httpsapplestackexchangecomquestions361870what-are-the-practical-differences-between-bash-and-zsh">shell <a href="https://apple.stackexchange.com/questions/361870/what-are-the-practical-differences-between-bash-and-zsh">配置文件</a></h3>
+<p>shell 在启动时会自动加载相应的配置文件。</p>
+<p>bash (in non-login interactive shells): 加载 <code>~/.bashrc</code>；<br>
+bash (login shells): 加载 <code>.bash_profile</code> 与 <code>.inputrc</code>；<br>
+zsh (in all interactive shells): 加载 <code>~/.zshrc</code>; <br>
+zsh (in login shells): 加载 <code>~/.zprofile</code>;</p>
+<pre><code># 查看当前使用的 shell 类型，以便配置相应的加载文件
+echo $SHELL
+
+# 将插件添加到配置文件中，以便后续启动 shell 时自动加载；
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</code></pre><h3 id="shell-的-path-变量-路径">shell 的 PATH 变量 （路径）</h3>
+<blockquote>
+<p><a href="https://medium.com/@jalendport/what-exactly-is-your-shell-path-2f076f02deb4"><em>The shell path</em></a> for a user in macOS is a set of locations in the filing system whereby the user has permissions to use certain applications, commands and programs without the need to specify the full path to that command or program in the Terminal. The <a href="https://coolestguidesontheplanet.com/add-shell-path-osx/"><em>PATH</em></a> variable is basically a list of directories your computer looks through to find a requested executable.</p>
+</blockquote>
+<p>shell 解释器的 <strong>PATH</strong> 是计算机查找相应可执行文件的<strong>一组文件目录（路径）列表</strong>。macOS 的应用程序存放在一个叫 Applications 的文件夹中，而 shell 的可执行文件可能存放在不同的文件夹中。比如 pyhton 3 的命令行执行文件，其完整路径为 <code>/usr/local/bin/python3</code>，它存放在 <code>/usr/local/bin/</code> 路径下。</p>
+<p>我们将 <code>/usr/local/bin/</code> 添加到 shell 的 <strong>PATH</strong> 变量中后，我们在 Termminal 中 启动 pyhton 3 时候，不必像下面这样输入其完整路径启动：</p>
+<pre><code>/usr/local/bin/python3
+</code></pre><p>而只需要直接输入命令本身即可启动：</p>
+<pre><code>python3
+</code></pre><p>可用 <code>echo $PATH</code> 命令显示 <strong>PATH</strong> 中的文件目录列表。shell 解释器的 <strong>PATH</strong> 中，其文件目录之间用英文（半角）冒号 <code>:</code> 隔开。</p>
+<pre><code>echo $PATH # 在 Terminal 查看已经加入到 PATH 变量中的文件目录
+
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin # PATH 变量的值显示为 
+</code></pre><p>如上显示， shell 的 <strong>PATH</strong> 变量中有 5 个文件目录（路径），并用冒号分隔。这意味着我们可以在 Terminal 中直接调用这 5 个文件目录下的可执行文件。</p>
+<pre><code>/usr/local/bin # 用户安装的可执行文件
+/usr/bin # 普通工具，编程工具以及应用软件
+/bin # 用户工具
+/usr/sbin # 系统维护和系统工具
+/sbin # 系统程序和管理工具
+</code></pre><p>另外，一些文件软件管理程序会使用类似的文件目录来存放所安装的软件，比如 Homebrew 将软件安装到 <code>/usr/local/Cellar</code> 目录下，而后通过<a href="https://zh.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5">符号链接</a>的方式，将所安装的软件链接到 <code>/usr/local/bin</code>中。</p>
+<p>在相应的 shell 的配置文件中，可用如下语法，将需要添加的<code>/usr/local/mysql/bin</code> 文件目录添加到原来的目录列表 <code>$PATH</code> 之前，并用英文冒号隔开。</p>
+<pre><code>export PATH=&quot;/usr/local/mysql/bin:$PATH&quot;
+</code></pre><p>另外， 在 <strong>PATH</strong> 中，文件目录之间是有先后排序的，即 shell 在执行某个可执行文件时，是按照 <strong>PATH</strong> 中文件目录的<a href="https://stackoverflow.com/questions/34984870/order-of-usr-bin-and-usr-local-bin-and-more-in-path">先后顺序查找该可执行文件所在的目录</a>并启用的。</p>
+<p>更改文件目录的先后排序，只需将各个文件目录重新排序即可。一般优先将 <code>/usr/local/bin</code> 目录放在<code>/usr/bin</code>之前，这样用户可自行安装某个软件的最新版本，并优先调用用户所安装的版本而非系统自带版本。而系统升级的话，也不会影响到用户所安装的软件。</p>
+<pre><code>export PATH=&quot;/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
+</code></pre><h3 id="macos-中的符号链接httpwwwgnuorgsoftwarecoreutilsmanualhtml_nodeln-invocationhtml">macOS 中的<a href="http://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html">符号链接</a></h3>
+<pre><code>ln -s target linkname
+</code></pre><p>除开Unix系统下的普通符号链接之外，macOS 还能使用别名（aliases）。例如，将可执行文件 namd2 添加到 PATH 中，并别名为 namd。</p>
+<pre><code>alias namd='~/NAMD_2.14b1_MacOSX-x86_64-multicore/namd2'
+</code></pre><h3 id="更改-shell-中-macos-默认调用的-python-版本">更改 shell 中 macOS 默认调用的 python 版本</h3>
+<p>(针对使用 homebrew 安装 python3 的情况)</p>
+<p>macOS 默认的 python 版本为 pyhton 2。可用别名的方式修改 shell 中 pyhon 版本的调用。这样做的好处是可以不影响其他依赖 pyhton 2 的程序。</p>
+<pre><code>alias p2='python'
+alias p3='python3'
+alias python='python3' # 自动调用 pyhton 3 而非 python 2
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-06-05/molecular-dynamics-gromacs-namd/">分子动力学</a></span>
+  <span class="nav-next"><a href="/cn/2020-06-07/r-rstudio/">用 R 进行绘图与写作</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-06-05\/molecular-dynamics-gromacs-namd\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-06-07\/r-rstudio\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

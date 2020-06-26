@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>用 R 进行绘图与写作 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="用 R 进行绘图与写作 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc :
+Terminal 中启动 R 后提示
+During &amp;hellip;">
+      <meta property="og:description" content="brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc :
+Terminal 中启动 R 后提示
+During &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>用 R 进行绘图与写作</h1>
+
+
+<h3>XiaO / 
+2020-06-07</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h3 id="安装-rrstudio-与-pandoc">安装 R，RStudio 与 pandoc</h3>
+<pre><code>brew install r
+
+brew cask install rstudio # 稳定版
+brew cask install rstudio-preview # 预览版
+brew cask install rstudio-daily # 日更版
+
+brew cask install pandoc-citeproc # 
+</code></pre><p>pandoc :</p>
+<p>Terminal 中启动 R 后提示</p>
+<pre><code>During startup - Warning messages:  
+1: Setting LC_COLLATE failed, using &quot;C&quot;   
+2: Setting LC_TIME failed, using &quot;C&quot;   
+3: Setting LC_MESSAGES failed, using &quot;C&quot;   
+4: Setting LC_MONETARY failed, using &quot;C&quot;  
+</code></pre><p>关于 <a href="https://wiki.archlinux.org/index.php/Locale_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Locale</a>和<a href="https://docs.oracle.com/cd/E37934_01/html/E36634/glmbx.html">语言环境</a></p>
+<p>add the codes to shell config file</p>
+<pre><code>export LANG=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8
+</code></pre><h3 id="自定义-r-包的安装位置-说明之-一1-二2-三3">自定义 R 包的安装位置 说明之 <a href="https://blog.csdn.net/kuyu05/article/details/83303803">一</a> <a href="https://www.accelebrate.com/library/how-to-articles/r-rstudio-library">二</a> <a href="https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work">三</a></h3>
+<p>R 在启动时会自动加载的其配置文件，可通过修改该配置文件来修改包的默认安装位置，比如我们将其安装到 <code>~/Rpackages</code>。</p>
+<p>homebrew 安装的 R 的位置为 <code>/usr/local/Cellar/</code>，其配置文件的位置 <code>/usr/local/Cellar/r/4.0.0_1/lib/R/library/base/R/Rprofile</code> （注意版本号的不同）。</p>
+<p>更新 R 以后，可以找到该文件，把上述包的位置重新写入即可，不必重新下载安装所有包，省事不少。</p>
+<pre><code>#Rprofile.site
+.libPaths(c(&quot;~/Rpackages&quot;, .libPaths()))
+</code></pre><h3 id="安装-r-包">安装 R 包</h3>
+<p>启动 RStudio，安装 R 包。</p>
+<pre><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;)) # 用 R 画图
+install.packages(c(&quot;blogdown&quot;, rmarkdown&quot;,&quot;bookdown&quot;,&quot;tufte&quot;, &quot;tinytex&quot;,&quot;miniUI&quot;,&quot;rticles&quot;,&quot;kableExtra&quot;)) # 生成网站或论文
+</code></pre><h3 id="利用-tinytex-包来安装--latex-发行版-tinytex">利用 tinytex 包来安装  LaTeX 发行版 TinyTeX</h3>
+<pre><code>tinytex::install_tinytex()
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-06-06/shell-zsh-bash-path/">关于人机交互的 shell</a></span>
+  <span class="nav-next"><a href="/cn/2020-06-07/pyenv-python/">使用 pyenv 管理 python 版本</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-06-06\/shell-zsh-bash-path\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-06-07\/pyenv-python\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

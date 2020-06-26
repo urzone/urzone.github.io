@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>GPG - XiaO | 缄默之语</title>
+    <meta property="og:title" content="GPG - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="而现在，“PGP” 被普遍用来表示开放的 OpenPGP 标准，而不再指代最初的商业软件，因此 “PGP” 和 “OpenPGP” 是可以互换的，都指代一个标准。
+“GnuPG”、“gpg” 和 &amp;ldquo;GPG&amp;rdquo; 仅指代 &amp;ldquo;Gnu Privacy Guard&amp;rdquo; 软件，它们仅是实现 PGP 功能的工具，它们所实现的 PGP 密钥，PGP 签名，PGP 加密等 &amp;hellip;">
+      <meta property="og:description" content="而现在，“PGP” 被普遍用来表示开放的 OpenPGP 标准，而不再指代最初的商业软件，因此 “PGP” 和 “OpenPGP” 是可以互换的，都指代一个标准。
+“GnuPG”、“gpg” 和 &amp;ldquo;GPG&amp;rdquo; 仅指代 &amp;ldquo;Gnu Privacy Guard&amp;rdquo; 软件，它们仅是实现 PGP 功能的工具，它们所实现的 PGP 密钥，PGP 签名，PGP 加密等 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>GPG</h1>
+
+
+<h3>XiaO / 
+2020-06-14</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h2 id="gpg-概念原理和安装">GPG 概念，原理和安装</h2>
+<h3 id="名词概念">名词概念</h3>
+<ul>
+<li>PGP （“Pretty Good Privacy”） 是最初商业软件的名字</li>
+<li>OpenPGP 是与最初 PGP 商业软件兼容的 IETF 标准</li>
+<li><a href="https://gnupg.org">GnuPG</a> （“Gnu Privacy Guard”）是实现了 OpenPGP 标准的自由软件</li>
+<li>GnuPG 的命令行工具为 “gpg”</li>
+<li>GnuPG 的图形界面软件为 “<a href="https://gpgtools.org">GPG Tools</a>”</li>
+</ul>
+<p>而现在，“PGP” 被普遍用来表示开放的 OpenPGP 标准，而不再指代最初的商业软件，因此 “PGP” 和 “OpenPGP” 是可以互换的，都指代一个标准。</p>
+<p>“GnuPG”、“gpg” 和 &ldquo;GPG&rdquo; 仅指代 &ldquo;Gnu Privacy Guard&rdquo; 软件，它们仅是实现 PGP 功能的工具，它们所实现的 PGP 密钥，PGP 签名，PGP 加密等功能被称作 PGP 功能。</p>
+<h3 id="pgp-功能的基本原理3">PGP 功能的<a href="https://linux.cn/article-9524-1.html">基本原理</a></h3>
+<p>公钥密码学（非对称式密码学）进行明文与密文之间的转换所使用的密钥包含两部分，公钥和私钥。这两部分组成一对，在实际工作中这两部分即各司其职（一个公开，一个保密），又相互配合（加密与解密）。在公钥密码学中所说的密钥实际上指代的都是密钥对，本文中提及的密钥、主密钥和子密钥，其实也都指代的是密钥对。</p>
+<ul>
+<li>
+<p>公钥，所有人都可知道</p>
+</li>
+<li>
+<p>私钥，只被拥有者知道</p>
+</li>
+<li>
+<p>加解密过程：PGP 使用一个密钥拥有者的公钥部分创建一条只能通过该密钥拥有者的私钥从能解密的消息。</p>
+<ul>
+<li>发送者<strong>随机</strong>生成一个<strong>会话密钥</strong>，并用该会话密钥对<strong>发送内容</strong>进行加密（该过程中使用对称算法）</li>
+<li>发送者使用<strong>接收者的 PGP 公钥</strong>对<strong>会话密钥</strong>进行加密</li>
+<li>发送者向接收者发送<strong>加密后的内容</strong>和<strong>加密后的会话密钥</strong></li>
+<li>接收者使用自己的 PGP 私钥解密接收到的会话密钥</li>
+<li>接收者使用<strong>解密后的会话密钥</strong>解密消息的内容（该过程中同样使用对称算法）</li>
+</ul>
+</li>
+<li>
+<p>签名验证过程</p>
+<ul>
+<li>签名者生成需发送内容的<strong>校检和</strong>（HASH）</li>
+<li>签名者使用<strong>自己的 PGP 私钥</strong>对该<strong>校检和进行加密</strong></li>
+<li>签名者将<strong>加密后的校检和</strong>与需发送的内容一并发送</li>
+<li>验证者对收到的内容生成自己的校检和</li>
+<li>验证者使用签名者的 PGP 公钥来解密签名者所提供的校检和，并与自己生成的校验和进行比对</li>
+</ul>
+</li>
+</ul>
+<h3 id="密钥关联的用户身份">密钥关联的用户身份</h3>
+<p>每个 PGP 密钥必须有一个或多个与之关联的用户身份（UID, user identity, 即用户全名和邮件地址），同一密钥上可以有多个身份，当使用多个身份时，其中一个身份将被标记为 “primary identity” 来让检索更简单。</p>
+<h3 id="密钥所关联身份的可信度">密钥所关联身份的可信度</h3>
+<p>密钥所关联身份的可信度即确认该公钥属于某人的程度。有完全确定 (full)，大致确定 (marginal)，不确认 (unknown) 等不同的确认程度。</p>
+<h3 id="gpg-安装">GPG 安装</h3>
+<p>GnuPG v.1 和 GnuPG v.2 都实现了同样的 PGP 标准，但它们提供的库和命令行工具可能不兼容，建议新版。</p>
+<pre><code>brew search gpg # 查看 gpg 相关信息             
+==&gt; Formulae
+gpg             gpg1            gpg2            gpgme           libgpg-error
+==&gt; Casks
+gpg-suite
+gpg-suite-no-mail ✔
+gpg-suite-pinentry
+gpg-sync
+
+brew cask install gpg-suite-no-mail # 安装不含邮箱插件的图形界面版本，使用起来相对更方便，且已经自动最新 (GnuPG/MacGPG2) 2.2.20 以上。
+</code></pre><h2 id="pgp-的主密钥">PGP 的主密钥</h2>
+<h3 id="主密钥">主密钥</h3>
+<p>PGP 密钥有四项能力 (capabilities)：[E] 加密，[S] 签名，[A] 身份认证以及 [C] 认证其他密钥。</p>
+<p>从技术上来说，所有密钥的生成过程都是一样的，他们本质上并无差异。只是在生成的时候，每个密钥被赋予的能力不同而已。一般而言，一个 PGP 密钥只具有一项上述能力，而具有认证能力 [C] 的密钥被称作主密钥。因为只有主密钥可用于：</p>
+<ul>
+<li>添加或撤销其他密钥（子密钥）的 S/E/A 能力</li>
+<li>添加、更改或撤销密钥关联的身份（UID）</li>
+<li>更改自身或其他子密钥的到期时间</li>
+<li>为网络上其他用户的密钥进行身份确认时签名</li>
+</ul>
+<h3 id="主身份">主身份</h3>
+<p>身份（user ID, UID）用户身份，即与邮件的发件人一栏相同格式的字符串，包括用户名与邮箱地址。一个密钥可关联多个用户身份（通过创建新的身份或者取消旧的身份）。当有多个身份时，其中一个身份被指定为主身份，主身份可更改。</p>
+<h3 id="密码">密码</h3>
+<p>密码是用于对存储在磁盘上的私钥进行对称加密的，所以这个密码其实非常重要。</p>
+<h3 id="密钥的自身身份-key-id-or-fingerprint">密钥的自身身份 (key ID or fingerprint)</h3>
+<pre><code>% gpg --list-keys     # 列出所有公钥信息
+~/.gnupg/pubring.kbx
+------------------------------
+pub   rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+sub   rsa4096 2020-06-14 [E]
+</code></pre><p>短横线上显示的是存储密钥证书信息的数据库文件。</p>
+<p>短横线下第一行显示的是密钥生成时采用的算法 (rsa)、加密长度 (4096)、产生时间 (2020-06-14)、能力 [SC]；第二行是该密钥的完整指纹 Fingerprint （40 个字符），是该密钥自身身份 (key ID) 的唯一认证。密钥的自身身份其实就是完整指纹的最后 8 位字符；第三行则是用户身份信息，包括确认程度，名字和邮件；最后一行显示的是一个具有加密能力的子密钥。</p>
+<pre><code>% gpg --list-secret-keys  # 列出所有私钥信息              
+~.gnupg/pubring.kbx
+------------------------------
+sec   rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+ssb   rsa4096 2020-06-14 [E]
+</code></pre><p>可见密钥的私钥部分和公钥部分拥有完全一样的指纹，即一个密钥其实是一个密钥对，包括公钥和私钥部分。</p>
+<h3 id="吊销证书">吊销证书</h3>
+<p>吊销证书用于将密钥（完整的密钥对）标记为吊销状态，即表明该密钥将不再被使用或信任。任何获得该文件的人，都可以将其对应的密钥标记为吊销状态。</p>
+<h2 id="pgp-的子密钥4">PGP 的<a href="https://wiki.debian.org/Subkeys">子密钥</a></h2>
+<p>子密钥可用于签名或加密，一个子密钥只具有一个功能。</p>
+<p>子密钥只不过是天然地与主密钥关联在一起而已，其他并没有什么不同。子密钥可以单独被撤消，也可以与主密钥分开存储。一个主密钥下还可添加多个子密钥。和主密钥一样，子密钥其实也是一对。</p>
+<p>GPG 软件生成主密钥的时候，实际上是将一个原本只具有签名 [S] 能力的密钥为其增加了认证 [C] 能力，使得主密钥同时具有了 [SC] 的能力，但主密钥依然不具备加密能力。所以，GPG 软件在生成主密钥的同时还会自动生成一个具有 [E] 能力的子密钥，使得 GPG 软件能完成加密工作。</p>
+<p>一个主密钥其实就是网络上一个独立的电子身份。如果有人获得了一个主密钥的私钥部分（或者其子密钥的私钥部分），再加上公钥部分，那么他就可以在网络上伪装成丢失私钥的那个人的身份。</p>
+<p>子密钥真正的好处是，它让密钥管理变得相对简单，特别是对<strong>主密钥私钥部分的管理</strong>。</p>
+<p>在创建主密钥时候，GPG 软件已经自动生成了一个用于加密的子密钥，我们可以再创建一个子密钥用于签名。这样，我们在加密或者签名的时候，实际使用的是子密钥完成的。比如，其他人将使用我们的子密钥中的公钥部分进行加密或者验证签名，而我们也将使用子密钥中的私钥来解密或者对消息签名。在这些常规操作中，我们并不会用到主密钥的私钥部分。这样我们就可以把主密钥的私钥部分备份到其他断网的地方，而不用存放在电脑，减少了其泄漏的机率。</p>
+<p>只有当我们需要行使主密钥 [C] 的能力时（比如我们为其他人的密钥签名以进行身份确认时），我们才需要使用到主密钥的私钥部分，因为主密钥在执行 [C] 的能力时候，需要从主密钥的私钥部分新增一个自签名或者一个吊销签名。而 OpenPGP 的认证签名（来自签名者主密钥的私钥）仅与用户身份（UID）相关，而与子密钥无关。这样，如果我们的子密钥被破坏不可用时，我们可以吊销被破坏的子密钥，用一个新的子密钥代替即可。</p>
+<h2 id="管理主密钥">管理主密钥</h2>
+<h3 id="密钥存储文件的结构">密钥存储文件的结构</h3>
+<p>GPG 生成的密钥文件，存储在 <code>~/.gnupg/</code> 目录里，其结构如下：</p>
+<pre><code>% tree ~/.gnupg
+
+├── S.gpg-agent
+├── S.gpg-agent.browser
+├── S.gpg-agent.extra
+├── S.gpg-agent.ssh
+│
+├── openpgp-revocs.d # 存储所有预生成的吊销证书的文件夹 （需备份）
+│   └── D993DA3B74DF27BA45622637D899FD6DE9C11BCA.rev # 一个文件名对应了一个相应密钥的指纹，表明其可用于吊销相应的密钥
+│
+├── private-keys-v1.d # 存储所有密钥的私钥部分的文件夹，每个私钥以单文件的形式分别存放在该文件夹下 （需备份）
+│   ├── 4496F1FD131F010998D2B20B05626D8DCFFC6209.key # 一个文件名即一个密钥夹
+│   └── 785FF8E130273C6BDFD1F18A51A27EE66D1A3545.key # 密钥夹将密钥的私钥部分与公钥部分对应了起来
+│
+├── pubring.kbx # 存储密钥的公钥部分及相关信息的数据库文件，所有公钥都存储在这个文件中（需备份）
+├── pubring.kbx~
+│
+└── trustdb.gpg # 可信任数据库 （无需备份）
+</code></pre><h3 id="密钥夹keygrip">密钥夹（keygrip）</h3>
+<pre><code>% gpg --list-keys --with-keygrip # 列出所有公钥信息，以及其密钥夹
+
+~/.gnupg/pubring.kbx
+------------------------------
+pub   rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+      Keygrip = 785FF8E130273C6BDFD1F18A51A27EE66D1A3545 # 主密钥对应的密钥夹
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+sub   rsa4096 2020-06-14 [E]
+      Keygrip = 4496F1FD131F010998D2B20B05626D8DCFFC6209 # 子密钥对应的密钥夹
+</code></pre><p>如上，我们可以看到两个密钥夹，分属主密钥和子密钥，因为我们在使用 GPG 软件创建密钥的时候，自动生成了主密钥和一个子密钥。这两个密钥夹正好对应了<strong>密钥的私钥部分所在文件夹</strong> (private-keys-v1.d) 中文件的名字。</p>
+<h3 id="私钥文件夹与公钥密钥盒">私钥文件夹与公钥密钥盒</h3>
+<p><a href="https://gnupg.org/faq/whats-new-in-2.1.html#nosecring">pubring.gpg 与 secring.gpg</a> 属于历史遗留产物，他们分别用于存储所有公钥和私钥，即所有的公钥放在一个单文件中，所有的私钥放在一个单文件中。</p>
+<p>GPG 新的版本改变了文件存储结构，其中的公钥部分 (pubring.gpg) 由公钥密钥盒 (pubring.kbx) 取代，可用工具 kbxutil 显示其内部结构；而私钥部分 (secring.gpg) 则专门放入私钥文件夹 (private-keys-v1.d) 中，且每个私钥分开以单文件的形式存放。如此，新的文件存储结构更利于快速检索和处理。</p>
+<p>如下，当我们用命令 <code>gpg --list-secret-keys</code> 列出私钥的时候，似乎私钥也存储在 pubring.kbx 公钥密钥盒中，实则不然。<code>gpg --list-secret-keys </code> 命令原本是在旧版本的 GPG 软件里提取存放在 secring.gpg 文件下的私钥的，现在新版本里其实没有 secring.gpg 文件，此刻命令 <code>gpg --list-secret-keys</code> 所列出的私钥其实是从私钥文件夹 (private-keys-v1.d) 经过 gpg-agent 转换而来的。</p>
+<pre><code>% gpg --list-secret-keys --with-keygrip
+
+~/.gnupg/pubring.kbx
+------------------------------
+sec   rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+      Keygrip = 785FF8E130273C6BDFD1F18A51A27EE66D1A3545
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+ssb   rsa4096 2020-06-14 [E]
+      Keygrip = 4496F1FD131F010998D2B20B05626D8DCFFC6209
+</code></pre><h3 id="备份与删除密钥">备份与删除密钥</h3>
+<p>如上我们知道，在日常加密签名操作时，都只使用子密钥来加密和签名，不会用到主密钥。所以为了安全起见，我们在备份了主密钥的私钥部分以及吊销证书后，需要将其从我们的联网电脑里删除。</p>
+<ul>
+<li>密钥备份与导入
+<ul>
+<li>我们可以直接将 <code>~/.gnupg</code> 文件夹保存到新的地方，比如移动硬盘或者专用的优盘。需要还原的实话，将整个文件夹直接放回根目录 <code>~/</code> 即可；</li>
+<li>我们也可以通过导出的方式仅备份密钥的关键部分，比如主密钥的私钥，密钥的吊销证书。这样导出的密钥文件，其实就是一个可读的文本文件。当我们需要重新导入密钥的时候，直接直接拖拽或者命令行的形式都可以。文中生成的密钥导出来的文本如下：</li>
+</ul>
+</li>
+</ul>
+<pre><code>-----BEGIN PGP PRIVATE KEY BLOCK-----
+
+lQdGBF7l2qABEADZelFYeVt3vNxdoNn0FC2i3blvuupdrfwFP6HZq6J9v+Iv5MlJ
+mHFvgx5zX+UwzeUHuCBClN4qnfI5CCkYD7c6LeBhEonDIM1BpLY0yJfPIUtoU+wo
+... # deleted lines
+bW+ej7o+CEV7xf+hyW4jOiyy+mG1tbIbZiyOQVDnZ3RG0QkZIHmhlRqtO2yzQ8O0
+0MiAAlXeJYSVVXrWrg2omtZti4Yy
+=O8Sa
+-----END PGP PRIVATE KEY BLOCK-----
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQINBF7l2qABEADZelFYeVt3vNxdoNn0FC2i3blvuupdrfwFP6HZq6J9v+Iv5MlJ
+mHFvgx5zX+UwzeUHuCBClN4qnfI5CCkYD7c6LeBhEonDIM1BpLY0yJfPIUtoU+wo
+... # deleted lines
+uJ8uld+Bz5E3IIecO4ltb56Puj4IRXvF/6HJbiM6LLL6YbW1shtmLI5BUOdndEbR
+CRkgeaGVGq07bLNDw7TQyIACVd4lhJVVetauDaia1m2LhjI=
+=mGS5
+-----END PGP PUBLIC KEY BLOCK-----  
+</code></pre><ul>
+<li>查找主密钥的密钥夹 (keygrip)，在 Terminal 中使用命令 <code>gpg --list-keys --with-keygrip *Key ID*</code>。key ID 其实就是密钥的<strong>指纹图谱</strong> (fingerprint) 最后 8 位字符，所以也可以用指纹图谱来代替 Key ID，记得修改 Key ID 为你自己主密钥的 Key ID。</li>
+</ul>
+<pre><code>% gpg --list-keys --with-keygrip E9C11BCA 
+pub   rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+      Keygrip = 785FF8E130273C6BDFD1F18A51A27EE66D1A3545 # 主密钥对应的密钥夹
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+sub   rsa4096 2020-06-14 [E]
+      Keygrip = 4496F1FD131F010998D2B20B05626D8DCFFC6209
+</code></pre><ul>
+<li>删除主密钥的私钥部分</li>
+</ul>
+<p>在 GnuPG 2.1 及后续版本里，直接在 <code>~/.gnupg/private-keys-v1.d/</code>文件夹中，删除<strong>以与主密钥对应的密钥夹命名的私钥文件</strong>即可。例如文中删除 <code>~/.gnupg/private-keys-v1.d/785FF8E130273C6BDFD1F18A51A27EE66D1A3545.key</code>文件。</p>
+<ul>
+<li>验证主密钥的私钥已经被删除</li>
+</ul>
+<p>我们通过列出密钥的私钥部分，可见主密钥的私钥标志 <code>sec</code> 旁边多了一个 <code>#</code> 符号，表示此刻我们的密钥文件里已不存在该私钥文件了。</p>
+<pre><code>% gpg --list-secret-keys --with-keygrip
+~/.gnupg/pubring.kbx
+------------------------------
+sec#  rsa4096 2020-06-14 [SC]
+      D993DA3B74DF27BA45622637D899FD6DE9C11BCA
+      Keygrip = 785FF8E130273C6BDFD1F18A51A27EE66D1A3545
+uid           [ultimate] test &lt;test@exapmle.com&gt;
+ssb   rsa4096 2020-06-14 [E]
+      Keygrip = 4496F1FD131F010998D2B20B05626D8DCFFC6209
+</code></pre><h3 id="关于命令行与图形界面软件的插曲">关于命令行与图形界面软件的插曲</h3>
+<p>末了，讲一个关于使用图形界面软件和命令行工具导入私钥时的插曲。</p>
+<p>在记录本文的时候，我生成了 UID 为 test &lt;test@example.com&gt; 的密钥。当需要重新导入自己所用的私钥的时候，我随手清空了 <code>~/.gnupg/</code> 文件夹下的全部内容，然后尝试导入密钥：</p>
+<ul>
+<li>使用 GPG Tools 导入私钥，无法导入。提示 &ldquo;<strong>Often</strong> keys cannot be imported due to a missing self-signature.&rdquo; 根据该提示，谷歌一番 self-signature 后，在 GPG Tools 官网看到其就<a href="https://gpgtools.tenderapp.com/kb/gpg-keychain-faq/add-self-signature-to-an-old-key-which-does-not-have-one">老密钥缺少 &ldquo;self-signature&rdquo; 的处理办法</a>一文，照着操作，心里还纳闷儿，2017 年的密钥，不至于缺少自我签名啊，而且我在图形界面里，明明也看到自我签名了，怎么会无法导入。果然，依然无法导入。此时感觉，问题可能并不在 self-signature 这里。</li>
+<li>使用命令行导入私钥，依然无法导入。错误提示如下：导入私钥的时候，PGP 将密钥信息发送给 gpg-agent 处理，gpg-agent 说，找不到需要存放信息的文件或者文件夹。于是又谷歌一下，原来问题即在自己<a href="https://unix.stackexchange.com/questions/318385/no-such-file-or-directory-when-generating-a-gpg-key"><strong>随手清空了</strong> <code>~/.gnupg/</code> 文件夹</a>。</li>
+</ul>
+<pre><code> % gpg --import Secret.asc
+ 
+gpg: key 6116A1BA/6116A1BA: error sending to agent: No such file or directory
+gpg: error building skey array: No such file or directory
+gpg: error reading 'Secret.asc': No such file or directory
+gpg: import from 'Secret.asc' failed: No such file or directory
+</code></pre><p>原本目录下有存放密钥信息的文件和文件夹，导入密钥的时候，密钥文件被 gpg-agent 处理后写入密钥存储文件，比如 private-keys-v1.d。当密钥存储文件被清空后，gpg-agent 处理过的文件就找不到存放密钥的位置了，故而无法导入。gpg-agent 心里估计也纳闷儿：&ldquo;咦，我原本是建了这个文件的啊，怎么找不到啦？那算了，不搞了，直接给他说找不到路径吧。&ldquo;此刻的处理办法：</p>
+<ul>
+<li>重启 gpg-agent，使用<a href="https://superuser.com/questions/1075404/how-can-i-restart-gpg-agent">命令</a> <code>gpgconf --kill gpg-agent</code>，而后使用命令行导入成功；</li>
+<li>或者直接将 <code>~/.gnupg</code> 文件夹全部删除，然后使用命令行导入亦可。</li>
+</ul>
+<p>所以，感觉上应该是重启后的 gpg-agent，当导入密钥时，如果不存在相关密钥存储文件，会自动新建一个吧。另外，此番风波，可见图形界面软件和命令行工具的差异性，命令行工具能给出更多更准确的提示信息。</p>
+<p><code>~/.gnupg</code> 文件夹手动清空前：</p>
+<pre><code>% tree ~/.gnupg
+
+├── S.gpg-agent
+├── S.gpg-agent.browser
+├── S.gpg-agent.extra
+├── S.gpg-agent.ssh
+├── openpgp-revocs.d
+│   └── D993DA3B74DF27BA45622637D899FD6DE9C11BCA.rev
+├── private-keys-v1.d 
+│   ├── 4496F1FD131F010998D2B20B05626D8DCFFC6209.key 
+│   └── 785FF8E130273C6BDFD1F18A51A27EE66D1A3545.key
+├── pubring.kbx
+├── pubring.kbx~
+└── trustdb.gpg）
+</code></pre><p><code>~/.gnupg</code> 文件夹手动清空后：</p>
+<pre><code>% tree ~/.gnupg
+
+├── S.gpg-agent
+├── S.gpg-agent.browser
+├── S.gpg-agent.extra
+└── S.gpg-agent.ssh
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-06-13/encryption/">信息加密</a></span>
+  <span class="nav-next"><a href="/cn/2020-06-17/freedom/">自由</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-06-13\/encryption\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-06-17\/freedom\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日志 on XiaO | 缄默之语</title>
+    <link>/cn/</link>
+    <description>Recent content in 日志 on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>伊素复合纳米颗粒</title>
+      <link>/cn/2020-06-26/camptothecin-curcumin-nanoparticle/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-26/camptothecin-curcumin-nanoparticle/</guid>
+      <description>伊素复合纳米颗粒是一个基于伊立替康与姜黄素联合用药的抗肿瘤纳米制剂，其彻底消除了伊立替康引起的致死性腹泻等副作用，同时显著增强了其抗肿瘤治疗</description>
+    </item>
+    
+    <item>
+      <title>实时影响因子的计算</title>
+      <link>/cn/2020-06-24/stupid-chinese-index/</link>
+      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-24/stupid-chinese-index/</guid>
+      <description>每年期刊引证报告（Journal Citation Report, JCR）所公布的期刊影响因子 (Impact Factor, IF) ，其数据反映的是期刊在所公布年份前一年的表现情况。通常 JCR 会在每年六七月</description>
+    </item>
+    
+    <item>
+      <title>蓝白格</title>
+      <link>/cn/2020-06-22/guilty/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-22/guilty/</guid>
+      <description>梦里又回到儿时的老屋，米白的墙壁上投射出穿过窗棂的灰白色暗影，仿佛夏天某个宁静的午后。表妹在准备着初考，弟弟在卧室里做着我曾经做过的某个数学</description>
+    </item>
+    
+    <item>
+      <title>酒</title>
+      <link>/cn/2020-06-21/alcohol/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-21/alcohol/</guid>
+      <description>想来，很多愤怒其实是不需要用酒精来稀释的。有些理想，是需要坚持的，有些理想，是需要迂徊的。 而，我们所追求的与所坚持的，又必要是发光与发热的，</description>
+    </item>
+    
+    <item>
+      <title>自由</title>
+      <link>/cn/2020-06-17/freedom/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-17/freedom/</guid>
+      <description>我不知道什么是自由。 我只知道，这，不是我想要的。小组会议，并没有带来什么实质性的讨论或者结果，除了平添的愤怒和你所知道的生命里又被浪费掉的几</description>
+    </item>
+    
+    <item>
+      <title>GPG</title>
+      <link>/cn/2020-06-14/gpg/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-14/gpg/</guid>
+      <description>GPG 概念，原理和安装 名词概念 PGP （“Pretty Good Privacy”） 是最初商业软件的名字 OpenPGP 是与最初 PGP 商业软件兼容的 IETF 标准 GnuPG （“Gnu Privacy Guard</description>
+    </item>
+    
+    <item>
+      <title>信息加密</title>
+      <link>/cn/2020-06-13/encryption/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-13/encryption/</guid>
+      <description>在密码学中，加密（英语：Encryption）是将明文信息改变为密文（不可读）内容的过程。只有拥有解密方法的对象，经由解密过程，才能将密文还</description>
+    </item>
+    
+    <item>
+      <title>shell 中的特殊符号</title>
+      <link>/cn/2020-06-12/special-characters-in-shell/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-12/special-characters-in-shell/</guid>
+      <description># comments shell 中以 # 开始的行会被 shell 忽略而不执行，可用作注释。 # This line is a comment. | pipe 将前一个命令的输出结果传递给下一个命令，作为下一个命令的输入参数。 command 1 |</description>
+    </item>
+    
+    <item>
+      <title>SVG 图片批量压缩</title>
+      <link>/cn/2020-06-12/svg-compressor/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-12/svg-compressor/</guid>
+      <description>SVG (Scalable Vector Graphics) 可缩放矢量图形是一种基于可扩展标记语言（XML），用于描述二维矢量图形的图形格式。 SVG 图片特点 SVG 图形文件可读，SVG 文件其实只是普通的</description>
+    </item>
+    
+    <item>
+      <title>Homebrew 个人使用记录</title>
+      <link>/cn/2020-06-11/homebrew/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-11/homebrew/</guid>
+      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
+    </item>
+    
+    <item>
+      <title>Mac 下用 link 创建链接</title>
+      <link>/cn/2020-06-11/link/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-11/link/</guid>
+      <description>从 myfile 文件创建一个链接，链接到 mylink 文件，这样我们可以通过访问 mylink 文件，来访问 myfile 文件。 创建链接的语法 ln [options] myfile mylink # 创建从 myfile 到 mylink 的硬链接 -s (Symbolic link) 创建软连接 -i</description>
+    </item>
+    
+    <item>
+      <title>谷歌搜索之参数设置</title>
+      <link>/cn/2020-06-10/google/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-10/google/</guid>
+      <description>使用谷歌搜索一些网页内容的时候，其结果常被历史访问或者地域语言等默认设定所干扰。可通过通过修改谷歌搜索中 URL 的参数，来达到自己想要的搜索目的。</description>
+    </item>
+    
+    <item>
+      <title>使用 pyenv 管理 python 版本</title>
+      <link>/cn/2020-06-07/pyenv-python/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-07/pyenv-python/</guid>
+      <description>万事皆需理由 macOS Catalina 自带 python 2.x 与 3.x，以为系统自身服务。 % which python /usr/bin/python % python -V Python 2.7.16 % which python3 /usr/bin/python3 % python3 -V Python 3.7.3 Homebrew 的更新 Homebrew 的 python 版本更新比较慢，毕竟需要众人拾柴。 其实</description>
+    </item>
+    
+    <item>
+      <title>用 R 进行绘图与写作</title>
+      <link>/cn/2020-06-07/r-rstudio/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-07/r-rstudio/</guid>
+      <description>安装 R，RStudio 与 pandoc brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc : Terminal 中启动 R 后提示 During startup - Warning messages: 1: Setting LC_COLLATE failed, using &amp;quot;C&amp;quot; 2: Setting LC_TIME failed,</description>
+    </item>
+    
+    <item>
+      <title>关于人机交互的 shell</title>
+      <link>/cn/2020-06-06/shell-zsh-bash-path/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-06/shell-zsh-bash-path/</guid>
+      <description>编译与解释 使用某个编程语言编写的源代码，其执行方式可以是：编译成新代码执行或通过解释器解释执行。 编译器：将使用 A 语言编写的源代码编译成 B 语言</description>
+    </item>
+    
+    <item>
+      <title>分子动力学</title>
+      <link>/cn/2020-06-05/molecular-dynamics-gromacs-namd/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-05/molecular-dynamics-gromacs-namd/</guid>
+      <description>分子动力学（Molecular dynamics） 分子动力学是依靠计算机来模拟分子、原子体系运动的多体模拟方法。通过对分子、原子在一定时间内运</description>
+    </item>
+    
+    <item>
+      <title>分子对接</title>
+      <link>/cn/2020-06-05/molecular-docking/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-05/molecular-docking/</guid>
+      <description>分子对接 （Molecular docking） 分子对接是一种预测两个分子彼此结合形成稳定复合物时一个分子相对于另一个分子的优选取向的方法。它可</description>
+    </item>
+    
+    <item>
+      <title>企鹅之死</title>
+      <link>/cn/2020-06-02/qq/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-02/qq/</guid>
+      <description>想起许多年前，中学时代的一个夜晚。 夏夜，不凉。然而回忆里也并不显出特别的热。 不大的房间里，靠墙摆着许多的电脑。那时候电脑的显示器很大。我说的</description>
+    </item>
+    
+    <item>
+      <title>用 inkscape 将图片转换为 emf 格式</title>
+      <link>/cn/2020-05-29/inkscape/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-29/inkscape/</guid>
+      <description>在 office 文档中直接插入矢量图，还真不是一件容易的事情。它奇葩地并不支持将一般作图软件生成的 pdf 或 svg 文件直接插入文档中，而需要 emf 文件格式。 下面使用 i</description>
+    </item>
+    
+    <item>
+      <title>关于余欢水</title>
+      <link>/cn/2020-05-24/if-there-is-no-tomorrow/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-24/if-there-is-no-tomorrow/</guid>
+      <description>余欢水这个角色，想起来是有意思的。 一个小人物在中年里的怯懦，在前半部份展现得淋漓尽致。其实每一次他都尝试着要把事情做好，奈何很多状况总是由不</description>
+    </item>
+    
+    <item>
+      <title>你不再是从前那个少年</title>
+      <link>/cn/2020-05-21/was-young/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-21/was-young/</guid>
+      <description>你知道，你已不再是从前那个少年，而所有的一切也都在悄然地改变。 今天终究是回到了住地，看着眼前的一切，似乎熟悉，又仿佛陌生。想来毕竟在这里待了</description>
+    </item>
+    
+    <item>
+      <title>树葬</title>
+      <link>/cn/2020-05-20/sorry/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-20/sorry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>组合拳之视频下载与处理</title>
+      <link>/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
+      <description>youtube-dl 是谷歌 github 上的一个开源项目，它是一款轻量级的命令行 下载实用工具，可解析下载包括 youtube、youku、腾讯视频、爱奇艺等国内外上百个视频</description>
+    </item>
+    
+    <item>
+      <title>更新 Rime 配置</title>
+      <link>/cn/2020-05-18/rime-setting/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-18/rime-setting/</guid>
+      <description>现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下： 个人隐私（相对现在流行的云词典输入法而言）； 一劳永逸（相对它的学习成本</description>
+    </item>
+    
+    <item>
+      <title>撞大运之 tinytex 安装  LaTeX 发行版 TinyTeX</title>
+      <link>/cn/2020-05-17/tinytex-tinytex/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-17/tinytex-tinytex/</guid>
+      <description>更新 R 更新 R 4.0 后，所有的 R 包都不见了。不过好在自己平时所用到的包就那么些个，而且都是广 (tè) 泛 (bié) 使 (dà) 用 (zhòng) 的包，故</description>
+    </item>
+    
+    <item>
+      <title>自用 Mac 软件记录</title>
+      <link>/cn/2020-05-16/homebrew-softwares/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-16/homebrew-softwares/</guid>
+      <description>自用 Mac 软件记录 Homebrew xcode-select —-install /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; brew tap homebrew/core brew tap homebrew/cask brew tap homebrew/cask-versions brew tap homebrew/cask-fonts brew tap brewsci/bio brew tap buo/cask-upgrade # 替代 `brew cask upgrade`，更直观，可交互更新； brew tap homebrew/bundle # 软</description>
+    </item>
+    
+    <item>
+      <title>用 Automator 将 PDF 批量转换为高清图片</title>
+      <link>/cn/2020-05-14/pdf-to-image-using-automator/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-14/pdf-to-image-using-automator/</guid>
+      <description>Mac 系统中的 Preview 软件，可以轻松查看 PDF，并将其中选中的某一页另存为图片格式，比如，JPG，PNG 等。 那么如果需要将一个很多页的 PDF 文件批量转换为</description>
+    </item>
+    
+    <item>
+      <title>Git 学习笔记</title>
+      <link>/cn/2020-05-13/git-basic/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-13/git-basic/</guid>
+      <description>Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本</description>
+    </item>
+    
+    <item>
+      <title>PyMOL 的安装、球棍模型设置与图片输出</title>
+      <link>/cn/2020-05-13/pymol-installing-setting/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-13/pymol-installing-setting/</guid>
+      <description>用 Homebrew 在 MacOS Catalina 下 安装开源版 PyMol 为安装 PyMol 添加一些依赖程序 brew install Caskroom/cask/xquartz brew install tcl-tk brew install python3 安装 PyMol (Homebrew version 2.3) brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) ＃ 如果您使用的是较旧版本的 pym</description>
+    </item>
+    
+    <item>
+      <title>Rstudio 下增添复制的问题</title>
+      <link>/cn/2020-05-13/copy-and-paste-under-rstudio/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-13/copy-and-paste-under-rstudio/</guid>
+      <description>记录一个剪贴板的复制问题。 从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有</description>
+    </item>
+    
+    <item>
+      <title>李清照</title>
+      <link>/cn/2020-05-12/poet-li-qingzhao/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-12/poet-li-qingzhao/</guid>
+      <description>李清照（1084 年 3 月 13 日 ～ 1155 年 5 月 12 日)，济南章丘（今属山东）人，号易安居士。宋代女词人，婉约词派代表。 早期生活优裕，与夫赵明诚共同致力于</description>
+    </item>
+    
+    <item>
+      <title>旧制度留下的遗产有好有坏</title>
+      <link>/cn/2020-05-11/command-line-tools/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-11/command-line-tools/</guid>
+      <description>对跟随近七年的老爷机进行系统升级后，发现旧款软件在 MacOS Catalina 下无法打开。而偶然又在词典里看到这样一个例句，很有意思。 The old system has left a mixed legacy. 旧制度留下的遗</description>
+    </item>
+    
+    <item>
+      <title>升级 MacOS Caterlina 后词库文件的消失</title>
+      <link>/cn/2020-05-10/missing-dictionary-of-macos-catalina/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-10/missing-dictionary-of-macos-catalina/</guid>
+      <description>从 EL Capitan 升级到 Catalina 后，系统的词库文件消失了。这也意味着，当自己再次使用三点取词的时候，只能找到 Wikipedia 对当前词语的相关注释，而再也没有了系统默认词典的</description>
+    </item>
+    
+    <item>
+      <title>四十二时记</title>
+      <link>/cn/2020-05-05/my-past-42-hours/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-05/my-past-42-hours/</guid>
+      <description>那么热的夏天 我似乎已经不太清楚夏天的定义具体是什么了，感觉上，从我走出那间屋子的一瞬间，我就进入了夏天。 车在柏油路上飞驰。在不到一分钟的时间</description>
+    </item>
+    
+    <item>
+      <title>《重生》大结局</title>
+      <link>/cn/2020-05-01/end-of-reborn/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-01/end-of-reborn/</guid>
+      <description>想着多年以后的再次重逢，也许，你会如同稀松平常的一天里看见风吹过树林时带着树枝的晃动一样，只是依旧说，这林子是松鼠们种下的。 我时刻在想，可能</description>
+    </item>
+    
+    <item>
+      <title>如果可能，请给你的人生多一个选择</title>
+      <link>/cn/2020-04-30/one-more-choice-for-your-life/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-30/one-more-choice-for-your-life/</guid>
+      <description>想来，我得感谢 Google Voice。因为它，让我通过电话联系美联航人工改签机票成为了可能，而这一通电话，持续了两个多小时。 2 月中旬通过 Gotogate 预订了从布拉</description>
+    </item>
+    
+    <item>
+      <title>等待</title>
+      <link>/cn/2020-04-29/waiting/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-29/waiting/</guid>
+      <description>最后，你会发现，所有的等待都是值得的。 可能在某一个时刻，你终究会明白，所有过往的等待，其实都是值得的。而在此之前，你并不会知道等待的意义。这</description>
+    </item>
+    
+    <item>
+      <title>非日常焦虑</title>
+      <link>/cn/2020-04-28/anxiety/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-28/anxiety/</guid>
+      <description>日常是日常，日常是不用焦虑的。 非日常焦虑，终归是有不确定因素在作用的，比如现在。 这基本也是我讨厌不确定的一个原因。有人说，如果能放下，那么所</description>
+    </item>
+    
+    <item>
+      <title>就像这山间的风</title>
+      <link>/cn/2020-04-27/just-like-the-wind-here/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-27/just-like-the-wind-here/</guid>
+      <description>很多事情，我们是看不到的，而它们也都必定以另一种方式存在着。就像这山间的风，我们看到的只是摇曳着枝桠的树，或者晃动着身姿的野花。 所以，很多时</description>
+    </item>
+    
+    <item>
+      <title>人间冷气</title>
+      <link>/cn/2020-04-26/the-weight-in-life/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-26/the-weight-in-life/</guid>
+      <description>在 Merced 待了近两个月了。由于疫情的影响，后一个月基本是在家里度过的。我称之为家，可能只是因为我并没有一个更合适的词语来描述这样的境况。而且，这也</description>
+    </item>
+    
+    <item>
+      <title>为你的网站添加 Logo</title>
+      <link>/cn/2020-04-25/generating-favicons-for-your-website/</link>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-25/generating-favicons-for-your-website/</guid>
+      <description>Real Favicon Generator 提供了一个免费的网站 Logo 生成器，让网页 Logo 添加变得很简单。只需要几步，咱们走着。 上传一张用作 Logo 的图片 上传一张用作网站 Logo 的图片，格式可以是 PNG,</description>
+    </item>
+    
+    <item>
+      <title>悲观地胡思乱想</title>
+      <link>/cn/2020-04-14/sadness/</link>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-04-14/sadness/</guid>
+      <description>乐观主义，看到更多世界的希望。 悲观主义，看到更多世界的真实。 某种意义上看，乐观主义似乎更倾向于虚幻。因为希望这种东西，一些人是看不到的。其实</description>
+    </item>
+    
+    <item>
+      <title>冠状病毒之后的世界</title>
+      <link>/cn/2020-03-29/the-world-after-coronavirus/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-03-29/the-world-after-coronavirus/</guid>
+      <description>&lt;p&gt;《人类简史》的作者尤瓦尔・赫拉利，上周末在《金融时报》发表了一篇长文&lt;a href=&#34;https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75&#34;&gt;《冠状病毒之后的世界》&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;他谈到疫情结束后，世界向何处去的问题，以及对目前各国没有统一行动的计划，反而各自为战、竞相关闭边境的担忧。这篇文章非常发人深省，强烈推荐。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2019 年终总结</title>
+      <link>/cn/2019-12-31/2019-annual-review/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2019-12-31/2019-annual-review/</guid>
+      <description>二月： 我越来越清楚，记录的目的，其实只是为了遗忘。本质上来说，这和提前进入老年痴呆并没有多少区别。只不过，一个是主观愿望，一个是别无选择。 可</description>
+    </item>
+    
+    <item>
+      <title>我开始或者已然失去了你</title>
+      <link>/cn/2019-09-15/farewell/</link>
+      <pubDate>Sun, 15 Sep 2019 20:23:21 +0000</pubDate>
+      
+      <guid>/cn/2019-09-15/farewell/</guid>
+      <description>我感觉，我开始或者已然失去你了。就在刚才，在你说不知道的那个瞬间。 下午和方老师一起在村里晒太阳。方老师说，并不是所有的人都会那么想的，有些事</description>
+    </item>
+    
+    <item>
+      <title>穿睡衣的女人</title>
+      <link>/cn/2019-02-18/a-lady-in-a-pajama/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2019-02-18/a-lady-in-a-pajama/</guid>
+      <description>时间是个刽子手，屠杀所有。 不紧不慢，不慌不忙。 而那些留下的树桩一样血淋淋的疤口，则烙在我们的心上。每当我们想起那些过往的时候，它们就会发作，</description>
+    </item>
+    
+    <item>
+      <title>你在过去，思念在风里</title>
+      <link>/cn/2019-02-09/missing-you-so-much/</link>
+      <pubDate>Sat, 09 Feb 2019 09:07:21 +0000</pubDate>
+      
+      <guid>/cn/2019-02-09/missing-you-so-much/</guid>
+      <description>&lt;p&gt;我想，人终究是逃不出自己的过往的。那些发生过的曾经，都或深或浅地刻在了我们的心上，无论我们主观上是否愿意。&lt;/p&gt;
+&lt;p&gt;曾听一个朋友说，很喜欢莫奈的画。朋友在法国的时候，曾看到一位头发花白的老人，静静地面对着一幅画，两行泪就兀自下来了。我想，老人的举动，或因对画喜爱，或者因画思人，亦或者兼而有之吧。我自己也很喜欢莫奈的画，然而我很清楚地知道，我远没有被一幅画感动的能力，而只能用自己会被一段曲子感动的心情去理解老人对画的感动。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>化学药品的专利类型及专利布局</title>
+      <link>/cn/2019-02-07/patent-strategies/</link>
+      <pubDate>Thu, 07 Feb 2019 09:07:21 +0000</pubDate>
+      
+      <guid>/cn/2019-02-07/patent-strategies/</guid>
+      <description>生物医药行业对知识产权的依存度是非常高的，医药企业对医药知识产权的保护也贯穿于整个药物的生命周期。 化合物专利 化合物专利通常是大家关注的重中之</description>
+    </item>
+    
+    <item>
+      <title>2018 年终总结</title>
+      <link>/cn/2019-02-06/2018-annual-review/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2019-02-06/2018-annual-review/</guid>
+      <description>一月： 很多时候，当你开始犹豫了，其实就已经有了答案。 二月： “你害怕自己太多的改变，难免心生眷念。你害怕自己太快的改变，却醒悟得太晚。” 看，那</description>
+    </item>
+    
+    <item>
+      <title>专利信息查询</title>
+      <link>/cn/2018-09-15/searching-patent-informaiton/</link>
+      <pubDate>Sat, 15 Sep 2018 09:07:21 +0000</pubDate>
+      
+      <guid>/cn/2018-09-15/searching-patent-informaiton/</guid>
+      <description>&lt;p&gt;专利策略：化合物专利，晶型专利，制备工艺专利，制剂专利，适应症专利。
+专利要点：技术效果的不可预见性；技术效果的非显而易见性。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Voice 是个好东西</title>
+      <link>/cn/2018-09-01/google-voice-is-amazing/</link>
+      <pubDate>Sat, 01 Sep 2018 20:07:21 +0000</pubDate>
+      
+      <guid>/cn/2018-09-01/google-voice-is-amazing/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/media/image/cn-20180901.jpg&#34; alt=&#34;Google Voice&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;google-voice&#34;&gt;Google Voice&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://voice.Google.com&#34;&gt;Google voice&lt;/a&gt; 是谷歌公司推出的网络电话服务，简称 GV，申请到 GV 号码之后可以接打电话、收发短信。&lt;/p&gt;
+&lt;h3 id=&#34;google-hangouts&#34;&gt;Google Hangouts&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://hangouts.Google.com&#34;&gt;Google hangouts&lt;/a&gt; 是谷歌推出的即时通讯软件，中文名称环聊，可以通过它使用 GV 的接打电话、收发电信。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>科研者的内心</title>
+      <link>/cn/2018-08-19/the-inner-world-of-researchers/</link>
+      <pubDate>Sun, 19 Aug 2018 10:07:21 +0800</pubDate>
+      
+      <guid>/cn/2018-08-19/the-inner-world-of-researchers/</guid>
+      <description>前天和胖子吐槽关于结巴事情，偶然说起做研究。 如下引自秦四清的《论文发表与学术声誉》： 科学家的声誉不在于发表论文的篇数，不在于发表论文的载体 &amp;ndash;</description>
+    </item>
+    
+    <item>
+      <title>疫苗之王</title>
+      <link>/cn/2018-07-23/the-king-of-vaccines/</link>
+      <pubDate>Mon, 23 Jul 2018 18:07:21 +0800</pubDate>
+      
+      <guid>/cn/2018-07-23/the-king-of-vaccines/</guid>
+      <description>&lt;p&gt;2001 年，东北一家国有疫苗公司悄无声息进行改制。多年后再回首，人们才明白其中意义。&lt;/p&gt;
+&lt;p&gt;那年的 9 月 18 日，上市公司长春高新旗下的长生生物迎来了两位新的股东——韩刚君和杜伟民。韩刚君用 1932 万元买下了长生生物 30% 的股权，成为第二大股东；他和杜伟民的合资公司则成为了长生的小股东。杜伟民是长生生物的销售总监。这笔交易几乎没人注意到。长生生物被放到聚光灯下，是在两年后了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2017 年终总结</title>
+      <link>/cn/2017-12-31/2017-annual-review/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2017-12-31/2017-annual-review/</guid>
+      <description>探索 + 机遇 = 红色的 2017。 实施 + 合作 = 2018。 一月： 你的第二故乡，其实可能会影响你的一生。而在时光的背影里，你却是我永远触不到的留白。 二</description>
+    </item>
+    
+    <item>
+      <title>丈夫许国，不必相送</title>
+      <link>/cn/2017-10-11/film-defenders/</link>
+      <pubDate>Wed, 11 Oct 2017 04:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-10-11/film-defenders/</guid>
+      <description>&lt;p&gt;观影归来，我在好些个群里发了《捍卫者》的电影剧照，讲到这部电影，提到那些殉国的壮士。但却发现很多人只顾谈着鹿晗谈着什么关晓彤，而如捍卫者这个话题应者寥寥，除了少数几个回复，几乎就无人搭理。仿佛没有人关心那些碧血撒沙场的忠魂，而只津津乐道于几个明星的八卦。除了叹息英雄的冷清寥落，还能怎样呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>中国：基于文明认同的文化凝聚体</title>
+      <link>/cn/2017-09-14/the-culture-base-of-china/</link>
+      <pubDate>Thu, 14 Sep 2017 04:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-09-14/the-culture-base-of-china/</guid>
+      <description>我能深切地体会到 夹杂在一群政治不同音中 强行扭曲的痛苦 所谓的台独，港独，藏独，疆独 想起华夏文明四个字 想起中华民族四个字 想起炎黄子孙四个字 我依旧</description>
+    </item>
+    
+    <item>
+      <title>加上我吧，在你的手机主页面</title>
+      <link>/cn/2017-06-29/take-me-home/</link>
+      <pubDate>Thu, 29 Jun 2017 19:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-06-29/take-me-home/</guid>
+      <description>对我笑吧，就像你我初次见面； 对我说吧，即使誓言明天就变； 想起我吧，在你感到变老的那一年； mp3: 只有我-张过年 加上我吧，在你的手机主页面： Step 1. 打开</description>
+    </item>
+    
+    <item>
+      <title>如果我可以叫她“向阳花“</title>
+      <link>/cn/2017-06-25/something-about-sunflowers/</link>
+      <pubDate>Sun, 25 Jun 2017 22:40:40 +0000</pubDate>
+      
+      <guid>/cn/2017-06-25/something-about-sunflowers/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/media/image/cn-20170625.jpg&#34; alt=&#34;向阳花&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;天气太热吗？我流鼻血了。&lt;br&gt;
+姐姐说，是肘子吃的。&lt;br&gt;
+是么？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我知道，人是会慢慢改变的。当我猛然意识到这句话的时候，一些东西好像已经改变了。以前常听老人们说，当你明白一件事情的时候，可能已经晚了。以前一直不太明白为什么晚了，后来慢慢知道了，可能是因为再也回不去了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一封只有我能打开的信</title>
+      <link>/cn/2017-06-11/an-encrypted-letter/</link>
+      <pubDate>Sun, 11 Jun 2017 19:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-06-11/an-encrypted-letter/</guid>
+      <description>我不知道人的一生中，会有多少秘密，这些秘密最后又都去了哪里。或许他们也曾重要，或许他们已经不重要。那就让他们在该重要的时候，重要一下吧。如此</description>
+    </item>
+    
+    <item>
+      <title>一件事情，发生在一个夏天</title>
+      <link>/cn/2017-05-30/things-happened-in-summer/</link>
+      <pubDate>Tue, 30 May 2017 19:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-05-30/things-happened-in-summer/</guid>
+      <description>夏天到了，天空飘着鱼鳞状的云，穿过小树林的风是热的。割草机在公园的草地上轰隆隆地转动，远处绿荫下散落着一两个乘凉的姑娘，她们坐在远处，一动不</description>
+    </item>
+    
+    <item>
+      <title>你恰巧想起了我，在我可能并没有想你的时候</title>
+      <link>/cn/2017-05-26/you-happen-to-think-of-me-when-i-may-not-think-of-you/</link>
+      <pubDate>Fri, 26 May 2017 09:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-05-26/you-happen-to-think-of-me-when-i-may-not-think-of-you/</guid>
+      <description>我并不知道当初是怎样的一种心境支持着我，让我坚持着，一路走到现在。如果我就这样子简单地丢出这么一句话来，似乎又真的太过于轻描淡写了，其实生活</description>
+    </item>
+    
+    <item>
+      <title>想那么多，可能只是以便别人可以问我为什么想那么多</title>
+      <link>/cn/2017-05-21/why-i-think-too-much/</link>
+      <pubDate>Sun, 21 May 2017 18:30:21 +0000</pubDate>
+      
+      <guid>/cn/2017-05-21/why-i-think-too-much/</guid>
+      <description>最近有人问我： 你总是想那么多干啥？ 想那么多不累吗？ 简单点不好吗？ 你看这黄昏多美啊，别动不动就思考人生啊。 这几个问题很有意思。 想起一位美国教授</description>
+    </item>
+    
+    <item>
+      <title>我想，是该道别的时候了</title>
+      <link>/cn/2017-02-16/i-suppose-to-leave-now/</link>
+      <pubDate>Thu, 16 Feb 2017 08:07:21 +0000</pubDate>
+      
+      <guid>/cn/2017-02-16/i-suppose-to-leave-now/</guid>
+      <description>我想，是该道别的时候了。 就像这山涧的风，轻拂过你的脸。 再让我看你一眼， 轻轻地， 看着你走远。 夜晚，在我毫不知情的梦境里，又遇见了你。我想，可能</description>
+    </item>
+    
+    <item>
+      <title>2016 年终总结</title>
+      <link>/cn/2016-12-31/2016-annual-review/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2016-12-31/2016-annual-review/</guid>
+      <description>等待 + 机遇 = 蓝色的 2016。 计划 + 实施 = 2017。 一月： 有些路，注定是要自己走的。 二月： 春假，蠢，假。 三月： 新疆的喀什，没有胡杨。所有的过往</description>
+    </item>
+    
+    <item>
+      <title>记忆里的那些不重要</title>
+      <link>/cn/2016-11-19/the-unimportance-in-memory/</link>
+      <pubDate>Sat, 19 Nov 2016 18:07:21 +0800</pubDate>
+      
+      <guid>/cn/2016-11-19/the-unimportance-in-memory/</guid>
+      <description>&lt;p&gt;中学一年级，冬季的的运动场。&lt;/p&gt;
+&lt;p&gt;那是记忆里少有的很特别的场景，天空飘着细碎的雪花，空气里凝着寒气，地面温度让刚着陆的小碎花迅速地消失，干燥的土色也随之晕出了些许的深色。同学的随身听里是刀郎《2002 年的第一场雪》，那是一首很应景的歌曲，因为那真的是那一年的第一场雪。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>梦里的你，还是记忆里的样子</title>
+      <link>/cn/2016-10-22/your-face-in-my-dream/</link>
+      <pubDate>Sat, 22 Oct 2016 08:07:21 +0000</pubDate>
+      
+      <guid>/cn/2016-10-22/your-face-in-my-dream/</guid>
+      <description>我不知道这是第几次梦见你了，今年梦到你的次数，好像比几年前的总和还要多。 梦醒以后，有一点失落。我知道这么用词，有点轻描淡写了，但是我也知道，</description>
+    </item>
+    
+    <item>
+      <title>捷克长期签证材料准备以及递签经历</title>
+      <link>/cn/2016-08-28/visa-for-czech-republic/</link>
+      <pubDate>Sun, 28 Aug 2016 20:07:21 +0000</pubDate>
+      
+      <guid>/cn/2016-08-28/visa-for-czech-republic/</guid>
+      <description>准备材料 有效期长于 90 天的护照； 两张 3.5 x 4.5 cm 的白底照片； 大学录取通知书（校方提供，大使馆递签只需要捷克语版本）； 住宿证明（住宿合同文件，大使馆</description>
+    </item>
+    
+    <item>
+      <title>一生的追忆</title>
+      <link>/cn/2016-08-01/a-lifetime-of-memory/</link>
+      <pubDate>Mon, 01 Aug 2016 18:29:28 +0000</pubDate>
+      
+      <guid>/cn/2016-08-01/a-lifetime-of-memory/</guid>
+      <description>我并不知道大家都是怎么走过迷茫期的，包括我自己。即使现在的我看起来，并没有以前那么迷茫，但是那种漂泊感一直都存在我的身上。经常一个人在街上走</description>
+    </item>
+    
+    <item>
+      <title>我猜测，你应该是长发的</title>
+      <link>/cn/2016-07-26/i-guess-you-had-long-hair/</link>
+      <pubDate>Tue, 26 Jul 2016 20:07:21 +0000</pubDate>
+      
+      <guid>/cn/2016-07-26/i-guess-you-had-long-hair/</guid>
+      <description>而我猜测：你应该是长发的，扎着马尾，眼眸晶莹，并且还有着鲜红的唇色。 片段一： 尹天仇：喂！ 柳飘飘：干什么？ 尹天仇：走了？ 柳飘飘：是啊。 尹天仇：</description>
+    </item>
+    
+    <item>
+      <title>夜归</title>
+      <link>/cn/2016-04-21/back-at-night/</link>
+      <pubDate>Thu, 21 Apr 2016 18:29:28 +0000</pubDate>
+      
+      <guid>/cn/2016-04-21/back-at-night/</guid>
+      <description>四月的北京 夜 风沙迷了眼睛 眯缝着虚晃中前行 耳机里低沉的是 刺猬的声音 身边走过 长发吃着冰棍儿的女孩儿 安然 气定闲神 摇曳的枝丫 在路灯下投射出晃动的黑影</description>
+    </item>
+    
+    <item>
+      <title>每一具青春的肉体都应该被阳光照耀</title>
+      <link>/cn/2016-04-17/every-youthful-body-should-be-illuminated-by-sunlight/</link>
+      <pubDate>Sun, 17 Apr 2016 18:29:28 +0000</pubDate>
+      
+      <guid>/cn/2016-04-17/every-youthful-body-should-be-illuminated-by-sunlight/</guid>
+      <description>曾经看过一部动画片《我在伊朗长大》，虽是动画片，但是那黑白色画面让人感受到宗教的压抑、炮火的残忍，小女孩眼中的世界是一代伊朗人的血泪史。 近几</description>
+    </item>
+    
+    <item>
+      <title>浅紫色长衣</title>
+      <link>/cn/2016-04-08/a-dream-about-you/</link>
+      <pubDate>Fri, 08 Apr 2016 18:29:28 +0000</pubDate>
+      
+      <guid>/cn/2016-04-08/a-dream-about-you/</guid>
+      <description>梦里像在演戏 天空有滑翔的敌机 你说这次逃亡 不知何时才能再遇 四下满是阴霾 浅紫色的长衣 你笑 手挽得更紧 正秘密进行的 某种仪式性的搏击 而我是下一个拳者 你</description>
+    </item>
+    
+    <item>
+      <title>我知道，你一直都在</title>
+      <link>/cn/2016-03-02/i-know-you-are-always-with-us/</link>
+      <pubDate>Wed, 02 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2016-03-02/i-know-you-are-always-with-us/</guid>
+      <description>事件一 大约从 15 号开始，由于家里来了客人，丹丹的二姐，而且还带了小孩子，小孩子认生，晚上会睡不好觉，所以我搬去客厅，所以丹丹二姐和小孩子在卧室</description>
+    </item>
+    
+    <item>
+      <title>未成行的送别</title>
+      <link>/cn/2016-02-16/the-unspoken-farewell/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2016-02-16/the-unspoken-farewell/</guid>
+      <description>关于你，我人生的天平是偏向你的，关于你，也是我第一次感受到这么强烈的不舍。正如我在去车站接你的路上，心底阵阵的忐忑，又有明知次日你将离别，一</description>
+    </item>
+    
+    <item>
+      <title>2015 年终总结</title>
+      <link>/cn/2015-12-31/2015-annual-review/</link>
+      <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-12-31/2015-annual-review/</guid>
+      <description>一月： 制剂部分实验全部完成，老板答应的细胞实验出尔反尔； 着手文章 (Paper) 初稿的修改和毕业论文 (Thesis) 初稿的撰写。 二月： 在师姐的帮助下，细胞实验两周内全部</description>
+    </item>
+    
+    <item>
+      <title>“别了，狗日的科研”</title>
+      <link>/cn/2015-12-15/farewell-research/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-12-15/farewell-research/</guid>
+      <description>&lt;p&gt;写下这么一个题目，我自己都震惊了。
+作为一个有二十年教龄的老教师，我实在不想这么粗鲁。
+可我已经忍它很多年了，快要被它憋死了，姑且就这么粗俗一回吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Music in Place M</title>
+      <link>/cn/2015-11-30/music-listened-in-macau/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-11-30/music-listened-in-macau/</guid>
+      <description>A list of songs palyed most during my stay in Place M. Maybe now my life belongs to her. 播放次数降序 曲名与网易云链 1 流川枫与苍井空 2 历历万乡 3 一生所爱 4 鬼迷心窍 5 心术 6 酒吧叙事体 7 相见难别亦</description>
+    </item>
+    
+    <item>
+      <title>“子荒，因子远。”</title>
+      <link>/cn/2015-05-23/too-far-away/</link>
+      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-05-23/too-far-away/</guid>
+      <description>梦里还乡。 脑海里浮现的文字。 “你走以后，我的山谷从此一片荒芜。” 一阵奔跑，似家乡麦黄。 远处飘渺的声音。 “子荒，因子远。” 不解。</description>
+    </item>
+    
+    <item>
+      <title>家乡</title>
+      <link>/cn/2015-05-21/hometown/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-05-21/hometown/</guid>
+      <description>第一次听到赵雷的家乡的时候，大致是去年圣诞节前夕。那时候因为实验课题的一些事情，心情很烦躁。春假临近，独自一人身处异乡，望着天空惨谈的色调，</description>
+    </item>
+    
+    <item>
+      <title>鬼梦</title>
+      <link>/cn/2015-05-14/the-ghost-in-a-dream/</link>
+      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-05-14/the-ghost-in-a-dream/</guid>
+      <description>夜 算不得深 宿舍的小屋 分明只有 我一个人 起身走过衣橱 背后晃过 某个小女孩 扎着马尾 穿着一身彩色衣服 恍惚之间 夹带着飘渺的笑声 似有若无 又仿佛 她能直穿障碍</description>
+    </item>
+    
+    <item>
+      <title>梦里的晚霞</title>
+      <link>/cn/2015-04-27/the-sunset-in-my-dream/</link>
+      <pubDate>Mon, 27 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2015-04-27/the-sunset-in-my-dream/</guid>
+      <description>梦里 你拉着我去拍晚霞 走过的风景 四季如画 一路寻来 错过了什么 就这么奔着 随它 一瞬间 背山里有晚霞 我绕圈 追赶着霞光 失控的相机 什么也没有记录下 回头望你 你</description>
+    </item>
+    
+    <item>
+      <title>纪念白服的青春，可是英雄在塞外</title>
+      <link>/cn/2014-12-31/memory-of-youth-but-i-am-too-far-away/</link>
+      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2014-12-31/memory-of-youth-but-i-am-too-far-away/</guid>
+      <description>她说：你就要走了 - 花粥。 “你就要走了，你对我说着 像有些悲伤，眼底却藏着欣喜 我看出来了，也不拆穿了 毕竟你终于，能离开这里了 听说外面的世界是特别</description>
+    </item>
+    
+    <item>
+      <title>慕青</title>
+      <link>/cn/2014-06-11/mum/</link>
+      <pubDate>Wed, 11 Jun 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-06-11/mum/</guid>
+      <description>惊讶 背景里 慕青面向着火炉 背对着我 慕青问我， 星星考上高中了吗？ 我赶紧向前， 有些许惊讶 我说，星星都大学毕业了呀， 都有小闺女了。 慕青对着我 一脸豁然</description>
+    </item>
+    
+    <item>
+      <title>你说</title>
+      <link>/cn/2014-05-07/what-you-said/</link>
+      <pubDate>Wed, 07 May 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-05-07/what-you-said/</guid>
+      <description>你说 你去过很多地方 看过很多风景 走过很多路 可是你从来不留影 你说 留下的残影 都是往后破碎的证据 你不愿意 你说 没有你的地方 亦没有风景</description>
+    </item>
+    
+    <item>
+      <title>HPLC 之峰高与面积</title>
+      <link>/cn/2014-04-25/hplc-peak-hight-vs-area/</link>
+      <pubDate>Fri, 25 Apr 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-04-25/hplc-peak-hight-vs-area/</guid>
+      <description>&lt;h3 id=&#34;hplc---紫外检测&#34;&gt;HPLC - 紫外检测&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;一浓度固定的供试液，采用 HPLC 紫外检测，当进样量加倍时，峰高、峰面积如何变化？&lt;/li&gt;
+&lt;li&gt;在线性范围以内：进样量加倍，因为紫外检测器属于摩尔型检测器，理论上峰面积会加倍，如果把峰当作三角形来计算的话，底边（峰宽不变）不变的时候，峰高确实会高一倍；但是实际上面积是大一倍，实际峰高只会高一些，不到一倍，因为峰型的影响因素很多，峰宽也会改变。线性范围以外没有实际讨论意义。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>大川芎方 &#43; 左金方</title>
+      <link>/cn/2014-04-22/ligusticum-wallichii-golden-cornus/</link>
+      <pubDate>Tue, 22 Apr 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-04-22/ligusticum-wallichii-golden-cornus/</guid>
+      <description>大川芎方 天麻+川芎 &amp;mdash;&amp;gt; 微丸。 整理中文文献，探讨研究思路：基于大川芎方，首先对其主要成分进行分析，确认其效应成分；其次考察其效应组分的提取纯化工</description>
+    </item>
+    
+    <item>
+      <title>Some notes</title>
+      <link>/cn/2014-04-20/rhodamine/</link>
+      <pubDate>Sun, 20 Apr 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-04-20/rhodamine/</guid>
+      <description>AB-8, D151, DA-201, NKA-9, D311. JWHO1S CB1R LD605, ADS-3, ADS-5, XAD7. 等渗溶液 等张溶液 区别 Rhodamine 123是一种可以通过细胞膜的选择性染色活细胞线粒体的荧光染料，呈黄绿色荧光。广泛用作检测线粒体膜</description>
+    </item>
+    
+    <item>
+      <title>制剂载药</title>
+      <link>/cn/2014-04-02/dds-for-gambogic-acid/</link>
+      <pubDate>Wed, 02 Apr 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-04-02/dds-for-gambogic-acid/</guid>
+      <description>&lt;h3 id=&#34;载药测试&#34;&gt;载药测试&lt;/h3&gt;
+&lt;p&gt;有机相1ml, 材料10mg, 药物1mg。水相10ml：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;包载紫杉醇：调节投料比，调节油水相比，改变有机相组成，均无法完成对紫杉醇的包裹，在胶束制备过程中直接导致药物连同材料一起析出，无法形成胶束。（试验重复，结果一样）&lt;/li&gt;
+&lt;li&gt;HPLC绘制标准曲线&lt;/li&gt;
+&lt;li&gt;包载藤黄酸：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Oil Phase&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Water Phase&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;PDI&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;EE(%)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Acetone&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;126.2 ± 0.23&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.450 ± 0.07&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;61.24 ± 0.77&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ACN&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;142.2 ± 0.33&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.213 ± 0.04&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70.98 ± 0.27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Methanol&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;160.3 ± 0.43&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.153 ± 0.14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;71.86 ± 0.27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>紫杉醇标准曲线</title>
+      <link>/cn/2014-03-13/hplc-condition-for-paclitaxel/</link>
+      <pubDate>Thu, 13 Mar 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2014-03-13/hplc-condition-for-paclitaxel/</guid>
+      <description>色谱条件 色谱柱：Kromasil-C18 (250mm×4.6mm，5μm)；流动相：甲醇-水（65 ：35 )；流速：0.8mL/min ；检测波</description>
+    </item>
+    
+    <item>
+      <title>想你的时候，我在梦里</title>
+      <link>/cn/2014-02-16/when-i-think-of-you/</link>
+      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2014-02-16/when-i-think-of-you/</guid>
+      <description>我在一个梦里 梦里有我的慕青 阳光 微风 还有那熟悉的笑容 我顽皮地对着慕青笑 像儿时一样 奔跑 我脱下外套 递给慕青 慕青没有接 只是微笑着 细声地说 放那边就好 那</description>
+    </item>
+    
+    <item>
+      <title>2013 年终总结</title>
+      <link>/cn/2014-01-30/2013-annual-review/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2014-01-30/2013-annual-review/</guid>
+      <description>时间如流⽔ 2 月里悲伤的春假。 3 月是一场关于失去的战争 （little little one）。 5月20号： 德国驻华使馆关于通过审核的证书； 澳⼤录取的通知。 6</description>
+    </item>
+    
+    <item>
+      <title>一场记忆的提取</title>
+      <link>/cn/2013-12-20/storage-of-memory/</link>
+      <pubDate>Fri, 20 Dec 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-12-20/storage-of-memory/</guid>
+      <description>觉得身体很沉重。 开始了一场梦： 土豪站在门口，我向他问好：回来了？什么时候回来的？ 土豪说：昨天晚上两点多。说完这话，土豪转身回房。 土豪说一起去</description>
+    </item>
+    
+    <item>
+      <title>薄层色谱</title>
+      <link>/cn/2013-12-13/thin-layer-paper-chromatography/</link>
+      <pubDate>Fri, 13 Dec 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-12-13/thin-layer-paper-chromatography/</guid>
+      <description>薄层色谱 薄层色谱是利用物质极性的大小的不同，并根据相似相容原理，在不同极性中溶解度不同而进行分离的过程。 极性大的溶剂一般为水或乙醇等，即可简</description>
+    </item>
+    
+    <item>
+      <title>多糖</title>
+      <link>/cn/2013-12-10/polysaccharide/</link>
+      <pubDate>Tue, 10 Dec 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-12-10/polysaccharide/</guid>
+      <description>香菇多糖(单一，但是支链，如何保证改到哪里了？) 红枣多糖 淫羊藿多糖 茶多糖 茶多糖是一种酸性糖蛋白，并结合有大量的矿质元素，称为茶叶多糖复合物，</description>
+    </item>
+    
+    <item>
+      <title>仪器分析的基本原理及谱图表示方法</title>
+      <link>/cn/2013-11-29/the-basic-principle-of-instrumental-analysis-and-the-method-for-spectral-representation/</link>
+      <pubDate>Fri, 29 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-29/the-basic-principle-of-instrumental-analysis-and-the-method-for-spectral-representation/</guid>
+      <description>紫外吸收光谱 UV 分析原理：吸收紫外光能量，引起分子中电子能级的跃迁 谱图的表示：相对吸收光能量随吸收光波长的变化 提供的信息：吸收峰的位置、强度和</description>
+    </item>
+    
+    <item>
+      <title>Dendrimers</title>
+      <link>/cn/2013-11-28/dendrimers/</link>
+      <pubDate>Thu, 28 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-28/dendrimers/</guid>
+      <description>Dendrimers Dendrimers 由核心 (Initiator core)，内部的多个支化官能团 (Interior) 和外部的表面基团 (Exterior) 三部分组成 Main Features 高度支化的结构 + 独特的单分散性 特点： 结构规整，分子结构精确; 相</description>
+    </item>
+    
+    <item>
+      <title>流氏细胞术</title>
+      <link>/cn/2013-11-24/flow-cytometry/</link>
+      <pubDate>Sun, 24 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-24/flow-cytometry/</guid>
+      <description>流氏细胞术 (Flow CytoMetry) 定义 流式细胞术是对悬液中的单细胞或其他生物粒子，通过检测标记的荧光信号，实现高速、逐一的细胞定量分析和分选技术。 原理 一束單色光</description>
+    </item>
+    
+    <item>
+      <title>荧光共振能量转移</title>
+      <link>/cn/2013-11-15/fluorescence-resonance-energy-transfer/</link>
+      <pubDate>Fri, 15 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-15/fluorescence-resonance-energy-transfer/</guid>
+      <description>荧光共振能量转移 （FRET） FRET is short for Fluorescence resonance energy transfer. 特点 当供体荧光分子的发射光谱与受体荧光分子的吸收光谱重叠，并且两个分子的距离在 10nm 范围以内时，Do</description>
+    </item>
+    
+    <item>
+      <title>LC-MS 技术在中药分析中的应用</title>
+      <link>/cn/2013-11-14/application-of-lc-ms-in-medicinal-analysis/</link>
+      <pubDate>Thu, 14 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-14/application-of-lc-ms-in-medicinal-analysis/</guid>
+      <description>LC-MS 技术在中药分析中的应用（一） HPLC (流动相相对更多 1 mL/min；可用盐；难点：漏和堵) LC-MS 流动相更少，尽量不用盐；难点：漏和堵且离子化) 质谱法</description>
+    </item>
+    
+    <item>
+      <title>量子点</title>
+      <link>/cn/2013-11-13/quantum-dot/</link>
+      <pubDate>Wed, 13 Nov 2013 18:16:28 +0000</pubDate>
+      
+      <guid>/cn/2013-11-13/quantum-dot/</guid>
+      <description>量子点 Quantum Dot: 有限数目的原子和分子的集合体，三个维度尺寸均在纳米数量级（1~10 nm）; 其内部电子在各方向上的运动都受到局限，所以量子局限效应 (quantum</description>
+    </item>
+    
+  </channel>
+</rss>

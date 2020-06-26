@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Git 学习笔记 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="Git 学习笔记 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本地仓库，其实平时的版本控制工作都是在本地库操作，如果不涉及团队协作或者备份，甚至可以只使用本地库即可。
+[&amp;hellip;] Git 数据传输流程
+[&amp;hellip;] 创建工作空间其实就是创建一个本地目录，在 Mac 平台执行如下命令： &amp;hellip;">
+      <meta property="og:description" content="Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本地仓库，其实平时的版本控制工作都是在本地库操作，如果不涉及团队协作或者备份，甚至可以只使用本地库即可。
+[&amp;hellip;] Git 数据传输流程
+[&amp;hellip;] 创建工作空间其实就是创建一个本地目录，在 Mac 平台执行如下命令： &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/cn/vitae/">简历</a></li>
+  
+  <li><a href="/en/">English</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Git 学习笔记</h1>
+
+
+<h3>XiaO / 
+2020-05-13</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本地仓库，其实平时的版本控制工作都是在本地库操作，如果不涉及团队协作或者备份，甚至可以只使用本地库即可。</p>
+<ul>
+<li>工作空间：其实就是我们在操作系统上的工作目录。我们能够通过操作系统的文件管理命令进行查看（例如在 Linux 上通过 <code>ls</code> 命令）；</li>
+<li>本地仓库：工作空间有一个隐藏目录<code>.git</code>，这个目录及其内容并隶属工作空间，而是 Git 的本地仓库。它是用来实现版本控制的；</li>
+<li>远程仓库：远程仓库是存储在远程服务器上的仓库，主要实现多用户的协同；</li>
+<li>暂存区： 暂存区一般存放在 <code>.git</code> 目录下的 <code>index</code> 文件<code>(.git/index)</code>中，所以我们把暂存区有时也叫作索引<code>(index)</code>。</li>
+</ul>
+<p><a href="https://www.stephenmarron.com/wp-content/uploads/2017/02/git.png">Git 数据传输流程</a></p>
+<p><img src="/media/image/cn-2020-05-13-git-01.png" alt=""></p>
+<h3 id="创建工作空间">创建工作空间</h3>
+<p>创建工作空间其实就是创建一个本地目录，在 Mac 平台执行如下命令：</p>
+<pre><code>mkdir gittest
+</code></pre><p>然后切换到该目录，并在里面随便创建一个文件：</p>
+<pre><code>cd gittest
+echo &quot;Hello, Git.&quot; &gt; test.md
+</code></pre><h3 id="创建本地仓库git-init">创建本地仓库（git init）</h3>
+<p>保持在刚才创建的文件夹内部（工作空间），通过执行 <code>git init</code> 命令就可以初始化一个本地仓库：</p>
+<pre><code>git init
+</code></pre><p>完成本地仓库的创建后，可以在当前目录下看到一个新增的隐藏目录<code>.git</code>，Git 就是通过这个目录里面的内容实现版本控制的。</p>
+<h3 id="查看状态git-status">查看状态（git status）</h3>
+<p>创建完成本地仓库之后就可以查看工作区的状态了。通过<code>git status</code>命令可以查看工作空间的状态（也就是文件的被管理情况）</p>
+<pre><code>git status
+</code></pre><p>执行该命令后，结果如下，可以看到在该工作区有一个文件，且处于未管理状态。</p>
+<pre><code>%  git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	test.md
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre><h3 id="添加文件git-add">添加文件（git add）</h3>
+<p>通过上面的操作，我们已经有了一个本地仓库了，但是本地仓库内部并没有管理任何内容。我们这一步做的就是让它管理一个文件。我们在前面工作空间中已经创建了一个名为 &lsquo;test.md&rsquo; 的文件，这是个普通的文本文件，内容是 &ldquo;Hello, Git.&quot;。我们这步先把它管理起来，具体执行如下命令：</p>
+<pre><code>git add test.md
+</code></pre><p>此时已经将该文件添加到了暂存区。然后我们在执行以下 <code>git status</code> 命令，可以看到如下结果。该文件已经被管理起来了，从提示我们可以看到这个文件还没有提交，意思是文件还没有真正在本地仓库里面，只是在暂存区而已。</p>
+<pre><code>%  git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	new file:   test.md
+</code></pre><h3 id="提交文件git-commit">提交文件（git commit）</h3>
+<p>提交文件其实就是将文件提交到本地库，也就是开始进行真正的版本管理了。具体可以通过执行如下命令,其后面的 <code>-m</code> 选项表示该次提交的注释内容。</p>
+<pre><code>git commit -m &quot;add new file&quot;
+</code></pre><p>完成提交后会有相应的返回，提示提交的结果：</p>
+<pre><code>% git commit -m &quot;add new file&quot;
+[master (root-commit) abf0460] add new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.md
+</code></pre><p>完成提交后，我们可以在看一下这个工作空间的状态<code>git status</code>。可以看到此时本地仓库中的内容与工作空间已经完全一致。</p>
+<pre><code>%  git status
+On branch master
+nothing to commit, working tree clean
+</code></pre><h3 id="查看提交日志git-log">查看提交日志（git log）</h3>
+<p>完成提交之后，在本地仓库已经有了我们刚才提交的内容。也就是说现在本地仓库已经对我们的内容进行版本控制了。那么，我们怎么知道已经做了哪些提交呢？这个时候 <code>git log</code> 命令就派上用场了。从字面上我们也能猜出大概用途来，这个命令是用来查看提交日志的。</p>
+<pre><code>git log
+</code></pre><p>从下图可以看到提交的基本信息，包括提交的 UUID、作者、日志和描述信息等内容。</p>
+<pre><code>% git log
+commit abf04605816e9da36b4f3219c4e562a19823015e (HEAD -&gt; master)
+Author: xiao &lt;github.com@example.com&gt;
+Date:   Wed May 13 15:32:27 2020 +0200
+
+    add new file
+</code></pre><h3 id="查看提交详情git-show">查看提交详情（git show）</h3>
+<p>如果我们想看一下提交的详细内容又该怎么办呢？通过 <code>git show</code> 命令可以查看某一次提交的详细内容。以上次提交为例：</p>
+<pre><code>git show abf04605816e9da36b4f3219c4e562a19823015e
+</code></pre><p>由下图可以看到提交的详细内容，除了上一个命令所涉及的简要信息外，还包括具体修改的那个文件，哪一行，以及具体修改的内容等等。</p>
+<pre><code>% git show abf04605816e9da36b4f3219c4e562a19823015e
+commit abf04605816e9da36b4f3219c4e562a19823015e (HEAD -&gt; master)
+Author: xiao &lt;github.com@example.com&gt;
+Date:   Wed May 13 15:32:27 2020 +0200
+
+    add new file
+
+diff --git a/test.md b/test.md
+new file mode 100644
+index 0000000..296c546
+--- /dev/null
++++ b/test.md
+@@ -0,0 +1 @@
++Hello, Git.
+</code></pre><h3 id="查看工作空间修改情况git-diff">查看工作空间修改情况（git diff）</h3>
+<p>我们在本地进行修改后，有的时候想了解当前工作区的内容作了哪些修改，这个时候可以使用 <code>git diff</code> 命令进行查看。</p>
+<pre><code>git diff
+</code></pre><p>执行该命令是查看<strong>工作空间</strong>与<strong>暂存区</strong>的差异情况。比如我们在 test.md 文件中增加一行写上<code>你好啊</code>，此时执行<code>git diff</code> 命令，就能看到新加的内容：</p>
+<pre><code>% git diff
+diff --git a/test.md b/test.md
+index 296c546..b931d68 100644
+--- a/test.md
++++ b/test.md
+@@ -1 +1,3 @@
+Hello, Git.
++你好啊
+</code></pre><p>如果我们把这个文件加入暂存区，然后在执行相同的命令，这时我们将看不到任何差异提示。</p>
+<h3 id="恢复到某个点git-reset">恢复到某个点（git reset）</h3>
+<p>Git 提供了 <code>git reset</code> 命令来解决代码回退的问题。比如我们对刚才添加的代码不满意，想通过 Git 命令回退到之前的版本。这是需要找到期望回退版本的 <code>commit id</code>（可通过 <code>git log</code> 中相应的备注查看），然后执行如下命令。</p>
+<pre><code>% git reset --hard abf04605816e9da36b4f3219c4e562a19823015e
+HEAD is now at abf0460 add new file
+</code></pre><h3 id="创建分支git-branch">创建分支（git branch）</h3>
+<p>分支 (branches) 是指在开发主线中分离出来，做进一步开发（比如新特性）而不影响到原来主线。实际上在我们创建完本地仓库时，就已经有一个<strong>分支</strong>了，只不过这个分支是主分支，也叫主线（master）。如图所示，在实际应用中除了主分支外还会有其它分支用于开发新特性。当完成新特性开发后，将代码统一合并到主分支中。</p>
+<p><a href="https://gitbookdown.site/branching-git-branch.html">分支操作流程</a></p>
+<p><img src="/media/image/cn-2020-05-13-git-02.png" alt=""></p>
+<p>通过命令 <code>git branch -l</code> 可以看到本地库已有的分支：</p>
+<pre><code>git branch -l
+</code></pre><p>可见，目前只有一个主分支：</p>
+<pre><code>% git branch -l
+* master
+</code></pre><p>上述所有控制都是在 <code>master</code> 分支上进行的，现在执行 <code>git branch</code> 命令创建一个新的分支</p>
+<pre><code>git branch dev
+</code></pre><p>创建完成后，我们通过 <code>git branch -l</code> 可以看到已经有一个新的分支，名称为 dev。其中 <code>*</code> 标记的是当前工作空间所在的分支。</p>
+<pre><code>% git branch dev
+% git branch -l
+  dev
+* master
+%
+</code></pre><h3 id="切换分支git-checkout">切换分支（git checkout）</h3>
+<p>通过 <code>git checkout</code> 命令可以将工作空间切换到新创建的 dev 分支。</p>
+<pre><code>git checkout dev
+</code></pre><pre><code>% git checkout dev
+
+Switched to branch 'dev'
+</code></pre><p>然后通过 <code>git branch -l</code> 可以看到发生的变化，此时 dev 分支被 * 号标记。</p>
+<pre><code>% git branch -l
+* dev
+  master
+</code></pre><p>切换分支以后，再提交的代码就位于新的分支。</p>
+<p>此时我们对文档进行修改，添加一行文字 &ldquo;new feature from dev&rdquo;，然后保存。我们用 <code>git diff</code> 比较一下<strong>当前工作空间与暂存区</strong>的差异，可见结果显示，新增了一行。</p>
+<pre><code>% git diff
+diff --git a/test.md b/test.md
+index 296c546..1ae6afd 100644
+--- a/test.md
++++ b/test.md
+@@ -1 +1,2 @@
+Hello, Git.
++new feature from dev
+</code></pre><p>然后我们再次检查一下当前工作空间的状态<code>git status</code>，这里显示我们的修改还未加入暂存区：</p>
+<pre><code>%  git status
+On branch dev
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	modified:   test.md
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre><p>我们加入暂存区后，再次查看状态：</p>
+<pre><code>% git add test.md
+%  git status
+On branch dev
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+	modified:   test.md
+</code></pre><p>而后我们提交：</p>
+<pre><code>% git commit -m &quot;new feature from dev&quot;
+[dev 5d41a16] New feature from dev
+ 1 file changed, 1 insertion(+)
+%  git status
+On branch dev
+nothing to commit, working tree clean
+</code></pre><p>需要注意的是，如果在分支做了一些修改，但还没有提交，这时切换分支会丢失已经做得的修改，因此切换之前需要提交代码。</p>
+<h3 id="合并分支git-merge">合并分支（git merge）</h3>
+<p>假设<strong>我们在 dev 分支已经添加了一些内容，并进行了提交</strong>。此时我们想将这些内容合并到主分支中。合并的方法就是<strong>先切换到主分支，然后执行 <code>git merge</code> 命令</strong>。</p>
+<pre><code>git merge dev
+</code></pre><p>切换到主分支：</p>
+<pre><code>%  git checkout master
+Switched to branch 'master'
+</code></pre><p>合并分支前，master 分支上，文本的内容：</p>
+<pre><code>% cat test.md
+Hello, Git.
+</code></pre><p>合并分支：</p>
+<pre><code>% git merge dev
+Updating abf0460..5d41a16
+Fast-forward
+ test.md | 1 +
+ 1 file changed, 1 insertion(+)
+%
+</code></pre><p>合并分支前，master 分支上，文本的内容以及和 dev 分支上一样了，我们从 dev 分支所做的修改就同步到 master 分支了。</p>
+<pre><code>% cat test.md
+Hello, Git.
+new feature from dev
+</code></pre><h3 id="添加远程库git-remote-add">添加远程库（git remote add）</h3>
+<p>假设我们在 github 上已经有了一个空的远程库（远程库路径为 <code>https://github.com/xxx/test.git</code>），此时远程库没有任何内容。我们可以通过 <code>git remote add</code> 命令<strong>建立本地仓库与远程仓库的关联关系</strong>：</p>
+<pre><code>git remote add origin https://github.com/xxx/test.git
+</code></pre><p>建立联系后，此时远程库依旧是空的。这里的 <code>origin</code> 只是我们给远程仓库的一个代名词，可以使用其它任何名称。</p>
+<h3 id="本地推送到远程git-push">本地推送到远程（git push）</h3>
+<p>我们将本地的 master 分支推送到 github 上，执行如下命令，过程中需要我们输入 github 上注册的用户名及对应的密码：</p>
+<pre><code>git push origin master
+</code></pre><p>默认情况下，git 会将代码推送到与本地分支同名的远程分支上。</p>
+<p>Git 的一般流程是：添加到暂存区（git add）,提交到本地仓库（git commit）,最后推送到远程仓库（git push）。</p>
+<h3 id="克隆远程仓库git-clone">克隆远程仓库（git clone）</h3>
+<p>克隆命令可以将远程仓库的内容克隆一份，生成一个一模一样的本地仓库，同时会生成工作空间的内容。</p>
+<p>默认情况下工作空间的内容是 master 分支的内容，如果需要其他分支，则需要创建本地分支，并且进行切换。</p>
+<pre><code>git clone https://github.com/xxx/test.git
+</code></pre><h3 id="下载远程仓库的更新git-fetchpull">下载远程仓库的更新（git fetch/pull）</h3>
+<p>git 有两个命令可以将远程仓库的内容拉到本地：</p>
+<ul>
+<li><code>git pull</code>，可以将远程仓库拉到本地仓库，同时合并到本地工作空间；</li>
+<li><code>git fetch</code>，可以将远程仓库的内容拉取到本地仓库，<strong>但并不会更新本地工作空间</strong>，需执行 <code>git merge</code> 命令将本地仓库相同分支的内容更新到工作空间。</li>
+</ul>
+<h3 id="查看代码的作者git-blame">查看代码的作者（git blame）</h3>
+<p><code>git blame</code> 可以查看提交的 ID、作者和时间等信息。</p>
+<pre><code>% git blame test.md
+^abf0460 (xiao 2020-05-13 15:32:27 +0200 1)Hello, Git.
+5d41a16d (xiao 2020-05-13 17:33:23 +0200 2) New feature from dev
+</code></pre><ul>
+<li><a href="https://juejin.im/post/5eb2d6bce51d454d9d3ed14f">60+ Git 常用命令行</a></li>
+<li><a href="http://researchhubs.com/post/computing/git/index.html">Git 英文教程</a></li>
+<li><a href="https://git-scm.com/book/zh/v2">Git 官方书籍 《Pro Git》</a></li>
+<li><a href="https://www.bootcss.com/p/git-guide/">Git 简易指南</a></li>
+<li><a href="http://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
+</ul>
+<h3 id="mac-下设置-git-的编辑器">Mac 下设置 Git 的编辑器</h3>
+<p>设置 Sublime Text 作为默认编辑器：</p>
+<pre><code>git config --global core.editor &quot;/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text&quot;
+</code></pre><p>检查是否成功设置：</p>
+<pre><code>Check : git config --global -e
+</code></pre><h3 id="知识点理解">知识点理解</h3>
+<h4 id="查看和比较">查看和比较</h4>
+<ul>
+<li><code>git status</code> 查看当前工作区文件所处的状态；</li>
+<li><code>git diff</code> 比较当前工作区文件状态与暂存区的状态的差别；</li>
+<li><code>git diff --staged</code> 比较暂存区的文件状态与上一次提交后的差别；</li>
+</ul>
+<p>比如一个自上一次提交后没有再做任何改动的 test.md 文件，查看一下状态：</p>
+<pre><code>% git status
+On branch master
+nothing to commit, working tree clean
+</code></pre><p>我们在 test.md 文件中添加一行 <code>Add the 3rd line</code>后，用 <code>git add</code> 命令将文件加入暂存区，而后又在 test.md 文件中添加一行 <code>Add the 4th line</code>，然后我们查看状态：</p>
+<pre><code>% git status
+On branch master
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+	modified:   test.md
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	modified:   test.md
+</code></pre><p>此时可见 test.md 文件有两个版本，一个是前一次加入暂存区的状态；另一个是我们做最后一次修改后的状态。我们用 <code>git diff</code> 来比较一下：</p>
+<pre><code>% git diff
+diff --git a/test.md b/test.md
+index 98c61a5..6b6c640 100644
+--- a/test.md
++++ b/test.md
+@@ -1,3 +1,4 @@
+Hello, Git.
+ New feature from dev
+ Add the 3rd line
++Add 4th line
+</code></pre><p><code>git diff</code> 默认比较的是当前工作区文件状态与暂存区中的差别。如上已经列出，与暂存区相比新增了第四行。</p>
+<p>如果我们需要比较暂存区与上一次提交的差别，用 <code>git diff --staged</code> 即可：</p>
+<pre><code>% git diff --staged
+diff --git a/test.md b/test.md
+index 1ae6afd..98c61a5 100644
+--- a/test.md
++++ b/test.md
+@@ -1,2 +1,3 @@
+Hello, Git.
+ New feature from dev
++Add the 3rd line
+</code></pre><h4 id="取消跟踪-git-restore">取消跟踪 （git restore）</h4>
+<p>将文件从 Git 跟踪清单中移除（文件依旧保留在磁盘上，只是 Git 将不再跟踪该文件），可用 <code>git restore --staged</code> 移除。</p>
+<p>我们在目录下新增 test2.md 文件，并用 <code>git add</code> 将其加入到暂存区以跟踪该文件，我们看一下文件状态：</p>
+<pre><code>% git status
+On branch master
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+	modified:   test.md
+	new file:   test2.md
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	modified:   test.md
+</code></pre><p>我们突然又不想跟踪 test2.md 文件了，仍然想保留该文件在磁盘上，于是用 <code>git restore --staged</code> 命令移除对其的跟踪，再看一下状态：</p>
+<pre><code>% git status
+On branch master
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+	modified:   test.md
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	modified:   test.md
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	test2.md
+</code></pre><p>可见 test2.md 又重新回到未被跟踪的状态了。</p>
+<h4 id="删除文件-git-rm">删除文件 （git rm）</h4>
+<h4 id="重置文件git-reset8">重置文件（<a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-reset">git reset</a>）</h4>
+<p><img src="/media/image/cn-2020-05-13-git-03.svg" alt=""></p>
+<p>上诉图片标注了不同的重置方式作用的范围，更详细的图片解释可见<a href="https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified">官方文档</a></p>
+<p><strong><code>--hard</code></strong></p>
+<p>The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit.</p>
+<p>该指令使得 HEAD 回退到某个提交点处，并将重置暂存区和工作区到那个提交点所处状态；</p>
+<p><strong><code>--mixed</code></strong></p>
+<p>The ref pointers are updated. The Staging Index is reset to the state of the specified commit. Any changes that have been undone from the Staging Index are moved to the Working Directory. Let us continue.</p>
+<p>该指令使得 HEAD 回退到某个提交点处，并将暂存区的状态回退到工作区，也是 <code>git reset</code> 默认的方式。</p>
+<p><strong><code>--soft</code></strong></p>
+<p>The ref pointers are updated and the reset stops there. The Staging Index and the Working Directory are left untouched. A soft reset will only reset the Commit History.</p>
+<p>该指令使得 HEAD 回退到某个提交点处，但是暂存区和工作区保持不变。</p>
+<h4 id="git-保存数据的原理10"><a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">Git 保存数据的原理</a></h4>
+<p>Git 保存的是一系列不同时刻的<code>快照</code>。</p>
+<p><strong>进行提交操作</strong>时，Git 会保存一个提交对象（commit object），该提交对象会包含<strong>一个指向暂存内容快照的指针</strong>、作者的姓名和邮箱、提交时输入的信息以及<strong>指向它的父对象的指针</strong>。</p>
+<p>首次提交产生的提交对象没有父对象，一个提交对象，包含了：</p>
+<ul>
+<li>若干 <code>blob</code> 对象（保存着文件快照）；</li>
+<li>一个 <code>树</code> 对象 （记录着目录结构和 <code>blob</code> 对象索引）；</li>
+<li>一个 提交对象（包含一个指向上述树对象的指针和所有提交信息）</li>
+</ul>
+<p><img src="/media/image/cn-2020-05-13-git-04.png" alt=""></p>
+<p>普通提交操作时，所提交的对象包含了在前述内容，并新增一个父对象：</p>
+<p><img src="/media/image/cn-2020-05-13-git-05.png" alt=""></p>
+<h4 id="git-checkout-的用法9">git checkout 的<a href="https://www.jianshu.com/p/cad4d2ec4da5">用法</a></h4>
+<p><code>git checkout</code> 命令的关联目标是 .git 文件夹下的 HEAD 文件。 在 Git 中，HEAD 是一个特殊指针，<strong>指向当前所在分支</strong>。</p>
+<p><img src="/media/image/cn-2020-05-13-git-06.png" alt=""></p>
+<p>切换到 <code>branchName</code> 分支</p>
+<pre><code>git checkout branchName
+</code></pre><p>新建 <code>branchName</code> 分支并切换到该分支</p>
+<pre><code>git checkout -b newBranch
+</code></pre><p><code>git checkout &lt;commit&gt;</code> 命令切换到 commit 参数指定的版本，该参数值可以是具体的 <code>commit hash</code> 值，可是是某个 Tag，也可以通过 <code>HEAD index</code> 来指定。例如，<code>HEAD^</code> 对应当前版本的上一个版本，那么 <code>git checkout HEAD^</code> 命令则讲文件切换到上一个版本，<strong>同时从当前分支脱离，处在一个未命名分支上</strong>。由于脱离了原先的分支，修改本地文件，并执行 <code>git commit</code> 进行提交，不会影响原来分支。</p>
+<pre><code>git checkout Commit or Tag
+</code></pre><p>例如，我们切换到 Tag 为 v3.14 的版本后， Git 提示如下：</p>
+<pre><code>% git checkout v3.14
+Note: switching to 'v3.14'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c &lt;new-branch-name&gt;
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9105949
+</code></pre><h4 id="git-checkout-与-git-reset-的区别-stack14-或官方文档15">git checkout 与 git reset 的区别 <a href="https://stackoverflow.com/questions/3639342/whats-the-difference-between-git-reset-and-git-checkout">Stack</a> 或<a href="https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified">官方文档</a></h4>
+<p><img src="/media/image/cn-2020-05-13-git-07.png" alt=""></p>
+<blockquote>
+<p>Here’s a cheat-sheet for which commands affect which trees. The “HEAD” column reads “REF” if that command moves the reference (branch) that HEAD points to, and “HEAD” if it moves HEAD itself.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center">HEAD</th>
+<th align="center">暂存区 (Index)</th>
+<th align="center">工作区 (Workdir)</th>
+<th align="center">是否安全</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>git reset --soft [commit]</code></td>
+<td align="center">REF</td>
+<td align="center">否</td>
+<td align="center">否</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="left"><code>git reset --mixed [commit]</code></td>
+<td align="center">REF</td>
+<td align="center">是</td>
+<td align="center">否</td>
+<td align="center">是</td>
+</tr>
+<tr>
+<td align="left"><code>git reset --hard</code> [commit]</td>
+<td align="center">REF</td>
+<td align="center">是</td>
+<td align="center">是</td>
+<td align="center">否</td>
+</tr>
+<tr>
+<td align="left"><code>git checkour</code></td>
+<td align="center">HEAD</td>
+<td align="center">是</td>
+<td align="center">是</td>
+<td align="center">是</td>
+</tr>
+</tbody>
+</table>
+<p>上面表格注明了不同命令的作用范围，<strong>如果命令移动了 HEAD 所指向的分支，则 HEAD 栏显示为 REF，如果命令仅仅移动了 HEAD 本身，则 HEAD 栏显示为 HEAD</strong>，以及相应的操作是否相对安全。标注否的需要谨慎操作。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2020-05-13/pymol-installing-setting/">PyMOL 的安装、球棍模型设置与图片输出</a></span>
+  <span class="nav-next"><a href="/cn/2020-05-14/pdf-to-image-using-automator/">用 Automator 将 PDF 批量转换为高清图片</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2020-05-13\/pymol-installing-setting\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2020-05-14\/pdf-to-image-using-automator\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2016 - 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

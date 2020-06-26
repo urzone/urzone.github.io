@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Just Blog it on XiaO | 缄默之语</title>
+    <link>/en/</link>
+    <description>Recent content in Just Blog it on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using ggplot2 to do an analysis of Nobel Prize Laureates</title>
+      <link>/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
+      <description>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.
+library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite) theme_xiao &amp;lt;- function () { theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure theme( # Background of the entire plot plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA), # Background of plotting area panel.</description>
+    </item>
+    
+    <item>
+      <title>Formation of nanomicelles</title>
+      <link>/en/2016-03-06/micelle-formation/</link>
+      <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/en/2016-03-06/micelle-formation/</guid>
+      <description>Coumarin 6 is a small molecular fluorescent dye, which has been frequently used for the traceability of excipients in vitro. And here, it was used as a hydrophobic model probe to explore the formation of micelles indirectly.
+Figure 1. The emission fluorescence intensity of coumarin 6 in water.
+Coumarin in water The emission fluorescent intensity of coumarin 6 in pure water, which was excited by the light with a maximum excitation wavelength at 441.</description>
+    </item>
+    
+    <item>
+      <title>Behaviour of Pyrene molecules in micellar systems</title>
+      <link>/en/2016-02-23/behaviour-of-pyrene-molecules-in-micellar-systems/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/en/2016-02-23/behaviour-of-pyrene-molecules-in-micellar-systems/</guid>
+      <description>Figure 1. Behaviour of pyrene molecules in micellar systems during dilution process.
+Recently I have done some experiments about critical micellar concentration (CMC). The CMC values of polymeric nano-micelles were determined by fluorescence spectroscopy, using pyrene as a polarity-sensitive fluorescent probe, of which the operations, data recording as well as the curve fitting are totally done according to the relevant literature reported previously.1
+Principle Pyrene, a hydrophobic fluorescent dye, could be used as a microenvironmental polarity-sensitive probe for the determination of CMC values.</description>
+    </item>
+    
+    <item>
+      <title>Bay of science</title>
+      <link>/en/2016-02-21/sci-hub/</link>
+      <pubDate>Sun, 21 Feb 2016 20:07:21 +0000</pubDate>
+      
+      <guid>/en/2016-02-21/sci-hub/</guid>
+      <description>A research paper is a special publication written by scientists to be read by ALL the human beings. Ways to Knowledge Sci-Hub https://sci-hub.se https://sci-hub.tw https://sci-hub.shop Library Genesis located in Holland http://gen.lib.rus.ec/ http://libgen.lc/ https://libgen.pw/ Books http://booksc.org http://b-ok.org https://b-ok.org/ http://en.bookfi.net/ http://m.bookfi.net/ Extentions for Browsers Auto Sci-Hub: https://roiarthurb.github.io/Side-Auto_Sci-Hub/ Pubmedplus: https://service.pubmedplus.com/pubmedplus-extension Tampermonkey: https://www.tampermonkey.net/ PMC https://www.ncbi.nlm.nih.gov/pmc/ Glgoo https://xue.glgoo.org/ 猫咪论文 https://lunwen.im/ 读秀 https://www.duxiu.com/ 学术导航网站 文献小</description>
+    </item>
+    
+    <item>
+      <title>Boltzmann sigmoid and Pyrene fluorescence ratio</title>
+      <link>/en/2016-02-20/boltzmann-sigmoid-and-pyrene-fluorescence-ratio/</link>
+      <pubDate>Sat, 20 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/en/2016-02-20/boltzmann-sigmoid-and-pyrene-fluorescence-ratio/</guid>
+      <description>Pyrene, a hydrophobic fluorescent dye, could be used as a microenvironmental polarity-sensitive probe for the determination of CMC values. Pyrene molecules could be excited by light at a wavelength of 339 nm and emitted fluoresces with maxima at wavelengths of 373 nm and 384 nm. Pyrene 373/384 ratio represents the ratio of fluorescent intensity at wavelength of 373 nm to 384 nm. [^1] Figure 1. Fluorescence emission spectra of pyrene.</description>
+    </item>
+    
+    <item>
+      <title>Polymer Synthesis</title>
+      <link>/en/2014-02-18/polymer-synthesis/</link>
+      <pubDate>Tue, 18 Feb 2014 18:16:28 +0000</pubDate>
+      
+      <guid>/en/2014-02-18/polymer-synthesis/</guid>
+      <description>Synthesis of mPEG-SS-NH2 
+Under a nitrogen atmosphere, N-hydroxy succinimide (NHS, 0.07 g, 0.6 mmol), N,N -dicyclohexylcarbodiimide (DCC, 0.12 g, 0.6 mmol) and mPEG-COOH (1.0 g, 0.5 mmol) were suspended in dichloromethane (30 mL) at 0°C for 5 h. Then a dry solution of cysteamine (0.5 g, 3.5 mmol) in 5 mL dichloromethane was dropwise added, and the reaction mixture was maintained at room temperature for another 24 h. The resulting product was isolated by filtration to remove insoluble byproducts, precipitated in cold diethyl ether twice and then purified by dialysis using a membrane (MWCO 1000 Da) for 24 h.</description>
+    </item>
+    
+    <item>
+      <title>Fluorescence Dye</title>
+      <link>/en/2013-11-10/fluorescence-dye/</link>
+      <pubDate>Sun, 10 Nov 2013 14:25:50 +0000</pubDate>
+      
+      <guid>/en/2013-11-10/fluorescence-dye/</guid>
+      <description>当我们在进行多色流式分析的时候，对分析成功的一个关键影响因素是每个抗体选择何种荧光染料标记。通常会有很多可行的结合，我们在做选择的时候有很多</description>
+    </item>
+    
+    <item>
+      <title>On the left &amp; by your side</title>
+      <link>/en/2011-11-25/on-the-left-by-your-side/</link>
+      <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/en/2011-11-25/on-the-left-by-your-side/</guid>
+      <description> U know, sometimes, the world sucks!
+Don&amp;rsquo;t waste time bothering each other.
+That&amp;rsquo;s the thing I got from u. Everything would be all right and ran as it should.
+Wish u got your dream.
+Farewell.
+On the left side of your desk.
+  From:a little pink flower from one summer.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

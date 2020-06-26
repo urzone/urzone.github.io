@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>California on XiaO | 缄默之语</title>
+    <link>/tags/california/</link>
+    <description>Recent content in California on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/california/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>四十二时记</title>
+      <link>/cn/2020-05-05/my-past-42-hours/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-05-05/my-past-42-hours/</guid>
+      <description>那么热的夏天 我似乎已经不太清楚夏天的定义具体是什么了，感觉上，从我走出那间屋子的一瞬间，我就进入了夏天。 车在柏油路上飞驰。在不到一分钟的时间</description>
+    </item>
+    
+  </channel>
+</rss>

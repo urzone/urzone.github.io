@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on XiaO | 缄默之语</title>
+    <link>/draft/</link>
+    <description>Recent content in Drafts on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pubmed PubReMiner</title>
+      <link>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
+      <description>Usually, we use Pubmed to search for the bio-related researches in literature. This tool is very useful for the daily work for academic researchers. Besides, it&amp;rsquo;s totaly free for the public, which means very one can use this tool if they want to find bio-related studies.
+irinotecan https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi</description>
+    </item>
+    
+    <item>
+      <title>Using R</title>
+      <link>/draft/using-r/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/using-r/</guid>
+      <description>Install Xcode command line tools for using commands like make, GCC, clang, perl, svn, git, size, strip, strings, libtool, cpp&amp;hellip;
+xcode-select --install
+Install Homebrew
+- /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; brew list --versions brew outdated brew update brew cleanup Install Homebrew Cask brew install caskroom/cask/brew-cask
+ursing brew cask to install and update R and Rstudio:
+brew cask install r brew link --overwrite r brew cask uninstall --force brew cask upgrade brew update &amp;amp;&amp;amp; brew upgrade &amp;amp;&amp;amp; brew cleanup During upgrading, If you get an error of the type Error:</description>
+    </item>
+    
+    <item>
+      <title>Manuscript is being considered for acceptance</title>
+      <link>/draft/manuscript-is-being-considered-for-acceptance/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/manuscript-is-being-considered-for-acceptance/</guid>
+      <description>Thanks for the positive and valuable comments from the reviewers and the editor. Actually, several things about these comments are very intresting. For instance, I don&amp;rsquo;t know why there is only one sentence from Reviewr 1 alrough the comment is very positive. The second thing is the review time for this manuscript is so long that I suddently recieve this email after more than half a year. I&amp;rsquo;m wondering if it takes such long time to write down those letters.</description>
+    </item>
+    
+    <item>
+      <title>Polymeric micelles</title>
+      <link>/draft/polymeric-micelles/</link>
+      <pubDate>Thu, 31 Oct 2013 14:25:50 +0000</pubDate>
+      
+      <guid>/draft/polymeric-micelles/</guid>
+      <description>&lt;h2 id=&#34;polymeric-micelles&#34;&gt;Polymeric micelles&lt;/h2&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;h3 id=&#34;polymeric-micelles-1&#34;&gt;Polymeric micelles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The biological properties of materials used in forming micelles&lt;/li&gt;
+&lt;li&gt;The methods of preparation(take examples)&lt;/li&gt;
+&lt;li&gt;The micellization and micelle morphology. the relationship between (the characteristic of aggregation, properties of molecular aggregates with different sizes, and the parameters of the initial and final states of the micellar solution)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

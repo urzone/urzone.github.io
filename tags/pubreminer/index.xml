@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PubReMiner on XiaO | 缄默之语</title>
+    <link>/tags/pubreminer/</link>
+    <description>Recent content in PubReMiner on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pubreminer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pubmed PubReMiner</title>
+      <link>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
+      <description>Usually, we use Pubmed to search for the bio-related researches in literature. This tool is very useful for the daily work for academic researchers. Besides, it&amp;rsquo;s totaly free for the public, which means very one can use this tool if they want to find bio-related studies.
+irinotecan https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi</description>
+    </item>
+    
+  </channel>
+</rss>
