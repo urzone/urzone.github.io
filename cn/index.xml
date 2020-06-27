@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>药品注册分类及重大新药创制</title>
+      <link>/cn/2020-06-27/drug-registration/</link>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-06-27/drug-registration/</guid>
+      <description>据国家市场监督管理总局令第 27 号令，《药品注册管理办法》已于 2020 年 1 月 15 日经国家市场监督管理总局 2020 年第 1 次局务会议审议通过，现予公布，自 2020 年 7 月</description>
+    </item>
+    
+    <item>
       <title>伊素复合纳米颗粒</title>
       <link>/cn/2020-06-26/camptothecin-curcumin-nanoparticle/</link>
       <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
@@ -957,15 +966,6 @@
       
       <guid>/cn/2013-11-14/application-of-lc-ms-in-medicinal-analysis/</guid>
       <description>LC-MS 技术在中药分析中的应用（一） HPLC (流动相相对更多 1 mL/min；可用盐；难点：漏和堵) LC-MS 流动相更少，尽量不用盐；难点：漏和堵且离子化) 质谱法</description>
-    </item>
-    
-    <item>
-      <title>量子点</title>
-      <link>/cn/2013-11-13/quantum-dot/</link>
-      <pubDate>Wed, 13 Nov 2013 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2013-11-13/quantum-dot/</guid>
-      <description>量子点 Quantum Dot: 有限数目的原子和分子的集合体，三个维度尺寸均在纳米数量级（1~10 nm）; 其内部电子在各方向上的运动都受到局限，所以量子局限效应 (quantum</description>
     </item>
     
   </channel>
