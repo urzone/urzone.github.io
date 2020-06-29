@@ -310,8 +310,8 @@ nobel_winners <span style="color:#f92672">&lt;-</span> df <span style="color:#f9
        y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Averge age&#34;</span>)
 </code></pre></div><p><img src="/media/image/en-20200423-10.svg" alt=""></p>
 <p>Finally, choose the format of your figure output and save them.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">svg</span>(<span style="color:#e6db74">&#34;file_name&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, bg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transparent&#34;</span>)
-Put your figures here
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">svglite<span style="color:#f92672">::</span><span style="color:#a6e22e">svglite</span>(file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rplots.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.6</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>,  bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, pointsize <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, standalone <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+put your figure file here
 <span style="color:#a6e22e">dev.off</span>()
 </code></pre></div>
 
