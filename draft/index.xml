@@ -6,10 +6,19 @@
     <description>Recent content in Drafts on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基于分子结构的无载体纳米递送体系</title>
+      <link>/draft/strucure-based-design-of-drug-self-delviery-systems/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/strucure-based-design-of-drug-self-delviery-systems/</guid>
+      <description>研究背景 日本科学家片冈一则因开创基于载体的纳米药物递送系统而被视为竞争诺贝尔生理学或医学奖的有力人选。该递送系统利用两亲性高分子材料在水中能</description>
+    </item>
     
     <item>
       <title>Pubmed PubReMiner</title>
