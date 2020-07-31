@@ -12,6 +12,42 @@
     
     
     <item>
+      <title>逼良为娼</title>
+      <link>/cn/2020-07-31/forced-prostitution/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-07-31/forced-prostitution/</guid>
+      <description>以某&amp;quot;行政单位&amp;quot;牵头的&amp;quot;特聘&amp;quot;部门，主要以临时组建的上级进一步招聘全职下级的方式运作； 粗略一算，下一</description>
+    </item>
+    
+    <item>
+      <title>让论文飞一会儿</title>
+      <link>/cn/2020-07-28/let-the-paper-fly/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-07-28/let-the-paper-fly/</guid>
+      <description>导师：完了，其他的课题组已经把能换的参数和概念都换了一遍了，文章已经排到九十年以后了，也就是 TMD 西历二一一零年，我们来晚了，这个课题被做死了，</description>
+    </item>
+    
+    <item>
+      <title>移除 PDF 的密码</title>
+      <link>/cn/2020-07-22/pdf-password-remover/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-07-22/pdf-password-remover/</guid>
+      <description>QPDF 安装 brew install qpdf 简单移除密码 qpdf --decrypt encrypted-filename.pdf decrypted-filename.pdf 另外可使用 Automtor 制作快捷动作批量移除密码 export PATH=/usr/local/bin:$PATH mkdir ~/PDFunLOCK for f in &amp;#34;$@&amp;#34; do file=$(basename $f) file_name=${file%.*} qpdf --decrypt $f ~/PDFunLOCK/${file_name}_unlocked.pdf done open ~/PDFunLOCK/ 快捷服务的存放位置 ~/Library/Services/ 具体[使用手册</description>
+    </item>
+    
+    <item>
+      <title>Github &#43; Netlify &#43; Yandex</title>
+      <link>/cn/2020-07-19/github-netlify-yandex-free-website-mail-service/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-07-19/github-netlify-yandex-free-website-mail-service/</guid>
+      <description>Github Netlify 网站托管 特点 免费网页托管； 自定义域名解析； 自动更新的免费 SSL/TLS 证书； 无限重定向服务； 步骤 注册并登录 netlify，可点击 New site from Git，将 GitHub 某</description>
+    </item>
+    
+    <item>
       <title>字母的国际拼写</title>
       <link>/cn/2020-07-13/international-spelling-alphabet/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
@@ -930,42 +966,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;</description>
-    </item>
-    
-    <item>
-      <title>紫杉醇标准曲线</title>
-      <link>/cn/2014-03-13/hplc-condition-for-paclitaxel/</link>
-      <pubDate>Thu, 13 Mar 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-03-13/hplc-condition-for-paclitaxel/</guid>
-      <description>色谱条件 色谱柱：Kromasil-C18 (250mm×4.6mm，5μm)；流动相：甲醇-水（65 ：35 )；流速：0.8mL/min ；检测波</description>
-    </item>
-    
-    <item>
-      <title>想你的时候，我在梦里</title>
-      <link>/cn/2014-02-16/when-i-think-of-you/</link>
-      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2014-02-16/when-i-think-of-you/</guid>
-      <description>我在一个梦里 梦里有我的慕青 阳光 微风 还有那熟悉的笑容 我顽皮地对着慕青笑 像儿时一样 奔跑 我脱下外套 递给慕青 慕青没有接 只是微笑着 细声地说 放那边就好 那</description>
-    </item>
-    
-    <item>
-      <title>2013 年终总结</title>
-      <link>/cn/2014-01-30/2013-annual-review/</link>
-      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2014-01-30/2013-annual-review/</guid>
-      <description>时间如流⽔ 2 月里悲伤的春假。 3 月是一场关于失去的战争 （little little one）。 5月20号： 德国驻华使馆关于通过审核的证书； 澳⼤录取的通知。 6</description>
-    </item>
-    
-    <item>
-      <title>一场记忆的提取</title>
-      <link>/cn/2013-12-20/storage-of-memory/</link>
-      <pubDate>Fri, 20 Dec 2013 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2013-12-20/storage-of-memory/</guid>
-      <description>觉得身体很沉重。 开始了一场梦： 土豪站在门口，我向他问好：回来了？什么时候回来的？ 土豪说：昨天晚上两点多。说完这话，土豪转身回房。 土豪说一起去</description>
     </item>
     
   </channel>
