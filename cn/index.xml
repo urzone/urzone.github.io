@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>《高级动物》</title>
+      <link>/cn/2020-08-04/human-beings/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-04/human-beings/</guid>
+      <description>物理的距离，是个定数。而人心的距离，却说不清楚。就像你抬头看见的光，它们来自哪里，这似乎并不重要。可能更重要的是，它们存在着，并且在那一刻，</description>
+    </item>
+    
+    <item>
       <title>逼良为娼</title>
       <link>/cn/2020-07-31/forced-prostitution/</link>
       <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
@@ -921,51 +930,6 @@
       
       <guid>/cn/2014-04-20/rhodamine/</guid>
       <description>AB-8, D151, DA-201, NKA-9, D311. JWHO1S CB1R LD605, ADS-3, ADS-5, XAD7. 等渗溶液 等张溶液 区别 Rhodamine 123是一种可以通过细胞膜的选择性染色活细胞线粒体的荧光染料，呈黄绿色荧光。广泛用作检测线粒体膜</description>
-    </item>
-    
-    <item>
-      <title>制剂载药</title>
-      <link>/cn/2014-04-02/dds-for-gambogic-acid/</link>
-      <pubDate>Wed, 02 Apr 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-04-02/dds-for-gambogic-acid/</guid>
-      <description>&lt;h3 id=&#34;载药测试&#34;&gt;载药测试&lt;/h3&gt;
-&lt;p&gt;有机相1ml, 材料10mg, 药物1mg。水相10ml：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;包载紫杉醇：调节投料比，调节油水相比，改变有机相组成，均无法完成对紫杉醇的包裹，在胶束制备过程中直接导致药物连同材料一起析出，无法形成胶束。（试验重复，结果一样）&lt;/li&gt;
-&lt;li&gt;HPLC绘制标准曲线&lt;/li&gt;
-&lt;li&gt;包载藤黄酸：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;Oil Phase&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Water Phase&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;PDI&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;EE(%)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;Acetone&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;126.2 ± 0.23&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.450 ± 0.07&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;61.24 ± 0.77&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ACN&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;142.2 ± 0.33&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.213 ± 0.04&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;70.98 ± 0.27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;Methanol&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;160.3 ± 0.43&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.153 ± 0.14&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;71.86 ± 0.27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</description>
     </item>
     
   </channel>
