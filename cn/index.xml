@@ -12,7 +12,16 @@
     
     
     <item>
-      <title>浮華</title>
+      <title>我们</title>
+      <link>/cn/2020-08-08/we/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-08/we/</guid>
+      <description>我们。 夏天砍柴。 冬天喂马。 春天种下樱桃树。 秋天看着白月牙。 走过四季。 披上华发。</description>
+    </item>
+    
+    <item>
+      <title>莫名的灰</title>
       <link>/cn/2020-08-06/life/</link>
       <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
       
@@ -21,12 +30,12 @@
     </item>
     
     <item>
-      <title>《高级动物》</title>
+      <title>《高級動物》</title>
       <link>/cn/2020-08-04/human-beings/</link>
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/cn/2020-08-04/human-beings/</guid>
-      <description>物理的距离，是个定数。而人心的距离，却说不清楚。就像你抬头看见的光，它们来自哪里，这似乎并不重要。可能更重要的是，它们存在着，并且在那一刻，</description>
+      <description>物理的距離，是個定數。而人心的距離，卻說不清楚。就像你擡頭看見的光，它們來自哪裏，這似乎並不重要。可能更重要的是，它們存在着，並且在那一刻，</description>
     </item>
     
     <item>
@@ -921,15 +930,6 @@
 &lt;li&gt;一浓度固定的供试液，采用 HPLC 紫外检测，当进样量加倍时，峰高、峰面积如何变化？&lt;/li&gt;
 &lt;li&gt;在线性范围以内：进样量加倍，因为紫外检测器属于摩尔型检测器，理论上峰面积会加倍，如果把峰当作三角形来计算的话，底边（峰宽不变）不变的时候，峰高确实会高一倍；但是实际上面积是大一倍，实际峰高只会高一些，不到一倍，因为峰型的影响因素很多，峰宽也会改变。线性范围以外没有实际讨论意义。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>大川芎方 &#43; 左金方</title>
-      <link>/cn/2014-04-22/ligusticum-wallichii-golden-cornus/</link>
-      <pubDate>Tue, 22 Apr 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-04-22/ligusticum-wallichii-golden-cornus/</guid>
-      <description>大川芎方 天麻+川芎 &amp;mdash;&amp;gt; 微丸。 整理中文文献，探讨研究思路：基于大川芎方，首先对其主要成分进行分析，确认其效应成分；其次考察其效应组分的提取纯化工</description>
     </item>
     
   </channel>
