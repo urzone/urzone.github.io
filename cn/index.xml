@@ -12,12 +12,21 @@
     
     
     <item>
+      <title>谋杀梦里的青蛙</title>
+      <link>/cn/2020-08-10/a-dream-about-the-little-frog/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-10/a-dream-about-the-little-frog/</guid>
+      <description>梦里一场追逐，听说抓住那只灰黑色的小青蛙，就可以挽救爱人在人世的旅途。于是，我拼尽全力地抓在手里，不敢一丝放松，毕竟它也是个活物。 谋杀的开始</description>
+    </item>
+    
+    <item>
       <title>我们</title>
       <link>/cn/2020-08-08/we/</link>
       <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/cn/2020-08-08/we/</guid>
-      <description>我们。 夏天砍柴。 冬天喂马。 春天种下樱桃树。 秋天看着白月牙。 走过四季。 披上华发。</description>
+      <description>我们。 夏天砍柴。 冬天喂马。 春天种下樱桃树。 秋天看着白月牙。 走过四季。 披上华发。 我们。 还是我们啊。</description>
     </item>
     
     <item>
@@ -917,19 +926,6 @@
       
       <guid>/cn/2014-05-07/what-you-said/</guid>
       <description>你说 你去过很多地方 看过很多风景 走过很多路 可是你从来不留影 你说 留下的残影 都是往后破碎的证据 你不愿意 你说 没有你的地方 亦没有风景</description>
-    </item>
-    
-    <item>
-      <title>HPLC 之峰高与面积</title>
-      <link>/cn/2014-04-25/hplc-peak-hight-vs-area/</link>
-      <pubDate>Fri, 25 Apr 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-04-25/hplc-peak-hight-vs-area/</guid>
-      <description>&lt;h3 id=&#34;hplc---紫外检测&#34;&gt;HPLC - 紫外检测&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;一浓度固定的供试液，采用 HPLC 紫外检测，当进样量加倍时，峰高、峰面积如何变化？&lt;/li&gt;
-&lt;li&gt;在线性范围以内：进样量加倍，因为紫外检测器属于摩尔型检测器，理论上峰面积会加倍，如果把峰当作三角形来计算的话，底边（峰宽不变）不变的时候，峰高确实会高一倍；但是实际上面积是大一倍，实际峰高只会高一些，不到一倍，因为峰型的影响因素很多，峰宽也会改变。线性范围以外没有实际讨论意义。&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>
