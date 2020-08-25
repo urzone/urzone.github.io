@@ -12,7 +12,70 @@
     
     
     <item>
-      <title>谋杀梦里的青蛙</title>
+      <title>老年班生活</title>
+      <link>/cn/2020-08-25/when-i-am-old/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-25/when-i-am-old/</guid>
+      <description>晚上和扫年一同回家。路过停车场的时候，我看见扫年头两侧间杂在黑发里隐约的白发。 我调侃到：&amp;ldquo;这真是一个极易用脑过度的行业啊，记得我</description>
+    </item>
+    
+    <item>
+      <title>没有答案</title>
+      <link>/cn/2020-08-23/our-life/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-23/our-life/</guid>
+      <description>我们的一生，究竟会走向哪里。其实，大略想来，这个问题，我是没有答案的。 冬冬问我，如果能预知未来，你会想要知道自己的未来吗？我不知道怎么回答这</description>
+    </item>
+    
+    <item>
+      <title>定風波</title>
+      <link>/cn/2020-08-22/lyrics-to-the-melody-of-a-pacified-storm/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-22/lyrics-to-the-melody-of-a-pacified-storm/</guid>
+      <description>三月七日，沙湖道中遇雨，雨具先去，同行皆狼狽，余獨不覺。已而遂晴，故作此。 莫聽穿林打葉聲，何妨吟嘯且徐行； 竹杖芒鞋輕勝馬，誰怕？一蓑烟雨任平</description>
+    </item>
+    
+    <item>
+      <title>共轭体系</title>
+      <link>/cn/2020-08-19/conjugation/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-19/conjugation/</guid>
+      <description>在量子力学里，用波函数（Wave Function）来描述量子系统的量子态。 价键理论 价键理论（Valence-bond Theory），一种获得</description>
+    </item>
+    
+    <item>
+      <title>两棵树</title>
+      <link>/cn/2020-08-18/two-trees/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-18/two-trees/</guid>
+      <description>鲁迅在《秋夜》中说：&amp;ldquo;在我的后园，可以看见墙外有两株树，一株是枣树，还有一株也是枣树。&amp;rdquo; 李志在《山阴路的夏天》里唱到</description>
+    </item>
+    
+    <item>
+      <title>用 ffmpeg 合并音频和视频文件</title>
+      <link>/cn/2020-08-12/combine-audio-and-video-with-ffmpeg/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-12/combine-audio-and-video-with-ffmpeg/</guid>
+      <description>最近下载了一个适合网络传输的视频文件，却是没有声音的。 遂又单独下载音频文件，而后祭出音视频处理神器 ffmpeg 用 ffmpeg 合并 mp4 和 m4a 文件： ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4</description>
+    </item>
+    
+    <item>
+      <title>百花杀</title>
+      <link>/cn/2020-08-11/nausea/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-08-11/nausea/</guid>
+      <description>突然知道，原来一些人一些事儿，只有当自己被狠狠地算计过之后才知道自己被坑了。如果这都不是愚蠢，那什么是愚蠢？想起来，这几年的付出，终究感觉像</description>
+    </item>
+    
+    <item>
+      <title>爱人与青蛙</title>
       <link>/cn/2020-08-10/a-dream-about-the-little-frog/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
@@ -143,7 +206,7 @@
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/cn/2020-07-01/stability/</guid>
-      <description>“三年后又三年，三年后又三年，差不多十年了，老大”。 ——《无间道》 我想，我终于还是被锤醒了。现实中的现实锤趴了我理想中的现实。 突然回过神来，</description>
+      <description>“三年后又三年，三年后又三年，差不多十年了，老大”。 ——《无间道》 突然回过神来，安，其实是一个很重要的因素。唯有如此，才能让人没有后顾之忧地</description>
     </item>
     
     <item>
@@ -863,69 +926,6 @@
       
       <guid>/cn/2015-11-30/music-listened-in-macau/</guid>
       <description>A list of songs palyed most during my stay in Place M. Maybe now my life belongs to her. 播放次数降序 曲名与网易云链 1 流川枫与苍井空 2 历历万乡 3 一生所爱 4 鬼迷心窍 5 心术 6 酒吧叙事体 7 相见难别亦</description>
-    </item>
-    
-    <item>
-      <title>“子荒，因子远。”</title>
-      <link>/cn/2015-05-23/too-far-away/</link>
-      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2015-05-23/too-far-away/</guid>
-      <description>梦里还乡。 脑海里浮现的文字。 “你走以后，我的山谷从此一片荒芜。” 一阵奔跑，似家乡麦黄。 远处飘渺的声音。 “子荒，因子远。” 不解。</description>
-    </item>
-    
-    <item>
-      <title>家乡</title>
-      <link>/cn/2015-05-21/hometown/</link>
-      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2015-05-21/hometown/</guid>
-      <description>第一次听到赵雷的家乡的时候，大致是去年圣诞节前夕。那时候因为实验课题的一些事情，心情很烦躁。春假临近，独自一人身处异乡，望着天空惨谈的色调，</description>
-    </item>
-    
-    <item>
-      <title>鬼梦</title>
-      <link>/cn/2015-05-14/the-ghost-in-a-dream/</link>
-      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2015-05-14/the-ghost-in-a-dream/</guid>
-      <description>夜 算不得深 宿舍的小屋 分明只有 我一个人 起身走过衣橱 背后晃过 某个小女孩 扎着马尾 穿着一身彩色衣服 恍惚之间 夹带着飘渺的笑声 似有若无 又仿佛 她能直穿障碍</description>
-    </item>
-    
-    <item>
-      <title>梦里的晚霞</title>
-      <link>/cn/2015-04-27/the-sunset-in-my-dream/</link>
-      <pubDate>Mon, 27 Apr 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2015-04-27/the-sunset-in-my-dream/</guid>
-      <description>梦里 你拉着我去拍晚霞 走过的风景 四季如画 一路寻来 错过了什么 就这么奔着 随它 一瞬间 背山里有晚霞 我绕圈 追赶着霞光 失控的相机 什么也没有记录下 回头望你 你</description>
-    </item>
-    
-    <item>
-      <title>纪念白服的青春，可是英雄在塞外</title>
-      <link>/cn/2014-12-31/memory-of-youth-but-i-am-too-far-away/</link>
-      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2014-12-31/memory-of-youth-but-i-am-too-far-away/</guid>
-      <description>她说：你就要走了 - 花粥。 “你就要走了，你对我说着 像有些悲伤，眼底却藏着欣喜 我看出来了，也不拆穿了 毕竟你终于，能离开这里了 听说外面的世界是特别</description>
-    </item>
-    
-    <item>
-      <title>慕青</title>
-      <link>/cn/2014-06-11/mum/</link>
-      <pubDate>Wed, 11 Jun 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-06-11/mum/</guid>
-      <description>惊讶 背景里 慕青面向着火炉 背对着我 慕青问我， 星星考上高中了吗？ 我赶紧向前， 有些许惊讶 我说，星星都大学毕业了呀， 都有小闺女了。 慕青对着我 一脸豁然</description>
-    </item>
-    
-    <item>
-      <title>你说</title>
-      <link>/cn/2014-05-07/what-you-said/</link>
-      <pubDate>Wed, 07 May 2014 18:16:28 +0000</pubDate>
-      
-      <guid>/cn/2014-05-07/what-you-said/</guid>
-      <description>你说 你去过很多地方 看过很多风景 走过很多路 可是你从来不留影 你说 留下的残影 都是往后破碎的证据 你不愿意 你说 没有你的地方 亦没有风景</description>
     </item>
     
   </channel>

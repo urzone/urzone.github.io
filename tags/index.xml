@@ -6,10 +6,19 @@
     <description>Recent content in Tags on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FFmpeg</title>
+      <link>/tags/ffmpeg/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Domain mail service</title>
@@ -579,15 +588,6 @@
     </item>
     
     <item>
-      <title>FFmpeg</title>
-      <link>/tags/ffmpeg/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>youtube-dl</title>
       <link>/tags/youtube-dl/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
@@ -800,6 +800,15 @@
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>soar</title>
+      <link>/tags/soar/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/soar/</guid>
       <description></description>
     </item>
     

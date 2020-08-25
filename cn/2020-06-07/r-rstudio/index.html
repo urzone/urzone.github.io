@@ -130,7 +130,9 @@ brew cask install pandoc-citeproc #
 <pre><code>export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 </code></pre><h3 id="自定义-r-包的安装位置-说明之-一1-二2-三3">自定义 R 包的安装位置 说明之 <a href="https://blog.csdn.net/kuyu05/article/details/83303803">一</a> <a href="https://www.accelebrate.com/library/how-to-articles/r-rstudio-library">二</a> <a href="https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work">三</a></h3>
-<p>R 在启动时会自动加载的其配置文件，可通过修改该配置文件来修改包的默认安装位置，比如我们将其安装到 <code>~/Rpackages</code>。</p>
+<p>查看 R 包的安装位置：</p>
+<pre><code>.libPaths()
+</code></pre><p>R 在启动时会自动加载的其配置文件，可通过修改该配置文件来修改包的默认安装位置，比如我们将其安装到 <code>~/Rpackages</code>。</p>
 <p>homebrew 安装的 R 的位置为 <code>/usr/local/Cellar/</code>，其配置文件的位置 <code>/usr/local/Cellar/r/4.0.0_1/lib/R/library/base/R/Rprofile</code> （注意版本号的不同）。</p>
 <p>更新 R 以后，可以找到该文件，把上述包的位置重新写入即可，不必重新下载安装所有包，省事不少。</p>
 <pre><code>#Rprofile.site

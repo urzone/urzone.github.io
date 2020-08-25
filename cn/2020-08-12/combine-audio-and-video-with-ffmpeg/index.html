@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>谋 - XiaO | 缄默之语</title>
-    <meta property="og:title" content="谋 - XiaO | 缄默之语">
+    <title>用 ffmpeg 合并音频和视频文件 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="用 ffmpeg 合并音频和视频文件 - XiaO | 缄默之语">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,12 +15,14 @@
 
     
       
-      <meta property="description" content="想来想去，在一个自己并不占优势的方面，若依然去走一个粗暴地比拼数量的模式，非常明显，这绝对是下下策。
-若果如谋圣所言，这个世界的运作方式，其实是利益。那么所谓共谋，其本质就是利益交换，用自己的优势去交换对方的所有。如若你的优势，恰又是对方所需，那么交换达成的可能性就比较大了。
-在一个新老模式更迭的状态下，妄论这新年代的开端，就已知的信息而言（西北工业，西安交通及南方技术），这已是一个全面铺开的局面 &amp;hellip;">
-      <meta property="og:description" content="想来想去，在一个自己并不占优势的方面，若依然去走一个粗暴地比拼数量的模式，非常明显，这绝对是下下策。
-若果如谋圣所言，这个世界的运作方式，其实是利益。那么所谓共谋，其本质就是利益交换，用自己的优势去交换对方的所有。如若你的优势，恰又是对方所需，那么交换达成的可能性就比较大了。
-在一个新老模式更迭的状态下，妄论这新年代的开端，就已知的信息而言（西北工业，西安交通及南方技术），这已是一个全面铺开的局面 &amp;hellip;">
+      <meta property="description" content="最近下载了一个适合网络传输的视频文件，却是没有声音的。 遂又单独下载音频文件，而后祭出音视频处理神器 ffmpeg
+用 ffmpeg 合并 mp4 和 m4a 文件：
+ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4 用 ffmpeg 合并 GIF 和 m4a 文件：
+">
+      <meta property="og:description" content="最近下载了一个适合网络传输的视频文件，却是没有声音的。 遂又单独下载音频文件，而后祭出音视频处理神器 ffmpeg
+用 ffmpeg 合并 mp4 和 m4a 文件：
+ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4 用 ffmpeg 合并 GIF 和 m4a 文件：
+">
       
     
 
@@ -100,11 +102,11 @@
     <article class="main">
       <header class="title">
       
-<h1>谋</h1>
+<h1>用 ffmpeg 合并音频和视频文件</h1>
 
 
 <h3>XiaO / 
-2020-07-05</h3>
+2020-08-12</h3>
 
 <hr>
 
@@ -113,20 +115,19 @@
 
 
 
-<p>想来想去，在一个自己并不占优势的方面，若依然去走一个粗暴地比拼数量的模式，非常明显，这绝对是下下策。</p>
-<p>若果如谋圣所言，这个世界的运作方式，其实是利益。那么所谓共谋，其本质就是利益交换，用自己的优势去交换对方的所有。如若你的优势，恰又是对方所需，那么交换达成的可能性就比较大了。</p>
-<p>在一个新老模式更迭的状态下，妄论这新年代的开端，就已知的信息而言（西北工业，西安交通及南方技术），这已是一个全面铺开的局面了。所谓君子顺势而为：</p>
-<ul>
-<li>充分利用自己的核心优势，CC 结合。[人 资]</li>
-<li>高水平产出。[蜇伏而待]</li>
-</ul>
-
+<p>最近下载了一个适合网络传输的视频文件，却是没有声音的。
+遂又单独下载音频文件，而后祭出音视频处理神器 <a href="https://www.ffmpeg.org/">ffmpeg</a></p>
+<p>用 ffmpeg 合并 mp4 和 m4a 文件：</p>
+<pre><code>ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4
+</code></pre><p>用 ffmpeg 合并 GIF 和 m4a 文件：</p>
+<pre><code>ffmpeg -i video.gif -i audio.m4a -c:v copy -c:a copy output.mp4
+</code></pre>
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/2020-07-01/stability/">安</a></span>
-  <span class="nav-next"><a href="/cn/2020-07-06/conundrum/">谜</a> &rarr;</span>
+  <span class="nav-prev">&larr; <a href="/cn/2020-08-11/nausea/">百花杀</a></span>
+  <span class="nav-next"><a href="/cn/2020-08-18/two-trees/">两棵树</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -134,11 +135,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/cn\/2020-07-01\/stability\/';
+    url = '\/cn\/2020-08-11\/nausea\/';
     
   } else if (e.which == 39) {  
     
-    url = '\/cn\/2020-07-06\/conundrum\/';
+    url = '\/cn\/2020-08-18\/two-trees\/';
     
   }
   if (url) window.location = url;
