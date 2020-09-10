@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>PDF 压缩</title>
+      <link>/cn/2020-09-10/pdf-compressor/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-09-10/pdf-compressor/</guid>
+      <description>工作中，时常会需要对 PDF 进行压缩处理。于是在 Github 上翻找了一下，看到了这个 PDF Toaster 两步安装 安装 ghostscript. Terminal 中输入如下代码 brew install ghostscript 下载 PDF Toaster。解压后，按</description>
+    </item>
+    
+    <item>
+      <title>可爱</title>
+      <link>/cn/2020-09-09/adorable/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/2020-09-09/adorable/</guid>
+      <description>可爱。 无从说起，不知道自己是否具备这个属性。也或者说，自己并不清楚所谓可爱到底意味着什么，就像自己并不能理解自己一样。 《恋人絮语》中有关于可</description>
+    </item>
+    
+    <item>
       <title>郑州</title>
       <link>/cn/2020-09-07/2-be/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
@@ -906,24 +924,6 @@
       
       <guid>/cn/2016-03-02/i-know-you-are-always-with-us/</guid>
       <description>事件一 大约从 15 号开始，由于家里来了客人，丹丹的二姐，而且还带了小孩子，小孩子认生，晚上会睡不好觉，所以我搬去客厅，所以丹丹二姐和小孩子在卧室</description>
-    </item>
-    
-    <item>
-      <title>未成行的送别</title>
-      <link>/cn/2016-02-16/the-unspoken-farewell/</link>
-      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2016-02-16/the-unspoken-farewell/</guid>
-      <description>关于你，我人生的天平是偏向你的，关于你，也是我第一次感受到这么强烈的不舍。正如我在去车站接你的路上，心底阵阵的忐忑，又有明知次日你将离别，一</description>
-    </item>
-    
-    <item>
-      <title>2015 年终总结</title>
-      <link>/cn/2015-12-31/2015-annual-review/</link>
-      <pubDate>Thu, 31 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/2015-12-31/2015-annual-review/</guid>
-      <description>一月： 制剂部分实验全部完成，老板答应的细胞实验出尔反尔； 着手文章 (Paper) 初稿的修改和毕业论文 (Thesis) 初稿的撰写。 二月： 在师姐的帮助下，细胞实验两周内全部</description>
     </item>
     
   </channel>
