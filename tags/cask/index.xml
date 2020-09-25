@@ -6,11 +6,7 @@
     <description>Recent content in cask on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/cask/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homebrew 个人使用记录</title>
       <link>/cn/2020-06-11/homebrew/</link>

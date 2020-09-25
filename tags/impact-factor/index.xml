@@ -6,11 +6,7 @@
     <description>Recent content in impact factor on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Wed, 24 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/impact-factor/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/impact-factor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实时影响因子的计算</title>
       <link>/cn/2020-06-24/stupid-chinese-index/</link>

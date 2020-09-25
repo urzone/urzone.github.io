@@ -138,7 +138,7 @@ nobel_winners <span style="color:#f92672">&lt;-</span> df <span style="color:#f9
          prize_age <span style="color:#f92672">=</span> prize_year <span style="color:#f92672">-</span> <span style="color:#a6e22e">year</span>(birth_date),
          birth_decade <span style="color:#f92672">=</span>  <span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">year</span>(birth_date)<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> )
 </code></pre></div><h3 id="figure-1">Figure 1</h3>
-<p>Distribution of Nobel Prize Laureates&rsquo; ages in different dacades.</p>
+<p>Distribution of Nobel Prize Laureates' ages in different dacades.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">group_by</span>(prize_decade) <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, prize_age, fill <span style="color:#f92672">=</span> prize_decade)) <span style="color:#f92672">+</span>
@@ -152,7 +152,7 @@ nobel_winners <span style="color:#f92672">&lt;-</span> df <span style="color:#f9
        y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age (years)&#34;</span>)
 </code></pre></div><p><img src="/media/image/en-20200423-1.svg" alt=""></p>
 <h3 id="figure-2">Figure 2</h3>
-<p>Distribution of Nobel Prize Laureates&rsquo; ages in different subjects.</p>
+<p>Distribution of Nobel Prize Laureates' ages in different subjects.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">  nobel_winners <span style="color:#f92672">%&gt;%</span> 
   <span style="color:#a6e22e">mutate</span>(category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_reorder</span>(category, prize_age, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)) <span style="color:#f92672">%&gt;%</span>
   <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(y <span style="color:#f92672">=</span> prize_age,

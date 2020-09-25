@@ -6,11 +6,7 @@
     <description>Recent content in svg on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/svg/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/svg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SVG 图片批量压缩</title>
       <link>/cn/2020-06-12/svg-compressor/</link>

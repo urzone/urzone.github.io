@@ -6,11 +6,7 @@
     <description>Recent content in OpenPGP on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/openpgp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/openpgp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPG</title>
       <link>/cn/2020-06-14/gpg/</link>

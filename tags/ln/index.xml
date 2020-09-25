@@ -6,11 +6,7 @@
     <description>Recent content in ln on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/ln/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ln/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac 下用 link 创建链接</title>
       <link>/cn/2020-06-11/link/</link>

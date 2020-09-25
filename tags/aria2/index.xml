@@ -6,11 +6,7 @@
     <description>Recent content in Aria2 on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/aria2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/aria2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>组合拳之视频下载与处理</title>
       <link>/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
