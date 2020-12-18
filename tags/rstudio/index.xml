@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rstudio on XiaO | 缄默之语</title>
-    <link>/tags/rstudio/</link>
+    <link>https://urz.one/tags/rstudio/</link>
     <description>Recent content in rstudio on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 R 进行绘图与写作</title>
-      <link>/cn/2020-06-07/r-rstudio/</link>
+      <link>https://urz.one/cn/2020-06-07/r-rstudio/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-06-07/r-rstudio/</guid>
+      <guid>https://urz.one/cn/2020-06-07/r-rstudio/</guid>
       <description>安装 R，RStudio 与 pandoc brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc 的引文格式。 Pandoc 默认管理引文的方法是使用 pando</description>
     </item>
     
     <item>
       <title>Rstudio 下增添复制的问题</title>
-      <link>/cn/2020-05-13/copy-and-paste-under-rstudio/</link>
+      <link>https://urz.one/cn/2020-05-13/copy-and-paste-under-rstudio/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-05-13/copy-and-paste-under-rstudio/</guid>
+      <guid>https://urz.one/cn/2020-05-13/copy-and-paste-under-rstudio/</guid>
       <description>记录一个剪贴板的复制问题。 从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有</description>
     </item>
     

@@ -23,7 +23,7 @@
     
     
     
-    <meta name="twitter:image" content="/images/logo.png">
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
     
     
 
@@ -136,7 +136,7 @@ export LC_ALL=en_GB.UTF-8
 <p>homebrew 安装的 R 的位置为 <code>/usr/local/Cellar/</code>，其配置文件的位置 <code>/usr/local/Cellar/r/4.0.0_1/lib/R/library/base/R/Rprofile</code> （注意版本号的不同）。</p>
 <p>更新 R 以后，可以找到该文件，把上述包的位置重新写入即可，不必重新下载安装所有包，省事不少。</p>
 <pre><code>#Rprofile.site
-.libPaths(c(&quot;~/Rpackages&quot;, .libPaths()))
+.libPaths( c( &quot;~/Rpackages&quot; , .libPaths() ) )
 </code></pre><h3 id="安装-r-包">安装 R 包</h3>
 <p>启动 RStudio，安装 R 包。</p>
 <pre><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;,&quot;svglite&quot;,&quot;ggalt&quot;)) # 用 R 画图

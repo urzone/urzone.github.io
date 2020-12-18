@@ -8,7 +8,7 @@
     /*background: #fafafa;*/
     width: 200px;
     padding: 2em 1em;
-    background-color: #232222;
+    background-color: #202020;
   }
   .main {
     margin-left: calc(50% - 250px);
@@ -48,18 +48,18 @@ a {
 }
 a {
   color: #b8b8b8;
-  border-bottom: 1px solid #893128;
+  border-bottom: 1px solid #cc342c;
 }
 
 a:hover {
-  border-bottom: 2px solid #893128;
+  border-bottom: 2px solid #cc342c;
 }
 
 .main {
   padding: 2em 40px;
   hyphens: manual;
   border-left: none;
-  background-color: #232222;
+  background-color: #202020;
   text-align: justify;
   /*  background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
   background-size: 20px 20px;
@@ -86,7 +86,7 @@ a:hover,
 }
 code {
   hyphens: none;
-  background: #232222;
+  background: #202020;
 }
 iframe,
 twitterwidget,
@@ -96,7 +96,7 @@ video {
   margin: auto;
 }
 #TableOfContents {
-  background-color: #232222 /*#f8f8f8*/;
+  background-color: #202020 /*#f8f8f8*/;
   padding: 0.5em;
 }
 table {
@@ -149,7 +149,7 @@ img[src$='#border'] {
   box-shadow: 5px 5px 5px #eee;
 }
 .cn del {
-  background-color: #414141 /*#232222*/;
+  background-color: #414141 /*#202020*/;
 }
 .cn del:hover {
   background-color: inherit;
@@ -203,14 +203,14 @@ img[src$='#border'] {
   .masthead .menu a {
     display: inline-block;
     padding: 5px 10px;
-    background: #232222;
+    background: #202020;
     color: #fff;
     border-radius: 5px;
   }
   .masthead .menu .active a {
     background: none;
-    border: 1px solid #232222;
-    color: #000;
+    border: 1px solid #202020;
+    color: #cc342c;
   }
   .masthead .menu li,
   .masthead .menu li:first-child {
@@ -247,5 +247,5 @@ ul ul {
 
 th,
 td {
-  background-color: #232222;
+  background-color: #202020;
 }

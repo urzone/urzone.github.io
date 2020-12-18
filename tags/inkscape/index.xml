@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>inkscape on XiaO | 缄默之语</title>
-    <link>/tags/inkscape/</link>
+    <link>https://urz.one/tags/inkscape/</link>
     <description>Recent content in inkscape on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 inkscape 将图片转换为 emf 格式</title>
-      <link>/cn/2020-05-29/inkscape/</link>
+      <link>https://urz.one/cn/2020-05-29/inkscape/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-05-29/inkscape/</guid>
+      <guid>https://urz.one/cn/2020-05-29/inkscape/</guid>
       <description>在 office 文档中直接插入矢量图，还真不是一件容易的事情。它奇葩地并不支持将一般作图软件生成的 pdf 或 svg 文件直接插入文档中，而需要 emf 文件格式。 下面使用 i</description>
     </item>
     

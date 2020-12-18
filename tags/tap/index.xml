@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tap on XiaO | 缄默之语</title>
-    <link>/tags/tap/</link>
+    <link>https://urz.one/tags/tap/</link>
     <description>Recent content in tap on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/tap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homebrew 个人使用记录</title>
-      <link>/cn/2020-06-11/homebrew/</link>
+      <link>https://urz.one/cn/2020-06-11/homebrew/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-06-11/homebrew/</guid>
+      <guid>https://urz.one/cn/2020-06-11/homebrew/</guid>
       <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
     </item>
     

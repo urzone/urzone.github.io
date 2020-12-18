@@ -2,45 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drafts on XiaO | 缄默之语</title>
-    <link>/draft/</link>
+    <link>https://urz.one/draft/</link>
     <description>Recent content in Drafts on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/draft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>羊皮之下</title>
-      <link>/draft/under-the-skin/</link>
+      <link>https://urz.one/draft/under-the-skin/</link>
       <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/draft/under-the-skin/</guid>
+      <guid>https://urz.one/draft/under-the-skin/</guid>
       <description>山不在高，有仙则名，水不在深，有龙则灵。 斯是陋室，唯吾德馨。 当你看到，其面对利益以一种欺压的方式对待真正的贡献者时，你就应该明白，其口中所标</description>
     </item>
     
     <item>
       <title>基于分子结构的无载体纳米递送体系</title>
-      <link>/draft/strucure-based-design-of-drug-self-delviery-systems/</link>
+      <link>https://urz.one/draft/strucure-based-design-of-drug-self-delviery-systems/</link>
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/draft/strucure-based-design-of-drug-self-delviery-systems/</guid>
+      <guid>https://urz.one/draft/strucure-based-design-of-drug-self-delviery-systems/</guid>
       <description>研究背景 日本科学家片冈一则因开创基于载体的纳米药物递送系统而被视为竞争诺贝尔生理学或医学奖的有力人选。该递送系统利用两亲性高分子材料在水中能</description>
     </item>
     
     <item>
-      <title>Pubmed PubReMiner</title>
-      <link>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/draft/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
-      <description>Usually, we use Pubmed to search for the bio-related researches in literature. This tool is very useful for the daily work for academic researchers. Besides, it&amp;rsquo;s totaly free for the public, which means very one can use this tool if they want to find bio-related studies.
-irinotecan https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi</description>
-    </item>
-    
-    <item>
       <title>Using R</title>
-      <link>/draft/using-r/</link>
+      <link>https://urz.one/draft/using-r/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/draft/using-r/</guid>
+      <guid>https://urz.one/draft/using-r/</guid>
       <description>Install Xcode command line tools for using commands like make, GCC, clang, perl, svn, git, size, strip, strings, libtool, cpp&amp;hellip;
 xcode-select --install
 Install Homebrew
@@ -51,19 +41,19 @@ brew cask install r brew link --overwrite r brew cask uninstall --force brew cas
     
     <item>
       <title>Manuscript is being considered for acceptance</title>
-      <link>/draft/manuscript-is-being-considered-for-acceptance/</link>
+      <link>https://urz.one/draft/manuscript-is-being-considered-for-acceptance/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/draft/manuscript-is-being-considered-for-acceptance/</guid>
+      <guid>https://urz.one/draft/manuscript-is-being-considered-for-acceptance/</guid>
       <description>Thanks for the positive and valuable comments from the reviewers and the editor. Actually, several things about these comments are very intresting. For instance, I don&amp;rsquo;t know why there is only one sentence from Reviewr 1 alrough the comment is very positive. The second thing is the review time for this manuscript is so long that I suddently recieve this email after more than half a year. I&amp;rsquo;m wondering if it takes such long time to write down those letters.</description>
     </item>
     
     <item>
       <title>Polymeric micelles</title>
-      <link>/draft/polymeric-micelles/</link>
+      <link>https://urz.one/draft/polymeric-micelles/</link>
       <pubDate>Thu, 31 Oct 2013 14:25:50 +0000</pubDate>
       
-      <guid>/draft/polymeric-micelles/</guid>
+      <guid>https://urz.one/draft/polymeric-micelles/</guid>
       <description>&lt;h2 id=&#34;polymeric-micelles&#34;&gt;Polymeric micelles&lt;/h2&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;h3 id=&#34;polymeric-micelles-1&#34;&gt;Polymeric micelles&lt;/h3&gt;

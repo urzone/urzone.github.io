@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>svg on XiaO | 缄默之语</title>
-    <link>/tags/svg/</link>
+    <link>https://urz.one/tags/svg/</link>
     <description>Recent content in svg on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/svg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/svg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SVG 图片批量压缩</title>
-      <link>/cn/2020-06-12/svg-compressor/</link>
+      <link>https://urz.one/cn/2020-06-12/svg-compressor/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-06-12/svg-compressor/</guid>
+      <guid>https://urz.one/cn/2020-06-12/svg-compressor/</guid>
       <description>SVG (Scalable Vector Graphics) 可缩放矢量图形是一种基于可扩展标记语言（XML），用于描述二维矢量图形的图形格式。 SVG 图片特点 SVG 图形文件可读，SVG 文件其实只是普通的</description>
     </item>
     
     <item>
       <title>用 inkscape 将图片转换为 emf 格式</title>
-      <link>/cn/2020-05-29/inkscape/</link>
+      <link>https://urz.one/cn/2020-05-29/inkscape/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-05-29/inkscape/</guid>
+      <guid>https://urz.one/cn/2020-05-29/inkscape/</guid>
       <description>在 office 文档中直接插入矢量图，还真不是一件容易的事情。它奇葩地并不支持将一般作图软件生成的 pdf 或 svg 文件直接插入文档中，而需要 emf 文件格式。 下面使用 i</description>
     </item>
     

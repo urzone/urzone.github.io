@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LaTeX on XiaO | 缄默之语</title>
-    <link>/tags/latex/</link>
+    <link>https://urz.one/tags/latex/</link>
     <description>Recent content in LaTeX on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>撞大运之 tinytex 安装  LaTeX 发行版 TinyTeX</title>
-      <link>/cn/2020-05-17/tinytex-tinytex/</link>
+      <link>https://urz.one/cn/2020-05-17/tinytex-tinytex/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-05-17/tinytex-tinytex/</guid>
+      <guid>https://urz.one/cn/2020-05-17/tinytex-tinytex/</guid>
       <description>更新 R 更新 R 4.0 后，所有的 R 包都不见了。不过好在自己平时所用到的包就那么些个，而且都是广 (tè) 泛 (bié) 使 (dà) 用 (zhòng) 的包，故</description>
     </item>
     

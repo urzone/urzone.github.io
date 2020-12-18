@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>youtube-dl on XiaO | 缄默之语</title>
-    <link>/tags/youtube-dl/</link>
+    <link>https://urz.one/tags/youtube-dl/</link>
     <description>Recent content in youtube-dl on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/youtube-dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/youtube-dl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>组合拳之视频下载与处理</title>
-      <link>/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
+      <link>https://urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
+      <guid>https://urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
       <description>youtube-dl 是谷歌 github 上的一个开源项目，它是一款轻量级的命令行 下载实用工具，可解析下载包括 youtube、youku、腾讯视频、爱奇艺等国内外上百个视频</description>
     </item>
     

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on XiaO | 缄默之语</title>
-    <link>/categories/</link>
+    <link>https://urz.one/categories/</link>
     <description>Recent content in Categories on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cmn-Hans-CN</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>cmn-Hans-CN</language><atom:link href="https://urz.one/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

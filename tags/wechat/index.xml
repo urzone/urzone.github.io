@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wechat on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/wechat/</link>
+    <description>Recent content in wechat on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 08 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/wechat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微信语音转码</title>
+      <link>https://urz.one/cn/2020-10-08/extract-wechat-audio/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2020-10-08/extract-wechat-audio/</guid>
+      <description>微信中朋友发送的语音文件（.silk）转码为可播放格式（譬如 mp3、falc 等），转码后的语音文件可转发或者保存之用。 安装转码依赖工具 gcc 与 ffmpeg</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Molecular docking on XiaO | 缄默之语</title>
-    <link>/tags/molecular-docking/</link>
+    <link>https://urz.one/tags/molecular-docking/</link>
     <description>Recent content in Molecular docking on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/molecular-docking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/molecular-docking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分子对接</title>
-      <link>/cn/2020-06-05/molecular-docking/</link>
+      <link>https://urz.one/cn/2020-06-05/molecular-docking/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/cn/2020-06-05/molecular-docking/</guid>
+      <guid>https://urz.one/cn/2020-06-05/molecular-docking/</guid>
       <description>分子对接 （Molecular docking） 分子对接是一种预测两个分子彼此结合形成稳定复合物时一个分子相对于另一个分子的优选取向的方法。它可</description>
     </item>
     
