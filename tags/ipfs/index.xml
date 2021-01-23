@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ipfs on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/ipfs/</link>
+    <description>Recent content in ipfs on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 IPFS 构建去中心化分布式网站</title>
+      <link>https://urz.one/cn/2021-01-23/ipfs/</link>
+      <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-01-23/ipfs/</guid>
+      <description>IPFS 简介 IPFS，又称“星际文件系统”。简单点说，它是一个点对点的分布式文件系统（和比特币技术一样），通过底层协议，可以让存储在 IPFS 系统上的文件</description>
+    </item>
+    
+  </channel>
+</rss>
