@@ -8,7 +8,34 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>利用 IPFS 构建去中心化分布式网站</title>
+      <title>医药圈创业眷侣</title>
+      <link>https://urz.one/cn/2021-02-14/couples-in-medicinal-industry/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-02-14/couples-in-medicinal-industry/</guid>
+      <description>医药圈一直不乏“夫妻携手创业”的神仙眷侣。往远处数有国内肝素钠原料药企业的创始人李锂和妻子李坦，智飞生物蒋仁生和结发妻子廖晓明；往近处说有孙</description>
+    </item>
+    
+    <item>
+      <title>pip 工具</title>
+      <link>https://urz.one/cn/2021-02-11/pip-tool/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-02-11/pip-tool/</guid>
+      <description>pip 操作 pip 安装 python 包 pip install Somepackage1 Somepackage2 # 安装包 pip install --upgrade Somepackage1 Somepackage2 # 更新包 pip uninstall Somepackage1 Somepackage2 # 安装包 pip 对所有的安装包进行操作 alias pip-upgrade=&amp;quot;pip freeze --user | cut -d&#39;=&#39; -f1 | xargs -n1 pip install -U&amp;quot; # 设置 pip-upgrade 别名更新所有 pip</description>
+    </item>
+    
+    <item>
+      <title>macOS 系统降级</title>
+      <link>https://urz.one/cn/2021-01-27/macos-downgrading/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-01-27/macos-downgrading/</guid>
+      <description>人总是在欲望中想着去尝试，而又每每在尝试后陷入后悔。这似乎是人性的弱点。 三种恢复系统的快捷键 通过 macOS 恢复功能启动：基于 Intel 处理器的 Mac 上，在 Mac 开机</description>
+    </item>
+    
+    <item>
+      <title>IPFS 构建去中心化网站</title>
       <link>https://urz.one/cn/2021-01-23/ipfs/</link>
       <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
       
@@ -879,34 +906,6 @@
       
       <guid>https://urz.one/cn/2019-02-18/a-lady-in-a-pajama/</guid>
       <description>时间是个刽子手，屠杀所有。 不紧不慢，不慌不忙。 而那些留下的树桩一样血淋淋的疤口，则烙在我们的心上。每当我们想起那些过往的时候，它们就会发作，</description>
-    </item>
-    
-    <item>
-      <title>你在过去，思念在风里</title>
-      <link>https://urz.one/cn/2019-02-09/missing-you-so-much/</link>
-      <pubDate>Sat, 09 Feb 2019 09:07:21 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2019-02-09/missing-you-so-much/</guid>
-      <description>&lt;p&gt;我想，人终究是逃不出自己的过往的。那些发生过的曾经，都或深或浅地刻在了我们的心上，无论我们主观上是否愿意。&lt;/p&gt;
-&lt;p&gt;曾听一个朋友说，很喜欢莫奈的画。朋友在法国的时候，曾看到一位头发花白的老人，静静地面对着一幅画，两行泪就兀自下来了。我想，老人的举动，或因对画喜爱，或者因画思人，亦或者兼而有之吧。我自己也很喜欢莫奈的画，然而我很清楚地知道，我远没有被一幅画感动的能力，而只能用自己会被一段曲子感动的心情去理解老人对画的感动。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>化学药品的专利类型及专利布局</title>
-      <link>https://urz.one/cn/2019-02-07/patent-strategies/</link>
-      <pubDate>Thu, 07 Feb 2019 09:07:21 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2019-02-07/patent-strategies/</guid>
-      <description>生物医药行业对知识产权的依存度是非常高的，医药企业对医药知识产权的保护也贯穿于整个药物的生命周期。 化合物专利 化合物专利通常是大家关注的重中之</description>
-    </item>
-    
-    <item>
-      <title>2018 年终总结</title>
-      <link>https://urz.one/cn/2019-02-06/2018-annual-review/</link>
-      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2019-02-06/2018-annual-review/</guid>
-      <description>一月： 很多时候，当你开始犹豫了，其实就已经有了答案。 二月： “你害怕自己太多的改变，难免心生眷念。你害怕自己太快的改变，却醒悟得太晚。” 看，那</description>
     </item>
     
   </channel>
