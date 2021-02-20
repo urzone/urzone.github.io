@@ -34,7 +34,7 @@ body {
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  line-height: 30px;
+  /*line-height: 30px;*/
 }
 
 h1,
