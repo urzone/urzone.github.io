@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>电子书格式转换</title>
+      <link>https://urz.one/cn/2021-02-25/ebook-converter/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-02-25/ebook-converter/</guid>
+      <description>不同平台所使用的电子书的格式不尽相同。于是，很多时候，电子书需要在多个格式之间转换。 此处借用全球最大同性交友网站上的轮子convert-eb</description>
+    </item>
+    
+    <item>
       <title>开往春天的地铁</title>
       <link>https://urz.one/cn/2021-02-18/the-metro-2-spring/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
@@ -897,15 +906,6 @@
       
       <guid>https://urz.one/cn/2019-12-31/2019-annual-review/</guid>
       <description>二月： 我越来越清楚，记录的目的，其实只是为了遗忘。本质上来说，这和提前进入老年痴呆并没有多少区别。只不过，一个是主观愿望，一个是别无选择。 可</description>
-    </item>
-    
-    <item>
-      <title>我开始或者已然失去了你</title>
-      <link>https://urz.one/cn/2019-09-15/farewell/</link>
-      <pubDate>Sun, 15 Sep 2019 20:23:21 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2019-09-15/farewell/</guid>
-      <description>我感觉，我开始或者已然失去你了。就在刚才，在你说不知道的那个瞬间。 下午和方老师一起在村里晒太阳。方老师说，并不是所有的人都会那么想的，有些事</description>
     </item>
     
   </channel>
