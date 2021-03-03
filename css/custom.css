@@ -24,7 +24,8 @@ body {
   padding: 0;
   background-color: #202020 /*#f5f1e9*/ /*#edeae0*/;
   font-size: 16px;
-  /*line-height: 2;*/
+  /*font-weight: 300;*/
+  line-height: 2;
   color: #b8b8b8; 
   word-spacing: 0px;
   -webkit-text-size-adjust: 100%;
