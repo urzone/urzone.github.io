@@ -9,6 +9,18 @@
     <atom:link href="https://urz.one/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Posts</title>
+      <link>https://urz.one/post/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/post/</guid>
+      <description>
+        
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Drafts</title>
       <link>https://urz.one/draft/</link>
       <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
@@ -1966,19 +1978,20 @@ Address:
       <guid>https://urz.one/cn/vitae/</guid>
       <description>
         &lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
-&lt;p&gt;Email：info [at] urz.one；主页：&lt;a href=&#34;https://urz.one&#34;&gt;https://urz.one&lt;/a&gt; (you are the one)；现居捷克共和国&lt;/p&gt;
+&lt;p&gt;Email：info [at] urz.one；&lt;br&gt;
+主页：&lt;a href=&#34;https://urz.one&#34;&gt;https://urz.one&lt;/a&gt; (You are the one)；&lt;/p&gt;
 &lt;h2 id=&#34;研究兴趣&#34;&gt;研究兴趣&lt;/h2&gt;
-&lt;p&gt;设计和制备&lt;strong&gt;纳米递送系统&lt;/strong&gt;，用于疾病的诊疗，自然生态等&lt;/p&gt;
+&lt;p&gt;设计和制备&lt;strong&gt;纳米递送系统&lt;/strong&gt;，用于疾病的诊疗，自然生态等：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;治疗：抗菌，抗病毒，抗肿瘤（化疗，光动力治疗，光热治疗）&lt;/li&gt;
-&lt;li&gt;生物成像，包括电子计算机断层扫描显影剂，近红外成像造影剂&lt;/li&gt;
-&lt;li&gt;能量转换，固体发光体，太阳能电池，生物生长光能转换&lt;/li&gt;
+&lt;li&gt;治疗：抗菌，抗病毒，抗肿瘤（化疗，光动力治疗，光热治疗）；&lt;/li&gt;
+&lt;li&gt;生物成像，包括电子计算机断层扫描显影剂，近红外成像造影剂；&lt;/li&gt;
+&lt;li&gt;能量转换，固体发光体，太阳能电池，生物生长光能转换；&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;学术经历&#34;&gt;学术经历&lt;/h2&gt;
 &lt;h3 id=&#34;专利项目&#34;&gt;专利项目&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;H. Xiao, V. Sedlarik. Injectable anticancer agent. (2019, CZ)&lt;/li&gt;
-&lt;li&gt;H. Xiao, V. Sedlarik. Self-delivered nano drugs and methods of making such. (2019, WO)&lt;/li&gt;
+&lt;li&gt;H. Xiao, V. Sedlarik. &lt;a href=&#34;https://patentimages.storage.googleapis.com/18/f7/56/a161fc3243b92b/WO2020088702A1.pdf&#34;&gt;Self-delivered nano drugs and methods of making such&lt;/a&gt;. (2019, WO)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;学术论文&#34;&gt;学术论文&lt;/h3&gt;
 &lt;ul&gt;
@@ -1994,8 +2007,8 @@ Address:
 &lt;/ul&gt;
 &lt;h3 id=&#34;访问学习&#34;&gt;访问学习&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;2020 春季，&lt;a href=&#34;https://www.ucmerced.edu/&#34;&gt;UC Merced&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;2019 春季，&lt;a href=&#34;https://www.cdutcm.edu.cn/&#34;&gt;成都中医药大学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2020 春季，&lt;a href=&#34;https://www.ucmerced.edu/&#34;&gt;UC Merced, California, USA.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2019 春季，&lt;a href=&#34;https://www.cdutcm.edu.cn/&#34;&gt;成都中医药大学，成都&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;教育背景&#34;&gt;教育背景&lt;/h3&gt;
 &lt;ul&gt;
