@@ -56,3 +56,13 @@ code {
   font-style: normal;
 }
 
+@font-face {
+  font-family: FZQKBYSJW;
+  src: url('fonts/FZQKBYSJW.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FZQKBYSJW.woff') format('woff'),
+    url('fonts/FZQKBYSJW.ttf') format('truetype'),
+    url('fonts/FZQKBYSJW.svg#FZQKBYSJW') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
