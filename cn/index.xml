@@ -8,7 +8,7 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>纳米药物三大指导原则</title>
+      <title>纳米药物指导原则</title>
       <link>https://urz.one/cn/2021-04-27/three-guiding-principles-of-nanomedicine-from-cde/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>透射电子显微镜在晶体结构分析中的应用</title>
+      <title>TEM 晶体结构分析</title>
       <link>https://urz.one/cn/2021-03-23/tem-for-the-analysis-of-crystal-strucures/</link>
       <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>透射电子显微镜的样品制备</title>
+      <title>TEM 样品制备</title>
       <link>https://urz.one/cn/2021-03-23/sample-preparation-for-tem/</link>
       <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>创新药企业选择投资人指南</title>
+      <title>创新药企之投资人选择</title>
       <link>https://urz.one/cn/2021-03-08/how-to-choose-investors/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -422,7 +422,7 @@
     </item>
     
     <item>
-      <title>用 ffmpeg 合并音频和视频文件</title>
+      <title>ffmpeg 合并音视频</title>
       <link>https://urz.one/cn/2020-08-12/combine-audio-and-video-with-ffmpeg/</link>
       <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
       
@@ -530,21 +530,21 @@
     </item>
     
     <item>
+      <title>TEM 基础知识</title>
+      <link>https://urz.one/cn/2020-07-08/basics-of-tem/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2020-07-08/basics-of-tem/</guid>
+      <description>透射电子显微镜（Transmission Electron Microscope, 简称 TEM），是一种把经加速和聚集的电子束透射到非常薄的样品上，电子与样品中的原子碰撞而改变方向</description>
+    </item>
+    
+    <item>
       <title>萝卜</title>
       <link>https://urz.one/cn/2020-07-08/rules/</link>
       <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-07-08/rules/</guid>
       <description>想起来，他们似乎永远也赶不上那些轨迹。 当他们念小学或中学的时候，他们念书是需要付费的，而诱导他们向前走的那根萝卜是大学生毕业有工作分配以及可</description>
-    </item>
-    
-    <item>
-      <title>透射电子显微镜的基础知识</title>
-      <link>https://urz.one/cn/2020-07-08/basics-of-tem/</link>
-      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-08/basics-of-tem/</guid>
-      <description>透射电子显微镜（Transmission Electron Microscope, 简称 TEM），是一种把经加速和聚集的电子束透射到非常薄的样品上，电子与样品中的原子碰撞而改变方向</description>
     </item>
     
     <item>
@@ -746,7 +746,7 @@
     </item>
     
     <item>
-      <title>用 inkscape 将图片转换为 emf 格式</title>
+      <title>inkscape 转换 emf 图片格式</title>
       <link>https://urz.one/cn/2020-05-29/inkscape/</link>
       <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
       
@@ -800,7 +800,7 @@
     </item>
     
     <item>
-      <title>撞大运之 tinytex 安装  LaTeX 发行版 TinyTeX</title>
+      <title>tinytex 安装  LaTeX 发行版 TinyTeX</title>
       <link>https://urz.one/cn/2020-05-17/tinytex-tinytex/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
       
@@ -818,7 +818,7 @@
     </item>
     
     <item>
-      <title>用 Automator 将 PDF 批量转换为高清图片</title>
+      <title>Automator 批量转换 PDF 为高清图片</title>
       <link>https://urz.one/cn/2020-05-14/pdf-to-image-using-automator/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
