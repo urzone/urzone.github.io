@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>R 包 ggalt 无法加载</title>
+      <link>https://urz.one/cn/2021-05-11/ggalt-load-failed/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-11/ggalt-load-failed/</guid>
+      <description>问题：R 包 ggalt 无法加载 R 包 ggalt 无法加载，提示找不到 ash 包的镜像。 &amp;gt; library(ggalt) Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpath = DLLpath, ...): unable to load shared object &#39;~/Rpackages/ash/libs/ash.so&#39;: dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib Referenced from: ~/Rpackages/ash/libs/ash.so Reason: image not found</description>
+    </item>
+    
+    <item>
       <title>单位社保开户</title>
       <link>https://urz.one/cn/2021-05-10/chengdu-social-insurance/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-05/my-past-42-hours/</guid>
       <description>那么热的夏天 我似乎已经不太清楚夏天的定义具体是什么了，感觉上，从我走出那间屋子的一瞬间，我就进入了夏天。 车在柏油路上飞驰。在不到一分钟的时间</description>
-    </item>
-    
-    <item>
-      <title>《重生》大结局</title>
-      <link>https://urz.one/cn/2020-05-01/end-of-reborn/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-01/end-of-reborn/</guid>
-      <description>想着多年以后的再次重逢，也许，你会如同稀松平常的一天里看见风吹过树林时带着树枝的晃动一样，只是依旧说，这林子是松鼠们种下的。 我时刻在想，可能</description>
     </item>
     
   </channel>
