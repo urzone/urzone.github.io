@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>纳米晶体技术</title>
+      <link>https://urz.one/cn/2021-05-26/nanocrystal/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-26/nanocrystal/</guid>
+      <description>一直以来，API溶解度差、生物利用度低是困扰药物研发人员的一大难题，因溶解性低，导致其制剂开发形式受限，给制剂科研人员带来了很大的挑战，当然</description>
+    </item>
+    
+    <item>
       <title>R 包 ggalt 无法加载</title>
       <link>https://urz.one/cn/2021-05-11/ggalt-load-failed/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-10/missing-dictionary-of-macos-catalina/</guid>
       <description>从 EL Capitan 升级到 Catalina 后，系统的词库文件消失了。这也意味着，当自己再次使用三点取词的时候，只能找到 Wikipedia 对当前词语的相关注释，而再也没有了系统默认词典的</description>
-    </item>
-    
-    <item>
-      <title>四十二时记</title>
-      <link>https://urz.one/cn/2020-05-05/my-past-42-hours/</link>
-      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-05/my-past-42-hours/</guid>
-      <description>那么热的夏天 我似乎已经不太清楚夏天的定义具体是什么了，感觉上，从我走出那间屋子的一瞬间，我就进入了夏天。 车在柏油路上飞驰。在不到一分钟的时间</description>
     </item>
     
   </channel>
