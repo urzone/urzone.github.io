@@ -158,11 +158,12 @@ brew untap &lt;user&gt;/&lt;repo&gt; # 移除某个仓库，不再对其进行�
 <li>存放在 Github 上并以 Homebrew-something 命名的仓库，可直接用 <code>brew tap &lt;user&gt;/&lt;somthing&gt;</code> 的短命令直接克隆启用，其为 <code>brew tap &lt;user&gt;/&lt;Homebrew-something&gt;</code> 的简写，即省略了前缀 Homebrew-。</li>
 <li>对于存放在 Github 上不以 Homebrew-something 命名的仓库或者不是存放在 GitHub 上的仓库，它们的启用则需要 <code>brew tap &lt;user&gt;/&lt;repo&gt; URL</code> 的全命令形式。</li>
 <li>通过 <code>brew tap</code> 克隆启用的仓库，其操作命令和核心库的操作一样。但通过<code>brew install formula</code> 安装某个软件的时候，Homebrew 会先查找核心库，当核心库不存在该软件的时候，才会查找其他通过 <code>brew tap</code> 克隆启用的仓库。当遇到某个软件在第三方库和核心库中的名字相同时候，<code>brew install formula</code> 就会默认安装核心库中的软件。此时，我们可以通过指定该软件所在仓库的方式来安装三方库中的软件 <code>brew install user/repo/formular</code>。</li>
-<li>homebrew 的 tap 都存放在 <code>/usr/local/Homebrew/Library/Taps/</code>路径下，并以 <code>&lt;user&gt;/&lt;repo&gt;</code> 的文件夹形式分开。比如核心库存放在 /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core</li>
+<li>homebrew 的 tap 都存放在 <code>/usr/local/Homebrew/Library/Taps/</code>路径下，并以 <code>&lt;user&gt;/&lt;repo&gt;</code> 的文件夹形式分开。比如核心库存放在：</li>
 </ul>
 </li>
 </ul>
-<pre><code>brew install username/repo/formula  # installs from your custom repo
+<pre><code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core # homebrew 核心库位置
+</code></pre><pre><code>brew install username/repo/formula  # installs from your custom repo
 </code></pre><h3 id="关于-cask">关于 cask</h3>
 <p>我们还可以通过 cask (木桶) 来安装图形界面 (GUI) 应用或者字体等。通过 cask 安装的图形界面应用或者字体等，安装在 <code>/usr/local/Caskroom</code> 路径下。而后软件本身会被移动到 <code>/Applications/</code>中，字体则被移动到 <code>~/Library/Fonts/</code> 文件夹中，以便使用。Caskroom 中的信息则供 Homebrew 管理该软件或字体使用。</p>
 <pre><code>brew tap homebrew/cask # 克隆启用 cask 软件仓库，仅需启用一次
