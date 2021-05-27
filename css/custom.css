@@ -187,9 +187,10 @@ body {
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+  text-align: justify;
 } 
 .main {
-  padding: 10px;
+  padding: 20px;
   hyphens: manual;
   border-left: none;
   background-color: #202020;
