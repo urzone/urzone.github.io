@@ -178,6 +178,16 @@ img[src$='#border'] {
   h6 {
     margin: 2em auto 1.5em auto;
   }
+body {
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+} 
   .title h2,
   .title h3 {
     margin: 1.5em auto;
