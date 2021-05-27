@@ -188,6 +188,12 @@ body {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
 } 
+.main {
+  padding: 0px;
+  hyphens: manual;
+  border-left: none;
+  background-color: #202020;
+}
   .title h2,
   .title h3 {
     margin: 1.5em auto;
