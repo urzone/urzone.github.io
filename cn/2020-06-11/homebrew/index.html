@@ -158,7 +158,7 @@ brew untap &lt;user&gt;/&lt;repo&gt; # 移除某个仓库，不再对其进行�
 <li>存放在 Github 上并以 Homebrew-something 命名的仓库，可直接用 <code>brew tap &lt;user&gt;/&lt;somthing&gt;</code> 的短命令直接克隆启用，其为 <code>brew tap &lt;user&gt;/&lt;Homebrew-something&gt;</code> 的简写，即省略了前缀 Homebrew-。</li>
 <li>对于存放在 Github 上不以 Homebrew-something 命名的仓库或者不是存放在 GitHub 上的仓库，它们的启用则需要 <code>brew tap &lt;user&gt;/&lt;repo&gt; URL</code> 的全命令形式。</li>
 <li>通过 <code>brew tap</code> 克隆启用的仓库，其操作命令和核心库的操作一样。但通过<code>brew install formula</code> 安装某个软件的时候，Homebrew 会先查找核心库，当核心库不存在该软件的时候，才会查找其他通过 <code>brew tap</code> 克隆启用的仓库。当遇到某个软件在第三方库和核心库中的名字相同时候，<code>brew install formula</code> 就会默认安装核心库中的软件。此时，我们可以通过指定该软件所在仓库的方式来安装三方库中的软件 <code>brew install user/repo/formular</code>。</li>
-<li>homebrew 的 tap 都存放在 <code>/usr/local/Homebrew/Library/Taps/</code>路径下，并以 <code>&lt;user&gt;/&lt;repo&gt;</code> 的文件夹形式分开。比如核心库存放在 <code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core</code></li>
+<li>homebrew 的 tap 都存放在 <code>/usr/local/Homebrew/Library/Taps/</code>路径下，并以 <code>&lt;user&gt;/&lt;repo&gt;</code> 的文件夹形式分开。比如核心库存放在 /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core</li>
 </ul>
 </li>
 </ul>
