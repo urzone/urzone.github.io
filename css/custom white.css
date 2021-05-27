@@ -39,6 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* letter-spacing: 0.5px; */
   /* font-weight: 300; */
+  text-align: justify;
 }
 h1,
 h2,
@@ -185,7 +186,7 @@ img[src$="#border"] {
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  /*text-align: justify;*/
+  text-align: left /*justify*/;
 } 
 .main {
   padding: 25px;

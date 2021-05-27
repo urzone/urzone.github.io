@@ -36,6 +36,7 @@ body {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   /*line-height: 30px;*/
+  text-align: justify;
 }
 
 h1,
@@ -169,6 +170,7 @@ img[src$='#border'] {
 #disqus_thread a {
   color: steelblue;
 }
+
 @media screen and (max-width: 960px) {
   h1,
   h2,
@@ -187,7 +189,7 @@ body {
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  /*text-align: justify;*/
+  text-align: left /*justify*/;
 } 
 .main {
   padding: 25px;
