@@ -169,6 +169,7 @@ img[src$='#border'] {
 #disqus_thread a {
   color: steelblue;
 }
+
 @media screen and (max-width: 960px) {
   h1,
   h2,

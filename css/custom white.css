@@ -175,6 +175,25 @@ img[src$="#border"] {
   h1, h2, h3, h4, h5, h6 {
     margin: 2em auto 1.5em auto;
   }
+
+  body {
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  /*text-align: justify;*/
+} 
+.main {
+  padding: 25px;
+  hyphens: manual;
+  border-left: none;
+  background-color: #202020;
+}
+
   .title h2, .title h3 {
     margin: 1.5em auto;
   }
