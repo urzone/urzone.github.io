@@ -179,7 +179,7 @@ img[src$='#border'] {
     margin: 2em auto 1.5em auto;
   }
 body {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
@@ -189,7 +189,7 @@ body {
   text-rendering: optimizeLegibility;
 } 
 .main {
-  padding: 0px;
+  padding: 10px;
   hyphens: manual;
   border-left: none;
   background-color: #202020;
