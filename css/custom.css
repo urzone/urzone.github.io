@@ -39,7 +39,7 @@ body {
   text-align: justify;
 }
 strong {
-  color: red;
+  color: #df2319;
   font-weight: bold;
 }
 
@@ -186,7 +186,7 @@ img[src$='#border'] {
   }
 
 strong {
-  color: red;
+  color: #df2319;
   font-weight: bold;
 }
 
