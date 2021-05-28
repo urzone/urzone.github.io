@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tviewer 个人使用</title>
+      <link>https://urz.one/cn/2021-05-28/tviewer/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-28/tviewer/</guid>
+      <description>有时候，远程桌面控制能解决很多因距离产生的问题（这似乎是某种隐喻，如有雷同，可能也并不是巧合）。 安装 Tviewer 最新版； brew install --cask teamviewer 下载 python2 脚本文件 Tvie</description>
+    </item>
+    
+    <item>
       <title>纳米晶体技术</title>
       <link>https://urz.one/cn/2021-05-26/nanocrystal/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-11/command-line-tools/</guid>
       <description>对跟随近七年的老爷机进行系统升级后，发现旧款软件在 MacOS Catalina 下无法打开。而偶然又在词典里看到这样一个例句，很有意思。 The old system has left a mixed legacy. 旧制度留下的遗</description>
-    </item>
-    
-    <item>
-      <title>升级 MacOS Caterlina 后词库文件的消失</title>
-      <link>https://urz.one/cn/2020-05-10/missing-dictionary-of-macos-catalina/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-10/missing-dictionary-of-macos-catalina/</guid>
-      <description>从 EL Capitan 升级到 Catalina 后，系统的词库文件消失了。这也意味着，当自己再次使用三点取词的时候，只能找到 Wikipedia 对当前词语的相关注释，而再也没有了系统默认词典的</description>
     </item>
     
   </channel>
