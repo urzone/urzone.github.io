@@ -52,10 +52,10 @@ h6 {
   color: #f5f5f5 /*#e5e5e5*/;
 }
 
-h2:before,h3:before {
+/*h2:before,h3:before {
   content: '\2134  ';
   color: #f5f5f5;
-}
+}*/
 
 /*h2:after,h3:after {
   content: '  \2134';
@@ -101,7 +101,7 @@ a:hover,
 }
 code {
   hyphens: none;
-  background: #202020;
+  background: #191919;
 }
 iframe,
 twitterwidget,
@@ -224,6 +224,7 @@ body {
   .title h3 {
     margin: 1.5em auto;
   }
+
   .main .title h1 {
     margin: 1em auto 0 auto;
   }
@@ -246,13 +247,13 @@ body {
   .masthead .menu a {
     display: inline-block;
     padding: 5px 10px;
-    background: #202020;
+    background: #191919;
     color: #fff;
     border-radius: 5px;
   }
   .masthead .menu .active a {
     background: none;
-    border: 1px solid #202020;
+    border: 1px solid #191919;
     color: #cc342c;
   }
   .masthead .menu li,
