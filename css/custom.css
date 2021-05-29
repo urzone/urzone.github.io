@@ -237,6 +237,7 @@ body {
   }
   .masthead .menu {
     max-width: inherit;
+    font-size: 16px;
   }
   .masthead h1 {
     margin-bottom: 10px;
