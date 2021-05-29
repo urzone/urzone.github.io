@@ -38,15 +38,18 @@ body {
   /*line-height: 30px;*/
   text-align: justify;
 }
+strong {
+  color: #cc342c;
+  font-weight: bold;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-a {
-  color: #e5e5e5;
+h6 {
+  color: #FFFFFF /*#e5e5e5*/;
 }
 a {
   color: #b8b8b8;
@@ -179,7 +182,15 @@ img[src$='#border'] {
   h5,
   h6 {
     margin: 2em auto 1.5em auto;
+    color: #FFFFFF;
   }
+
+strong {
+  color: #cc342c;
+  font-weight: bold;
+}
+
+
 body {
   font-size: 15px;
   -webkit-text-size-adjust: 100%;

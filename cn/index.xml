@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>MarkDown 表格与希腊字符的 LaTeX 命令</title>
+      <link>https://urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</guid>
+      <description>用 Markdown 语法创建表格着实是一件令人头疼的事情，其不仅输入较麻烦，而且查看和修改数据也不够直观。Table Convert Online 是一款在线表格格式转换工具，该工具可</description>
+    </item>
+    
+    <item>
       <title>Tviewer 个人使用</title>
       <link>https://urz.one/cn/2021-05-28/tviewer/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-12/poet-li-qingzhao/</guid>
       <description>李清照（1084 年 3 月 13 日 ～ 1155 年 5 月 12 日)，济南章丘（今属山东）人，号易安居士。宋代女词人，婉约词派代表。 早期生活优裕，与夫赵明诚共同致力于</description>
-    </item>
-    
-    <item>
-      <title>旧制度留下的遗产有好有坏</title>
-      <link>https://urz.one/cn/2020-05-11/command-line-tools/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-11/command-line-tools/</guid>
-      <description>对跟随近七年的老爷机进行系统升级后，发现旧款软件在 MacOS Catalina 下无法打开。而偶然又在词典里看到这样一个例句，很有意思。 The old system has left a mixed legacy. 旧制度留下的遗</description>
     </item>
     
   </channel>
