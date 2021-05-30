@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>M3U8 文件下载</title>
+      <link>https://urz.one/cn/2021-05-30/downloading-m3u8-files/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-30/downloading-m3u8-files/</guid>
+      <description>M3U8 文件是指 UTF-8 编码格式的 M3U 文件。M3U 文件是记录了一个索引的纯文本文件，打开它时播放软件并不是播放它，而是根据它的索引找到对应的音视频文件的网</description>
+    </item>
+    
+    <item>
       <title>MarkDown 表格与希腊字符的 LaTeX 命令</title>
       <link>https://urz.one/cn/2021-05-29/the-latex-commands-for-the-greek-alphabet-in-markdown/</link>
       <pubDate>Sat, 29 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-13/copy-and-paste-under-rstudio/</guid>
       <description>记录一个剪贴板的复制问题。 从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有</description>
-    </item>
-    
-    <item>
-      <title>李清照</title>
-      <link>https://urz.one/cn/2020-05-12/poet-li-qingzhao/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-12/poet-li-qingzhao/</guid>
-      <description>李清照（1084 年 3 月 13 日 ～ 1155 年 5 月 12 日)，济南章丘（今属山东）人，号易安居士。宋代女词人，婉约词派代表。 早期生活优裕，与夫赵明诚共同致力于</description>
     </item>
     
   </channel>
