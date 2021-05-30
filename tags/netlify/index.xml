@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-07-19/github-netlify-yandex-free-website-mail-service/</guid>
-      <description>Github Netlify 网站托管 特点 免费网页托管； 自定义域名解析； 自动更新的免费 SSL/TLS 证书； 无限重定向服务； 步骤 注册并登录 netlify，可点击 New site from Git，将 GitHub 某</description>
+      <description>Github 中转仓库 将 Github 作为文件中转仓库站，用于为 Netlify 自动提供文件源。 Sourcetree 运输工具 将 Sourcetree 作为本地与中转仓库之间的运输工具，将本地文件推送至中转仓库。首要任务</description>
     </item>
     
   </channel>
