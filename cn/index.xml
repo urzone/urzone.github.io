@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Windows To Go</title>
+      <link>https://urz.one/cn/2021-05-31/windows-to-go/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-05-31/windows-to-go/</guid>
+      <description>WTG 安装 软件 WTG 镜像写入工具 WTG 辅助工具，用于将 Windows 镜像写入到 U 盘、移动硬盘等便携设备上，并且写入移动设备上的 Windows 系统能随处在不同的电脑硬件上直接运行</description>
+    </item>
+    
+    <item>
       <title>M3U8 文件下载</title>
       <link>https://urz.one/cn/2021-05-30/downloading-m3u8-files/</link>
       <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-13/pymol-installing-setting/</guid>
       <description>用 Homebrew 在 MacOS Catalina 下 安装开源版 PyMol 为安装 PyMol 添加一些依赖程序 brew install Caskroom/cask/xquartz brew install tcl-tk brew install python3 安装 PyMol (Homebrew version 2.3) brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) ＃ 如果您使用的是较旧版本的 pym</description>
-    </item>
-    
-    <item>
-      <title>Rstudio 下增添复制的问题</title>
-      <link>https://urz.one/cn/2020-05-13/copy-and-paste-under-rstudio/</link>
-      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-13/copy-and-paste-under-rstudio/</guid>
-      <description>记录一个剪贴板的复制问题。 从开始使用 Rstudio 后，在 Rstudio 中每一次复制的内容（B），总会粘滞在前一次复制的内容（A）后面，导致每一次复制后，剪贴板里既有</description>
     </item>
     
   </channel>
