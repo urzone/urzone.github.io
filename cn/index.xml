@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>批量提取 PowerPoint 中的原始媒体文件</title>
+      <link>https://urz.one/cn/2021-06-02/extract-media-files-from-ppt/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-02/extract-media-files-from-ppt/</guid>
+      <description>因为协作关系，有时候需要把一些媒体文件从 PowerPoint 演示文稿中提取出来，例如视频、照片或声音文件。通常的方法可能是直接拖拽或选择另存为。譬如，选中需要</description>
+    </item>
+    
+    <item>
       <title>Windows To Go</title>
       <link>https://urz.one/cn/2021-05-31/windows-to-go/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-13/git-basic/</guid>
       <description>Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本</description>
-    </item>
-    
-    <item>
-      <title>PyMOL 的安装、球棍模型设置与图片输出</title>
-      <link>https://urz.one/cn/2020-05-13/pymol-installing-setting/</link>
-      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-13/pymol-installing-setting/</guid>
-      <description>用 Homebrew 在 MacOS Catalina 下 安装开源版 PyMol 为安装 PyMol 添加一些依赖程序 brew install Caskroom/cask/xquartz brew install tcl-tk brew install python3 安装 PyMol (Homebrew version 2.3) brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4) ＃ 如果您使用的是较旧版本的 pym</description>
     </item>
     
   </channel>

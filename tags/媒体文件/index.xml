@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>媒体文件 on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/%E5%AA%92%E4%BD%93%E6%96%87%E4%BB%B6/</link>
+    <description>Recent content in 媒体文件 on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/%E5%AA%92%E4%BD%93%E6%96%87%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>批量提取 PowerPoint 中的原始媒体文件</title>
+      <link>https://urz.one/cn/2021-06-02/extract-media-files-from-ppt/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-02/extract-media-files-from-ppt/</guid>
+      <description>因为协作关系，有时候需要把一些媒体文件从 PowerPoint 演示文稿中提取出来，例如视频、照片或声音文件。通常的方法可能是直接拖拽或选择另存为。譬如，选中需要</description>
+    </item>
+    
+  </channel>
+</rss>

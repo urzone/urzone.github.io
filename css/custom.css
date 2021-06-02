@@ -40,8 +40,12 @@ body {
 }
 strong {
   color: #cc342c;
-  font-weight: bold;
+  font-weight: normal;
 }
+
+/*strong:before, strong:after {
+  content: ' ';
+}*/
 
 h1,
 h2,
@@ -101,8 +105,17 @@ a:hover,
 }
 code {
   hyphens: none;
-  background: #191919;
+  background: #121212;
+  color: #cc342c;
+  border-radius: 5px;
+  border-color: #474747;
+  /*border-style: double;*/
 }
+
+/*code:before, code:after  {
+  content: ' ';
+}*/
+
 iframe,
 twitterwidget,
 video {
@@ -199,7 +212,7 @@ img[src$='#border'] {
 
 strong {
   color: #cc342c;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 
