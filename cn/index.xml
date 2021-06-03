@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>炎症反应</title>
+      <link>https://urz.one/cn/2021-06-03/inflammation/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-03/inflammation/</guid>
+      <description>炎症反应 炎症反应是指具有血管系统的活体组织对致炎因子及局部损伤所发生的防御性为主的反应，中心环节是血管反应，是生物组织受到外伤、出血或病原感</description>
+    </item>
+    
+    <item>
       <title>批量提取 PowerPoint 中的原始媒体文件</title>
       <link>https://urz.one/cn/2021-06-02/extract-media-files-from-ppt/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-14/pdf-to-image-using-automator/</guid>
       <description>Mac 系统中的 Preview 软件，可以轻松查看 PDF，并将其中选中的某一页另存为图片格式，比如，JPG，PNG 等。 那么如果需要将一个很多页的 PDF 文件批量转换为</description>
-    </item>
-    
-    <item>
-      <title>Git 学习笔记</title>
-      <link>https://urz.one/cn/2020-05-13/git-basic/</link>
-      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-13/git-basic/</guid>
-      <description>Git 从概念上分为 3 个区域，分别是工作空间、本地仓库和远程仓库。另外还有一个暂存区域，也称为索引区。Git 是分布式版本控制的关键点是它具备一个本</description>
     </item>
     
   </channel>
