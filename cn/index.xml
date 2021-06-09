@@ -8,6 +8,24 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>孵蛋纪</title>
+      <link>https://urz.one/cn/2021-06-09/fudan/</link>
+      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-09/fudan/</guid>
+      <description>匿名先生建议 不是编外临时工不能干，干临时工是大势所趋，是无奈之举。但是记住两点： 最好在你国内的导师或老师手底下干，滥不济师兄师姐、学术界合作</description>
+    </item>
+    
+    <item>
+      <title>关于 Homebrew 的小故 (shì) 事 (gù)</title>
+      <link>https://urz.one/cn/2021-06-03/tricks-on-homebrew/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-03/tricks-on-homebrew/</guid>
+      <description>Homebrew 下载龟速的解决方案 brew --cache # 查看 Homebrew 所有下载文件的存放位置 ~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置 安装特殊版本软件 通过 Homebrew 安装特殊版本的软件时，可（yī）能（</description>
+    </item>
+    
+    <item>
       <title>炎症反应</title>
       <link>https://urz.one/cn/2021-06-03/inflammation/</link>
       <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
@@ -887,24 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-17/tinytex-tinytex/</guid>
       <description>更新 R 更新 R 4.0 后，所有的 R 包都不见了。不过好在自己平时所用到的包就那么些个，而且都是广 (tè) 泛 (bié) 使 (dà) 用 (zhòng) 的包，故</description>
-    </item>
-    
-    <item>
-      <title>自用 Mac 软件记录</title>
-      <link>https://urz.one/cn/2020-05-16/homebrew-softwares/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-16/homebrew-softwares/</guid>
-      <description>自用 Mac 软件记录 Homebrew xcode-select —-install /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; brew tap homebrew/core brew tap homebrew/cask brew tap homebrew/cask-versions brew tap homebrew/cask-fonts brew tap brewsci/bio brew tap buo/cask-upgrade # 替代 `brew cask upgrade`，更直观，可交互更新； brew tap homebrew/bundle # 软</description>
-    </item>
-    
-    <item>
-      <title>Automator 批量转换 PDF 为高清图片</title>
-      <link>https://urz.one/cn/2020-05-14/pdf-to-image-using-automator/</link>
-      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-14/pdf-to-image-using-automator/</guid>
-      <description>Mac 系统中的 Preview 软件，可以轻松查看 PDF，并将其中选中的某一页另存为图片格式，比如，JPG，PNG 等。 那么如果需要将一个很多页的 PDF 文件批量转换为</description>
     </item>
     
   </channel>

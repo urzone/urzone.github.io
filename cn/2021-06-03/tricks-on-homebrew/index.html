@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Homebrew - XiaO | 缄默之语</title>
-    <meta property="og:title" content="Homebrew - XiaO | 缄默之语">
+    <title>关于 Homebrew 的小故 (shì) 事 (gù) - XiaO | 缄默之语</title>
+    <meta property="og:title" content="关于 Homebrew 的小故 (shì) 事 (gù) - XiaO | 缄默之语">
     
     <meta name="twitter:card" content="summary">
 
@@ -14,6 +14,9 @@
     
 
     
+      
+      <meta property="description" content="brew --cache # 查看 Homebrew 所有下载文件的存放位置 ~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置 安装特殊版本软件 通过 Homebrew 安装特殊版本的软件时，可（yī）能（dìng）会遇到 SHA256 mismatch 错误，进而导致无法安装。此时，可直接将 formular 中的的 SHA  &amp;hellip;">
+      <meta property="og:description" content="brew --cache # 查看 Homebrew 所有下载文件的存放位置 ~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置 安装特殊版本软件 通过 Homebrew 安装特殊版本的软件时，可（yī）能（dìng）会遇到 SHA256 mismatch 错误，进而导致无法安装。此时，可直接将 formular 中的的 SHA  &amp;hellip;">
       
     
 
@@ -27,12 +30,13 @@
     
 
     
-    <link href="/tags/homebrew/index.xml" rel="alternate" type="application/rss+xml" title="XiaO | 缄默之语" />
-    
     
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
+
+
+
 <link rel="stylesheet" href="/css/custom.css" />
 
 
@@ -52,7 +56,7 @@
   </head>
 
   
-  <body class="tags">
+  <body class="cn">
     <header class="masthead">
       
 
@@ -64,9 +68,7 @@
   <ul>
   
   
-  <li><a href="/en/">Blog</a></li>
-  
-  <li><a href="/en/vitae/">Vitae</a></li>
+  <li><a href="/">首页</a></li>
   
   <li><a href="/cn/">日志</a></li>
   
@@ -74,7 +76,17 @@
   
   <li><a href="/cn/vitae/">简历</a></li>
   
+  <li><a href="/en/">English</a></li>
   
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
 
   </ul>
 </nav>
@@ -84,8 +96,11 @@
     <article class="main">
       <header class="title">
       
-<h1>Homebrew</h1>
+<h1>关于 Homebrew 的小故 (shì) 事 (gù)</h1>
 
+
+<h3>XiaO / 
+2021-06-03</h3>
 
 <hr>
 
@@ -94,43 +109,30 @@
 
 
 
-<div class="archive">
+<h3 id="homebrew-下载龟速的解决方案1">Homebrew 下载龟速的<a href="https://zhuanlan.zhihu.com/p/107469378">解决方案</a></h3>
+<pre><code>brew --cache # 查看 Homebrew 所有下载文件的存放位置 
+~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置
+</code></pre><h3 id="安装特殊版本软件">安装特殊版本软件</h3>
+<p>通过 Homebrew 安装特殊版本的软件时，可（yī）能（dìng）会遇到 <code>SHA256 mismatch</code> 错误，进而导致无法安装。此时，可直接将 formular 中的的 SHA 无需验证即可。</p>
+<pre><code>Error: SHA256 mismatch
+Expected: 71e11aad1e3ac68d775abe2c488e55484c74e0cd144ab028df63aaa52c611ab2
+  Actual: 717cfcd11cea7c770f32aa48c5d1226cb9a9374a2749f43e72deb073e3ec286b
   
-  <h2 class="archive-title">2021</h2>
-  
-  
-  <p>
-    <span>2021-06-03</span>
-    <a href="/cn/2021-06-03/tricks-on-homebrew/">关于 Homebrew 的小故 (shì) 事 (gù)</a>
-  </p>
-  
-  
-  
-  <h2 class="archive-title">2020</h2>
-  
-  
-  <p>
-    <span>2020-06-11</span>
-    <a href="/cn/2020-06-11/homebrew/">Homebrew 个人使用记录</a>
-  </p>
-  
-  
-  
-  <p>
-    <span>2020-05-16</span>
-    <a href="/cn/2020-05-16/homebrew-softwares/">自用 Mac 软件记录</a>
-  </p>
-  
-  
-  
-</div>
+brew edit AppName # 打开 fomular
 
+sha256 :no_check # 编辑 fomular 中的 SHA 值为不检查
+</code></pre><h3 id="清理工作">清理工作</h3>
+<p>完成安装工作后，可以使用brew cleanup来清理刚刚产生的缓存文件。</p>
+<pre><code>brew cleanup # 清理刚刚产生的下载缓存文件
+
+brew cleanup --prune 0 # 强制清理 n 天以前的缓存文件，包括下载文件以外的缓存
+</code></pre>
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev"></span>
-  <span class="nav-next"></span>
+  <span class="nav-prev">&larr; <a href="/cn/2021-06-03/inflammation/">炎症反应</a></span>
+  <span class="nav-next"><a href="/cn/2021-06-09/fudan/">孵蛋纪</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -138,7 +140,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
+    url = '\/cn\/2021-06-03\/inflammation\/';
+    
   } else if (e.which == 39) {  
+    
+    url = '\/cn\/2021-06-09\/fudan\/';
     
   }
   if (url) window.location = url;

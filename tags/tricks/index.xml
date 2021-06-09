@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tricks on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/tricks/</link>
+    <description>Recent content in Tricks on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于 Homebrew 的小故 (shì) 事 (gù)</title>
+      <link>https://urz.one/cn/2021-06-03/tricks-on-homebrew/</link>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-03/tricks-on-homebrew/</guid>
+      <description>Homebrew 下载龟速的解决方案 brew --cache # 查看 Homebrew 所有下载文件的存放位置 ~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置 安装特殊版本软件 通过 Homebrew 安装特殊版本的软件时，可（yī）能（</description>
+    </item>
+    
+  </channel>
+</rss>
