@@ -157,8 +157,8 @@ pre code {
 }
 
 blockquote {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   font-size: 16px;
 }
 
@@ -185,9 +185,16 @@ img[src$='#border'] {
   background-color: inherit;
   text-decoration: inherit;
 }
+
+blockquote {
+    margin: 1em 0;
+    padding: 0 2em;
+    border-left: 3px solid #d6d6d6;
+}
+
 .home blockquote,
 .cn blockquote:not(:hover) {
-  border-left-color: transparent;
+  border-left-color: #d6d6d6;
 }
 .anchor {
   display: none;
