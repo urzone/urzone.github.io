@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>英文地址书写</title>
+      <link>https://urz.one/cn/2021-06-18/address-in-english/</link>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-18/address-in-english/</guid>
+      <description>常用名词 名称 英文 示例 路 Road (Rd.) 同辉南路 Tonghui S. Rd. 街 Street (St.) 同辉北街 Tonghui N. St. 弄 Alley 青瓦弄 Qingwa Alley 巷 Lane 熊猫巷 Panda Lane 楼 Floor (F or FL.) 三楼 3rd. FL or 3F 号 Number( No.) 250 号 47 or No.47 段 Section (Sec) 三段 Sec.3 大</description>
+    </item>
+    
+    <item>
       <title>孵蛋纪</title>
       <link>https://urz.one/cn/2021-06-09/fudan/</link>
       <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-18/rime-setting/</guid>
       <description>现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下： 个人隐私（相对现在流行的云词典输入法而言）； 一劳永逸（相对它的学习成本</description>
-    </item>
-    
-    <item>
-      <title>tinytex 安装  LaTeX 发行版 TinyTeX</title>
-      <link>https://urz.one/cn/2020-05-17/tinytex-tinytex/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-17/tinytex-tinytex/</guid>
-      <description>更新 R 更新 R 4.0 后，所有的 R 包都不见了。不过好在自己平时所用到的包就那么些个，而且都是广 (tè) 泛 (bié) 使 (dà) 用 (zhòng) 的包，故</description>
     </item>
     
   </channel>
