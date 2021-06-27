@@ -134,7 +134,7 @@ headers <span style="color:#f92672">=</span> {
 <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;~/repos.txt&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> f: <span style="color:#75715e"># 此处修改为 repos.txt 的地址</span>
     data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
 
-url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.github.com/repos/{}/{}&#34;</span>
+url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.github.com/repos/</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>
 urls <span style="color:#f92672">=</span> []
 <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> data:
     name, repo <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;/&#34;</span>)

@@ -143,31 +143,31 @@
 <span style="color:#f92672">import</span> string
 <span style="color:#f92672">import</span> sys
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;
+print(<span style="color:#e6db74">&#39;&#39;&#39;
 </span><span style="color:#e6db74">--------------------------------
 </span><span style="color:#e6db74">TeamViewer ID Changer for MAC OS
 </span><span style="color:#e6db74">--------------------------------
 </span><span style="color:#e6db74">&#39;&#39;&#39;</span>)
 
 <span style="color:#66d9ef">if</span> sys<span style="color:#f92672">.</span>version[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;2&#34;</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This script can be run only on Python27.&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This script can be run only on Python27.&#34;</span>)
     sys<span style="color:#f92672">.</span>exit()
 
 <span style="color:#66d9ef">if</span> platform<span style="color:#f92672">.</span>system() <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;Darwin&#34;</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This script can be run only on MAC OS.&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This script can be run only on MAC OS.&#34;</span>)
     sys<span style="color:#f92672">.</span>exit()
 
 <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>geteuid() <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This script must be run form root.&#34;</span>)
+    print(<span style="color:#e6db74">&#34;This script must be run form root.&#34;</span>)
     sys<span style="color:#f92672">.</span>exit()
 
 <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;SUDO_USER&#34;</span> <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>environ:
     USERNAME <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SUDO_USER&#34;</span>]
     <span style="color:#66d9ef">if</span> USERNAME <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;root&#34;</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Can not find user name. Run this script via sudo from regular user&#34;</span>)
+        print(<span style="color:#e6db74">&#34;Can not find user name. Run this script via sudo from regular user&#34;</span>)
         sys<span style="color:#f92672">.</span>exit()
 <span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Can not find user name. Run this script via sudo from regular user&#34;</span>)
+    print(<span style="color:#e6db74">&#34;Can not find user name. Run this script via sudo from regular user&#34;</span>)
     sys<span style="color:#f92672">.</span>exit()
 
 HOMEDIRLIB <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/&#34;</span> <span style="color:#f92672">+</span> USERNAME <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/library/preferences/&#34;</span>
@@ -191,16 +191,16 @@ CONFIGS <span style="color:#f92672">=</span> []
         CONFIGS<span style="color:#f92672">.</span>append(file)
 
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> CONFIGS:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;
+    print(<span style="color:#e6db74">&#39;&#39;&#39;
 </span><span style="color:#e6db74">There is no TemViewer configs found.
 </span><span style="color:#e6db74">Maybe you have deleted it manualy or never run TeamViewer after installation.
 </span><span style="color:#e6db74">Nothing to delete.
 </span><span style="color:#e6db74">&#39;&#39;&#39;</span>)
 <span style="color:#66d9ef">else</span>:
     <span style="color:#75715e"># Delete config files</span>
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Configs found:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> CONFIGS: <span style="color:#66d9ef">print</span>(file)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;
+    print(<span style="color:#e6db74">&#34;Configs found:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> CONFIGS: print(file)
+    print(<span style="color:#e6db74">&#39;&#39;&#39;
 </span><span style="color:#e6db74">This files will be DELETED permanently.
 </span><span style="color:#e6db74">All TeamViewer settings will be lost
 </span><span style="color:#e6db74">&#39;&#39;&#39;</span>)
@@ -210,9 +210,9 @@ CONFIGS <span style="color:#f92672">=</span> []
         <span style="color:#66d9ef">try</span>:
             os<span style="color:#f92672">.</span>remove(file)
         <span style="color:#66d9ef">except</span>:
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Cannot delete config files. Permission denied?&#34;</span>)
+            print(<span style="color:#e6db74">&#34;Cannot delete config files. Permission denied?&#34;</span>)
             sys<span style="color:#f92672">.</span>exit()
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Done.&#34;</span>)
+    print(<span style="color:#e6db74">&#34;Done.&#34;</span>)
 
 <span style="color:#75715e"># Find binaryes</span>
 
@@ -226,8 +226,8 @@ TMBINARYES <span style="color:#f92672">=</span> [
     <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(file):
         <span style="color:#66d9ef">pass</span>
     <span style="color:#66d9ef">else</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;File not found: &#34;</span> <span style="color:#f92672">+</span> file)
-        <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;Install TeamViewer correctly&#34;</span>)
+        print(<span style="color:#e6db74">&#34;File not found: &#34;</span> <span style="color:#f92672">+</span> file)
+        print (<span style="color:#e6db74">&#34;Install TeamViewer correctly&#34;</span>)
         sys<span style="color:#f92672">.</span>exit()
 
 
@@ -236,14 +236,14 @@ TMBINARYES <span style="color:#f92672">=</span> [
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">idpatch</span>(fpath, platf, serial):
     file <span style="color:#f92672">=</span> open(fpath, <span style="color:#e6db74">&#39;r+b&#39;</span>)
     binary <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
-    PlatformPattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IOPlatformExpert.{6}&#34;</span>
+    PlatformPattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IOPlatformExpert.</span><span style="color:#e6db74">{6}</span><span style="color:#e6db74">&#34;</span>
     SerialPattern <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;IOPlatformSerialNumber</span><span style="color:#e6db74">%s%s%s</span><span style="color:#e6db74">&#34;</span>
 
     binary <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>sub(PlatformPattern, platf, binary)
     binary <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>sub(SerialPattern <span style="color:#f92672">%</span> (chr(<span style="color:#ae81ff">0</span>), <span style="color:#e6db74">&#34;[0-9a-zA-Z]{8,8}&#34;</span>, chr(<span style="color:#ae81ff">0</span>)), SerialPattern <span style="color:#f92672">%</span> (chr(<span style="color:#ae81ff">0</span>), serial, chr(<span style="color:#ae81ff">0</span>)), binary)
 
     file <span style="color:#f92672">=</span> open(fpath, <span style="color:#e6db74">&#39;wb&#39;</span>)<span style="color:#f92672">.</span>write(binary)
-    <span style="color:#66d9ef">return</span> True
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
 
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">random_generator</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, chars<span style="color:#f92672">=</span>string<span style="color:#f92672">.</span>ascii_uppercase <span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>ascii_lowercase <span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>digits):
@@ -257,15 +257,15 @@ RANDOMPLATFORM <span style="color:#f92672">=</span> <span style="color:#e6db74">
     <span style="color:#66d9ef">try</span>:
         idpatch(file, RANDOMPLATFORM, RANDOMSERIAL)
     <span style="color:#66d9ef">except</span>:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Error: can not patch file &#34;</span> <span style="color:#f92672">+</span> file)
+        print(<span style="color:#e6db74">&#34;Error: can not patch file &#34;</span> <span style="color:#f92672">+</span> file)
         sys<span style="color:#f92672">.</span>exit()
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;PlatformDevice: &#34;</span> <span style="color:#f92672">+</span> RANDOMPLATFORM)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;PlatformSerial: &#34;</span> <span style="color:#f92672">+</span> RANDOMSERIAL)
+print(<span style="color:#e6db74">&#34;PlatformDevice: &#34;</span> <span style="color:#f92672">+</span> RANDOMPLATFORM)
+print(<span style="color:#e6db74">&#34;PlatformSerial: &#34;</span> <span style="color:#f92672">+</span> RANDOMSERIAL)
 
 os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sudo codesign -f -s - /Applications/TeamViewer.app/&#34;</span>)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;
+print(<span style="color:#e6db74">&#39;&#39;&#39;
 </span><span style="color:#e6db74">ID changed sucessfully.
 </span><span style="color:#e6db74">!!! Restart computer before using TeamViewer !!!!
 </span><span style="color:#e6db74">&#39;&#39;&#39;</span>)

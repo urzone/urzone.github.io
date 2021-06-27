@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>芳香性</title>
+      <link>https://urz.one/cn/2021-06-24/aromaticity/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-24/aromaticity/</guid>
+      <description>电子结构 在量子化学中，电子结构是电子在静止原子核产生的静电场中的运动状态。电子结构包括电子的波函数和与电子相关的能量。电子携带能量，以抵消核</description>
+    </item>
+    
+    <item>
       <title>英文地址书写</title>
       <link>https://urz.one/cn/2021-06-18/address-in-english/</link>
       <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
       <description>youtube-dl 是谷歌 github 上的一个开源项目，它是一款轻量级的命令行 下载实用工具，可解析下载包括 youtube、youku、腾讯视频、爱奇艺等国内外上百个视频</description>
-    </item>
-    
-    <item>
-      <title>更新 Rime 配置</title>
-      <link>https://urz.one/cn/2020-05-18/rime-setting/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-18/rime-setting/</guid>
-      <description>现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下： 个人隐私（相对现在流行的云词典输入法而言）； 一劳永逸（相对它的学习成本</description>
     </item>
     
   </channel>
