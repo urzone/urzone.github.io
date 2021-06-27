@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="134.5 140 314.85314 315.04676" width="314.85314" height="315.04676">
+  <defs>
+    <font-face font-family="STKaiti" font-size="16" panose-1="2 1 6 0 4 1 1 1 1 1" units-per-em="1000" underline-position="-133" underline-thickness="20" slope="0" x-height="446" cap-height="695" ascent="860.0006" descent="-139.99939" font-weight="400">
+      <font-face-src>
+        <font-face-name name="STKaiti"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="SharpArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -4 10 8" markerWidth="10" markerHeight="8" color="#b1001c">
+      <g>
+        <path d="M 5 0 L -3 -3 L 0 0 L 0 0 L -3 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="SharpArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-4 -4 10 8" markerWidth="10" markerHeight="8" color="#b1001c">
+      <g>
+        <path d="M 5 0 L -3 -3 L 0 0 L 0 0 L -3 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-06-27 16:47:30 +0000</metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <path d="M 145 145 L 255 145 C 260.52285 145 265 149.47715 265 155 L 265 183 C 265 188.52285 260.52285 193 255 193 L 145 193 C 139.47715 193 135 188.52285 135 183 L 135 155 C 135 149.47715 139.47715 145 145 145 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(140 150)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="4" y="17">化合物是否含有</tspan>
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#b1001c" x="11.784" y="36">环形 π 体系</tspan>
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" y="36">？</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="200" y1="193.5" x2="200" y2="241.82892" marker-end="url(#SharpArrow_Marker)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 318 145 L 438.85314 145 C 444.376 145 448.85314 149.47715 448.85314 155 L 448.85314 183 C 448.85314 188.52285 444.376 193 438.85314 193 L 318 193 C 312.47715 193 308 188.52285 308 183 L 308 155 C 308 149.47715 312.47715 145 318 145 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(313 150)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="1.4265747" y="17">不具有芳香性、反</tspan>
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="1.4265747" y="36">芳香性或非芳香性</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 145 249.22892 L 255 249.22892 C 260.52285 249.22892 265 253.70607 265 259.22892 L 265 287.22892 C 265 292.75177 260.52285 297.22892 255 297.22892 L 145 297.22892 C 139.47715 297.22892 135 292.75177 135 287.22892 L 135 259.22892 C 135 253.70607 139.47715 249.22892 145 249.22892 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(140 254.22892)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="3.784" y="17">离域 π 电子数量</tspan>
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="44" y="36">是？</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 328.85314 346 L 438.85314 346 C 444.376 346 448.85314 350.47715 448.85314 356 L 448.85314 365 C 448.85314 370.52285 444.376 375 438.85314 375 L 328.85314 375 C 323.3303 375 318.85314 370.52285 318.85314 365 L 318.85314 356 C 318.85314 350.47715 323.3303 346 328.85314 346 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(323.85314 351)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="4" y="17">是否平面结构？</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 145 346 L 255 346 C 260.52285 346 265 350.47715 265 356 L 265 365 C 265 370.52285 260.52285 375 255 375 L 145 375 C 139.47715 375 135 370.52285 135 365 L 135 356 C 135 350.47715 139.47715 346 145 346 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(140 351)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="4" y="17">是否平面结构？</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 145 425.54676 L 203 425.54676 C 208.52285 425.54676 213 430.0239 213 435.54676 L 213 444.54676 C 213 450.0696 208.52285 454.54676 203 454.54676 L 145 454.54676 C 139.47715 454.54676 135 450.0696 135 444.54676 L 135 435.54676 C 135 430.0239 139.47715 425.54676 145 425.54676 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(140 430.54676)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="10" y="17">芳香性</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 255 425.54676 L 313 425.54676 C 318.52285 425.54676 323 430.0239 323 435.54676 L 323 444.54676 C 323 450.0696 318.52285 454.54676 313 454.54676 L 255 454.54676 C 249.47715 454.54676 245 450.0696 245 444.54676 L 245 435.54676 C 245 430.0239 249.47715 425.54676 255 425.54676 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(250 430.54676)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">非芳香性</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 380.85314 425.54676 L 438.85314 425.54676 C 444.376 425.54676 448.85314 430.0239 448.85314 435.54676 L 448.85314 444.54676 C 448.85314 450.0696 444.376 454.54676 438.85314 454.54676 L 380.85314 454.54676 C 375.3303 454.54676 370.85314 450.0696 370.85314 444.54676 L 370.85314 435.54676 C 370.85314 430.0239 375.3303 425.54676 380.85314 425.54676 Z" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(375.85314 430.54676)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">反芳香性</tspan>
+        </text>
+      </g>
+      <g id="Line_20">
+        <line x1="200" y1="297.72892" x2="200" y2="338.6" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_21">
+        <path d="M 265.5 273.22892 L 383.7037 273.22892 L 383.81564 338.6" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_22">
+        <line x1="265.5" y1="169" x2="301.1" y2="169" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_28">
+        <line x1="166" y1="375.9815" x2="166" y2="418.64676" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_29">
+        <line x1="166" y1="375.9815" x2="250.78954" y2="422.01593" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_30">
+        <line x1="384.74074" y1="375.72816" x2="312.9482" y2="421.5646" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_31">
+        <line x1="384.74074" y1="375.97087" x2="384.74074" y2="418.64676" marker-end="url(#SharpArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(206 206)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">是</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(274 145)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">否</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(206 305.5)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="5.412" y="17">4n + 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(389.74074 305.5)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">4n</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(216.01852 380.9815)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">否</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(141.81818 380.9815)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">是</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(389.74074 380.9815)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">是</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(326.27273 380.9815)" fill="#e3e3e3">
+          <tspan font-family="STKaiti" font-size="16" font-weight="400" fill="#e3e3e3" x="2" y="17">否</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
