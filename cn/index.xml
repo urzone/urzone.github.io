@@ -8,6 +8,42 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>卟啉</title>
+      <link>https://urz.one/cn/2021-07-08/porphyrin/</link>
+      <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-08/porphyrin/</guid>
+      <description>卟吩 (bǔ fēn, porphin)，旧称㗊 (léi)： 四个吡咯环的 $\alpha$ 碳原子通过四个次甲基（－CH＝）桥相互连接形成环形平面共轭体系，平面上含</description>
+    </item>
+    
+    <item>
+      <title>溶解性标准</title>
+      <link>https://urz.one/cn/2021-07-08/solubility/</link>
+      <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-08/solubility/</guid>
+      <description>溶解性及其术语的量化 轨道： 电子出现概率较大 (电子出现密度) 的空间的形状。 键： 因轨道电子云的重叠而将原子聚在一起的吸引力。 电负性： 两个不同原子</description>
+    </item>
+    
+    <item>
+      <title>高考录取率</title>
+      <link>https://urz.one/cn/2021-07-01/china-national-university-entrance-exam/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-01/china-national-university-entrance-exam/</guid>
+      <description>2009 年各省高考人数及一本录取率 省别 报名人数（万人） 录取人数（人） 比例（%） 北京 10.03 20175 20.1 天津 7.65 15057 19.7 上海 8.30 14955 18.0 青海 4.00 5070 12.7 海南 5.78 6817 11.8 浙江 34.85 33600 9.6 宁夏 5.80 5483</description>
+    </item>
+    
+    <item>
+      <title>晶体</title>
+      <link>https://urz.one/cn/2021-06-28/crystals/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-06-28/crystals/</guid>
+      <description>波： 凡是描述运动状态的函数具有时间周期性和空间周期性特征的都可称为波，如引力波，微观粒子的概率波。 德布罗意波长： $\lambda = \frac h p$ （$h$ 为普朗克常</description>
+    </item>
+    
+    <item>
       <title>芳香性</title>
       <link>https://urz.one/cn/2021-06-24/aromaticity/</link>
       <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
@@ -869,42 +905,6 @@
       
       <guid>https://urz.one/cn/2020-05-29/inkscape/</guid>
       <description>在 office 文档中直接插入矢量图，还真不是一件容易的事情。它奇葩地并不支持将一般作图软件生成的 pdf 或 svg 文件直接插入文档中，而需要 emf 文件格式。 下面使用 i</description>
-    </item>
-    
-    <item>
-      <title>关于余欢水</title>
-      <link>https://urz.one/cn/2020-05-24/if-there-is-no-tomorrow/</link>
-      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-24/if-there-is-no-tomorrow/</guid>
-      <description>余欢水这个角色，想起来是有意思的。 一个小人物在中年里的怯懦，在前半部份展现得淋漓尽致。其实每一次他都尝试着要把事情做好，奈何很多状况总是由不</description>
-    </item>
-    
-    <item>
-      <title>你不再是从前那个少年</title>
-      <link>https://urz.one/cn/2020-05-21/was-young/</link>
-      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-21/was-young/</guid>
-      <description>你知道，你已不再是从前那个少年，而所有的一切也都在悄然地改变。 今天终究是回到了住地，看着眼前的一切，似乎熟悉，又仿佛陌生。想来毕竟在这里待了</description>
-    </item>
-    
-    <item>
-      <title>树葬</title>
-      <link>https://urz.one/cn/2020-05-20/sorry/</link>
-      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-20/sorry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>组合拳之视频下载与处理</title>
-      <link>https://urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/</guid>
-      <description>youtube-dl 是谷歌 github 上的一个开源项目，它是一款轻量级的命令行 下载实用工具，可解析下载包括 youtube、youku、腾讯视频、爱奇艺等国内外上百个视频</description>
     </item>
     
   </channel>
