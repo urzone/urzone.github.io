@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>树葬 - XiaO | 缄默之语</title>
-    <meta property="og:title" content="树葬 - XiaO | 缄默之语">
+    <title>SVG 背景色 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="SVG 背景色 - XiaO | 缄默之语">
     
     <meta name="twitter:card" content="summary">
 
@@ -14,6 +14,13 @@
     
 
     
+      
+      <meta property="description" content="SVG (Scalable Vector Graphics) 是一种可缩放矢量图（不同于位图），其背景色可通过编辑其描述语言直接设置。
+一个 SVG 图的所有描述语言都嵌在一对 &amp;lt;svg&amp;gt;...&amp;lt;/svg&amp;gt; 标签之间，如下是一个黑底白边的圆。
+&amp;lt;svg width=&amp;quot;100%&amp;quot;&amp;gt; &amp;lt;circle cx=&amp;quot;50%&amp;quot; &amp;hellip;">
+      <meta property="og:description" content="SVG (Scalable Vector Graphics) 是一种可缩放矢量图（不同于位图），其背景色可通过编辑其描述语言直接设置。
+一个 SVG 图的所有描述语言都嵌在一对 &amp;lt;svg&amp;gt;...&amp;lt;/svg&amp;gt; 标签之间，如下是一个黑底白边的圆。
+&amp;lt;svg width=&amp;quot;100%&amp;quot;&amp;gt; &amp;lt;circle cx=&amp;quot;50%&amp;quot; &amp;hellip;">
       
     
 
@@ -93,11 +100,11 @@
     <article class="main">
       <header class="title">
       
-<h1>树葬</h1>
+<h1>SVG 背景色</h1>
 
 
-<h3>海桑 / 
-2020-05-20</h3>
+<h3>XiaO / 
+2021-07-23</h3>
 
 <hr>
 
@@ -106,14 +113,28 @@
 
 
 
-<p><img src="/media/image/cn-2020-05-20.svg" alt="cn-2020-05-20" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<p>SVG (Scalable Vector Graphics) 是一种可缩放矢量图（不同于位图），其背景色可通过编辑其描述语言直接设置。</p>
+<p>一个 SVG 图的所有描述语言都嵌在一对 <code>&lt;svg&gt;...&lt;/svg&gt;</code> 标签之间，如下是一个黑底白边的圆。</p>
+<pre><code>&lt;svg width=&quot;100%&quot;&gt;
+&lt;circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;40&quot; stroke=&quot;#F5F5F5&quot; stroke-width=&quot;1&quot; fill=&quot;#000000&quot; /&gt;
+&lt;/svg&gt;
+</code></pre><svg width="100%">
+<circle cx="50%" cy="50%" r="40" stroke="#F5F5F5" stroke-width="2" fill="#000000" />
+</svg>
+<p><a href="https://www.geeksforgeeks.org/how-to-set-the-svg-background-color/">修改 svg 图片的背景色</a>，只需要在 <code>&lt;svg&gt;</code> 内修改相应的 style 属性即可。</p>
+<pre><code>&lt;svg width=&quot;100%&quot; style=&quot;background-color:rgb(245, 245, 245, 60%); border-radius: 15px;&quot;&gt;  # 添加背景色，并设置角落弧度
+&lt;circle cx=&quot;50%&quot; cy=&quot;50%&quot; r=&quot;40&quot; stroke=&quot;#F5F5F5&quot; stroke-width=&quot;2&quot; fill=&quot;#CC342C&quot; /&gt;
+&lt;/svg&gt;
+</code></pre><svg width="100%" style="background-color:rgb(245, 245, 245, 60%); border-radius: 15px;">
+<circle cx="50%" cy="50%" r="40" stroke="#F5F5F5" stroke-width="2" fill="#CC342C" />
+</svg>
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/">组合拳之视频下载与处理</a></span>
-  <span class="nav-next"><a href="/cn/2020-05-21/was-young/">你不再是从前那个少年</a> &rarr;</span>
+  <span class="nav-prev">&larr; <a href="/cn/2021-07-23/regular-polygon-area-calculation/">正多边形面积</a></span>
+  <span class="nav-next"><a href="/cn/2021-07-28/contrast-agent/">造影剂</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -121,11 +142,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/cn\/2020-05-19\/mac-youtube-dl-aria2-ffmpeg\/';
+    url = '\/cn\/2021-07-23\/regular-polygon-area-calculation\/';
     
   } else if (e.which == 39) {  
     
-    url = '\/cn\/2020-05-21\/was-young\/';
+    url = '\/cn\/2021-07-28\/contrast-agent\/';
     
   }
   if (url) window.location = url;

@@ -158,19 +158,36 @@
 <li>红外光波长：<code>$ 780 \ nm$</code> 到 <code>$1 \ mm$</code> ；</li>
 <li><a href="https://www.jeol.co.jp/en/words/emterms/search_result.html?keyword=wavelength%20of%20electron#:~:text=wavelength%20of%20an%20electron%20is,%2C%20h%20is%20Planck%20constant">电子波波长</a>：
 <ul>
-<li>$$ v[m / s]=c \sqrt{1-\left(1+\frac{e E}{m_{0} c^{2}}\right)^{-2}}$$
-$$=3.00 \times 10^{8} \sqrt{1-\left(1+1.96 \times 10^{-6} E\right)^{-2}} $$ 上式表示电子在加速电压 <code>$E [V]$</code> 下的速度 <code>$v[m/s]$</code>。其中 <code>$c$</code> 是光速，e 是一个电子的<a href="https://www.wikiwand.com/zh-hans/%E5%9F%BA%E6%9C%AC%E7%94%B5%E8%8D%B7">基本电荷</a>，<code>$E [V]$</code> 为相对论修正前的加速电压， <code>$m_0$</code>  是电子的静止质量。</li>
-<li>$$ \lambda[p m]=\frac{h}{\sqrt{2 m_{0} e E^{*}}} $$
-$$=\frac{1.23 \times 10^{3}}{\sqrt{E\left(1+9.78 \times 10^{-7} E\right)}} $$ 上式通过使用电子的波长 <code>$\lambda$</code> 和动量 <code>$p$</code>  之间的德布罗意关系来计算给定能量（加速电压 <code>$E [V]$</code>）的电子的波长 <code>$\lambda$</code>。其中，<code>$h$</code> 是普朗克常数，<code>$E^* [V]$</code> 为相对论修正后的加速电压，<code>$E [V]$</code> 为相对论修正前的加速电压。<code>$E$</code> 为 <code>$1 \ kV$</code> 条件下电子波波长为 <code>$38.764 \ pm = 0.038764 \ nm$</code>。</li>
+<li>
+<p>$$
+\begin{align}
+v[m / s] &amp; = c \sqrt{1-\left(1+\frac{e E}{m_{0} c^{2}}\right)^{-2}} \\<br>
+&amp; = 3.00 \times 10^{8} \sqrt{1-\left(1+1.96 \times 10^{-6} E\right)^{-2}}
+\end{align} \tag{1}
+$$
+公式 <code>$(1)$</code> 表示电子在加速电压 <code>$E [V]$</code> 下的速度 <code>$v[m/s]$</code>。其中 <code>$c$</code> 是光速，e 是一个电子的<a href="https://www.wikiwand.com/zh-hans/%E5%9F%BA%E6%9C%AC%E7%94%B5%E8%8D%B7">基本电荷</a>，<code>$E [V]$</code> 为相对论修正前的加速电压， <code>$m_0$</code>  是电子的静止质量。</p>
+<ul>
+<li>$$
+\begin{align}
+\lambda[p m] &amp; = \frac{h}{\sqrt{2 m_{0} e E^{*}}} \\<br>
+&amp; = \frac{1.23 \times 10^{3}}{\sqrt{E\left(1+9.78 \times 10^{-7} E\right)}}
+\end{align} \tag{2}
+$$
+公式 <code>$(2)$</code> 通过使用电子的波长 <code>$\lambda$</code> 和动量 <code>$p$</code>  之间的德布罗意关系来计算给定能量（加速电压 <code>$E [V]$</code>）的电子的波长 <code>$\lambda$</code>。其中，<code>$h$</code> 是普朗克常数，<code>$E^* [V]$</code> 为相对论修正后的加速电压，<code>$E [V]$</code> 为相对论修正前的加速电压。<code>$E$</code> 为 <code>$1 \ kV$</code> 条件下电子波波长为 <code>$38.764 \ pm = 0.038764 \ nm$</code>。</li>
 <li>被限制在原子核周围特定空间的电子，<a href="https://courses.lumenlearning.com/cheminter/chapter/de-broglie-wave-equation/">只能以电子波恰好适合其原子大小的方式</a>绕核运动。这也就意味着电子波的频率（<code>$\nu$</code>）是量子化的。根据方程 <code>$E=h\nu$</code>，量子化的频率进一步说明电子只能以特定能量存在于原子中。</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
-<p><strong>布拉格衍射：</strong> 同相位的入射波经过<strong>不同晶面</strong>，在晶格原子处发生衍射后，将会产生相位差，从而导致干涉相长或相消，这就形成了布拉格衍射。若不考虑<a href="https://www.wikiwand.com/zh/%E5%BA%B7%E6%99%AE%E9%A0%93%E6%95%A3%E5%B0%84">康普顿散射</a>，则波束的波长在进入晶体前后不发生改变。根据布拉格定律，干涉加强位置所满足的条件为：<img src="/media/image/cn-20210628-01.png" alt="布拉格衍射" width="400" style="display: block; margin-left: auto; margin-right: auto; width: 40%;"> $$m\lambda =2d\sin \theta$$ 其中 <code>$\lambda$</code>  为入射波的波长，<code>$d$</code> 为晶面间距，<code>$\theta$</code>  为衍射角度，<code>$m$</code> 为衍射级数。</p>
+<p><strong>布拉格衍射：</strong> 同相位的入射波经过<strong>不同晶面</strong>，在晶格原子处发生衍射后，将会产生相位差，从而导致干涉相长或相消，这就形成了布拉格衍射。若不考虑<a href="https://www.wikiwand.com/zh/%E5%BA%B7%E6%99%AE%E9%A0%93%E6%95%A3%E5%B0%84">康普顿散射</a>，则波束的波长在进入晶体前后不发生改变。根据布拉格定律，干涉加强位置所满足的条件为：</p>
 </li>
 </ul>
+<img src="/media/image/cn-20210628-01.svg" alt="布拉格衍射" width="400" style="background-color:rgb(245, 245, 245, 70%); border-radius: 30px; display: block; margin-left: auto; margin-right: auto; width: 60%;"> 
+<p>$$m\lambda =2d\sin \theta$$</p>
+<p>其中 <code>$\lambda$</code>  为入射波的波长，<code>$d$</code> 为晶面间距，<code>$\theta$</code>  为衍射角度，<code>$m$</code> 为衍射级数。</p>
 
 
   <footer>

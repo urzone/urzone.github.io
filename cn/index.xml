@@ -8,6 +8,69 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>冰晶世界</title>
+      <link>https://urz.one/cn/2021-08-06/crystal-world/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-08-06/crystal-world/</guid>
+      <description>梦里，一个冰晶的世界，有雪白的大山，有浅蓝色的点缀。 潜意识告诉我，这里应该很冷，但是身体却没有特别的感觉。我们在路上走着，欣赏着一路的风景。</description>
+    </item>
+    
+    <item>
+      <title>造影剂</title>
+      <link>https://urz.one/cn/2021-07-28/contrast-agent/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-28/contrast-agent/</guid>
+      <description>造影剂（对比剂）： 为增强影像观察效果而注入（或服用）到人体组织或器官的化学制品。这些制品的密度高于或低于周围组织，可利用某些器械显示形成的对</description>
+    </item>
+    
+    <item>
+      <title>SVG 背景色</title>
+      <link>https://urz.one/cn/2021-07-23/background-color-of-svg/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-23/background-color-of-svg/</guid>
+      <description>SVG (Scalable Vector Graphics) 是一种可缩放矢量图（不同于位图），其背景色可通过编辑其描述语言直接设置。 一个 SVG 图的所有描述语言都嵌在一对 &amp;lt;svg&amp;gt;...&amp;lt;/svg&amp;gt; 标签之间，如下是一个黑底白</description>
+    </item>
+    
+    <item>
+      <title>正多边形面积</title>
+      <link>https://urz.one/cn/2021-07-23/regular-polygon-area-calculation/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-23/regular-polygon-area-calculation/</guid>
+      <description>边长为 $a$ 的正多边形，其面积如公式 $(1)$ 所示。 $$ \begin{align} S_{n} &amp;amp; = \frac {1}{2} \cdot a \cdot \frac {a} {2 \tan {\frac{\pi}{n}}} \cdot n \\ &amp;amp; = \frac {n}{4 \tan {\frac {\pi}{n}}} \cdot a^2 \end{align} \tag{1} $$ 当边长 $a =$ 1.39 时，则： $S_{正三角形} =</description>
+    </item>
+    
+    <item>
+      <title>专利三性</title>
+      <link>https://urz.one/cn/2021-07-16/patent/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-16/patent/</guid>
+      <description>国家知识产权局作为国务院专利行政管理部门，委托国家知识产权局专利局受理、审批专利申请，国家知识产权局专利局以国家知识产权局的名义作出各项决定</description>
+    </item>
+    
+    <item>
+      <title>里宾斯基五规则</title>
+      <link>https://urz.one/cn/2021-07-15/lipinskis-rule-of-five/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-15/lipinskis-rule-of-five/</guid>
+      <description>辉瑞公司药物化学家克里斯多夫·里宾斯基于 1997 年提出了筛选适合口服的类药分子的基本法则。符合里宾斯基五规则的化合物会有更好的药代动力学性质，其在</description>
+    </item>
+    
+    <item>
+      <title>化合物疏水性的量度</title>
+      <link>https://urz.one/cn/2021-07-14/logp-and-logd/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-07-14/logp-and-logd/</guid>
+      <description>分配系数 (Partition coefficient, P)： 在一定温度下，物质的未解离形态在两种互不相溶的溶剂中达到分配平衡时在两相中的活度（常近似为浓度）之比，为一常数。可用于表示</description>
+    </item>
+    
+    <item>
       <title>卟啉</title>
       <link>https://urz.one/cn/2021-07-08/porphyrin/</link>
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
@@ -17,7 +80,7 @@
     </item>
     
     <item>
-      <title>溶解性标准</title>
+      <title>溶解性的量度</title>
       <link>https://urz.one/cn/2021-07-08/solubility/</link>
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -842,69 +905,6 @@
       
       <guid>https://urz.one/cn/2020-06-10/google/</guid>
       <description>使用谷歌搜索一些网页内容的时候，其结果常被历史访问或者地域语言等默认设定所干扰。可通过通过修改谷歌搜索中 URL 的参数，来达到自己想要的搜索目的。</description>
-    </item>
-    
-    <item>
-      <title>使用 pyenv 管理 python 版本</title>
-      <link>https://urz.one/cn/2020-06-07/pyenv-python/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-07/pyenv-python/</guid>
-      <description>万事皆需理由 macOS Catalina 自带 python 2.x 与 3.x，以为系统自身服务。 % which python /usr/bin/python % python -V Python 2.7.16 % which python3 /usr/bin/python3 % python3 -V Python 3.7.3 Homebrew 的更新 Homebrew 的 python 版本更新比较慢，毕竟需要众人拾柴。 其实</description>
-    </item>
-    
-    <item>
-      <title>用 R 进行绘图与写作</title>
-      <link>https://urz.one/cn/2020-06-07/r-rstudio/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-07/r-rstudio/</guid>
-      <description>安装 R，RStudio 与 pandoc brew install r brew cask install rstudio # 稳定版 brew cask install rstudio-preview # 预览版 brew cask install rstudio-daily # 日更版 brew cask install pandoc-citeproc # pandoc 的引文格式。 Pandoc 默认管理引文的方法是使用 pando</description>
-    </item>
-    
-    <item>
-      <title>关于人机交互的 shell</title>
-      <link>https://urz.one/cn/2020-06-06/shell-zsh-bash-path/</link>
-      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-06/shell-zsh-bash-path/</guid>
-      <description>编译与解释 使用某个编程语言编写的源代码，其执行方式可以是：编译成新代码执行或通过解释器解释执行。 编译器：将使用 A 语言编写的源代码编译成 B 语言</description>
-    </item>
-    
-    <item>
-      <title>分子动力学</title>
-      <link>https://urz.one/cn/2020-06-05/molecular-dynamics-gromacs-namd/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-05/molecular-dynamics-gromacs-namd/</guid>
-      <description>分子动力学（Molecular dynamics） 分子动力学是依靠计算机来模拟分子、原子体系运动的多体模拟方法。通过对分子、原子在一定时间内运</description>
-    </item>
-    
-    <item>
-      <title>分子对接</title>
-      <link>https://urz.one/cn/2020-06-05/molecular-docking/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-05/molecular-docking/</guid>
-      <description>分子对接 （Molecular docking） 分子对接是一种预测两个分子彼此结合形成稳定复合物时一个分子相对于另一个分子的优选取向的方法。它可</description>
-    </item>
-    
-    <item>
-      <title>企鹅之死</title>
-      <link>https://urz.one/cn/2020-06-02/qq/</link>
-      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-02/qq/</guid>
-      <description>想起许多年前，中学时代的一个夜晚。 夏夜，不凉。然而回忆里也并不显出特别的热。 不大的房间里，靠墙摆着许多的电脑。那时候电脑的显示器很大。我说的</description>
-    </item>
-    
-    <item>
-      <title>inkscape 转换 emf 图片格式</title>
-      <link>https://urz.one/cn/2020-05-29/inkscape/</link>
-      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-05-29/inkscape/</guid>
-      <description>在 office 文档中直接插入矢量图，还真不是一件容易的事情。它奇葩地并不支持将一般作图软件生成的 pdf 或 svg 文件直接插入文档中，而需要 emf 文件格式。 下面使用 i</description>
     </item>
     
   </channel>

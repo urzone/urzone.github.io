@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>树葬 - XiaO | 缄默之语</title>
-    <meta property="og:title" content="树葬 - XiaO | 缄默之语">
+    <title>正多边形面积 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="正多边形面积 - XiaO | 缄默之语">
     
     <meta name="twitter:card" content="summary">
 
@@ -14,6 +14,11 @@
     
 
     
+      
+      <meta property="description" content="边长为 $a$ 的正多边形，其面积如公式 $(1)$ 所示。
+[&amp;hellip;] $$ \begin{align} S_{n} &amp;amp; = \frac {1}{2} \cdot a \cdot \frac {a} {2 \tan {\frac{\pi}{n}}} \cdot n \\ &amp;amp; = \frac {n}{4 \tan {\frac {\pi}{n}}} \cdot a^2 &amp;hellip;">
+      <meta property="og:description" content="边长为 $a$ 的正多边形，其面积如公式 $(1)$ 所示。
+[&amp;hellip;] $$ \begin{align} S_{n} &amp;amp; = \frac {1}{2} \cdot a \cdot \frac {a} {2 \tan {\frac{\pi}{n}}} \cdot n \\ &amp;amp; = \frac {n}{4 \tan {\frac {\pi}{n}}} \cdot a^2 &amp;hellip;">
       
     
 
@@ -93,11 +98,11 @@
     <article class="main">
       <header class="title">
       
-<h1>树葬</h1>
+<h1>正多边形面积</h1>
 
 
-<h3>海桑 / 
-2020-05-20</h3>
+<h3>XiaO / 
+2021-07-23</h3>
 
 <hr>
 
@@ -106,14 +111,39 @@
 
 
 
-<p><img src="/media/image/cn-2020-05-20.svg" alt="cn-2020-05-20" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<p>边长为 <code>$a$</code> 的正多边形，其面积如公式 <code>$(1)$</code> 所示。</p>
+<img src="/media/image/cn-20210723-01.svg" alt="布拉格衍射" width="400" style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+<p>$$
+\begin{align}
+S_{n} &amp; = \frac {1}{2} \cdot a \cdot  \frac {a} {2 \tan {\frac{\pi}{n}}} \cdot n \\ &amp; = \frac {n}{4 \tan {\frac {\pi}{n}}} \cdot a^2
+\end{align} \tag{1}
+$$</p>
+<p>当边长 <code>$a =$</code> <a href="https://chem.libretexts.org/Courses/Athabasca_University/Chemistry_350%3A_Organic_Chemistry_I/15%3A_Benzene_and_Aromaticity/15.04%3A_Structure_and_Stability_of_Benzene">1.39</a> 时，则：</p>
+<ul>
+<li>
+<p><code>$S_{正三角形} = \frac{3}{4 \tan \frac {\pi} {3}} a^2 = \frac{\sqrt{3}}{4} a^2 = 0.8366 $</code></p>
+</li>
+<li>
+<p><code>$S_{正方形} = \frac{4}{4 \tan \frac {\pi} {4}} a^2 = a^2 = 1.9321$</code></p>
+</li>
+<li>
+<p><code>$S_{正五边形} = \frac{5}{4 \tan \frac {\pi} {5}} a^2 =  \frac{5}{4\sqrt{5-2\sqrt{5}}} a^2 = 3.3241$</code></p>
+</li>
+<li>
+<p><code>$S_{正六边形} = \frac{6}{4 \tan \frac {\pi} {6}} a^2 = \frac{3\sqrt{3}}{2} a^2 = 5.0197$</code></p>
+</li>
+<li>
+<p><code>$S_{正七边形} = \frac{7}{4 \tan \frac {\pi} {7}} a^2 = 7.0211$</code></p>
+</li>
+</ul>
+<p><img src="/media/image/cn-20210723-02.svg" alt="三角函数圆图" width="400" style="background-color:rgb(245, 245, 245, 70%); border-radius: 30%; display: block; margin-left: auto; margin-right: auto; width: 70%;" ></p>
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/2020-05-19/mac-youtube-dl-aria2-ffmpeg/">组合拳之视频下载与处理</a></span>
-  <span class="nav-next"><a href="/cn/2020-05-21/was-young/">你不再是从前那个少年</a> &rarr;</span>
+  <span class="nav-prev">&larr; <a href="/cn/2021-07-16/patent/">专利三性</a></span>
+  <span class="nav-next"><a href="/cn/2021-07-23/background-color-of-svg/">SVG 背景色</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -121,11 +151,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/cn\/2020-05-19\/mac-youtube-dl-aria2-ffmpeg\/';
+    url = '\/cn\/2021-07-16\/patent\/';
     
   } else if (e.which == 39) {  
     
-    url = '\/cn\/2020-05-21\/was-young\/';
+    url = '\/cn\/2021-07-23\/background-color-of-svg\/';
     
   }
   if (url) window.location = url;
@@ -162,6 +192,8 @@ document.addEventListener('keyup', function(e) {
 
 
 
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
