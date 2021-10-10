@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://urz.one/tags/bing/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/dissenter/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/duckduckgo/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/ecosia/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/google/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/google-hit-hider-by-domain/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://urz.one/tags/homebrew/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,10 +32,31 @@
     <loc>https://urz.one/tags/pdffonts/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://urz.one/tags/searx/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/startpage/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://urz.one/tags/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://urz.one/tags/tampermonkey/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/ublacklist/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/yahoo/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2021-10-10/%E4%BF%A1%E6%81%AF%E8%BE%B9%E7%95%8C/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://urz.one/cn/2021-10-10/tasukuhonjo/</loc>
+    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/%E8%87%AA%E5%8A%A8%E6%97%A0%E7%BC%9D%E7%BF%BB%E9%A1%B5/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/%E7%89%A9%E6%80%81/</loc>
@@ -580,9 +619,6 @@
   </url><url>
     <loc>https://urz.one/tags/tap/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://urz.one/tags/google/</loc>
-    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/parameters/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
