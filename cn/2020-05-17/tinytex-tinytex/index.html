@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -114,17 +112,17 @@
 <h3 id="更新-r">更新 R</h3>
 <p>更新 R 4.0 后，所有的 R 包都不见了。不过好在自己平时所用到的包就那么些个，而且都是广 (tè) 泛 (bié) 使 (dà) 用 (zhòng) 的包，故而不用担心重装包的繁琐，也不需要担心包的版本和 R 之间的兼容性问题。</p>
 <p>所用 R 包之<strong>些微</strong>（读音 xiē wēi 而非 xuē wēi）譬如一下（我知道这里语法使用不正确，只是想戏谑（xì xuè）诙谐或顽皮一下）：</p>
-<pre><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;)) # 图片输出
+<pre tabindex="0"><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;)) # 图片输出
 install.packages(c(&quot;rmarkdown&quot;,&quot;bookdown&quot;,&quot;blogdown&quot;,&quot;tufte&quot;, &quot;tinytex&quot;,&quot;miniUI&quot;)) # 网站或论文输出
 tinytex::install_tinytex()
 </code></pre><p>另外发现，自 RStudio v1.3.958-3 Preview 预览版之后，当遇到需要的包而又没有的时候，会弹框提示是否安装，于是傻乎乎地点击一下是即可，真是舒心啊。</p>
 <p>想来，如果一切都是这么稀松平常的话，那我在这里写字到底是要做什么呢？是的，一些事情就是会遇到一些<strong>但是</strong>。</p>
 <p>三更半夜重装 TinyTeX</p>
-<pre><code>install.packages('tinytex')
+<pre tabindex="0"><code>install.packages('tinytex')
 tinytex::install_tinytex()
 tinytex::uninstall_tinytex() # to uninstall TinyTeX
 </code></pre><p>遇到提示如下：</p>
-<pre><code>tinytex::install_tinytex()
+<pre tabindex="0"><code>tinytex::install_tinytex()
 …
 failed. Output was:
 gpg: Signature made Thu May 14 16:34:16 2020 CEST
@@ -136,7 +134,7 @@ and try again; usually this is because of transient updates.
 If problems persist, feel free to report to texlive@tug.org.
 …
 </code></pre><p>于是作罢，异日请早。</p>
-<pre><code>tinytex::install_tinytex()
+<pre tabindex="0"><code>tinytex::install_tinytex()
 …
 tlmgr: package log updated: ~/Library/TinyTeX/texmf-var/web2c/tlmgr.log
 TinyTeX installed to ~/Library/TinyTeX
@@ -144,7 +142,7 @@ TinyTeX installed to ~/Library/TinyTeX
 <hr>
 <h3 id="记录安装提示">记录安装提示</h3>
 <p>提示安装未成功</p>
-<pre><code>&gt; tinytex::install_tinytex()
+<pre tabindex="0"><code>&gt; tinytex::install_tinytex()
 trying URL 'https://yihui.org/gh/tinytex/tools/install-unx.sh'
 Content type 'text/plain; charset=utf-8' length 614 bytes
 ==================================================
@@ -192,7 +190,7 @@ Warning messages:
 3: In tinytex::install_tinytex() :
   TinyTeX was not successfully installed or configured.Your PATH variable is /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/TeX/texbin:/usr/local/MacGPG2/bin:/opt/X11/bin:/Applications/RStudio.app/Contents/MacOS/postback. See https://yihui.org/tinytex/faq/ for more information.
 </code></pre><p>提示安装成功</p>
-<pre><code>&gt; tinytex::install_tinytex()
+<pre tabindex="0"><code>&gt; tinytex::install_tinytex()
 trying URL 'https://yihui.org/gh/tinytex/tools/install-unx.sh'
 Content type 'text/plain; charset=utf-8' length 614 bytes
 ==================================================

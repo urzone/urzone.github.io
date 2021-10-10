@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doc2pdf on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/doc2pdf/</link>
+    <description>Recent content in doc2pdf on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/doc2pdf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>doc2pdf</title>
+      <link>https://urz.one/cn/2021-09-29/doc2pdf/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-09-29/doc2pdf/</guid>
+      <description>doc2docx 在 Terminal 中，使用 textutil 将 doc 文件 file.doc 转换为 docx 格式。 textutil -help # 查看 textutil 使用帮助 textutil -convert docx file.doc docx2pdf brew install pandoc # 格式转换工具 brew install --cask basictex # PDF 生成引擎 pandoc --help # 查看 pandoc 使用帮助 fc-list :lang=zh # 列出</description>
+    </item>
+    
+  </channel>
+</rss>

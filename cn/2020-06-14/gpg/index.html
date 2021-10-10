@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -158,7 +156,7 @@
 <p>密钥所关联身份的可信度即确认该公钥属于某人的程度。有完全确定 (full)，大致确定 (marginal)，不确认 (unknown) 等不同的确认程度。</p>
 <h3 id="gpg-安装">GPG 安装</h3>
 <p>GnuPG v.1 和 GnuPG v.2 都实现了同样的 PGP 标准，但它们提供的库和命令行工具可能不兼容，建议新版。</p>
-<pre><code>brew search gpg # 查看 gpg 相关信息             
+<pre tabindex="0"><code>brew search gpg # 查看 gpg 相关信息             
 ==&gt; Formulae
 gpg             gpg1            gpg2            gpgme           libgpg-error
 ==&gt; Casks
@@ -183,7 +181,7 @@ brew cask install gpg-suite-no-mail # 安装不含邮箱插件的图形界面版
 <h3 id="密码">密码</h3>
 <p>密码是用于对存储在磁盘上的私钥进行对称加密的，所以这个密码其实非常重要。</p>
 <h3 id="密钥的自身身份-key-id-or-fingerprint">密钥的自身身份 (key ID or fingerprint)</h3>
-<pre><code>% gpg --list-keys     # 列出所有公钥信息
+<pre tabindex="0"><code>% gpg --list-keys     # 列出所有公钥信息
 ~/.gnupg/pubring.kbx
 ------------------------------
 pub   rsa4096 2020-06-14 [SC]
@@ -192,7 +190,7 @@ uid           [ultimate] test &lt;test@exapmle.com&gt;
 sub   rsa4096 2020-06-14 [E]
 </code></pre><p>短横线上显示的是存储密钥证书信息的数据库文件。</p>
 <p>短横线下第一行显示的是密钥生成时采用的算法 (rsa)、加密长度 (4096)、产生时间 (2020-06-14)、能力 [SC]；第二行是该密钥的完整指纹 Fingerprint （40 个字符），是该密钥自身身份 (key ID) 的唯一认证。密钥的自身身份其实就是完整指纹的最后 8 位字符；第三行则是用户身份信息，包括确认程度，名字和邮件；最后一行显示的是一个具有加密能力的子密钥。</p>
-<pre><code>% gpg --list-secret-keys  # 列出所有私钥信息              
+<pre tabindex="0"><code>% gpg --list-secret-keys  # 列出所有私钥信息              
 ~.gnupg/pubring.kbx
 ------------------------------
 sec   rsa4096 2020-06-14 [SC]
@@ -213,7 +211,7 @@ ssb   rsa4096 2020-06-14 [E]
 <h2 id="管理主密钥">管理主密钥</h2>
 <h3 id="密钥存储文件的结构">密钥存储文件的结构</h3>
 <p>GPG 生成的密钥文件，存储在 <code>~/.gnupg/</code> 目录里，其结构如下：</p>
-<pre><code>% tree ~/.gnupg
+<pre tabindex="0"><code>% tree ~/.gnupg
 
 ├── S.gpg-agent
 ├── S.gpg-agent.browser
@@ -232,7 +230,7 @@ ssb   rsa4096 2020-06-14 [E]
 │
 └── trustdb.gpg # 可信任数据库 （无需备份）
 </code></pre><h3 id="密钥夹keygrip">密钥夹（keygrip）</h3>
-<pre><code>% gpg --list-keys --with-keygrip # 列出所有公钥信息，以及其密钥夹
+<pre tabindex="0"><code>% gpg --list-keys --with-keygrip # 列出所有公钥信息，以及其密钥夹
 
 ~/.gnupg/pubring.kbx
 ------------------------------
@@ -247,7 +245,7 @@ sub   rsa4096 2020-06-14 [E]
 <p><a href="https://gnupg.org/faq/whats-new-in-2.1.html#nosecring">pubring.gpg 与 secring.gpg</a> 属于历史遗留产物，他们分别用于存储所有公钥和私钥，即所有的公钥放在一个单文件中，所有的私钥放在一个单文件中。</p>
 <p>GPG 新的版本改变了文件存储结构，其中的公钥部分 (pubring.gpg) 由公钥密钥盒 (pubring.kbx) 取代，可用工具 kbxutil 显示其内部结构；而私钥部分 (secring.gpg) 则专门放入私钥文件夹 (private-keys-v1.d) 中，且每个私钥分开以单文件的形式存放。如此，新的文件存储结构更利于快速检索和处理。</p>
 <p>如下，当我们用命令 <code>gpg --list-secret-keys</code> 列出私钥的时候，似乎私钥也存储在 pubring.kbx 公钥密钥盒中，实则不然。<code>gpg --list-secret-keys </code> 命令原本是在旧版本的 GPG 软件里提取存放在 secring.gpg 文件下的私钥的，现在新版本里其实没有 secring.gpg 文件，此刻命令 <code>gpg --list-secret-keys</code> 所列出的私钥其实是从私钥文件夹 (private-keys-v1.d) 经过 gpg-agent 转换而来的。</p>
-<pre><code>% gpg --list-secret-keys --with-keygrip
+<pre tabindex="0"><code>% gpg --list-secret-keys --with-keygrip
 
 ~/.gnupg/pubring.kbx
 ------------------------------
@@ -267,7 +265,7 @@ ssb   rsa4096 2020-06-14 [E]
 </ul>
 </li>
 </ul>
-<pre><code>-----BEGIN PGP PRIVATE KEY BLOCK-----
+<pre tabindex="0"><code>-----BEGIN PGP PRIVATE KEY BLOCK-----
 
 lQdGBF7l2qABEADZelFYeVt3vNxdoNn0FC2i3blvuupdrfwFP6HZq6J9v+Iv5MlJ
 mHFvgx5zX+UwzeUHuCBClN4qnfI5CCkYD7c6LeBhEonDIM1BpLY0yJfPIUtoU+wo
@@ -288,7 +286,7 @@ CRkgeaGVGq07bLNDw7TQyIACVd4lhJVVetauDaia1m2LhjI=
 </code></pre><ul>
 <li>查找主密钥的密钥夹 (keygrip)，在 Terminal 中使用命令 <code>gpg --list-keys --with-keygrip *Key ID*</code>。key ID 其实就是密钥的<strong>指纹图谱</strong> (fingerprint) 最后 8 位字符，所以也可以用指纹图谱来代替 Key ID，记得修改 Key ID 为你自己主密钥的 Key ID。</li>
 </ul>
-<pre><code>% gpg --list-keys --with-keygrip E9C11BCA 
+<pre tabindex="0"><code>% gpg --list-keys --with-keygrip E9C11BCA 
 pub   rsa4096 2020-06-14 [SC]
       D993DA3B74DF27BA45622637D899FD6DE9C11BCA
       Keygrip = 785FF8E130273C6BDFD1F18A51A27EE66D1A3545 # 主密钥对应的密钥夹
@@ -303,7 +301,7 @@ sub   rsa4096 2020-06-14 [E]
 <li>验证主密钥的私钥已经被删除</li>
 </ul>
 <p>我们通过列出密钥的私钥部分，可见主密钥的私钥标志 <code>sec</code> 旁边多了一个 <code>#</code> 符号，表示此刻我们的密钥文件里已不存在该私钥文件了。</p>
-<pre><code>% gpg --list-secret-keys --with-keygrip
+<pre tabindex="0"><code>% gpg --list-secret-keys --with-keygrip
 ~/.gnupg/pubring.kbx
 ------------------------------
 sec#  rsa4096 2020-06-14 [SC]
@@ -319,7 +317,7 @@ ssb   rsa4096 2020-06-14 [E]
 <li>使用 GPG Tools 导入私钥，无法导入。提示 &ldquo;<strong>Often</strong> keys cannot be imported due to a missing self-signature.&rdquo; 根据该提示，谷歌一番 self-signature 后，在 GPG Tools 官网看到其就<a href="https://gpgtools.tenderapp.com/kb/gpg-keychain-faq/add-self-signature-to-an-old-key-which-does-not-have-one">老密钥缺少 &ldquo;self-signature&rdquo; 的处理办法</a>一文，照着操作，心里还纳闷儿，2017 年的密钥，不至于缺少自我签名啊，而且我在图形界面里，明明也看到自我签名了，怎么会无法导入。果然，依然无法导入。此时感觉，问题可能并不在 self-signature 这里。</li>
 <li>使用命令行导入私钥，依然无法导入。错误提示如下：导入私钥的时候，PGP 将密钥信息发送给 gpg-agent 处理，gpg-agent 说，找不到需要存放信息的文件或者文件夹。于是又谷歌一下，原来问题即在自己<a href="https://unix.stackexchange.com/questions/318385/no-such-file-or-directory-when-generating-a-gpg-key"><strong>随手清空了</strong> <code>~/.gnupg/</code> 文件夹</a>。</li>
 </ul>
-<pre><code> % gpg --import Secret.asc
+<pre tabindex="0"><code> % gpg --import Secret.asc
  
 gpg: key 6116A1BA/6116A1BA: error sending to agent: No such file or directory
 gpg: error building skey array: No such file or directory
@@ -332,7 +330,7 @@ gpg: import from 'Secret.asc' failed: No such file or directory
 </ul>
 <p>所以，感觉上应该是重启后的 gpg-agent，当导入密钥时，如果不存在相关密钥存储文件，会自动新建一个吧。另外，此番风波，可见图形界面软件和命令行工具的差异性，命令行工具能给出更多更准确的提示信息。</p>
 <p><code>~/.gnupg</code> 文件夹手动清空前：</p>
-<pre><code>% tree ~/.gnupg
+<pre tabindex="0"><code>% tree ~/.gnupg
 
 ├── S.gpg-agent
 ├── S.gpg-agent.browser
@@ -347,7 +345,7 @@ gpg: import from 'Secret.asc' failed: No such file or directory
 ├── pubring.kbx~
 └── trustdb.gpg）
 </code></pre><p><code>~/.gnupg</code> 文件夹手动清空后：</p>
-<pre><code>% tree ~/.gnupg
+<pre tabindex="0"><code>% tree ~/.gnupg
 
 ├── S.gpg-agent
 ├── S.gpg-agent.browser

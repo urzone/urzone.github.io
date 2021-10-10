@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -113,7 +111,7 @@
 
 <h3 id="问题r-包-ggalt-无法加载">问题：R 包 ggalt 无法加载</h3>
 <p>R 包 <a href="https://github.com/hrbrmstr/ggalt">ggalt</a> 无法加载，提示找不到 ash 包的镜像。</p>
-<pre><code>&gt; library(ggalt)
+<pre tabindex="0"><code>&gt; library(ggalt)
 Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpath = DLLpath, ...):
  unable to load shared object '~/Rpackages/ash/libs/ash.so':
   dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib
@@ -121,7 +119,7 @@ Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpat
   Reason: image not found
 </code></pre><h3 id="尝试重新安装-ggalt">尝试：重新安装 ggalt</h3>
 <p>尝试重新安装 ggalt，依旧提示找不到 ash 包的镜像。</p>
-<pre><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
+<pre tabindex="0"><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
 trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz'
@@ -151,7 +149,7 @@ Warning in install.packages :
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="尝试重新安装-ash">尝试：重新安装 ash</h3>
-<pre><code>&gt; install.packages(&quot;ash&quot;)
+<pre tabindex="0"><code>&gt; install.packages(&quot;ash&quot;)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
 trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ash_1.0-15.tar.gz'
@@ -181,7 +179,7 @@ installing to ~/Rpackages/00LOCK-ash/00new/ash/libs
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="尝试重新安装-ggalt-1">尝试：重新安装 ggalt</h3>
-<pre><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
+<pre tabindex="0"><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
 trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz'
@@ -266,7 +264,7 @@ downloaded 2.1 MB
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="小结">小结</h3>
-<pre><code>install.packages(&quot;ash&quot;)
+<pre tabindex="0"><code>install.packages(&quot;ash&quot;)
 install.packages(&quot;ggalt&quot;, dependencies = T)
 </code></pre>
 

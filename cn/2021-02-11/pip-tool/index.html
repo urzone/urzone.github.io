@@ -78,9 +78,7 @@ alias &amp;hellip;">
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -115,18 +113,18 @@ alias &amp;hellip;">
 
 <h2 id="pip-操作">pip 操作</h2>
 <p>pip 安装 python 包</p>
-<pre><code>pip install Somepackage1  Somepackage2 # 安装包
+<pre tabindex="0"><code>pip install Somepackage1  Somepackage2 # 安装包
 pip install --upgrade Somepackage1  Somepackage2 # 更新包
 pip uninstall Somepackage1  Somepackage2 # 安装包
 </code></pre><p>pip 对所有的安装包进行操作</p>
-<pre><code>alias pip-upgrade=&quot;pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U&quot; # 设置 pip-upgrade 别名更新所有 pip 安装的包
+<pre tabindex="0"><code>alias pip-upgrade=&quot;pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U&quot; # 设置 pip-upgrade 别名更新所有 pip 安装的包
 
 pip list -o --format columns|  cut -d' ' -f1|xargs -n1 pip install -U # 更新所有 pip 安装的包
 
 pip freeze | xargs pip uninstall -y # 卸载所有 pip 安装的包
 </code></pre><h2 id="所用工具">所用工具</h2>
 <p>docx2pdf</p>
-<pre><code>pip install docx2pdf
+<pre tabindex="0"><code>pip install docx2pdf
 docx2pdf input_file.docx # 单个文件转换
 </code></pre>
 

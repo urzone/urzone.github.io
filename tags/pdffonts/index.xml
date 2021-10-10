@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pdffonts on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/pdffonts/</link>
+    <description>Recent content in pdffonts on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/pdffonts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF 字体</title>
+      <link>https://urz.one/cn/2021-10-10/pdffonts/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-10/pdffonts/</guid>
+      <description>Poppler 是一个基于 xpdf-3.0 编码的 PDF 渲染库，可用于查看 PDF 文档中字体的嵌入情况。 软件安装： brew install poppler 软件使用： pdffonts /path/to/document.pdf 结果显示： name type encoding emb sub uni object ID ------------------------------------ ----------------- ---------------- --- --- --- --------- ZWRJGF+STKaitiSC-Regular CID TrueType</description>
+    </item>
+    
+  </channel>
+</rss>

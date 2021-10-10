@@ -8,6 +8,69 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>PDF 字体</title>
+      <link>https://urz.one/cn/2021-10-10/pdffonts/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-10/pdffonts/</guid>
+      <description>Poppler 是一个基于 xpdf-3.0 编码的 PDF 渲染库，可用于查看 PDF 文档中字体的嵌入情况。 软件安装： brew install poppler 软件使用： pdffonts /path/to/document.pdf 结果显示： name type encoding emb sub uni object ID ------------------------------------ ----------------- ---------------- --- --- --- --------- ZWRJGF+STKaitiSC-Regular CID TrueType</description>
+    </item>
+    
+    <item>
+      <title>本庶佑答记者问</title>
+      <link>https://urz.one/cn/2021-10-10/tasukuhonjo/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-10/tasukuhonjo/</guid>
+      <description>2018 年 10 月初，诺贝尔奖获奖名单的公布再次引爆了一年一度的媒体报道和公众讨论。两个多月后的今天，相关讨论已趋于平静。如果说之前媒体及公众的关注点</description>
+    </item>
+    
+    <item>
+      <title>物态</title>
+      <link>https://urz.one/cn/2021-10-01/state-of-matter/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-01/state-of-matter/</guid>
+      <description>物质的状态（物态）指物质出现的相。物质按保持物质理化性质的最小单位（简称粒子，包括離子、原子或分子）间的相互作用的关系分为固态、液态、气态以</description>
+    </item>
+    
+    <item>
+      <title>拂尔</title>
+      <link>https://urz.one/cn/2021-09-30/%E6%8B%82%E5%B0%94/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-09-30/%E6%8B%82%E5%B0%94/</guid>
+      <description>留别于十一兄逖裴十三游塞垣 &amp;mdash; 李白 太公渭川水，李斯上蔡门。 钓周猎秦安黎元，小鱼鵕兔何足言？ 天张云卷有时节，吾徒莫叹羝触藩。 于公白首大梁野，使人</description>
+    </item>
+    
+    <item>
+      <title>doc2pdf</title>
+      <link>https://urz.one/cn/2021-09-29/doc2pdf/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-09-29/doc2pdf/</guid>
+      <description>doc2docx 在 Terminal 中，使用 textutil 将 doc 文件 file.doc 转换为 docx 格式。 textutil -help # 查看 textutil 使用帮助 textutil -convert docx file.doc docx2pdf brew install pandoc # 格式转换工具 brew install --cask basictex # PDF 生成引擎 pandoc --help # 查看 pandoc 使用帮助 fc-list :lang=zh # 列出</description>
+    </item>
+    
+    <item>
+      <title>IPTV</title>
+      <link>https://urz.one/cn/2021-09-29/iptv/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-09-29/iptv/</guid>
+      <description>IPTV 是一个 Github 开源共同维护的公共电视台频道列表，频道数量多达 5000 多个，汇集了全世界各种语言、各种类型的电视频道，你只需在支持 m3u 的视频播放器上输入地</description>
+    </item>
+    
+    <item>
+      <title>月余</title>
+      <link>https://urz.one/cn/2021-09-29/%E6%9C%88%E4%BD%99/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-09-29/%E6%9C%88%E4%BD%99/</guid>
+      <description>佛教里有句话说，缘起性空。因缘而起，自性本空，所谓 “万物生于有，有生于无”。 足月。 回想起来，过去这一个月，我已经不知道应该用怎样的语言才能更</description>
+    </item>
+    
+    <item>
       <title>冰晶世界</title>
       <link>https://urz.one/cn/2021-08-06/crystal-world/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
@@ -842,69 +905,6 @@
       
       <guid>https://urz.one/cn/2020-06-17/freedom/</guid>
       <description>我不知道什么是自由。 我只知道，这，不是我想要的。小组会议，并没有带来什么实质性的讨论或者结果，除了平添的愤怒和你所知道的生命里又被浪费掉的几</description>
-    </item>
-    
-    <item>
-      <title>GPG</title>
-      <link>https://urz.one/cn/2020-06-14/gpg/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-14/gpg/</guid>
-      <description>GPG 概念，原理和安装 名词概念 PGP （“Pretty Good Privacy”） 是最初商业软件的名字 OpenPGP 是与最初 PGP 商业软件兼容的 IETF 标准 GnuPG （“Gnu Privacy Guard</description>
-    </item>
-    
-    <item>
-      <title>信息加密</title>
-      <link>https://urz.one/cn/2020-06-13/encryption/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-13/encryption/</guid>
-      <description>在密码学中，加密（英语：Encryption）是将明文信息改变为密文（不可读）内容的过程。只有拥有解密方法的对象，经由解密过程，才能将密文还</description>
-    </item>
-    
-    <item>
-      <title>shell 中的特殊符号</title>
-      <link>https://urz.one/cn/2020-06-12/special-characters-in-shell/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-12/special-characters-in-shell/</guid>
-      <description># comments shell 中以 # 开始的行会被 shell 忽略而不执行，可用作注释。 # This line is a comment. | pipe 将前一个命令的输出结果传递给下一个命令，作为下一个命令的输入参数。 command 1 |</description>
-    </item>
-    
-    <item>
-      <title>SVG 图片批量压缩</title>
-      <link>https://urz.one/cn/2020-06-12/svg-compressor/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-12/svg-compressor/</guid>
-      <description>SVG (Scalable Vector Graphics) 可缩放矢量图形是一种基于可扩展标记语言（XML），用于描述二维矢量图形的图形格式。 SVG 图片特点 SVG 图形文件可读，SVG 文件其实只是普通的</description>
-    </item>
-    
-    <item>
-      <title>Homebrew 个人使用记录</title>
-      <link>https://urz.one/cn/2020-06-11/homebrew/</link>
-      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-11/homebrew/</guid>
-      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
-    </item>
-    
-    <item>
-      <title>Mac 下用 link 创建链接</title>
-      <link>https://urz.one/cn/2020-06-11/link/</link>
-      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-11/link/</guid>
-      <description>从 myfile 文件创建一个链接，链接到 mylink 文件，这样我们可以通过访问 mylink 文件，来访问 myfile 文件。 创建链接的语法 ln [options] myfile mylink # 创建从 myfile 到 mylink 的硬链接 -s (Symbolic link) 创建软连接 -i</description>
-    </item>
-    
-    <item>
-      <title>谷歌搜索之参数设置</title>
-      <link>https://urz.one/cn/2020-06-10/google/</link>
-      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-10/google/</guid>
-      <description>使用谷歌搜索一些网页内容的时候，其结果常被历史访问或者地域语言等默认设定所干扰。可通过通过修改谷歌搜索中 URL 的参数，来达到自己想要的搜索目的。</description>
     </item>
     
   </channel>

@@ -76,9 +76,7 @@ xcode-select —-install /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubu
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -113,7 +111,7 @@ xcode-select —-install /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubu
 
 <h3 id="自用-mac-软件记录">自用 Mac 软件记录</h3>
 <p><a href="https://brew.sh/">Homebrew</a></p>
-<pre><code>xcode-select —-install
+<pre tabindex="0"><code>xcode-select —-install
 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
 
 brew tap homebrew/core
@@ -127,30 +125,30 @@ brew tap homebrew/bundle # 软件打包备份
 brew deps --tree formula  # 查看一个软件的依赖
 </code></pre><p><a href="https://atom.io">Atom</a></p>
 <p>免费文档编辑，然而<strong>某</strong>使用并不多。Built upon web technologies.</p>
-<pre><code>brew cask install atom
+<pre tabindex="0"><code>brew install --cask atom
 </code></pre><p><a href="https://macitbetter.com/BetterZip-Quick-Look-Generator/">Betterzipql</a></p>
 <p>快速预览压缩文件而不必解压，支持 ZIP, RAR, 7-Zip, TAR, TGZ, TBZ, TXZ, GZip, BZip2, ARJ, LZH, ISO, CHM, CAB, CPIO, DEB, RPM, StuffIt&rsquo;s SIT, BinHex, MacBinary，Apple Disk Images (DMG) and winmail.dat。</p>
-<pre><code>brew cask install betterzipql
+<pre tabindex="0"><code>brew install --cask betterzipql
 </code></pre><p><a href="https://getbitbar.com">Bitbar</a></p>
 <p>状态栏工具，把日常小工具放入状态栏</p>
-<pre><code>brew cask install bitbar
+<pre tabindex="0"><code>brew install --cask bitbar
 </code></pre><p><a href="https://calibre-ebook.com">Calibre</a></p>
 <p>电子书制作管理全能，<a href="https://sspai.com/post/43843">中文教程</a></p>
-<pre><code>brew cask install calibre
+<pre tabindex="0"><code>brew install --cask calibre
 </code></pre><p><a href="https://sindresorhus.com/caprine/">Caprine</a></p>
 <p>脸书的非官方桌面客户端，看起来还不错，不过也没咋用</p>
-<pre><code>brew cask install caprine
+<pre tabindex="0"><code>brew install --cask caprine
 </code></pre><p><a href="https://github.com/Clipy/Clipy">Clipy</a></p>
 <p>免费，剪贴板管理</p>
-<pre><code>brew cask install clipy
+<pre tabindex="0"><code>brew install --cask clipy
 </code></pre><p><a href="https://cryptomator.org">Cryptomator</a></p>
 <p>云存储加密软件，<a href="https://github.com/cryptomator/cryptomator">开源</a></p>
-<pre><code>brew cask install cryptomator
+<pre tabindex="0"><code>brew install --cask cryptomator
 </code></pre><p>Evernote 配合 Skitch 截屏使用， <strong>某</strong>使用不多</p>
-<pre><code>brew cask install evernote skitch
+<pre tabindex="0"><code>brew install --cask evernote skitch
 </code></pre><p><a href="https://www.gimp.org">GIMP</a></p>
 <p>图片编辑，免费开源</p>
-<pre><code>brew cask install gimp
+<pre tabindex="0"><code>brew install --cask gimp
 </code></pre><p><a href="https://iina.io">IINA</a></p>
 <p>高颜质视频播放器，自动下载字幕。</p>
 <p><a href="https://github.com/iina/iina/wiki/%E4%BD%BF%E7%94%A8-IINA-%E5%92%8C-youtube-dl-%E8%A7%82%E7%9C%8B%E7%BD%91%E9%A1%B5%E8%A7%86%E9%A2%91">配合</a> <a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html">youtube-dl</a> 播放网络视频，舒心。</p>
@@ -159,10 +157,10 @@ brew deps --tree formula  # 查看一个软件的依赖
 <li>若需启用本地最新版 youtube-dl，在其路径 <code>Custom youtube-dl path</code> 中填入 <code>/usr/local/bin/</code> 即可（homebrew 安装软件的默认路径）；</li>
 <li>若需<a href="https://stackoverflow.com/questions/47978387/choose-youtube-videos-quality-in-iina/47978388#47978388">调整载入视频的大小</a>，在其 <code>Raw options</code> 中添加参数：<code>format=&quot;bestvideo[height&lt;=?1440]+bestaudio/best[height&lt;=?1440]&quot;</code> ；</li>
 </ul>
-<pre><code>brew cask install iina
+<pre tabindex="0"><code>brew install --cask iina
 brew install youtube-dl
 </code></pre><p>youtube-dl 的<a href="https://sspai.com/post/42409">使用</a></p>
-<pre><code>brew install youtube-dl
+<pre tabindex="0"><code>brew install youtube-dl
 youtube-dl [OPTIONS] URL [URL...]
 
 youtube-dl -F 'link' # 注意 `F`
@@ -174,41 +172,41 @@ youtube-dl -f bestvideo+bestaudio 'link' # 配合 FFmpeg 使用，注意 `f`
 youtube-dl --help
 </code></pre><p><a href="https://www.ffmpeg.org">FFmpeg</a></p>
 <p>音视频处理工具</p>
-<pre><code>brew install ffmpeg
+<pre tabindex="0"><code>brew install ffmpeg
 
 ffmpeg -i input.mp4 output.avi # 格式转换
 </code></pre><p><a href="https://imageoptim.com/">ImageOptim</a></p>
 <p>终端图片压缩</p>
-<pre><code>brew cask install imageoptim
+<pre tabindex="0"><code>brew install --cask imageoptim
 </code></pre><p><a href="https://www.iterm2.com/downloads/nightly/#/section/home">Iterm2</a></p>
 <p>终端软件，据说各种厉害，其实<strong>某</strong>也只是轻量使用，无碍。</p>
-<pre><code>brew cask install iterm2 # 稳定版
-brew cask install iterm2-nightly # 日更版
+<pre tabindex="0"><code>brew install --cask iterm2 # 稳定版
+brew install --cask iterm2-nightly # 日更版
 </code></pre><p><a href="https://www.keka.io/en/">Keka</a></p>
 <p>解压缩软件</p>
-<pre><code>brew cask install keka
-brew cask install keka-beta
+<pre tabindex="0"><code>brew install --cask keka
+brew install --cask keka-beta
 </code></pre><p><a href="https://macdown.uranusjr.com">Macdown</a></p>
 <p>免费的 Markdown 编辑器，黑暗模式</p>
-<pre><code>brew cask install macdown
+<pre tabindex="0"><code>brew install --cask macdown
 </code></pre><p><a href="https://www.manuscriptsapp.com">Manuscripts</a></p>
 <p>据说是一站式的手稿软件，免费。（还没用过，现在多在 R 中输出）</p>
-<pre><code>brew cask install manuscripts
+<pre tabindex="0"><code>brew install --cask manuscripts
 </code></pre><p><a href="http://www.masterpasswordapp.com">Master Password</a></p>
 <p>免费多平台密码生成工具，配合 Aplle 的 Keychain 使用</p>
-<pre><code>brew cask install master-password
+<pre tabindex="0"><code>brew install --cask master-password
 </code></pre><p><a href="https://owncloud.org">Owncloud</a></p>
 <p>学校配的云存储工具</p>
-<pre><code>brew cask install owncloud
+<pre tabindex="0"><code>brew install --cask owncloud
 </code></pre><p><a href="https://github.com/sindresorhus/quick-look-plugins">Quick Look plugins</a></p>
 <p>扩展苹果的预览功能</p>
-<pre><code>brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json suspicious-package quicklookase qlvideo # qlimagesize 对 Catalina 不支持，有些遗憾
+<pre tabindex="0"><code>brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json suspicious-package quicklookase qlvideo # qlimagesize 对 Catalina 不支持，有些遗憾
 </code></pre><p><a href="https://rambox.pro/">Rambox</a></p>
 <p>多帐号聚合平台,好像和 另外一个 Station 类似，所用不多</p>
-<pre><code>brew cask install rambox
-brew cask install station
+<pre tabindex="0"><code>brew install --cask rambox
+brew install --cask station
 </code></pre><p><a href="https://www.r-project.org">R</a> 与 <a href="https://dailies.rstudio.com">RStudio</a></p>
-<pre><code>brew install r
+<pre tabindex="0"><code>brew install r
 
 brew cask rstudio # 稳定版
 brew cask rstudio-preview # 预览版
@@ -220,20 +218,20 @@ brew cask rstudio-daily # 日更版
 4: Setting LC_MONETARY failed, using &ldquo;C&rdquo;</p>
 <p>关于 <a href="https://wiki.archlinux.org/index.php/Locale_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Locale</a>和<a href="https://docs.oracle.com/cd/E37934_01/html/E36634/glmbx.html">语言环境</a></p>
 <p>add the codes to shell config file</p>
-<pre><code>export LANG=en_GB.UTF-8
+<pre tabindex="0"><code>export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 </code></pre><p><a href="https://www.sodaplayer.com">Soda-player</a></p>
 <p>比特流视频可立即播放，不必再等待下载完成</p>
-<pre><code>brew cask install soda-player
+<pre tabindex="0"><code>brew install --cask soda-player
 </code></pre><p><a href="https://getstandapp.com">Stand</a></p>
 <p>久坐提醒，无它。</p>
-<pre><code>brew cask install stand
+<pre tabindex="0"><code>brew install --cask stand
 </code></pre><p><a href="https://developer.apple.com/safari/technology-preview/">Safari-technology-preview</a></p>
 <p>久用 Dissenter 后，换下口味，这速度真是贼快，只是插件不好弄啊（谁知道一上插件，会不会贼慢呢）。</p>
-<pre><code>brew cask install safari-technology-preview
+<pre tabindex="0"><code>brew install --cask safari-technology-preview
 </code></pre><p><a href="https://www.sublimetext.com">Sublime Text</a></p>
 <p>文档编辑工具</p>
-<pre><code>brew cask install sublime-text
+<pre tabindex="0"><code>brew install --cask sublime-text
 </code></pre><ul>
 <li>为 Sublime Text 安装<a href="https://packagecontrol.io/installation#st3">插件管理器 Package Control</a>：
 <ul>
@@ -245,23 +243,23 @@ export LC_ALL=en_GB.UTF-8
 </ul>
 <p><a href="https://oldj.github.io/SwitchHosts/#cn">Switchhosts</a></p>
 <p>管理、切换多个 Hosts 方案的工具</p>
-<pre><code>brew cask install switchhosts
+<pre tabindex="0"><code>brew install --cask switchhosts
 </code></pre><p><a href="https://www.teamviewer.com/en/download/mac-os/">Teamviewer</a></p>
 <p>远程桌面操作工作</p>
-<pre><code>brew cask install teamviewer
+<pre tabindex="0"><code>brew install --cask teamviewer
 </code></pre><p><a href="https://www.catnapgames.com/tiny-player-for-mac/">Tiny player</a></p>
 <p>支持 MP3s，FLAC, AAC, AIFF and WAV</p>
-<pre><code>brew cask install tiny-playe
+<pre tabindex="0"><code>brew install --cask tiny-playe
 </code></pre><p><a href="https://transmissionbt.com">Transmission</a></p>
 <p>比特流下载客户端</p>
-<pre><code>brew cask install transmission
+<pre tabindex="0"><code>brew install --cask transmission
 </code></pre><p><a href="https://code.visualstudio.com">Microsoft Visual Studio Code</a></p>
 <p>开源免费的文档编辑器</p>
-<pre><code>brew cask install visual-studio-code
+<pre tabindex="0"><code>brew install --cask visual-studio-code
 </code></pre><p><a href="https://webtorrent.io">Webtorrent</a></p>
 <p>WebTorrent Desktop connects to both BitTorrent and WebTorrent peers. It can talk to peers running Transmission or uTorrent, and it can also talk to web pages like instant.io.</p>
 <p>支持立即播放，无需等待下载完成</p>
-<pre><code>brew cask install webtorrent
+<pre tabindex="0"><code>brew install --cask webtorrent
 </code></pre><p><a href="https://www.wechat.com/en/">Wechat</a></p>
 <p>一个大家都懂的软件。</p>
 <p>回想起来，大约十年前，3G 还没有普及，人们主要的聊天方式除了电话就是短信。</p>
@@ -270,15 +268,15 @@ export LC_ALL=en_GB.UTF-8
 <p>现在想起来，它的确是把短信揍趴下了，只是真的有些讽刺。可能真是那句话吧，有些东西，如果不是 <strong>开源免费</strong> 的话，那么这样的免费很可能是最贵的。</p>
 <p>有句老话说，你想着别人的利息，殊不知，别人想的是你的本金。</p>
 <p>最后，且行且珍惜吧。</p>
-<pre><code>brew cask install wechat
+<pre tabindex="0"><code>brew install --cask wechat
 </code></pre><p><a href="https://aria2.github.io">Aria 2</a></p>
 <p>轻量的多线程多协议下载工具，<a href="https://aria2.github.io/manual/en/html/index.html">使用说明 1</a> <a href="http://ivo-wang.github.io/2019/04/18/%E5%85%B3%E4%BA%8Earia2%E6%9C%80%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%80%E7%AF%87/">使用说明 2</a></p>
-<pre><code>brew install aria2
+<pre tabindex="0"><code>brew install aria2
 
 aria2c &quot;url&quot;
 </code></pre><p><a href="https://github.com/svg/svgo">SVGO</a></p>
 <p>SVG Optimizer，基于 Node.js 的 SVG 压缩工具</p>
-<pre><code>brew install node
+<pre tabindex="0"><code>brew install node
 
 # IF &quot;The formula built, but is not symlinked into /usr/local&quot;
 sudo chmod -R 777 /usr/local/include/node
@@ -294,41 +292,41 @@ brew install svgo
 </ul>
 </li>
 </ul>
-<pre><code>curl -sS https://raw.githubusercontent.com/svg/svgo-osx-folder-action/master/install.sh | sh`
+<pre tabindex="0"><code>curl -sS https://raw.githubusercontent.com/svg/svgo-osx-folder-action/master/install.sh | sh`
 </code></pre><p><a href="https://imageoptim.com/command-line.html">ImageOptim 命令行工具</a></p>
-<pre><code>brew install imageoptim-cli
+<pre tabindex="0"><code>brew install imageoptim-cli
 </code></pre><p><a href="https://brewsci.github.io/homebrew-bio/">PyMol</a></p>
 <p>化学分子渲染</p>
-<pre><code>brew install Caskroom/cask/xquartz
+<pre tabindex="0"><code>brew install Caskroom/cask/xquartz
 brew install tcl-tk
 brew install python
 
 brew install brewsci/bio/pymol
 </code></pre><p><a href="https://github.com/dawbarton/pdf2svg">pdf2svg</a></p>
 <p>PDF 渲染为 SVG，字体渲染效果很好。</p>
-<pre><code>brew install pdf2svg # 安装
+<pre tabindex="0"><code>brew install pdf2svg # 安装
 
 pdf2svg &lt;input.pdf&gt; &lt;output.svg&gt; [&lt;pdf page no. or &quot;all&quot; &gt;] # 使用方式
 pdf2svg input.pdf output_page%d.svg all # 当需要输出 PDF 的全部页面的时候，用 `%d` 进行分页
 </code></pre><p><a href="https://gohugo.io/getting-started/usage/">Hugo</a></p>
 <p>自称是地球上最快的静态网站生成器</p>
-<pre><code>brew install hugo
+<pre tabindex="0"><code>brew install hugo
 </code></pre><p>wifi-password</p>
 <p>显示当前连接网络的 Wi-Fi 密码</p>
-<pre><code>brew install wifi-password
+<pre tabindex="0"><code>brew install wifi-password
 wifi-password
 </code></pre><hr>
 <h3 id="macos-软件的备份httpsblogo2ascomp2019backup-crossplatfrom与重装httpswwwcaseylisscom2019108brew-bundle">macOS 软件的<a href="https://blog.o2as.com/p/2019/backup-crossplatfrom/">备份</a>与<a href="https://www.caseyliss.com/2019/10/8/brew-bundle">重装</a></h3>
 <p>安装 <a href="https://github.com/mas-cli/mas">mas</a> 依赖，以便备份从 Mac App Store 下载的软件</p>
-<pre><code>brew install mas
+<pre tabindex="0"><code>brew install mas
 </code></pre><p>在当前的目录生成了名为 Brewfile 的文本清单，清单中包含 tap, brew, cask 以及 mas 下载的软件。</p>
 <ul>
 <li>brew，只列出了手动安装软件（不含自动安装的依赖项）</li>
 <li>mas，列出了程序名称以及其对应的 app ID</li>
 </ul>
-<pre><code>brew bundle dump
+<pre tabindex="0"><code>brew bundle dump
 </code></pre><p>重装</p>
-<pre><code>brew bundle
+<pre tabindex="0"><code>brew bundle
 </code></pre>
 
   <footer>

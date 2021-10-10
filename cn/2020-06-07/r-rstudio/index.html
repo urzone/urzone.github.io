@@ -74,9 +74,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -110,7 +108,7 @@
 
 
 <h3 id="安装-rrstudio-与-pandoc">安装 R，RStudio 与 pandoc</h3>
-<pre><code>brew install r
+<pre tabindex="0"><code>brew install r
 
 brew cask install rstudio # 稳定版
 brew cask install rstudio-preview # 预览版
@@ -120,29 +118,29 @@ brew cask install pandoc-citeproc #
 </code></pre><h4 id="pandoc-的引文格式4">pandoc 的<a href="https://bookdown.org/yihui/bookdown/citations.html">引文格式</a>。</h4>
 <p>Pandoc 默认管理引文的方法是使用 <code>pandoc-citeproc</code>。该工具依据 <a href="http://docs.citationstyles.org/en/1.0.1/specification.html">Citation Style Language (CSL)</a> 规范管理文献，其中各个杂志的引文格式，可从 <a href="https://www.zotero.org/styles/">Zotero Style Repository</a> 下载。</p>
 <p>Terminal 中启动 R 后提示</p>
-<pre><code>During startup - Warning messages:  
+<pre tabindex="0"><code>During startup - Warning messages:  
 1: Setting LC_COLLATE failed, using &quot;C&quot;   
 2: Setting LC_TIME failed, using &quot;C&quot;   
 3: Setting LC_MESSAGES failed, using &quot;C&quot;   
 4: Setting LC_MONETARY failed, using &quot;C&quot;  
 </code></pre><p>关于 <a href="https://wiki.archlinux.org/index.php/Locale_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Locale</a>和<a href="https://docs.oracle.com/cd/E37934_01/html/E36634/glmbx.html">语言环境</a></p>
 <p>add the codes to shell config file</p>
-<pre><code>export LANG=en_GB.UTF-8
+<pre tabindex="0"><code>export LANG=en_GB.UTF-8
 export LC_ALL=en_GB.UTF-8
 </code></pre><h3 id="自定义-r-包的安装位置-说明之-一1-二2-三3">自定义 R 包的安装位置 说明之 <a href="https://blog.csdn.net/kuyu05/article/details/83303803">一</a> <a href="https://www.accelebrate.com/library/how-to-articles/r-rstudio-library">二</a> <a href="https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work">三</a></h3>
 <p>查看 R 包的安装位置：</p>
-<pre><code>.libPaths()
+<pre tabindex="0"><code>.libPaths()
 </code></pre><p>R 在启动时会自动加载的其配置文件，可通过修改该配置文件来修改包的默认安装位置，比如我们将其安装到 <code>~/Rpackages</code>。</p>
 <p>homebrew 安装的 R 的位置为 <code>/usr/local/Cellar/</code>，其配置文件的位置 <code>/usr/local/Cellar/r/4.0.0_1/lib/R/library/base/R/Rprofile</code> （注意版本号的不同）。</p>
 <p>更新 R 以后，可以找到该文件，把上述包的位置重新写入即可，不必重新下载安装所有包，省事不少。</p>
-<pre><code># Rprofile.site
+<pre tabindex="0"><code># Rprofile.site
 .libPaths( c( &quot;~/Rpackages&quot;, .libPaths()))
 </code></pre><h3 id="安装-r-包">安装 R 包</h3>
 <p>启动 RStudio，安装 R 包。</p>
-<pre><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;,&quot;svglite&quot;,&quot;ggalt&quot;)) # 用 R 画图
+<pre tabindex="0"><code>install.packages(c(&quot;tidyverse&quot;,&quot;reshape2&quot;,&quot;svglite&quot;,&quot;ggalt&quot;)) # 用 R 画图
 install.packages(c(&quot;blogdown&quot;, rmarkdown&quot;,&quot;bookdown&quot;,&quot;tufte&quot;, &quot;tinytex&quot;,&quot;miniUI&quot;,&quot;rticles&quot;,&quot;kableExtra&quot;)) # 生成网站或论文
 </code></pre><h3 id="利用-tinytex-包来安装--latex-发行版-tinytex">利用 tinytex 包来安装  LaTeX 发行版 TinyTeX</h3>
-<pre><code>tinytex::install_tinytex()
+<pre tabindex="0"><code>tinytex::install_tinytex()
 </code></pre>
 
   <footer>

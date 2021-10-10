@@ -6,7 +6,16 @@
     <description>Recent content in Homebrew on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF 字体</title>
+      <link>https://urz.one/cn/2021-10-10/pdffonts/</link>
+      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-10/pdffonts/</guid>
+      <description>Poppler 是一个基于 xpdf-3.0 编码的 PDF 渲染库，可用于查看 PDF 文档中字体的嵌入情况。 软件安装： brew install poppler 软件使用： pdffonts /path/to/document.pdf 结果显示： name type encoding emb sub uni object ID ------------------------------------ ----------------- ---------------- --- --- --- --------- ZWRJGF+STKaitiSC-Regular CID TrueType</description>
+    </item>
+    
     <item>
       <title>关于 Homebrew 的小故 (shì) 事 (gù)</title>
       <link>https://urz.one/cn/2021-06-03/tricks-on-homebrew/</link>

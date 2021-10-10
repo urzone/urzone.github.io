@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -115,10 +113,10 @@
 <h3 id="组合拳之视频下载与处理">组合拳之视频下载与处理</h3>
 <p>macOS 利用 youtube-dl + Aria2 + FFmpeg + AtomicParsley 一套组合实现视频的多线程下载，转码输出并添加最后封面的操作。而这一切都基于开源免费软件，着实舒心啊。</p>
 <p>Terminal 中一条命令即可安装：</p>
-<pre><code>brew install youtube-dl aria2 ffmpeg atomicparsley # 安装
+<pre tabindex="0"><code>brew install youtube-dl aria2 ffmpeg atomicparsley # 安装
 </code></pre><h3 id="配置文件">配置文件</h3>
 <p>youtube-dl <a href="/media/file/config">config 文件</a>，macOS 请将配置文件放于如下位置：</p>
-<pre><code>~/.config/youtube-dl/config
+<pre tabindex="0"><code>~/.config/youtube-dl/config
 </code></pre><p>以上配置主要功能<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 如下：</p>
 <ul>
 <li>忽略错误尝试继续下载，重试次数为无限次；</li>
@@ -130,7 +128,7 @@
 <li><a href="http://atomicparsley.sourceforge.net">AtomicParsley</a> 为 mp3、m4a、mp4 文件添加封面；</li>
 </ul>
 <h3 id="youtube-dl-常用命令">youtube-dl 常用命令：</h3>
-<pre><code># 下载，默认情况下，youtube-dl会自动选择下载最高画质
+<pre tabindex="0"><code># 下载，默认情况下，youtube-dl会自动选择下载最高画质
 youtube-dl 'URL' 
 
 # 提取 m4a 格式的音乐
@@ -154,7 +152,7 @@ youtube-dl -o '输出路径'
 # 获取帮助
 youtube-dl -h 
 </code></pre><h3 id="aria2-多线程下载设置httpsaria2githubiomanualenhtmlaria2chtml">Aria2 多线程下载<a href="https://aria2.github.io/manual/en/html/aria2c.html">设置</a></h3>
-<pre><code>aria2c -x 16 -s 16 -k 1M 'url'
+<pre tabindex="0"><code>aria2c -x 16 -s 16 -k 1M 'url'
 </code></pre><p><a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-x">-x, &ndash;max-connection-per-server=&lt;NUM&gt;</a>: 每个服务器最大的连接数，默认 1，最大 16；</p>
 <p><a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-s">-s, &ndash;split=&lt;N&gt;</a>: 下载一个文件最大线程数，默认 5。-s 受限流于-x；同样连接数大于 5 时，-x 也受限于 -s；</p>
 <p><a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-k">-k, &ndash;min-split-size=&lt;SIZE&gt;</a>: 最小的分块大小，默认 20M，可使用 1M-1024M。如果要下载的文件为 15M，最小的分块大小为 10M，即使 -s 和 -x 参数大于 1，也只使用 1 个连接下载。</p>

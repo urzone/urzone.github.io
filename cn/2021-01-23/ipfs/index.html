@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -156,21 +154,21 @@ IPFS 通过网络删除重复具有相同哈希值的文件，通过计算是可
 <h2 id="ipfs-配置">IPFS 配置</h2>
 <h3 id="1-下载安装1">1. <a href="https://docs.ipfs.io/install/command-line/#official-distributions">下载安装</a></h3>
 <p><a href="https://dist.ipfs.io/go-ipfs/v0.7.0/go-ipfs_v0.7.0_darwin-amd64.tar.gz">下载</a> Mac 版 IPFS 安装文件 <code>go-ipfs_v0.7.0_darwin-amd64.tar.gz</code>，解压缩该文件，得到 <code>go-ipfs</code> 文件夹，包含如下文件：</p>
-<pre><code>├── LICENSE
+<pre tabindex="0"><code>├── LICENSE
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
 ├── README.md
 ├── install.sh
 └── ipfs
 </code></pre><p>安装 IPFS</p>
-<pre><code>cd go-ipfs
+<pre tabindex="0"><code>cd go-ipfs
 install.sh
 &gt; Moved ./ipfs to /usr/local/bin
 
 ipfs --version                                        
 &gt; ipfs version 0.7.0 # 出现版本信息，表示安装成功
 </code></pre><p><a href="https://docs.ipfs.io/recent-releases/go-ipfs-0-5/update-procedure/#use-ipfs-update">升级</a> IPFS，下载 <a href="https://dist.ipfs.io/#ipfs-update">ipfs-update</a> 工具，解压缩</p>
-<pre><code>cd ipfs-update
+<pre tabindex="0"><code>cd ipfs-update
 install.sh
 
 &gt; Moved ./ipfs-update to /usr/local/bin
@@ -186,7 +184,7 @@ ipfs-update --version # 出现版本信息，表示安装成功
 </ul>
 </li>
 </ul>
-<pre><code>ipfs init # 创建新节点，所生成的新文件夹`.ipfs` 所含文件如下
+<pre tabindex="0"><code>ipfs init # 创建新节点，所生成的新文件夹`.ipfs` 所含文件如下
 .
 ├── blocks
 ├── config
@@ -199,7 +197,7 @@ fs-repo-migrations -revert-ok -to 10 # 将现有节点迁移到指定版本，�
 </code></pre><ul>
 <li>节点配置</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">{
   <span style="color:#f92672">&#34;API&#34;: </span>{
     <span style="color:#f92672">&#34;HTTPHeaders&#34;: </span>{
       <span style="color:#f92672">&#34;Server&#34;: </span>[
@@ -333,7 +331,7 @@ fs-repo-migrations -revert-ok -to 10 # 将现有节点迁移到指定版本，�
 <li>节点 ID</li>
 </ul>
 <p>每个节点都会存在一个唯一标识。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">ipfs id</span> <span style="color:#75715e"># 查看节点 ID</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">ipfs id</span> <span style="color:#75715e"># 查看节点 ID</span>
 
 {
 	<span style="color:#f92672">&#34;ID&#34;: </span><span style="color:#e6db74">&#34;QmXXXXXXXXXXXXXXX&#34;</span>,
@@ -346,7 +344,7 @@ fs-repo-migrations -revert-ok -to 10 # 将现有节点迁移到指定版本，�
 </code></pre></div><ul>
 <li>启动节点，启动后可通过 <code>http://127.0.0.1:5001/webui</code> 在浏览器中打开 IPFS。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">ipfs daemon <span style="color:#75715e"># 启动节点</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">ipfs daemon <span style="color:#75715e"># 启动节点</span>
 
 Initializing daemon...
 go-ipfs version: 0.7.0
@@ -372,13 +370,13 @@ Gateway <span style="color:#f92672">(</span>readonly<span style="color:#f92672">
 Daemon is ready
 </code></pre></div><p>执行命令后，最后出现 <code>Daemon is ready</code>，就代表节点启动成功了，并已经作为节点加入了 IPFS 网络了。</p>
 <p>检查本机的种子节点命令：<code>ipfs bootstrap</code> 检查本机加入的集群信息：<code>ipfs swarm peers</code>。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">GATEWAY</span>: <span style="color:#ae81ff">http://localhost:8080</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">GATEWAY</span>: <span style="color:#ae81ff">http://localhost:8080</span>
 <span style="color:#f92672">API</span>: <span style="color:#ae81ff">http://127.0.0.1:5001</span>
 </code></pre></div><ul>
 <li>本地发布站点文件到 IPFS</li>
 </ul>
 <p><a href="https://flyingzumwalt.gitbooks.io/decentralized-web-primer/content/publishing-changes/lessons/create-webpage.html">注意</a>，使用带有 <code>-r</code> 参数的 <code>ipfs add</code> 命令，即 <code>ipfs add -r</code>，以便将文件夹下所有文件递归地添加到 IPFS。</p>
-<pre><code>ipfs add -r Path/to/webpage/Folder
+<pre tabindex="0"><code>ipfs add -r Path/to/webpage/Folder
 
 ipfs add -r ~/Downloads/me     
 added QmdNsncGJ35Uy247gSW9JG2oqvUjNwfQNcLC9BzGKMtZP7 me/assets/css/me.css
@@ -411,13 +409,13 @@ added QmNWsJM4c2ESKmwhVvz3nh1h87jrtxfvTVXViUSzE7m9dV me
 <ul>
 <li>通过 IPFS 访问站点</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">https://ipfs.io/ipfs/your-webpage-hash</span> <span style="color:#75715e"># 使用 `IPFS hash` 访问站点；</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">https://ipfs.io/ipfs/your-webpage-hash</span> <span style="color:#75715e"># 使用 `IPFS hash` 访问站点；</span>
 </code></pre></div><ul>
 <li><a href="https://flyingzumwalt.gitbooks.io/decentralized-web-primer/content/publishing-changes/lessons/modify-republish.html">发布到 IPNS</a></li>
 </ul>
 <p>IPFS 中，网站的哈希值和网站的内容是一一对应的，网页中任何的改变都将导致其生成新的哈希值。所以，每次更新网站之后，网站的哈希值都会变，旧的链接不能访问到新的内容。</p>
 <p>通过 IPNS，将网站的 IPFS 哈希值与 Peer ID 绑定，完后更新完网站，可通过 IPNS 使用 Peer ID 来访问站点，而每个用户的 Peer ID 可保持不变。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ipfs name publish your<span style="color:#f92672">-</span>webpage<span style="color:#f92672">-</span>hash <span style="color:#75715e"># 将网站的 IPFS 哈希值发布到 IPNS</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ipfs name publish your<span style="color:#f92672">-</span>webpage<span style="color:#f92672">-</span>hash <span style="color:#75715e"># 将网站的 IPFS 哈希值发布到 IPNS</span>
 
 ipfs name publish QmNWsJM4c2ESKmwhVvz3nh1h87jrtxfvTVXViUSzE7m9dV <span style="color:#75715e"># 将上述网站发布到 IPNS</span>
 Published to k2k4r8ot14v7ncfnxhvq4hx86thrxkn2sghvmjcrksas8fyqojwmnrq7<span style="color:#f92672">:</span> <span style="color:#f92672">/</span>ipfs<span style="color:#f92672">/</span>QmNWsJM4c2ESKmwhVvz3nh1h87jrtxfvTVXViUSzE7m9dV <span style="color:#75715e">#  将 IPFS 哈希值发布到 IPNS，生成了一个新的 IPNS 哈希值；</span>
@@ -430,15 +428,15 @@ ipfs name resolve QmctjMf6xLZGiiXSoK9JAmvVdXwgpLBGLcShPE9fGpDbxr
 </code></pre></div><ul>
 <li>通过 IPNS 使用 Peer ID 来访问站点</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">https<span style="color:#f92672">://</span>ipfs.io<span style="color:#f92672">/</span>ipns<span style="color:#f92672">/</span>your<span style="color:#f92672">-</span>peer<span style="color:#f92672">-</span>id
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">https<span style="color:#f92672">://</span>ipfs.io<span style="color:#f92672">/</span>ipns<span style="color:#f92672">/</span>your<span style="color:#f92672">-</span>peer<span style="color:#f92672">-</span>id
 https<span style="color:#f92672">://</span>ipfs.io<span style="color:#f92672">/</span>ipns<span style="color:#f92672">/</span>QmctjMf6xLZGiiXSoK9JAmvVdXwgpLBGLcShPE9fGpDbxr
 </code></pre></div><ul>
 <li><a href="https://www.chedan.io/posts/host-website-with-ipfs/">绑定域名</a>（避免使用复杂的哈希值访问网站）</li>
 </ul>
 <p>我们已经有一个域名<code>sub.your.domain</code>，可创建一个 DNS TXT 记录（DNSLink），这条记录的键（name 或者  key）为 <code>_dnslink.sub.your.domain</code>，值（data）为 <code>dnslink=/ipns/$SITE_CID</code>，其中 $SITE_CID 为站点的 Peer ID，将 Peer ID 与域名绑定。</p>
-<pre><code>TXT _dnslink.www.urz.one dnslink=/ipns/QmctjMf6xLZGiiXSoK9JAmvVdXwgpLBGLcShPE9fGpDbxr
+<pre tabindex="0"><code>TXT _dnslink.www.urz.one dnslink=/ipns/QmctjMf6xLZGiiXSoK9JAmvVdXwgpLBGLcShPE9fGpDbxr
 </code></pre><p>在域名解析里面建立一条 CNAME 记录，将 <code>sub.your.domain</code> 解析指向 <code>cloudflare-ipfs.com</code>.</p>
-<pre><code>CNAME www.urz.one cloudflare-ipfs.com
+<pre tabindex="0"><code>CNAME www.urz.one cloudflare-ipfs.com
 </code></pre><ul>
 <li>HTTPS 保护</li>
 </ul>
@@ -448,7 +446,7 @@ https<span style="color:#f92672">://</span>ipfs.io<span style="color:#f92672">/<
 <li>网站更新</li>
 </ul>
 <p>网站本地更新后，将内容托管到 <a href="https://pinata.cloud/">pinata.cloud</a>，将 <a href="https://pinata.cloud/">pinata.cloud</a> 生成的内容 CID，发布到 IPNS <code>ipfs name publish site-hash</code> 即可。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nslookup cloudflare<span style="color:#f92672">-</span>ipfs.com. <span style="color:#75715e"># 查询服务节点的 IP</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nslookup cloudflare<span style="color:#f92672">-</span>ipfs.com. <span style="color:#75715e"># 查询服务节点的 IP</span>
 Server<span style="color:#f92672">:</span>		<span style="color:#ae81ff">8.8.8.8</span>
 Address<span style="color:#f92672">:</span>	<span style="color:#ae81ff">8.8.8.8</span><span style="color:#75715e">#53</span>
 Non<span style="color:#f92672">-</span>authoritative answer<span style="color:#f92672">:</span>

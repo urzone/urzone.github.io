@@ -76,9 +76,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -115,7 +113,7 @@
 <ul>
 <li>macOS Catalina <a href="https://superuser.com/questions/1503141/unable-to-remove-python-3-7-from-macos">自带 python 2.x 与 3.x</a>，以为系统自身服务。</li>
 </ul>
-<pre><code>% which python
+<pre tabindex="0"><code>% which python
   /usr/bin/python
 
 % python -V     
@@ -136,15 +134,15 @@
 <h3 id="pyenv">pyenv</h3>
 <p>pyenv 是一个 Python 版本管理工具。pyenv 通过在 PATH 变量的最前面插入了一个垫片路径（shims）<code>~/.pyenv/shims:$PATH</code>，以优先在 shims 路径中查找 pyhton 的可执行文件，而 PATH 后面的文件目录则被忽略<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
 <h3 id="pyenv-管理器自身的安装">pyenv 管理器自身的安装</h3>
-<pre><code>brew install pyenv
+<pre tabindex="0"><code>brew install pyenv
 </code></pre><p>在 Terminal 中，<a href="https://github.com/pyenv/pyenv#basic-github-checkout">添加如下命令</a>，以自动补全 PATH 变量。</p>
-<pre><code>echo -e 'if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi' &gt;&gt; ~/.zshrc
+<pre tabindex="0"><code>echo -e 'if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi' &gt;&gt; ~/.zshrc
 </code></pre><p>或直接在 shell 的配置文件 <code>~/.zshrc</code> 中添加如下命令，以自动补全 PATH 变量。</p>
-<pre><code>if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then
+<pre tabindex="0"><code>if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then
   eval &quot;$(pyenv init -)&quot;
 fi
 </code></pre><h3 id="使用-pyenv-增删-python">使用 pyenv 增删 python</h3>
-<pre><code>% pyenv install --list | grep &quot; 3\.[89]&quot; # 查看所有符合条件的 python 版本
+<pre tabindex="0"><code>% pyenv install --list | grep &quot; 3\.[89]&quot; # 查看所有符合条件的 python 版本
   3.8.0
   3.8-dev
   3.8.1
@@ -158,11 +156,11 @@ fi
   
   pyenv which python # 显示当前使用版本 python 的安装路径
 </code></pre><h3 id="使用-pyenv-管理-python-版本">使用 pyenv 管理 python 版本</h3>
-<pre><code>pyenv versions # 检查所有已安装可用的 python 版本
+<pre tabindex="0"><code>pyenv versions # 检查所有已安装可用的 python 版本
 * system (set by ~/.pyenv/version)
   3.8.2
 </code></pre><p>如上，可看到目前可用的两个 python 版本，一个是系统自带的版本，一个是刚才通过 pyenv 安装的更高版本。* 表示当前启用的 python 版本。</p>
-<pre><code>pyenv global 3.8.2 # 通过将版本号写入 ~/.pyenv/version 文件设置全局 python 版本。
+<pre tabindex="0"><code>pyenv global 3.8.2 # 通过将版本号写入 ~/.pyenv/version 文件设置全局 python 版本。
 
 pyenv local 3.8.2 # 通过将版本号写入当前目录下的 .python-version 文件设置 Python 本地版本。
 

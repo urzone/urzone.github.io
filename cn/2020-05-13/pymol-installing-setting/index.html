@@ -80,9 +80,7 @@ brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4)
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -118,13 +116,13 @@ brew install brewsci/bio/pymol 安装 PyMol (源码本地编译 version 2.4)
 <p><img src="/media/image/cn-2020-05-13-pymol-01.png" alt=""></p>
 <h3 id="用-homebrew-在-macos-catalina-下-安装httpsgithubmolgenmpgdempibr-bioinformaticspymol-install开源版-pymol">用 Homebrew 在 MacOS Catalina 下 <a href="https://github.molgen.mpg.de/MPIBR-Bioinformatics/pymol-install">安装</a>开源版 PyMol</h3>
 <p>为安装 PyMol 添加一些依赖程序</p>
-<pre><code>brew install Caskroom/cask/xquartz
+<pre tabindex="0"><code>brew install Caskroom/cask/xquartz
 brew install tcl-tk
 brew install python3
 </code></pre><p>安装 PyMol (Homebrew version 2.3)</p>
-<pre><code>brew install brewsci/bio/pymol
+<pre tabindex="0"><code>brew install brewsci/bio/pymol
 </code></pre><p>安装 PyMol (<a href="https://qiita.com/Ag_smith/items/58e917710c4eddab46ee">源码本地编译 version 2.4</a>)</p>
-<pre><code>＃ 如果您使用的是较旧版本的 pymol，请先使用 brew uninstall pymol 卸载它
+<pre tabindex="0"><code>＃ 如果您使用的是较旧版本的 pymol，请先使用 brew uninstall pymol 卸载它
 brew uninstall
 
 brew install wget
@@ -136,9 +134,9 @@ wget https://raw.githubusercontent.com/YoshitakaMo/homebrew-bio/develop/Formula/
 
 brew install --build-from-source ~/Desktop/pymol.rb
 </code></pre><p>启动 pymol</p>
-<pre><code>pymol
+<pre tabindex="0"><code>pymol
 </code></pre><p>添加图形界面</p>
-<pre><code>* Step 1: Open the `Automator` app. Create a new document and select &quot;Application&quot;;
+<pre tabindex="0"><code>* Step 1: Open the `Automator` app. Create a new document and select &quot;Application&quot;;
 * Step 2: Left under &quot;Actions Library&quot; select &quot;Utilities&quot; and &quot;Run Shell Script&quot;;
 * Step 3: Choose &quot;/bin/bash&quot; as a shell;
 * Step 4: Paste the following: `/usr/local/bin/pymol -M`. Change the path to pymol (`which pymol`) if necessary;
@@ -178,29 +176,29 @@ brew install --build-from-source ~/Desktop/pymol.rb
 <p><img src="/media/image/cn-2020-05-13-pymol-02.png" alt=""></p>
 <h3 id="pymol-透明背景设置以及球棍模型">PyMol 透明背景设置以及球棍模型</h3>
 <p>设置透明背景</p>
-<pre><code>set ray_opaque_background, off
+<pre tabindex="0"><code>set ray_opaque_background, off
 </code></pre><p>是否显示球棍模型</p>
-<pre><code>set stick_radius,0.15
+<pre tabindex="0"><code>set stick_radius,0.15
 set sphere_scale,0.2
 </code></pre><p>是否显示双键</p>
-<pre><code>set valence, 0 # off
+<pre tabindex="0"><code>set valence, 0 # off
 set valence, 1 # on
 </code></pre><p>双键显示模式</p>
-<pre><code>set valence_mode, 0 # centered
+<pre tabindex="0"><code>set valence_mode, 0 # centered
 set valence_mode, 1 # inside
 </code></pre><p>设置双键的间距</p>
-<pre><code>set valence_size, 0.1 # default: 0.06 # range 0 - ~0.5
+<pre tabindex="0"><code>set valence_size, 0.1 # default: 0.06 # range 0 - ~0.5
 </code></pre><p><strong>最终统一设置如下</strong></p>
-<pre><code>set ray_opaque_background, off
+<pre tabindex="0"><code>set ray_opaque_background, off
 set valence, 1
 set valence_mode, 0
 set valence_size, 0.1
 set stick_radius,0.15
 set sphere_scale,0.2
 </code></pre><h3 id="高分辨率图片输出">高分辨率图片输出</h3>
-<pre><code>png filename[, width[, height[, dpi[, ray[, quiet]]]]]
+<pre tabindex="0"><code>png filename[, width[, height[, dpi[, ray[, quiet]]]]]
 </code></pre><p>例如，保存图片为 <code>test.png</code> 到 <code>~/Library/Mobile Documents/com~apple~CloudDocs/Science/DSDS/Molecular 3D Structures/</code> 文件夹，设置宽度为 <code>10 in</code>，分辨率为 <code>600 dpi</code>。</p>
-<pre><code>png ~/Library/Mobile Documents/com~apple~CloudDocs/Science/DSDS/Molecular 3D Structures/test.png, width=10 in, dpi=600, ray=1
+<pre tabindex="0"><code>png ~/Library/Mobile Documents/com~apple~CloudDocs/Science/DSDS/Molecular 3D Structures/test.png, width=10 in, dpi=600, ray=1
 
 ray 576,576   # 8inch * 72 dpi;
 ray 800,800   # 8inch * 100 dpi;
@@ -235,14 +233,14 @@ ray 2400,2400 # 8inch * 300 dpi;
 <li>设置 label 字体大小：set label_size, n （n 为任一数字）</li>
 <li>设置 label 字体：set label_font, n （n 为任一数字）</li>
 </ul>
-<pre><code>set label_font, 8
+<pre tabindex="0"><code>set label_font, 8
 set label_shadow_mode, 0
 set label_size, 20
 
 set label_color, color-name, selection
 set label_color, black
 </code></pre><h3 id="制作动画">制作动画：</h3>
-<pre><code>mset 1, 180
+<pre tabindex="0"><code>mset 1, 180
 util.mroll 1, 180, 1
 set ray_trace_frames, 1
 set cache_frames, 0

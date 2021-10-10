@@ -80,9 +80,7 @@
   
   <li><a href="/cn/note/">缄语</a></li>
   
-  <li><a href="/cn/vitae/">简历</a></li>
-  
-  <li><a href="/en/">English</a></li>
+  <li><a href="/en/">En</a></li>
   
   
 
@@ -124,10 +122,10 @@
 </ul>
 <p><strong>某</strong>惯用<strong>小鹤双拼 + 系统英文输入法</strong>。</p>
 <h3 id="安装">安装</h3>
-<pre><code>brew cask install squirrel
+<pre tabindex="0"><code>brew cask install squirrel
 </code></pre><h3 id="rime-配置文件httpsgithubcomrimehomewikirimewithschemata-说明-1httpsblogdwxiomy-rime-说明-2httpswwwdreamxucominstall-config-squirrel">Rime <a href="https://github.com/rime/home/wiki/RimeWithSchemata">配置文件</a> <a href="https://blog.dwx.io/my-rime/">说明 1</a> <a href="https://www.dreamxu.com/install-config-squirrel/">说明 2</a></h3>
 <p>配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：<code>~/Library/Rime/</code>，其中文件结构如下：</p>
-<pre><code>├── default.custom.yaml # 全局配置
+<pre tabindex="0"><code>├── default.custom.yaml # 全局配置
 ├── squirrel.custom.yaml # 外观定制
 
 ├── custom_phrase.txt # 个人短语定制
@@ -150,7 +148,7 @@
 # &lt;词库名&gt;.userdb
 └── luna_pinyin.userdb # 记录用户用字习惯中的文件夹（自动生成）
 </code></pre><h3 id="全局配置-defaultcustomyaml">全局配置 (default.custom.yaml)</h3>
-<pre><code># default.custom.yaml, 全局生效
+<pre tabindex="0"><code># default.custom.yaml, 全局生效
 patch:
   schema_list:
     - schema: double_pinyin_flypy # 小鹤双拼
@@ -174,7 +172,7 @@ patch:
       Caps_Lock: commit_code
       Eisu_toggle: clear
 </code></pre><h3 id="外观配置httpsplacelessnetblogrime-squirrel-customization-2019-squirrelcustomyaml-"><a href="https://placeless.net/blog/rime-squirrel-customization-2019">外观配置</a> (squirrel.custom.yaml )</h3>
-<pre><code>patch:
+<pre tabindex="0"><code>patch:
   style:
     color_scheme: mojave_dark
 
@@ -213,12 +211,12 @@ patch:
 <ul>
 <li>设置主词库。在 <code>*&lt;方案标识&gt;.custom.yaml</code> 中将 <code>translator/dictionary</code> 的值设置为主词库的名字即可：</li>
 </ul>
-<pre><code>patch:
+<pre tabindex="0"><code>patch:
   translator/dictionary: luna_pinyin
 </code></pre><ul>
 <li>添加副词库。<code>luna_pinyin.dict.yaml</code> 文件，在其中引入自己需要的副词库：</li>
 </ul>
-<pre><code># luna_pinyin.dict.yaml
+<pre tabindex="0"><code># luna_pinyin.dict.yaml
 ---
 name: luna_pinyin
 version: &quot;2020.05.18&quot;
@@ -241,7 +239,7 @@ import_tables:
 </ul>
 </li>
 </ul>
-<pre><code>brew install opencc
+<pre tabindex="0"><code>brew install opencc
 opencc -h # 帮助信息
 </code></pre><h3 id="rime-输入法-使-xí-用-guàn-说-yǎng-明-chénghttpsgithubcomrimehomewikiuserguide">Rime 输入法 <a href="https://github.com/rime/home/wiki/UserGuide">使 (xí) 用 (guàn) 说 (yǎng) 明 (chéng)</a></h3>
 <ul>
@@ -258,11 +256,11 @@ opencc -h # 帮助信息
 </ul>
 <h3 id="rime-输入法备份">Rime 输入法备份</h3>
 <p>多台电脑及不同系统之间同步用户词典和用户设定的备份，可编辑用户文件夹下的 <code>installation.yaml</code> ，添加 <code>sync_dir: ''</code> 语句，并补充上相应的同步位置即可：</p>
-<pre><code>sync_dir: '/Users/xiao/RimeSync/'
+<pre tabindex="0"><code>sync_dir: '/Users/xiao/RimeSync/'
 </code></pre><ul>
 <li><code>installation.yaml</code> 文件中，每套 Rime 会随机生成一个 UUID 作为标识。不同 installation ID 可区分来自不同机器/系统的用户词典。可用小写字母、数字、横线和下划线自定义该 ID：</li>
 </ul>
-<pre><code>installation_id: 'Rime-setting-mac-xiao'
+<pre tabindex="0"><code>installation_id: 'Rime-setting-mac-xiao'
 </code></pre>
 
   <footer>
