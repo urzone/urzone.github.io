@@ -121,7 +121,7 @@
 <ul>
 <li>SVGO 是一款基于 Node.js 的 SVG 图形压缩工具，命令行软件。</li>
 </ul>
-<pre tabindex="0"><code># 使用 homebrew 安装
+<pre><code># 使用 homebrew 安装
 brew install svgo 
 
 # 压缩当前目录下的指定 svg 文件
@@ -145,7 +145,7 @@ svgo -s 'data:image/svg+xml;base64,...' -o test.min.svg
 <li><a href="https://image-shrinker.com">Image Shrinker</a> 可同时压缩 JPG, PNG 和 SVG 的 macOS 图形界面应用；</li>
 </ul>
 <h3 id="svgcleaner9-一款追求压缩质量与效率的软件"><a href="https://github.com/RazrFalcon/svgcleaner-gui/">SVGCleaner</a> 一款追求压缩质量与效率的软件</h3>
-<pre tabindex="0"><code># 使用 homebrew 安装命令行软件
+<pre><code># 使用 homebrew 安装命令行软件
 brew install svgcleaner 
 
 svgcleaner input.svg out.svg # 
@@ -153,14 +153,14 @@ svgcleaner input.svg out.svg #
 # 使用 homebrew 安装其图形界面软件
 brew cask install svgo 
 </code></pre><h3 id="scour11-是一款基于-python-的-svg-压缩软件"><a href="https://github.com/scour-project/scour">Scour</a> 是一款基于 python 的 svg 压缩软件</h3>
-<pre tabindex="0"><code># 使用 homebrew 安装命令行软件
+<pre><code># 使用 homebrew 安装命令行软件
 brew install scour
 
 scour -i input.svg -o output.svg # 压缩当前路径下的某个图片，软件本身无法对文件夹进行操作，即批量处理需要借助其他方法
 </code></pre><p>利用 Automator 创建快捷服务进行批量处理：</p>
 <p>Automator -&gt; Quick Action -&gt; Actions -&gt; Run Shell Script</p>
 <p>在 Shell Script ，设置输入参数为自变量，并执行如下代码：</p>
-<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH # 将软件路径加入到 PATH 变量
+<pre><code>export PATH=/usr/local/bin:$PATH # 将软件路径加入到 PATH 变量
 mkdir ~/ScourCompressedImg # 在根目录创建 ScourCompressedImg 文件夹
 
 for f in &quot;$@&quot;
@@ -176,7 +176,7 @@ done
 open ~/ScourCompressedImg/ # 完成后，打开该文件夹
 </code></pre><p><img src="/media/image/cn-2020-06-12-svg-01.png" alt=""></p>
 <p>关于 shell 中的<a href="https://www.runoob.com/linux/linux-shell-variable.html">变量</a> 和<a href="https://www.runoob.com/linux/linux-shell-passing-arguments.html">参数传递</a></p>
-<pre tabindex="0"><code>file_name=&quot;abc&quot; # 定义变量时，变量名不加美元符号（$）,变量名和等号之间不能有空格。除了显式地直接赋值，还可以用语句给变量赋值。
+<pre><code>file_name=&quot;abc&quot; # 定义变量时，变量名不加美元符号（$）,变量名和等号之间不能有空格。除了显式地直接赋值，还可以用语句给变量赋值。
 
 $file_name # 使用一个定义过的变量，只要在变量名前面加美元符号即可
 ${file_name} # 变量名外面的花括号，加不加都行，加花括号是为了帮助解释器识别变量的边界
@@ -188,7 +188,7 @@ ehco 'hello, '$file_name' !'  单引号可成对出现，作为字符串拼接�
 $@ # 使用时加引号，并在引号中返回每个参数。如 &quot;$@&quot; ，用「&quot;」括起来，即以&quot;$1&quot; &quot;$2&quot; … &quot;$n&quot; 的形式输出所有参数。
 </code></pre><h3 id="软件的默认压缩率比较">软件的默认压缩率比较</h3>
 <p>由包含文字和图片的中英 pdf 文件通过 pdf2svg 转换而来的 svg 文件夹，原始大小为 79.8 M。通过不同的压缩软件压缩后的体积比较，所示如下：</p>
-<pre tabindex="0"><code>% du -hs * | sort -nr
+<pre><code>% du -hs * | sort -nr
 
  76M	OriginalFiles
  62M	Scour
@@ -196,7 +196,7 @@ $@ # 使用时加引号，并在引号中返回每个参数。如 &quot;$@&quot;
  39M	SVGO
  39M	Image Shrinker
 </code></pre><p>语法：在 shell 中查看当前文件夹下的<strong>文件和文件夹</strong>的大小</p>
-<pre tabindex="0"><code>du [options] [files| directories] # disk usage occupied by files or directories
+<pre><code>du [options] [files| directories] # disk usage occupied by files or directories
 
 -k Measure usage in kilobytes.
 -m Measure usage in megabytes.

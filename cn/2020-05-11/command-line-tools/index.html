@@ -120,20 +120,20 @@
 </blockquote>
 <h3 id="安装-command-line-tools-工具包">安装 Command Line Tools 工具包</h3>
 <p>Command Line Tools 是一个小型独立包，是 Xcode IDE 的可选命令行工具子部分。该工具包为 mac 终端用户提供了许多常用的工具，如 svn，git，make，GCC，clang，perl，size，strip，strings，libtool，cpp，what 等。</p>
-<pre tabindex="0"><code>xcode-select --install
+<pre><code>xcode-select --install
 </code></pre><p>工具包安装在 <strong>mac 的根 <code>(/)</code> 目录</strong> （非用户目录<code>(~/..)</code>）下:</p>
 <p><code>/Library/Developer/CommandLineTools/</code></p>
 <p>可在<code>/Library/Developer/CommandLineTools/usr/bin/</code>中查看由工具包提供的新的可用命令：</p>
-<pre tabindex="0"><code>git
+<pre><code>git
 gcc
 swift
 ...
 </code></pre><h3 id="移除-quarantine-标签">移除 &ldquo;quarantine&rdquo; 标签</h3>
 <p>软件由于 &ldquo;quarantine attribute&rdquo; 显示被破坏而无法打开，可通过移除 &ldquo;quarantine&rdquo; 标签解决问题。具体分析可参见博文 <a href="http://www.engineering.union.edu/howto/damaged.html">How to deal with damaged downloads in OSX</a></p>
-<pre tabindex="0"><code>xattr -r -d com.apple.quarantine /path/to/app
+<pre><code>xattr -r -d com.apple.quarantine /path/to/app
 </code></pre><h3 id="重新签名软件">重新签名软件</h3>
 <p>一些软件在 MacOS Catalina 系统下打开闪退，可能需要对软件重新签名。关于签名，具体可参见博文 <a href="https://blog.0x5e.cn/2016/09/25/ios-codesign-things/">iOS 代码签名与重签名</a></p>
-<pre tabindex="0"><code>codesign --force --deep --sign - /path/to/app
+<pre><code>codesign --force --deep --sign - /path/to/app
 </code></pre>
 
   <footer>

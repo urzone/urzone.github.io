@@ -122,19 +122,19 @@
 <p><img src="/media/image/cn-2020-05-13-git-01.png" alt=""></p>
 <h3 id="创建工作空间">创建工作空间</h3>
 <p>创建工作空间其实就是创建一个本地目录，在 Mac 平台执行如下命令：</p>
-<pre tabindex="0"><code>mkdir gittest
+<pre><code>mkdir gittest
 </code></pre><p>然后切换到该目录，并在里面随便创建一个文件：</p>
-<pre tabindex="0"><code>cd gittest
+<pre><code>cd gittest
 echo &quot;Hello, Git.&quot; &gt; test.md
 </code></pre><h3 id="创建本地仓库git-init">创建本地仓库（git init）</h3>
 <p>保持在刚才创建的文件夹内部（工作空间），通过执行 <code>git init</code> 命令就可以初始化一个本地仓库：</p>
-<pre tabindex="0"><code>git init
+<pre><code>git init
 </code></pre><p>完成本地仓库的创建后，可以在当前目录下看到一个新增的隐藏目录<code>.git</code>，Git 就是通过这个目录里面的内容实现版本控制的。</p>
 <h3 id="查看状态git-status">查看状态（git status）</h3>
 <p>创建完成本地仓库之后就可以查看工作区的状态了。通过<code>git status</code>命令可以查看工作空间的状态（也就是文件的被管理情况）</p>
-<pre tabindex="0"><code>git status
+<pre><code>git status
 </code></pre><p>执行该命令后，结果如下，可以看到在该工作区有一个文件，且处于未管理状态。</p>
-<pre tabindex="0"><code>%  git status
+<pre><code>%  git status
 On branch master
 
 No commits yet
@@ -146,9 +146,9 @@ Untracked files:
 nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre><h3 id="添加文件git-add">添加文件（git add）</h3>
 <p>通过上面的操作，我们已经有了一个本地仓库了，但是本地仓库内部并没有管理任何内容。我们这一步做的就是让它管理一个文件。我们在前面工作空间中已经创建了一个名为 &lsquo;test.md&rsquo; 的文件，这是个普通的文本文件，内容是 &ldquo;Hello, Git.&quot;。我们这步先把它管理起来，具体执行如下命令：</p>
-<pre tabindex="0"><code>git add test.md
+<pre><code>git add test.md
 </code></pre><p>此时已经将该文件添加到了暂存区。然后我们在执行以下 <code>git status</code> 命令，可以看到如下结果。该文件已经被管理起来了，从提示我们可以看到这个文件还没有提交，意思是文件还没有真正在本地仓库里面，只是在暂存区而已。</p>
-<pre tabindex="0"><code>%  git status
+<pre><code>%  git status
 On branch master
 
 No commits yet
@@ -158,21 +158,21 @@ Changes to be committed:
 	new file:   test.md
 </code></pre><h3 id="提交文件git-commit">提交文件（git commit）</h3>
 <p>提交文件其实就是将文件提交到本地库，也就是开始进行真正的版本管理了。具体可以通过执行如下命令,其后面的 <code>-m</code> 选项表示该次提交的注释内容。</p>
-<pre tabindex="0"><code>git commit -m &quot;add new file&quot;
+<pre><code>git commit -m &quot;add new file&quot;
 </code></pre><p>完成提交后会有相应的返回，提示提交的结果：</p>
-<pre tabindex="0"><code>% git commit -m &quot;add new file&quot;
+<pre><code>% git commit -m &quot;add new file&quot;
 [master (root-commit) abf0460] add new file
  1 file changed, 1 insertion(+)
  create mode 100644 test.md
 </code></pre><p>完成提交后，我们可以在看一下这个工作空间的状态<code>git status</code>。可以看到此时本地仓库中的内容与工作空间已经完全一致。</p>
-<pre tabindex="0"><code>%  git status
+<pre><code>%  git status
 On branch master
 nothing to commit, working tree clean
 </code></pre><h3 id="查看提交日志git-log">查看提交日志（git log）</h3>
 <p>完成提交之后，在本地仓库已经有了我们刚才提交的内容。也就是说现在本地仓库已经对我们的内容进行版本控制了。那么，我们怎么知道已经做了哪些提交呢？这个时候 <code>git log</code> 命令就派上用场了。从字面上我们也能猜出大概用途来，这个命令是用来查看提交日志的。</p>
-<pre tabindex="0"><code>git log
+<pre><code>git log
 </code></pre><p>从下图可以看到提交的基本信息，包括提交的 UUID、作者、日志和描述信息等内容。</p>
-<pre tabindex="0"><code>% git log
+<pre><code>% git log
 commit abf04605816e9da36b4f3219c4e562a19823015e (HEAD -&gt; master)
 Author: xiao &lt;github.com@example.com&gt;
 Date:   Wed May 13 15:32:27 2020 +0200
@@ -180,9 +180,9 @@ Date:   Wed May 13 15:32:27 2020 +0200
     add new file
 </code></pre><h3 id="查看提交详情git-show">查看提交详情（git show）</h3>
 <p>如果我们想看一下提交的详细内容又该怎么办呢？通过 <code>git show</code> 命令可以查看某一次提交的详细内容。以上次提交为例：</p>
-<pre tabindex="0"><code>git show abf04605816e9da36b4f3219c4e562a19823015e
+<pre><code>git show abf04605816e9da36b4f3219c4e562a19823015e
 </code></pre><p>由下图可以看到提交的详细内容，除了上一个命令所涉及的简要信息外，还包括具体修改的那个文件，哪一行，以及具体修改的内容等等。</p>
-<pre tabindex="0"><code>% git show abf04605816e9da36b4f3219c4e562a19823015e
+<pre><code>% git show abf04605816e9da36b4f3219c4e562a19823015e
 commit abf04605816e9da36b4f3219c4e562a19823015e (HEAD -&gt; master)
 Author: xiao &lt;github.com@example.com&gt;
 Date:   Wed May 13 15:32:27 2020 +0200
@@ -198,9 +198,9 @@ index 0000000..296c546
 +Hello, Git.
 </code></pre><h3 id="查看工作空间修改情况git-diff">查看工作空间修改情况（git diff）</h3>
 <p>我们在本地进行修改后，有的时候想了解当前工作区的内容作了哪些修改，这个时候可以使用 <code>git diff</code> 命令进行查看。</p>
-<pre tabindex="0"><code>git diff
+<pre><code>git diff
 </code></pre><p>执行该命令是查看<strong>工作空间</strong>与<strong>暂存区</strong>的差异情况。比如我们在 test.md 文件中增加一行写上<code>你好啊</code>，此时执行<code>git diff</code> 命令，就能看到新加的内容：</p>
-<pre tabindex="0"><code>% git diff
+<pre><code>% git diff
 diff --git a/test.md b/test.md
 index 296c546..b931d68 100644
 --- a/test.md
@@ -211,38 +211,38 @@ Hello, Git.
 </code></pre><p>如果我们把这个文件加入暂存区，然后在执行相同的命令，这时我们将看不到任何差异提示。</p>
 <h3 id="恢复到某个点git-reset">恢复到某个点（git reset）</h3>
 <p>Git 提供了 <code>git reset</code> 命令来解决代码回退的问题。比如我们对刚才添加的代码不满意，想通过 Git 命令回退到之前的版本。这是需要找到期望回退版本的 <code>commit id</code>（可通过 <code>git log</code> 中相应的备注查看），然后执行如下命令。</p>
-<pre tabindex="0"><code>% git reset --hard abf04605816e9da36b4f3219c4e562a19823015e
+<pre><code>% git reset --hard abf04605816e9da36b4f3219c4e562a19823015e
 HEAD is now at abf0460 add new file
 </code></pre><h3 id="创建分支git-branch">创建分支（git branch）</h3>
 <p>分支 (branches) 是指在开发主线中分离出来，做进一步开发（比如新特性）而不影响到原来主线。实际上在我们创建完本地仓库时，就已经有一个<strong>分支</strong>了，只不过这个分支是主分支，也叫主线（master）。如图所示，在实际应用中除了主分支外还会有其它分支用于开发新特性。当完成新特性开发后，将代码统一合并到主分支中。</p>
 <p><a href="https://gitbookdown.site/branching-git-branch.html">分支操作流程</a></p>
 <p><img src="/media/image/cn-2020-05-13-git-02.png" alt=""></p>
 <p>通过命令 <code>git branch -l</code> 可以看到本地库已有的分支：</p>
-<pre tabindex="0"><code>git branch -l
+<pre><code>git branch -l
 </code></pre><p>可见，目前只有一个主分支：</p>
-<pre tabindex="0"><code>% git branch -l
+<pre><code>% git branch -l
 * master
 </code></pre><p>上述所有控制都是在 <code>master</code> 分支上进行的，现在执行 <code>git branch</code> 命令创建一个新的分支</p>
-<pre tabindex="0"><code>git branch dev
+<pre><code>git branch dev
 </code></pre><p>创建完成后，我们通过 <code>git branch -l</code> 可以看到已经有一个新的分支，名称为 dev。其中 <code>*</code> 标记的是当前工作空间所在的分支。</p>
-<pre tabindex="0"><code>% git branch dev
+<pre><code>% git branch dev
 % git branch -l
   dev
 * master
 %
 </code></pre><h3 id="切换分支git-checkout">切换分支（git checkout）</h3>
 <p>通过 <code>git checkout</code> 命令可以将工作空间切换到新创建的 dev 分支。</p>
-<pre tabindex="0"><code>git checkout dev
-</code></pre><pre tabindex="0"><code>% git checkout dev
+<pre><code>git checkout dev
+</code></pre><pre><code>% git checkout dev
 
 Switched to branch 'dev'
 </code></pre><p>然后通过 <code>git branch -l</code> 可以看到发生的变化，此时 dev 分支被 * 号标记。</p>
-<pre tabindex="0"><code>% git branch -l
+<pre><code>% git branch -l
 * dev
   master
 </code></pre><p>切换分支以后，再提交的代码就位于新的分支。</p>
 <p>此时我们对文档进行修改，添加一行文字 &ldquo;new feature from dev&rdquo;，然后保存。我们用 <code>git diff</code> 比较一下<strong>当前工作空间与暂存区</strong>的差异，可见结果显示，新增了一行。</p>
-<pre tabindex="0"><code>% git diff
+<pre><code>% git diff
 diff --git a/test.md b/test.md
 index 296c546..1ae6afd 100644
 --- a/test.md
@@ -251,7 +251,7 @@ index 296c546..1ae6afd 100644
 Hello, Git.
 +new feature from dev
 </code></pre><p>然后我们再次检查一下当前工作空间的状态<code>git status</code>，这里显示我们的修改还未加入暂存区：</p>
-<pre tabindex="0"><code>%  git status
+<pre><code>%  git status
 On branch dev
 Changes not staged for commit:
   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -260,14 +260,14 @@ Changes not staged for commit:
 
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </code></pre><p>我们加入暂存区后，再次查看状态：</p>
-<pre tabindex="0"><code>% git add test.md
+<pre><code>% git add test.md
 %  git status
 On branch dev
 Changes to be committed:
   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
 	modified:   test.md
 </code></pre><p>而后我们提交：</p>
-<pre tabindex="0"><code>% git commit -m &quot;new feature from dev&quot;
+<pre><code>% git commit -m &quot;new feature from dev&quot;
 [dev 5d41a16] New feature from dev
  1 file changed, 1 insertion(+)
 %  git status
@@ -276,37 +276,37 @@ nothing to commit, working tree clean
 </code></pre><p>需要注意的是，如果在分支做了一些修改，但还没有提交，这时切换分支会丢失已经做得的修改，因此切换之前需要提交代码。</p>
 <h3 id="合并分支git-merge">合并分支（git merge）</h3>
 <p>假设<strong>我们在 dev 分支已经添加了一些内容，并进行了提交</strong>。此时我们想将这些内容合并到主分支中。合并的方法就是<strong>先切换到主分支，然后执行 <code>git merge</code> 命令</strong>。</p>
-<pre tabindex="0"><code>git merge dev
+<pre><code>git merge dev
 </code></pre><p>切换到主分支：</p>
-<pre tabindex="0"><code>%  git checkout master
+<pre><code>%  git checkout master
 Switched to branch 'master'
 </code></pre><p>合并分支前，master 分支上，文本的内容：</p>
-<pre tabindex="0"><code>% cat test.md
+<pre><code>% cat test.md
 Hello, Git.
 </code></pre><p>合并分支：</p>
-<pre tabindex="0"><code>% git merge dev
+<pre><code>% git merge dev
 Updating abf0460..5d41a16
 Fast-forward
  test.md | 1 +
  1 file changed, 1 insertion(+)
 %
 </code></pre><p>合并分支前，master 分支上，文本的内容以及和 dev 分支上一样了，我们从 dev 分支所做的修改就同步到 master 分支了。</p>
-<pre tabindex="0"><code>% cat test.md
+<pre><code>% cat test.md
 Hello, Git.
 new feature from dev
 </code></pre><h3 id="添加远程库git-remote-add">添加远程库（git remote add）</h3>
 <p>假设我们在 github 上已经有了一个空的远程库（远程库路径为 <code>https://github.com/xxx/test.git</code>），此时远程库没有任何内容。我们可以通过 <code>git remote add</code> 命令<strong>建立本地仓库与远程仓库的关联关系</strong>：</p>
-<pre tabindex="0"><code>git remote add origin https://github.com/xxx/test.git
+<pre><code>git remote add origin https://github.com/xxx/test.git
 </code></pre><p>建立联系后，此时远程库依旧是空的。这里的 <code>origin</code> 只是我们给远程仓库的一个代名词，可以使用其它任何名称。</p>
 <h3 id="本地推送到远程git-push">本地推送到远程（git push）</h3>
 <p>我们将本地的 master 分支推送到 github 上，执行如下命令，过程中需要我们输入 github 上注册的用户名及对应的密码：</p>
-<pre tabindex="0"><code>git push origin master
+<pre><code>git push origin master
 </code></pre><p>默认情况下，git 会将代码推送到与本地分支同名的远程分支上。</p>
 <p>Git 的一般流程是：添加到暂存区（git add）,提交到本地仓库（git commit）,最后推送到远程仓库（git push）。</p>
 <h3 id="克隆远程仓库git-clone">克隆远程仓库（git clone）</h3>
 <p>克隆命令可以将远程仓库的内容克隆一份，生成一个一模一样的本地仓库，同时会生成工作空间的内容。</p>
 <p>默认情况下工作空间的内容是 master 分支的内容，如果需要其他分支，则需要创建本地分支，并且进行切换。</p>
-<pre tabindex="0"><code>git clone https://github.com/xxx/test.git
+<pre><code>git clone https://github.com/xxx/test.git
 </code></pre><h3 id="下载远程仓库的更新git-fetchpull">下载远程仓库的更新（git fetch/pull）</h3>
 <p>git 有两个命令可以将远程仓库的内容拉到本地：</p>
 <ul>
@@ -315,7 +315,7 @@ new feature from dev
 </ul>
 <h3 id="查看代码的作者git-blame">查看代码的作者（git blame）</h3>
 <p><code>git blame</code> 可以查看提交的 ID、作者和时间等信息。</p>
-<pre tabindex="0"><code>% git blame test.md
+<pre><code>% git blame test.md
 ^abf0460 (xiao 2020-05-13 15:32:27 +0200 1)Hello, Git.
 5d41a16d (xiao 2020-05-13 17:33:23 +0200 2) New feature from dev
 </code></pre><ul>
@@ -327,9 +327,9 @@ new feature from dev
 </ul>
 <h3 id="mac-下设置-git-的编辑器">Mac 下设置 Git 的编辑器</h3>
 <p>设置 Sublime Text 作为默认编辑器：</p>
-<pre tabindex="0"><code>git config --global core.editor &quot;/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text&quot;
+<pre><code>git config --global core.editor &quot;/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text&quot;
 </code></pre><p>检查是否成功设置：</p>
-<pre tabindex="0"><code>Check : git config --global -e
+<pre><code>Check : git config --global -e
 </code></pre><h3 id="知识点理解">知识点理解</h3>
 <h4 id="查看和比较">查看和比较</h4>
 <ul>
@@ -338,11 +338,11 @@ new feature from dev
 <li><code>git diff --staged</code> 比较暂存区的文件状态与上一次提交后的差别；</li>
 </ul>
 <p>比如一个自上一次提交后没有再做任何改动的 test.md 文件，查看一下状态：</p>
-<pre tabindex="0"><code>% git status
+<pre><code>% git status
 On branch master
 nothing to commit, working tree clean
 </code></pre><p>我们在 test.md 文件中添加一行 <code>Add the 3rd line</code>后，用 <code>git add</code> 命令将文件加入暂存区，而后又在 test.md 文件中添加一行 <code>Add the 4th line</code>，然后我们查看状态：</p>
-<pre tabindex="0"><code>% git status
+<pre><code>% git status
 On branch master
 Changes to be committed:
   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
@@ -353,7 +353,7 @@ Changes not staged for commit:
   (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
 	modified:   test.md
 </code></pre><p>此时可见 test.md 文件有两个版本，一个是前一次加入暂存区的状态；另一个是我们做最后一次修改后的状态。我们用 <code>git diff</code> 来比较一下：</p>
-<pre tabindex="0"><code>% git diff
+<pre><code>% git diff
 diff --git a/test.md b/test.md
 index 98c61a5..6b6c640 100644
 --- a/test.md
@@ -365,7 +365,7 @@ Hello, Git.
 +Add 4th line
 </code></pre><p><code>git diff</code> 默认比较的是当前工作区文件状态与暂存区中的差别。如上已经列出，与暂存区相比新增了第四行。</p>
 <p>如果我们需要比较暂存区与上一次提交的差别，用 <code>git diff --staged</code> 即可：</p>
-<pre tabindex="0"><code>% git diff --staged
+<pre><code>% git diff --staged
 diff --git a/test.md b/test.md
 index 1ae6afd..98c61a5 100644
 --- a/test.md
@@ -377,7 +377,7 @@ Hello, Git.
 </code></pre><h4 id="取消跟踪-git-restore">取消跟踪 （git restore）</h4>
 <p>将文件从 Git 跟踪清单中移除（文件依旧保留在磁盘上，只是 Git 将不再跟踪该文件），可用 <code>git restore --staged</code> 移除。</p>
 <p>我们在目录下新增 test2.md 文件，并用 <code>git add</code> 将其加入到暂存区以跟踪该文件，我们看一下文件状态：</p>
-<pre tabindex="0"><code>% git status
+<pre><code>% git status
 On branch master
 Changes to be committed:
   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
@@ -389,7 +389,7 @@ Changes not staged for commit:
   (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
 	modified:   test.md
 </code></pre><p>我们突然又不想跟踪 test2.md 文件了，仍然想保留该文件在磁盘上，于是用 <code>git restore --staged</code> 命令移除对其的跟踪，再看一下状态：</p>
-<pre tabindex="0"><code>% git status
+<pre><code>% git status
 On branch master
 Changes to be committed:
   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
@@ -433,13 +433,13 @@ Untracked files:
 <p><code>git checkout</code> 命令的关联目标是 .git 文件夹下的 HEAD 文件。 在 Git 中，HEAD 是一个特殊指针，<strong>指向当前所在分支</strong>。</p>
 <p><img src="/media/image/cn-2020-05-13-git-06.png" alt=""></p>
 <p>切换到 <code>branchName</code> 分支</p>
-<pre tabindex="0"><code>git checkout branchName
+<pre><code>git checkout branchName
 </code></pre><p>新建 <code>branchName</code> 分支并切换到该分支</p>
-<pre tabindex="0"><code>git checkout -b newBranch
+<pre><code>git checkout -b newBranch
 </code></pre><p><code>git checkout &lt;commit&gt;</code> 命令切换到 commit 参数指定的版本，该参数值可以是具体的 <code>commit hash</code> 值，可是是某个 Tag，也可以通过 <code>HEAD index</code> 来指定。例如，<code>HEAD^</code> 对应当前版本的上一个版本，那么 <code>git checkout HEAD^</code> 命令则讲文件切换到上一个版本，<strong>同时从当前分支脱离，处在一个未命名分支上</strong>。由于脱离了原先的分支，修改本地文件，并执行 <code>git commit</code> 进行提交，不会影响原来分支。</p>
-<pre tabindex="0"><code>git checkout Commit or Tag
+<pre><code>git checkout Commit or Tag
 </code></pre><p>例如，我们切换到 Tag 为 v3.14 的版本后， Git 提示如下：</p>
-<pre tabindex="0"><code>% git checkout v3.14
+<pre><code>% git checkout v3.14
 Note: switching to 'v3.14'.
 
 You are in 'detached HEAD' state. You can look around, make experimental

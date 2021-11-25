@@ -111,14 +111,14 @@
 
 <h3 id="doc2docx">doc2docx</h3>
 <p>在 Terminal 中，使用 <a href="https://ss64.com/osx/textutil.html">textutil</a> 将 doc 文件 file.doc 转换为 docx 格式。</p>
-<pre tabindex="0"><code>textutil -help # 查看 textutil 使用帮助
+<pre><code>textutil -help # 查看 textutil 使用帮助
 textutil -convert docx file.doc
 </code></pre><h3 id="docx2pdf2"><a href="https://gowa.club/macOS/%E4%BD%BF%E7%94%A8pandoc%E8%BD%AC%E6%8D%A2pdf%E4%B8%8Edocx%E5%8A%A0%E4%B8%8A%E4%B9%A6%E7%AD%BE%E7%9B%AE%E5%BD%95.html">docx2pdf</a></h3>
-<pre tabindex="0"><code>brew install pandoc # 格式转换工具
+<pre><code>brew install pandoc # 格式转换工具
 brew install --cask basictex # PDF 生成引擎
 
 pandoc --help # 查看 pandoc 使用帮助
-</code></pre><pre tabindex="0"><code>fc-list :lang=zh # 列出系统中的中文字体
+</code></pre><pre><code>fc-list :lang=zh # 列出系统中的中文字体
 
 pandoc -f docx -o output_file.pdf --pdf-engine=xelatex -V CJKmainfont='Kaiti SC' -V mainfont=Menlo file.docx
 </code></pre><ul>

@@ -115,12 +115,12 @@
 <p>settings -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token</p>
 <p>选择 delete_repo，记录该 token。</p>
 <h3 id="2-构建需删除仓库的文本-repostxt">2. 构建需删除仓库的文本 <code>repos.txt</code></h3>
-<pre tabindex="0"><code>name/repository1
+<pre><code>name/repository1
 name/repository2
 ……
 
 </code></pre><h3 id="3-构建请求脚本-delete_repopy">3. 构建请求脚本 <code>delete_repo.py</code></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep
 <span style="color:#f92672">import</span> requests
 
 headers <span style="color:#f92672">=</span> {
@@ -142,7 +142,7 @@ urls <span style="color:#f92672">=</span> []
     requests<span style="color:#f92672">.</span>delete(url<span style="color:#f92672">=</span>l, headers<span style="color:#f92672">=</span>headers)
     sleep(<span style="color:#ae81ff">2</span>)
 </code></pre></div><h3 id="4-在-terminal-中执行文件">4. 在 terminal 中执行文件</h3>
-<pre tabindex="0"><code>pip install requests # 可能需要安装 requests
+<pre><code>pip install requests # 可能需要安装 requests
 
 python3 delete_repo.py
 </code></pre>

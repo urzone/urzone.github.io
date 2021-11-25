@@ -8,6 +8,42 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>用 rbenv 管理 ruby 版本</title>
+      <link>https://urz.one/cn/2021-11-25/rbenv-ruby/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-11-25/rbenv-ruby/</guid>
+      <description>安装 rbenv brew update brew install rbenv 将以下代码添加到 ~/.zshrc 文件中，补全 PATH 变量及初始化 eval &amp;quot;$(rbenv init -)&amp;quot; export PATH=&amp;quot;$HOME/.rbenv/bin:$PATH&amp;quot; 使用 rbenv 查看所有可安装的 ruby 版本 rbenv install --list 2.6.9 2.7.5 3.0.3 jruby-9.3.1.0 mruby-3.0.0 rbx-5.0 truffleruby-21.3.0 truffleruby+graalvm-21.3.0 安装及查看版本 rbenv install</description>
+    </item>
+    
+    <item>
+      <title>偏光显微镜</title>
+      <link>https://urz.one/cn/2021-11-24/%E5%81%8F%E5%85%89%E6%98%BE%E5%BE%AE%E9%95%9C/</link>
+      <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-11-24/%E5%81%8F%E5%85%89%E6%98%BE%E5%BE%AE%E9%95%9C/</guid>
+      <description>双折射现象：当光照射到各向异性材料（晶体）时，发生两个不同方向的折射，进而产生两束折射光的现象。当光线入射到晶体之中时，一般都会发生双折射现</description>
+    </item>
+    
+    <item>
+      <title>随机密码生成</title>
+      <link>https://urz.one/cn/2021-10-28/generate-random-passwords/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-28/generate-random-passwords/</guid>
+      <description>在 Terminal 中使用 openssl 或 md5 随机生成 16 位密码，可通过改变相应的数值得到不同长度的密码。 openssl rand -base64 16 | colrm 17 # /dOw/e8IspJ/640E openssl rand -hex 16 | colrm 17 # f9dc69efd6db5667 openssl rand -base64 16 |md5 |head -c16; echo # 03b325b5eaa5721a date | md5 | head</description>
+    </item>
+    
+    <item>
+      <title>马说</title>
+      <link>https://urz.one/cn/2021-10-25/%E9%A9%AC%E8%AF%B4/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-10-25/%E9%A9%AC%E8%AF%B4/</guid>
+      <description>世有伯乐1，然后有千里马。千里马常有，而伯乐不常有。故虽有名马，祗2辱于奴隶人3之手，骈死4于槽枥5之间，不以千里称也6。 马之千里者7，一食</description>
+    </item>
+    
+    <item>
       <title>PDF 字体</title>
       <link>https://urz.one/cn/2021-10-10/pdffonts/</link>
       <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
@@ -869,42 +905,6 @@
       
       <guid>https://urz.one/cn/2020-06-27/drug-registration/</guid>
       <description>据国家市场监督管理总局令第 27 号令，《药品注册管理办法》已于 2020 年 1 月 15 日经国家市场监督管理总局 2020 年第 1 次局务会议审议通过，现予公布，自 2020 年 7 月</description>
-    </item>
-    
-    <item>
-      <title>伊素复合纳米颗粒</title>
-      <link>https://urz.one/cn/2020-06-26/camptothecin-curcumin-nanoparticle/</link>
-      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-26/camptothecin-curcumin-nanoparticle/</guid>
-      <description>伊素复合纳米颗粒是一个基于伊立替康与姜黄素联合用药的抗肿瘤纳米制剂，其彻底消除了伊立替康引起的致死性腹泻等副作用，同时显著增强了其抗肿瘤治疗</description>
-    </item>
-    
-    <item>
-      <title>实时影响因子的计算</title>
-      <link>https://urz.one/cn/2020-06-24/stupid-chinese-index/</link>
-      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-24/stupid-chinese-index/</guid>
-      <description>每年期刊引证报告（Journal Citation Report, JCR）所公布的期刊影响因子 (Impact Factor, IF) ，其数据反映的是期刊在所公布年份前一年的表现情况。通常 JCR 会在每年六七月</description>
-    </item>
-    
-    <item>
-      <title>蓝白格</title>
-      <link>https://urz.one/cn/2020-06-22/guilty/</link>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-22/guilty/</guid>
-      <description>梦里又回到儿时的老屋，米白的墙壁上投射出穿过窗棂的灰白色暗影，仿佛夏天某个宁静的午后。表妹在准备着初考，弟弟在卧室里做着我曾经做过的某个数学</description>
-    </item>
-    
-    <item>
-      <title>酒</title>
-      <link>https://urz.one/cn/2020-06-21/alcohol/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-21/alcohol/</guid>
-      <description>想来，很多愤怒其实是不需要用酒精来稀释的。有些理想，是需要坚持的，有些理想，是需要迂徊的。 而，我们所追求的与所坚持的，又必要是发光与发热的，</description>
     </item>
     
   </channel>

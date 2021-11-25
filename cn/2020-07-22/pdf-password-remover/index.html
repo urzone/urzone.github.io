@@ -115,11 +115,11 @@ qpdf --decrypt encrypted-filename.pdf decrypted-filename.pdf 另外可使用 Aut
 
 <h3 id="qpdf1"><a href="http://qpdf.sourceforge.net">QPDF</a></h3>
 <p>安装</p>
-<pre tabindex="0"><code>brew install qpdf
+<pre><code>brew install qpdf
 </code></pre><p>简单移除密码</p>
-<pre tabindex="0"><code>qpdf --decrypt encrypted-filename.pdf decrypted-filename.pdf
+<pre><code>qpdf --decrypt encrypted-filename.pdf decrypted-filename.pdf
 </code></pre><p>另外可使用 Automtor 制作快捷动作批量移除密码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
 mkdir ~/PDFunLOCK
 <span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">do</span>
@@ -129,7 +129,7 @@ mkdir ~/PDFunLOCK
 <span style="color:#66d9ef">done</span>
 open ~/PDFunLOCK/
 </code></pre></div><p>快捷服务的存放位置</p>
-<pre tabindex="0"><code>~/Library/Services/
+<pre><code>~/Library/Services/
 </code></pre><p>具体[使用手册][2]参考。</p>
 
 
