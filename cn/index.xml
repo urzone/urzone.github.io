@@ -31,7 +31,7 @@
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2021-10-28/generate-random-passwords/</guid>
-      <description>在 Terminal 中使用 openssl 或 md5 随机生成 16 位密码，可通过改变相应的数值得到不同长度的密码。 openssl rand -base64 16 | colrm 17 # /dOw/e8IspJ/640E openssl rand -hex 16 | colrm 17 # f9dc69efd6db5667 openssl rand -base64 16 |md5 |head -c16; echo # 03b325b5eaa5721a date | md5 | head</description>
+      <description>在 Terminal 中生成指定特征的随机密码。 pwgen 安装： brew install pwgen 使用： 语法： pwgen [OPTION] [pw_length] [num_pw] OPTIONS： -c or –capitalize 密码中至少包含一个大写字母 -A or –n</description>
     </item>
     
     <item>
