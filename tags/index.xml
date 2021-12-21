@@ -6,7 +6,25 @@
     <description>Recent content in Tags on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colligative properties</title>
+      <link>https://urz.one/tags/colligative-properties/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/tags/colligative-properties/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raoult&#39;s law</title>
+      <link>https://urz.one/tags/raoults-law/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/tags/raoults-law/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>rbenv</title>
       <link>https://urz.one/tags/rbenv/</link>
@@ -886,24 +904,6 @@
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/tags/pyenv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://urz.one/tags/python/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://urz.one/tags/r/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/tags/r/</guid>
       <description></description>
     </item>
     

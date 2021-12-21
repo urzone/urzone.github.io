@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://urz.one/tags/colligative-properties/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/draft/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/raoults-law/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/draft/colligative-properties/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://urz.one/tags/rbenv/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/ruby/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://urz.one/tags/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/cn/2021-11-25/rbenv-ruby/</loc>
@@ -100,9 +112,6 @@
   </url><url>
     <loc>https://urz.one/cn/2021-09-29/%E6%9C%88%E4%BD%99/</loc>
     <lastmod>2021-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://urz.one/draft/</loc>
-    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/draft/molecular-structure/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>
@@ -1001,7 +1010,7 @@
     <loc>https://urz.one/en/2016-02-23/behaviour-of-pyrene-molecules-in-micellar-systems/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/en/2016-02-21/sci-hub/</loc>
+    <loc>https://urz.one/draft/sci-hub/</loc>
     <lastmod>2016-02-21T20:07:21+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/en/2016-02-20/boltzmann-sigmoid-and-pyrene-fluorescence-ratio/</loc>
