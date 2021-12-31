@@ -8,6 +8,69 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2021 年终总结</title>
+      <link>https://urz.one/cn/2021-12-31/annual-review/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-31/annual-review/</guid>
+      <description>一月： 这城市的光很亮，却总也照不亮黑影里的脏。 我好像拥有过什么，又好像什么都没有。或许在某个黄昏的日落后，眼前一片暖色的昏黄，某个地方，某个</description>
+    </item>
+    
+    <item>
+      <title>用 ExifTool 工具整理照片</title>
+      <link>https://urz.one/cn/2021-12-30/exiftool-commands-for-image-organization/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-30/exiftool-commands-for-image-organization/</guid>
+      <description>ExifTool 可快速安全地批量移动、复制、重命名、分组、提取预览 JPG 或标记照片。 工具安装 # 命令 brew install exiftool 照片信息 文件信息与照片 Metadata 信息是不同的。文件信息是由电脑</description>
+    </item>
+    
+    <item>
+      <title>PNG 与 JPG 的压缩与存储</title>
+      <link>https://urz.one/cn/2021-12-29/compressing-and-storing-of-png-and-jpg-fgirues/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-29/compressing-and-storing-of-png-and-jpg-fgirues/</guid>
+      <description>个人原则，能矢量化的图形，则选用矢量格式；无法矢量化，则： 电脑图片选用 PNG 格式； 相机照片选用 JPG 格式； PNG 压缩 pngquant 免费开源的无损压缩工具：pngqu</description>
+    </item>
+    
+    <item>
+      <title>从 iOS 访问 macOS 中的视频文件</title>
+      <link>https://urz.one/cn/2021-12-28/how-to-stream-videos-from-mac-to-ipad/iphone/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-28/how-to-stream-videos-from-mac-to-ipad/iphone/</guid>
+      <description>这大冬天的，其实只是想换个姿势看文 (dian) 件 (ying) 而已，譬如，躺（平）在床上。 无线网络 将 iOS 与 macOS 置于同一无线网络下，即所有设备 ip 地址的前三个字段都是相同</description>
+    </item>
+    
+    <item>
+      <title>Zotero 文献管理</title>
+      <link>https://urz.one/cn/2021-12-26/zotero/</link>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-26/zotero/</guid>
+      <description>想来甚是神奇，自己居然能这样子走到今天，我指的是我的文献管理。与其说是管理，不如说是放任不管。一则，文献资料与日俱增，多如牛毛，浩如烟海，譬</description>
+    </item>
+    
+    <item>
+      <title>依数性</title>
+      <link>https://urz.one/cn/2021-12-18/colligative-properties/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-18/colligative-properties/</guid>
+      <description>难挥发的非电解质的稀溶液，溶液的饱和蒸气压、凝固点、沸点以及渗透压的变化只与溶质的浓度（溶质的质点数量）有关，而与溶质的种类无关的性质，称为</description>
+    </item>
+    
+    <item>
+      <title>梦中的婚礼</title>
+      <link>https://urz.one/cn/2021-12-15/wedding-in-the-dream/</link>
+      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2021-12-15/wedding-in-the-dream/</guid>
+      <description>梦里，我结婚了， 和一个我叫不上名儿的姑娘。 一切安静，只有家人。 简单到如同只是一顿餐饭的事情。 外婆在准备锅碗， 大富在准备桌凳， 我在准备流浪。 路</description>
+    </item>
+    
+    <item>
       <title>用 rbenv 管理 ruby 版本</title>
       <link>https://urz.one/cn/2021-11-25/rbenv-ruby/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
@@ -842,69 +905,6 @@
       
       <guid>https://urz.one/cn/2020-07-13/international-spelling-alphabet/</guid>
       <description>在许多语言中，字母的拼写是不同的并且相差很大。因此，在国际交流中，提供正确的拼写信息很重要。 在交流时，可以使用字母拼写的方式为使用不同语言的</description>
-    </item>
-    
-    <item>
-      <title>善良不是软弱</title>
-      <link>https://urz.one/cn/2020-07-11/kindness-is-not-weakness/</link>
-      <pubDate>Sat, 11 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-11/kindness-is-not-weakness/</guid>
-      <description>晚饭后，闲聊。 想起一些事情，内心直觉得恶心，以至于脱口而出&amp;quot;恶心&amp;quot;二字。老板娘说，一些时候，人越是善良，对方只会以为你软</description>
-    </item>
-    
-    <item>
-      <title>TEM 基础知识</title>
-      <link>https://urz.one/cn/2020-07-08/basics-of-tem/</link>
-      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-08/basics-of-tem/</guid>
-      <description>透射电子显微镜（Transmission Electron Microscope, 简称 TEM），是一种把经加速和聚集的电子束透射到非常薄的样品上，电子与样品中的原子碰撞而改变方向</description>
-    </item>
-    
-    <item>
-      <title>萝卜</title>
-      <link>https://urz.one/cn/2020-07-08/rules/</link>
-      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-08/rules/</guid>
-      <description>想起来，他们似乎永远也赶不上那些轨迹。 当他们念小学或中学的时候，他们念书是需要付费的，而诱导他们向前走的那根萝卜是大学生毕业有工作分配以及可</description>
-    </item>
-    
-    <item>
-      <title>谜</title>
-      <link>https://urz.one/cn/2020-07-06/conundrum/</link>
-      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-06/conundrum/</guid>
-      <description>当梦想和现实纠缠在一起的时候，你是否还能分辨出哪个是梦想，哪个是现实？ 或者换一个说法，到底是梦想只存在于心底，还是现实容不下梦想，又或者所谓</description>
-    </item>
-    
-    <item>
-      <title>谋</title>
-      <link>https://urz.one/cn/2020-07-05/strategy/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-05/strategy/</guid>
-      <description>想来想去，在一个自己并不占优势的方面，若依然去走一个粗暴地比拼数量的模式，非常明显，这绝对是下下策。 若果如谋圣所言，这个世界的运作方式，其实</description>
-    </item>
-    
-    <item>
-      <title>安</title>
-      <link>https://urz.one/cn/2020-07-01/stability/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-07-01/stability/</guid>
-      <description>“三年后又三年，三年后又三年，差不多十年了，老大”。 ——《无间道》 突然回过神来，安，其实是一个很重要的因素。唯有如此，才能让人没有后顾之忧地</description>
-    </item>
-    
-    <item>
-      <title>药品注册分类及重大新药创制</title>
-      <link>https://urz.one/cn/2020-06-27/drug-registration/</link>
-      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-06-27/drug-registration/</guid>
-      <description>据国家市场监督管理总局令第 27 号令，《药品注册管理办法》已于 2020 年 1 月 15 日经国家市场监督管理总局 2020 年第 1 次局务会议审议通过，现予公布，自 2020 年 7 月</description>
     </item>
     
   </channel>

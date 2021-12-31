@@ -2,20 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://urz.one/tags/colligative-properties/</loc>
-    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+    <loc>https://urz.one/cn/2021-12-31/annual-review/</loc>
+    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/draft/</loc>
+    <loc>https://urz.one/cn/2021-12-30/exiftool-commands-for-image-organization/</loc>
+    <lastmod>2021-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2021-12-29/compressing-and-storing-of-png-and-jpg-fgirues/</loc>
+    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2021-12-28/how-to-stream-videos-from-mac-to-ipad/iphone/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/</loc>
+    <lastmod>2021-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/zotero/</loc>
+    <lastmod>2021-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2021-12-26/zotero/</loc>
+    <lastmod>2021-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/colligative-properties/</loc>
     <lastmod>2021-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/raoults-law/</loc>
     <lastmod>2021-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/tags/</loc>
+    <loc>https://urz.one/cn/2021-12-18/colligative-properties/</loc>
     <lastmod>2021-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/draft/colligative-properties/</loc>
-    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
+    <loc>https://urz.one/cn/2021-12-15/wedding-in-the-dream/</loc>
+    <lastmod>2021-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/rbenv/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
@@ -112,6 +130,9 @@
   </url><url>
     <loc>https://urz.one/cn/2021-09-29/%E6%9C%88%E4%BD%99/</loc>
     <lastmod>2021-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/draft/</loc>
+    <lastmod>2021-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/draft/molecular-structure/</loc>
     <lastmod>2021-08-14T00:00:00+00:00</lastmod>

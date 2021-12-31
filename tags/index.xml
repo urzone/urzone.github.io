@@ -6,7 +6,16 @@
     <description>Recent content in Tags on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zotero</title>
+      <link>https://urz.one/tags/zotero/</link>
+      <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/tags/zotero/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Colligative properties</title>
       <link>https://urz.one/tags/colligative-properties/</link>
@@ -895,15 +904,6 @@
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pyenv</title>
-      <link>https://urz.one/tags/pyenv/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/tags/pyenv/</guid>
       <description></description>
     </item>
     

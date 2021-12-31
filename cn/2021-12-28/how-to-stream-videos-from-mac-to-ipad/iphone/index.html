@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>从 iOS 访问 macOS 中的视频文件 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="从 iOS 访问 macOS 中的视频文件 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="这大冬天的，其实只是想换个姿势看文 (dian) 件 (ying) 而已，譬如，躺（平）在床上。
+[&amp;hellip;] 将 iOS 与 macOS 置于同一无线网络下，即所有设备 ip 地址的前三个字段都是相同的，譬如，除 x 外，都是 18.188.188.x 。
+[&amp;hellip;] 如此，打完收工，去超市搬运干粮。
+">
+      <meta property="og:description" content="这大冬天的，其实只是想换个姿势看文 (dian) 件 (ying) 而已，譬如，躺（平）在床上。
+[&amp;hellip;] 将 iOS 与 macOS 置于同一无线网络下，即所有设备 ip 地址的前三个字段都是相同的，譬如，除 x 外，都是 18.188.188.x 。
+[&amp;hellip;] 如此，打完收工，去超市搬运干粮。
+">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>从 iOS 访问 macOS 中的视频文件</h1>
+
+
+<h3>XiaO / 
+2021-12-28</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>这大冬天的，其实只是想换个姿势看文 (dian) 件 (ying) 而已，譬如，躺（平）在床上。</p>
+<h3 id="无线网络">无线网络</h3>
+<p>将 iOS 与 macOS 置于同一无线网络下，即所有设备 ip 地址的前三个字段都是相同的，譬如，除 x 外，都是 <code>18.188.188.x</code> 。</p>
+<h3 id="macos-相关设置">macOS 相关设置</h3>
+<ul>
+<li>打开系统设置 System Preferences，点击分享 Sharing; <img src="/media/image/cn-20211228-01.png" alt=""></li>
+<li>勾选文件分享 File sharing，并在选项中选中 SMB 文件分享以及 Windows File Sharing；<img src="/media/image/cn-20211228-02.png" alt=""></li>
+</ul>
+<h3 id="ios-相关设置">iOS 相关设置</h3>
+<ul>
+<li>通过 iOS 自带的文件 Files app 访问 macOS；
+<ul>
+<li>读取较大文件时反应较慢；</li>
+<li>部分视频格式不支持；<br>
+<img src="/media/image/cn-20211228-03.png" style="width:250px;"/></li>
+</ul>
+</li>
+<li>通过第三方软件 Documents app 访问 macOS，macOS Server 中填写 Mac 的 ip 地址，同时填写上电脑的登录用户名与密码；
+<ul>
+<li>读取较大文件时反应足够；</li>
+<li>部分视频格式不支持；</li>
+<li>视频文件较大时，声音有卡顿延迟；</li>
+<li>支持画中画模式；<br>
+<img src="/media/image/cn-20211228-04.png" alt=""></li>
+</ul>
+</li>
+<li>通过第三方软件 VLC app 访问 macOS，macOS Server 中填写 Mac 的 ip 地址，同时填写上电脑的登录用户名与密码；
+<ul>
+<li>只能读取视频文件；</li>
+<li>文件读取流畅；</li>
+<li>不支持画中画模式；<br>
+<img src="/media/image/cn-20211228-05.png" style="width:250px;"/></li>
+</ul>
+</li>
+</ul>
+<p>如此，打完收工，去超市搬运干粮。</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2021-12-26/zotero/">Zotero 文献管理</a></span>
+  <span class="nav-next"><a href="/cn/2021-12-29/compressing-and-storing-of-png-and-jpg-fgirues/">PNG 与 JPG 的压缩与存储</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2021-12-26\/zotero\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2021-12-29\/compressing-and-storing-of-png-and-jpg-fgirues\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2021</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

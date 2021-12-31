@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>PNG 与 JPG 的压缩与存储 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="PNG 与 JPG 的压缩与存储 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="个人原则，能矢量化的图形，则选用矢量格式；无法矢量化，则：
+[&amp;hellip;] 免费开源的无损压缩工具：pngquant，专注 PNG 格式，压缩率不错。
+brew install pngquant pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.png # 参数说明 --quality &amp;hellip;">
+      <meta property="og:description" content="个人原则，能矢量化的图形，则选用矢量格式；无法矢量化，则：
+[&amp;hellip;] 免费开源的无损压缩工具：pngquant，专注 PNG 格式，压缩率不错。
+brew install pngquant pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.png # 参数说明 --quality &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>PNG 与 JPG 的压缩与存储</h1>
+
+
+<h3>XiaO / 
+2021-12-29</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>个人原则，能矢量化的图形，则选用矢量格式；无法矢量化，则：</p>
+<ul>
+<li>电脑图片选用 PNG 格式；</li>
+<li>相机照片选用 JPG 格式；</li>
+</ul>
+<h2 id="png-压缩">PNG 压缩</h2>
+<h3 id="pngquant">pngquant</h3>
+<p>免费开源的无损压缩工具：<a href="https://github.com/kornelski/pngquant">pngquant</a>，专注 PNG 格式，压缩率不错。</p>
+<pre><code>brew install pngquant
+
+pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.png
+
+# 参数说明
+--quality 0~100 控制压缩质量，100 则是无损压缩
+--force 目标文件存在时，覆盖之
+--strip 去除 meta 信息
+--skip-if-larger 压缩后文件大于原始文件，则跳过
+--ext 输出文件的后缀名，可用 _new.png 的方式防止原始文件被覆盖
+</code></pre><p>Automator 设置快捷批量处理：</p>
+<ol>
+<li>启动 Automator (CMD + SPACE, “automator”, 回车)</li>
+<li>文件 启动AutomatorFile -&gt; New, 选择 Select “Service”.</li>
+<li>在左侧搜索栏中搜索并选中 “run shell script”, 将其拖入右侧区域.</li>
+<li>并作如下设置:
+<ol>
+<li>“Service receives selected” = “image files”</li>
+<li>“in” = “finder”</li>
+<li>“Shell” = “/bin/zsh/”</li>
+<li>“Pass input” = “as arguments”</li>
+</ol>
+</li>
+<li>将以下代码粘贴到 “run shell script” 的文本框中（删除预置的示例代码）：</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+
+<span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">do</span>
+    file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
+    file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;png&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  	  pngquant $f --quality <span style="color:#ae81ff">100</span> --force --strip --skip-if-larger --ext _mini.png
+  	<span style="color:#66d9ef">else</span>
+	  osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a PNG file!&#34; with title &#34;pngquant&#34;&#39;</span>
+	  afplay /System/Library/Sounds/Submarine.aiff
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><h2 id="jpg-压缩与存储">JPG 压缩与存储</h2>
+<p>对于 jpg 格式而言，个人并没有找到比较理想的压缩处理工具。其实这里面主要考虑的有如下几个因素；</p>
+<ul>
+<li>压缩率；</li>
+<li>压缩用时；</li>
+<li>压缩后的质量；</li>
+</ul>
+<p>当然，以上几个要素之间，只能寻得一个平衡，并没有绝对的优解。所以，且试且看吧。</p>
+<h3 id="imageoptim-2"><a href="https://imageoptim.com/">ImageOptim </a></h3>
+<p>ImageOptim 是一款免费开源软件。相比较于 ImageAlpha、pngquant、TinyPNG、JPEGMini、MozJPEG 等默认有损压缩来一定程度缩小文件，ImageOptim 则默认采用无损压缩模式，这也使得 ImageOptim 压缩后的文件相对大一些。如果需要，ImageOptim 也可在选项中直接设置压缩的比率。</p>
+<pre><code>brew install --cask imageoptim
+</code></pre><p>另外，可安装非官方 imageoptim-cli 终端工具，进而实现在终端对 ImageOptim 的调用。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 安装</span>
+brew install imageoptim-cli
+
+<span style="color:#75715e"># 查看帮助</span>
+imageoptim -h 
+</code></pre></div><h3 id="lepton">Lepton</h3>
+<p>Lepton 可将 JPG 格式照片压缩为 LEP 格式文件，文件体积可减少 20% 以上，适合不常打开的照片的存储。当需要查看的时候，需再次使用 Lepton 对其解码。解码后的文件，除日期与原始文件不同外，其它的 meta 信息与源文件一致。</p>
+<p>故而，个人做法是将照片以拍摄时间命名并压缩为 LEP 格式进行存储。这样做的好处是可以记录拍摄时间，同时，在需要解码的时候，可以直接通过名称大致找到需要的文件。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install lepton
+
+Usage: lepton <span style="color:#f92672">[</span>switches<span style="color:#f92672">]</span> input_file <span style="color:#f92672">[</span>output_file<span style="color:#f92672">]</span>
+</code></pre></div><p>Automator 设置快捷批量处理：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+
+<span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">do</span>
+  file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
+  file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPEG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpeg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lep&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  	lepton $f
+	osascript -e <span style="color:#e6db74">&#39;display notification &#34;Compress complete!&#34; with title &#34;lepton&#34;&#39;</span>
+  <span style="color:#66d9ef">else</span>
+	osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a JPG or LEP file!&#34; with title &#34;lepton&#34;&#39;</span>
+	afplay /System/Library/Sounds/Submarine.aiff
+  <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2021-12-28/how-to-stream-videos-from-mac-to-ipad/iphone/">从 iOS 访问 macOS 中的视频文件</a></span>
+  <span class="nav-next"><a href="/cn/2021-12-30/exiftool-commands-for-image-organization/">用 ExifTool 工具整理照片</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2021-12-28\/how-to-stream-videos-from-mac-to-ipad\/iphone\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2021-12-30\/exiftool-commands-for-image-organization\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2021</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
