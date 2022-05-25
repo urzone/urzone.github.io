@@ -13,7 +13,7 @@
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2021-05-11/ggalt-load-failed/</guid>
-      <description>问题：R 包 ggalt 无法加载 R 包 ggalt 无法加载，提示找不到 ash 包的镜像。 &amp;gt; library(ggalt) Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpath = DLLpath, ...): unable to load shared object &#39;~/Rpackages/ash/libs/ash.so&#39;: dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib Referenced from: ~/Rpackages/ash/libs/ash.so Reason: image not found</description>
+      <description>问题：R 包 ggalt 无法加载 R 包 ggalt 无法加载，提示找不到 ash 包的镜像。 &amp;gt; library(ggalt) Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpath = DLLpath, ...): unable to load shared object &amp;#39;~/Rpackages/ash/libs/ash.so&amp;#39;: dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib Referenced from: ~/Rpackages/ash/libs/ash.so Reason: image not found</description>
     </item>
     
   </channel>

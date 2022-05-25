@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>动物样本量 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="动物样本量 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="在做与动物相关的实验时，动物样本量的选择是很重要的一个方面。如果样本量太小，则支持相关结论的数据不够，甚至可能得到假阳性结果；如果样本量太大，虽然对所数据的准确度有所提高，但是其提高的程度与增大样本量所消耗的资源却不成正比，如此变相地造成了资源浪费。所以，在能满足统计学验证的情况下，科学地选择适合的样本量是很重要的。目前，最受青睐和最科学的方法，是通过功效分析 (Power Analysis) 来 &amp;hellip;">
+      <meta property="og:description" content="在做与动物相关的实验时，动物样本量的选择是很重要的一个方面。如果样本量太小，则支持相关结论的数据不够，甚至可能得到假阳性结果；如果样本量太大，虽然对所数据的准确度有所提高，但是其提高的程度与增大样本量所消耗的资源却不成正比，如此变相地造成了资源浪费。所以，在能满足统计学验证的情况下，科学地选择适合的样本量是很重要的。目前，最受青睐和最科学的方法，是通过功效分析 (Power Analysis) 来 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>动物样本量</h1>
+
+
+<h3>XiaO / 
+2022-03-16</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>在做与动物相关的实验时，动物样本量的选择是很重要的一个方面。如果样本量太小，则支持相关结论的数据不够，甚至可能得到假阳性结果；如果样本量太大，虽然对所数据的准确度有所提高，但是其提高的程度与增大样本量所消耗的资源却不成正比，如此变相地造成了资源浪费。所以，在能满足统计学验证的情况下，科学地选择适合的样本量是很重要的。目前，最受青睐和最科学的方法，是通过功效分析 (Power Analysis) 来计算样本量。动物相关实验，应尽可能地采用该方法来计算样本量。</p>
+<ul>
+<li>
+<p>基本概念</p>
+<ul>
+<li>效应大小 (Effect Size)，即两组数据间的差异。<strong>若两组数据为定量数据，则该效应是定量分析的，其差异为两组数据间的平均值的差异；若两组数据为定性数据，则该效应是定性分析的，其差异为两组数据间某个事件发生的比例的差异</strong>。研究者应在研究开始前决定，两组数据之间的最小差异须达到多少才能认为两组数据间有显著性差异。<strong>关于两组数据之间的临床显著性差异，最好是从以前发表的研究中获得</strong>。</li>
+<li>标准（偏）差 (Standard deviation)。标准差衡量样本内的变异性。<strong>只有在定量分析中才需要关注标准差的信息</strong>。关于某一特定变量的标准差的信息可以从以前发表的研究中获取。如果没有相关的研究，那么研究者应该先进行试点研究，标准差可以从试点研究中计算出来。</li>
+<li>I 型错误 (Type 1 error)：这是由<strong>显著性水平衡量的，通常被固定在 5% 的水平（P=0.05）</strong>。这是一个任意值，可以根据具体的研究问题增减。</li>
+<li>功效 (Power) ：<strong>发现某效应的概率</strong>。根据研究问题的不同，这个概率可能保持在 80% 到 99% 之间。</li>
+<li>效应的方向（单尾或双尾）：当研究者想探索某些干预措施的效果时，在样本中观察到的实际效果可能与研究者所想的方向一致，也可能正好与之相反。<strong>如果研究者认为效果可能在两个方向上，那么应该使用双尾测试，如果他有充分理由相信效应只在一个方向上，那么可以使用单尾测试</strong>。在动物研究中，<strong>通常使用双尾试验</strong>。</li>
+<li>预期动物的减少（如死亡）。<strong>最终的样本量应根据预期损耗进行调整</strong>。假设研究者预计有 10% 的减少，那么通过公式或软件计算出的样本量应除以 0.9，得到实际的样本量。</li>
+</ul>
+</li>
+<li>
+<p>免费处理软件</p>
+<ul>
+<li><a href="https://statpages.info/">Stat Pages</a></li>
+<li><a href="https://powerandsamplesize.com/">Power and Sample Size</a> #推荐</li>
+<li><a href="https://biostat.app.vumc.org/wiki/Main/PowerSampleSize">Power and Sample Size Calculation</a></li>
+<li><a href="https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower.html">G*Power</a> #推荐</li>
+<li><a href="https://www.danielsoper.com/statcalc/default.aspx">Free Statistics Calculators</a> #推荐</li>
+<li><a href="https://www.openepi.com/Menu/OE_Menu.htm">Open Epi</a></li>
+<li><a href="https://epitools.ausvet.com.au/samplesize?page=SampleSize">Sample size calculations</a></li>
+<li><a href="https://homepage.stat.uiowa.edu/~rlenth/Power/#Download_to_run_locally">Java applets for power and sample size</a></li>
+</ul>
+</li>
+<li>
+<p>G*Power</p>
+<ul>
+<li><a href="https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPowerManual.pdf">使用说明</a></li>
+<li><a href="https://www.psychologie.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Psychologie/AAP/gpower/GPowerMac_3.1.9.6.zip">Mac 版本下载</a></li>
+<li>软件界面：<img src="/media/image/cn-2022-03-16-01.png" alt="界面"></li>
+<li>软件出图（透明背景）：<img src="/media/image/cn-2022-03-16-02.png" alt="出图"></li>
+</ul>
+</li>
+</ul>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2022-03-16/animal-equivalent-dose/">动物等效剂量</a></span>
+  <span class="nav-next"><a href="/cn/2022-04-29/writing-under-the-lights/">灯下漫笔</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2022-03-16\/animal-equivalent-dose\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2022-04-29\/writing-under-the-lights\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2021</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

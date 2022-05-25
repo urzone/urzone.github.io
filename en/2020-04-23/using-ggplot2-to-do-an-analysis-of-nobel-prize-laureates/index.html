@@ -105,213 +105,213 @@
 
 
 <p>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(tidyverse)
-<span style="color:#a6e22e">library</span>(lubridate) <span style="color:#75715e"># to handal dates easily</span>
-<span style="color:#a6e22e">library</span>(viridisLite)
-
-theme_xiao <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function </span>() { 
-  <span style="color:#a6e22e">theme_light</span>(base_size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>, base_family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Avenir Next&#34;</span>) <span style="color:#f92672">%+replace%</span>  <span style="color:#75715e"># Here you need to define the font you may use in your figure</span>
-    <span style="color:#a6e22e">theme</span>(
-      <span style="color:#75715e"># Background of the entire plot</span>
-      plot.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>), 
-      
-      <span style="color:#75715e"># Background of plotting area</span>
-      panel.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>), 
-      panel.grid.major <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(), 
-      panel.grid.minor <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
-      
-      legend.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour<span style="color:#f92672">=</span><span style="color:#66d9ef">NA</span>),
-      legend.key <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour<span style="color:#f92672">=</span><span style="color:#66d9ef">NA</span>),
-      legend.box.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>)
-    )}
-</code></pre></div><p>Then <code>read</code> in the data of Nobel Winners from <a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv">RawGithub</a> and clean it for further use.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&#34;</span>)
-
-nobel_winners <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate_if</span>(is.character, tolower) <span style="color:#f92672">%&gt;%</span> 
-  
-  <span style="color:#75715e"># Delete the duplicated rows according to the columns selected </span>
-  <span style="color:#a6e22e">distinct_at</span>(<span style="color:#a6e22e">vars</span>(full_name, prize_year, category), .keep_all <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">mutate</span>(prize_decade <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> (prize_year <span style="color:#f92672">%/%</span> <span style="color:#ae81ff">10</span>)),
-         prize_age <span style="color:#f92672">=</span> prize_year <span style="color:#f92672">-</span> <span style="color:#a6e22e">year</span>(birth_date),
-         birth_decade <span style="color:#f92672">=</span>  <span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">year</span>(birth_date)<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> )
-</code></pre></div><h3 id="figure-1">Figure 1</h3>
-<p>Distribution of Nobel Prize Laureates' ages in different dacades.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(prize_decade) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, prize_age, fill <span style="color:#f92672">=</span> prize_decade)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_violin</span>(trim<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_boxplot</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#000000&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, begin <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Distribution of Nobel Prize Laureates&#39; ages in different dacades&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dacade&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age (years)&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-1.svg" alt="en-20200423-1" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(tidyverse)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(lubridate) <span style="color:#75715e"># to handal dates easily</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(viridisLite)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>theme_xiao <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function </span>() { 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_light</span>(base_size<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>, base_family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Avenir Next&#34;</span>) <span style="color:#f92672">%+replace%</span>  <span style="color:#75715e"># Here you need to define the font you may use in your figure</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">theme</span>(
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Background of the entire plot</span>
+</span></span><span style="display:flex;"><span>      plot.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>), 
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Background of plotting area</span>
+</span></span><span style="display:flex;"><span>      panel.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>), 
+</span></span><span style="display:flex;"><span>      panel.grid.major <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(), 
+</span></span><span style="display:flex;"><span>      panel.grid.minor <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>      legend.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour<span style="color:#f92672">=</span><span style="color:#66d9ef">NA</span>),
+</span></span><span style="display:flex;"><span>      legend.key <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, colour<span style="color:#f92672">=</span><span style="color:#66d9ef">NA</span>),
+</span></span><span style="display:flex;"><span>      legend.box.background <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transparent&#34;</span>, colour <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>)
+</span></span><span style="display:flex;"><span>    )}
+</span></span></code></pre></div><p>Then <code>read</code> in the data of Nobel Winners from <a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv">RawGithub</a> and clean it for further use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">&lt;-</span> df <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate_if</span>(is.character, tolower) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Delete the duplicated rows according to the columns selected </span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">distinct_at</span>(<span style="color:#a6e22e">vars</span>(full_name, prize_year, category), .keep_all <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(prize_decade <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.factor</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> (prize_year <span style="color:#f92672">%/%</span> <span style="color:#ae81ff">10</span>)),
+</span></span><span style="display:flex;"><span>         prize_age <span style="color:#f92672">=</span> prize_year <span style="color:#f92672">-</span> <span style="color:#a6e22e">year</span>(birth_date),
+</span></span><span style="display:flex;"><span>         birth_decade <span style="color:#f92672">=</span>  <span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">year</span>(birth_date)<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> )
+</span></span></code></pre></div><h3 id="figure-1">Figure 1</h3>
+<p>Distribution of Nobel Prize Laureates&rsquo; ages in different dacades.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(prize_decade) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, prize_age, fill <span style="color:#f92672">=</span> prize_decade)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_violin</span>(trim<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_boxplot</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#000000&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, begin <span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Distribution of Nobel Prize Laureates&#39; ages in different dacades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dacade&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age (years)&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-1.svg" alt="en-20200423-1" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-2">Figure 2</h3>
-<p>Distribution of Nobel Prize Laureates' ages in different subjects.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">  nobel_winners <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">mutate</span>(category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_reorder</span>(category, prize_age, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(y <span style="color:#f92672">=</span> prize_age,
-             x <span style="color:#f92672">=</span> category,
-             fill <span style="color:#f92672">=</span> category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_violin</span>(trim<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_boxplot</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#000000&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_d</span>(<span style="color:#e6db74">&#34;Category&#34;</span>,alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, begin<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, end<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Distribution of Nobel Prize Laureates&#39; ages in different subjects&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subjects&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age (years)&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-2.svg" alt="en-20200423-2" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<p>Distribution of Nobel Prize Laureates&rsquo; ages in different subjects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>  nobel_winners <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_reorder</span>(category, prize_age, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(y <span style="color:#f92672">=</span> prize_age,
+</span></span><span style="display:flex;"><span>             x <span style="color:#f92672">=</span> category,
+</span></span><span style="display:flex;"><span>             fill <span style="color:#f92672">=</span> category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_violin</span>(trim<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_boxplot</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#000000&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_d</span>(<span style="color:#e6db74">&#34;Category&#34;</span>,alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, begin<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, end<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Distribution of Nobel Prize Laureates&#39; ages in different subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Age (years)&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-2.svg" alt="en-20200423-2" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-3">Figure 3</h3>
 <p>Number and genders of Nobel Prize Laureates in different decades.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">  nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>prize_decade, y <span style="color:#f92672">=</span> n, color <span style="color:#f92672">=</span> prize_decade)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_segment</span>(<span style="color:#a6e22e">aes</span>(xend <span style="color:#f92672">=</span> prize_decade, yend <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>), size <span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_color_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_y_continuous</span>(expand <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>), limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">150</span>)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Prize Laureates in different decades&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of people&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-3.svg" alt="en-20200423-3" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>  nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>prize_decade, y <span style="color:#f92672">=</span> n, color <span style="color:#f92672">=</span> prize_decade)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_segment</span>(<span style="color:#a6e22e">aes</span>(xend <span style="color:#f92672">=</span> prize_decade, yend <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>), size <span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_color_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_y_continuous</span>(expand <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>), limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">150</span>)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Prize Laureates in different decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of people&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-3.svg" alt="en-20200423-3" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-4">Figure 4</h3>
 <p>Number of Nobel Price Laureates in different decades by subjects.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
-         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(n))) <span style="color:#f92672">+</span> 
-  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Number&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Price Laureates in different decades by subjects&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-4.svg" alt="en-20200423-4" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
+</span></span><span style="display:flex;"><span>         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(n))) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Number&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Price Laureates in different decades by subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-4.svg" alt="en-20200423-4" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-5">Figure 5</h3>
 <p>Number of Nobel Price Laureates in different decades by gender.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
-         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, category, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(n))) <span style="color:#f92672">+</span> 
-  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(gender)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Number&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Price Laureates in different decades by gender&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-5.svg" alt="en-20200423-5" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
+</span></span><span style="display:flex;"><span>         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, category, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(n))) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(gender)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Number&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number of Nobel Price Laureates in different decades by gender&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-5.svg" alt="en-20200423-5" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-6">Figure 6</h3>
 <p>Subject distribution of Nobel Price Laureates in different decades by gender</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">  nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
-         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade, category, gender) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(prize_decade, gender) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, category, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
-  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(gender)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subject distribution of Nobel Price Laureates in different decades by gender&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subjects&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-6.svg" alt="en-20200423-6" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>  nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
+</span></span><span style="display:flex;"><span>         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade, category, gender) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(prize_decade, gender) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, category, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(gender)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subject distribution of Nobel Price Laureates in different decades by gender&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Subjects&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-6.svg" alt="en-20200423-6" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-7">Figure 7</h3>
 <p>Gender distribution of Nobel Price Laureates in different decades by subjects.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
-         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(prize_decade, category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
-  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gender distribution of Nobel Price Laureates in different decades by subjects&#34;</span>, 
-         x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-         y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-7.svg" alt="en-20200423-7" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
+</span></span><span style="display:flex;"><span>         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(prize_decade, category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_tile</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gender distribution of Nobel Price Laureates in different decades by subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>         x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>         y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-7.svg" alt="en-20200423-7" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-8">Figure 8</h3>
 <p>Time distribution of Nobel Price Laureates in different subjects by Gender.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
-         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(category, gender) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_tile</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
-  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gender distribution of Nobel Price Laureates in different decades by subjects&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-8.svg" alt="en-20200423-8" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender),
+</span></span><span style="display:flex;"><span>         category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(prize_decade, gender, category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(category, gender) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_decade, gender, fill <span style="color:#f92672">=</span> prop)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_tile</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> scales<span style="color:#f92672">::</span><span style="color:#a6e22e">number</span>(prop, accuracy <span style="color:#f92672">=</span> <span style="color:#ae81ff">.01</span>))) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_grid</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_fill_viridis_c</span>(<span style="color:#e6db74">&#34;Ratio&#34;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, begin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gender distribution of Nobel Price Laureates in different decades by subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-8.svg" alt="en-20200423-8" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-9">Figure 9</h3>
 <p>Born Decades of Nobel Prize Laureates in different subjects</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">mutate</span>(category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category),
-         gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#75715e">#  slice(1:3)</span>
-  <span style="color:#a6e22e">filter</span>(laureate_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Individual&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">count</span>(category, birth_decade) <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> birth_decade, y <span style="color:#f92672">=</span> n, fill <span style="color:#f92672">=</span> category, color <span style="color:#f92672">=</span> category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_segment</span>(<span style="color:#a6e22e">aes</span>(xend <span style="color:#f92672">=</span> birth_decade, yend <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_color_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, begin<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_x_continuous</span>(breaks <span style="color:#f92672">=</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">1810</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">40</span>)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> n), 
-            vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, 
-            position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_dodge</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>), 
-            size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, check_overlap <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Born Decades of Nobel Prize Laureates in different subjects&#34;</span>, 
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;People&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-9.svg" alt="en-20200423-9" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(category <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(category),
+</span></span><span style="display:flex;"><span>         gender <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_explicit_na</span>(gender)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#  slice(1:3)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(laureate_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Individual&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">count</span>(category, birth_decade) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> birth_decade, y <span style="color:#f92672">=</span> n, fill <span style="color:#f92672">=</span> category, color <span style="color:#f92672">=</span> category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_segment</span>(<span style="color:#a6e22e">aes</span>(xend <span style="color:#f92672">=</span> birth_decade, yend <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_color_viridis_d</span>(alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, begin<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, end <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.9</span>, direction <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, option <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_x_continuous</span>(breaks <span style="color:#f92672">=</span> <span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">1810</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">40</span>)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> n), 
+</span></span><span style="display:flex;"><span>            vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">-1</span>, 
+</span></span><span style="display:flex;"><span>            position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_dodge</span>(width<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span>            size <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, check_overlap <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(category)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Born Decades of Nobel Prize Laureates in different subjects&#34;</span>, 
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Decades&#34;</span>, 
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;People&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-9.svg" alt="en-20200423-9" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="figure-10">Figure 10</h3>
 <p>Average age vs total number of prizes in different subjects</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nobel_winners <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(category) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">summarise</span>(prize_number <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>(),
-            mean_prize_age <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(prize_age, na.rm <span style="color:#f92672">=</span> T)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_number, mean_prize_age)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>,formula <span style="color:#f92672">=</span> y <span style="color:#f92672">~</span> x, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#777777&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_point</span>(<span style="color:#a6e22e">aes</span>(color <span style="color:#f92672">=</span> category), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_color_viridis_d</span>(<span style="color:#e6db74">&#34;Subjects&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">theme</span>(legend.position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span>) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Total prize number in different subjects vs average age of Laureates&#34;</span>,
-       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Prize Number&#34;</span>,
-       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Averge age&#34;</span>)
-</code></pre></div><p><img src="/media/image/en-20200423-10.svg" alt="en-20200423-10" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>nobel_winners <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">group_by</span>(category) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">summarise</span>(prize_number <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span>(),
+</span></span><span style="display:flex;"><span>            mean_prize_age <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(prize_age, na.rm <span style="color:#f92672">=</span> T)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(prize_number, mean_prize_age)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>,formula <span style="color:#f92672">=</span> y <span style="color:#f92672">~</span> x, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#777777&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_point</span>(<span style="color:#a6e22e">aes</span>(color <span style="color:#f92672">=</span> category), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_color_viridis_d</span>(<span style="color:#e6db74">&#34;Subjects&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme_xiao</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span>(legend.position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Total prize number in different subjects vs average age of Laureates&#34;</span>,
+</span></span><span style="display:flex;"><span>       x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Prize Number&#34;</span>,
+</span></span><span style="display:flex;"><span>       y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Averge age&#34;</span>)
+</span></span></code></pre></div><img src="/media/image/en-20200423-10.svg" alt="en-20200423-10" style="background-color:white; border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <p>Finally, choose the format of your figure output and save them.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">svglite<span style="color:#f92672">::</span><span style="color:#a6e22e">svglite</span>(file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rplots.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.6</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>,  bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, pointsize <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, standalone <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-put your figure file here
-<span style="color:#a6e22e">dev.off</span>()
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>svglite<span style="color:#f92672">::</span><span style="color:#a6e22e">svglite</span>(file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rplots.svg&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.6</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>,  bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;transparent&#34;</span>, pointsize <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>, standalone <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span>put your figure file here
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span></code></pre></div>
 
   <footer>
   

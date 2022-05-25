@@ -115,9 +115,9 @@ M3U 是一种播放多媒体列表的文件格式，它的设计初衷是为了�
 <h3 id="m3u8-下载工具">M3U8 下载工具</h3>
 <p>油猴插件 <a href="https://greasyfork.org/zh-CN/scripts/422269-media-source-extract">Media-source-extract</a> 可自动检测并提取 M3U8 文件，所提取文件分为视频文件部分与音频文件部分。</p>
 <h3 id="ffmpeg-合并音视频文件">ffmpeg 合并音视频文件</h3>
-<pre><code>ffmpeg -i &quot;path/to/audio.mp4&quot; -acodec copy &quot;audio.aac&quot; # 将下载的 mp4 格式的音频文件转换为 aac 格式
+<pre tabindex="0"><code>ffmpeg -i &#34;path/to/audio.mp4&#34; -acodec copy &#34;audio.aac&#34; # 将下载的 mp4 格式的音频文件转换为 aac 格式
 
-ffmpeg -i &quot;path/to/video.mp4&quot; -i &quot;path/to/audio.aac&quot; -c copy -shortest &quot;Final.mp4&quot; 合并音视频文件
+ffmpeg -i &#34;path/to/video.mp4&#34; -i &#34;path/to/audio.aac&#34; -c copy -shortest &#34;Final.mp4&#34; 合并音视频文件
 
 Convert ts files to mp4
 ffmpeg -i ts_file_path -acodec copy -vcodec copy -f mp4 path+name.mp4

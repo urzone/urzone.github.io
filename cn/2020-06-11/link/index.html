@@ -111,7 +111,7 @@
 
 <p>从 myfile 文件创建一个链接，链接到 mylink 文件，这样我们可以通过访问 mylink 文件，来访问 myfile 文件。</p>
 <h3 id="创建链接的语法">创建链接的语法</h3>
-<pre><code>ln [options] myfile mylink # 创建从 myfile 到 mylink 的硬链接
+<pre tabindex="0"><code>ln [options] myfile mylink # 创建从 myfile 到 mylink 的硬链接
 
   -s (Symbolic link) 创建软连接
   -i (Interactive) 交互模式 - 目标文件 mylink 存在时，覆盖前询问
@@ -125,21 +125,21 @@ Reference 链接文件；</li>
 <li>硬链接与复制粘贴亦不同：硬链接实际指向源文件在磁盘上的位置，所以，对硬链接的编辑等同于对源文件的直接编辑；复制粘贴的内容会在磁盘上新的位置上创建文件，占用新的磁盘空间，但对其编辑不会影响源文件；</li>
 </ul>
 <p>如图所示<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>：</p>
-<p><img src="/media/image/cn-2020-06-11-link.svg" alt="cn-2020-06-11-link" style="background-color:rgb(245, 245, 245, 70%); border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" ></p>
+<img src="/media/image/cn-2020-06-11-link.svg" alt="cn-2020-06-11-link" style="background-color:rgb(245, 245, 245, 70%); border-radius: 10px; display: block; margin-left: auto; margin-right: auto; width: 100%;" >
 <h3 id="显示当前文件夹中的文件的指向">显示当前文件夹中的文件的指向</h3>
-<pre><code>ls -l
+<pre tabindex="0"><code>ls -l
 </code></pre><h3 id="语法记忆">语法记忆</h3>
 <p>关于该语法的记忆，可是参考<a href="https://news.ycombinator.com/item?id=1984456">这里</a>，有点意思。看来不太记得住东西这件事情，可能不分国界。简言之：</p>
-<pre><code>cp    existing_thing new_thing
+<pre tabindex="0"><code>cp    existing_thing new_thing
 ln -s existing_thing new_thing
-</code></pre><section class="footnotes" role="doc-endnotes">
+</code></pre><div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re11.html">Macintosh Terminal Pocket Guide by Daniel J. Barrett</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 
   <footer>

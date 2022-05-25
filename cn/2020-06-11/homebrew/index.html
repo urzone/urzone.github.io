@@ -15,8 +15,8 @@
 
     
       
-      <meta property="description" content="xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew &amp;hellip;">
-      <meta property="og:description" content="xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew &amp;hellip;">
+      <meta property="description" content="xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap  &amp;hellip;">
+      <meta property="og:description" content="xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap  &amp;hellip;">
       
     
 
@@ -108,11 +108,11 @@
 
 
 <h3 id="安装">安装</h3>
-<pre><code>xcode-select —install # 安装 macOS 上的集成开发工具
+<pre tabindex="0"><code>xcode-select —install # 安装 macOS 上的集成开发工具
 
-/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot; # 安装 homebrew
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&#34; # 安装 homebrew
 </code></pre><h3 id="基础使用">基础使用</h3>
-<pre><code>brew update # 更新 homebrew 各个 tap 中的 formulae 信息
+<pre tabindex="0"><code>brew update # 更新 homebrew 各个 tap 中的 formulae 信息
 
 brew install wget # 安装 homebrew/core 的软件
 brew uninstall wget # 卸载 homebrew/core 的软件
@@ -128,7 +128,7 @@ brew info # 查看某个软件的具体信息
 </code></pre><p>Homebrew 会把在核心库中有记录的软件安装到 <code>/usr/local/Cellar</code>，并且通过创建<a href="https://zh.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5">软链链接</a> (<a href="https://en.wikipedia.org/wiki/Symbolic_link">Symbolic link</a>)的方式将其链接到 <code>/usr/local/bin</code> 以便我们可以在 shell 中直接使用，因为 <code>/usr/local/bin</code> 天然在 PATH 变量中，而 <code>/usr/local/Cellar</code> 则不在。</p>
 <p>所有从核心库安装好的软件都放在 <code>/usr/local/Cellar</code> 路径下，就像酒存储在地窖 (cellar) 里一样。而 keg （小桶）里装的是也是存放在地窖 (Celler) 里的酒（某个软件），只不过这些软件不会被软链链接到 <code>/usr/local/bin</code>，而可能只是一些其他软件的依赖程序。</p>
 <p>我们可以通过 <code>brew unlink</code> 和 <code>brew link</code> 删除或创建链接。</p>
-<pre><code>brew unlink wget # 删除符号链接，但保留程序本身。即程序依旧存在 /usr/local/Cellar 目录中
+<pre tabindex="0"><code>brew unlink wget # 删除符号链接，但保留程序本身。即程序依旧存在 /usr/local/Cellar 目录中
 
 brew link wget # 创建符号链接，重新启用该该程序
 </code></pre><h3 id="关于-tap仓库httpswwwwenjunjiangwin20180113homebrew的tap功能详解">关于 tap（<a href="https://www.wenjunjiang.win/2018/01/13/homebrew%E7%9A%84tap%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3/">仓库</a>）</h3>
@@ -143,7 +143,7 @@ brew link wget # 创建符号链接，重新启用该该程序
 </ul>
 </li>
 </ul>
-<pre><code>brew tap 列出当前启用的仓库
+<pre tabindex="0"><code>brew tap 列出当前启用的仓库
 
 brew tap &lt;user&gt;/&lt;repo&gt; # 在本地对存放在 Github 上的仓库 https://github.com/user/repo 浅度克隆，而后可如同操作核心库一样对这个仓库中的的软件安装描述方案进行操作
 
@@ -160,20 +160,20 @@ brew untap &lt;user&gt;/&lt;repo&gt; # 移除某个仓库，不再对其进行�
 </ul>
 </li>
 </ul>
-<pre><code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core # homebrew 核心库位置
-</code></pre><pre><code>brew install username/repo/formula  # installs from your custom repo
+<pre tabindex="0"><code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core # homebrew 核心库位置
+</code></pre><pre tabindex="0"><code>brew install username/repo/formula  # installs from your custom repo
 </code></pre><h3 id="关于-cask">关于 cask</h3>
 <p>我们还可以通过 cask (木桶) 来安装图形界面 (GUI) 应用或者字体等。通过 cask 安装的图形界面应用或者字体等，安装在 <code>/usr/local/Caskroom</code> 路径下。而后软件本身会被移动到 <code>/Applications/</code>中，字体则被移动到 <code>~/Library/Fonts/</code> 文件夹中，以便使用。Caskroom 中的信息则供 Homebrew 管理该软件或字体使用。</p>
-<pre><code>brew tap homebrew/cask # 克隆启用 cask 软件仓库，仅需启用一次
+<pre tabindex="0"><code>brew tap homebrew/cask # 克隆启用 cask 软件仓库，仅需启用一次
 brew cask install formula # 安装 homebrew/cask 中的软件
 
 brew tap homebrew/cask-fonts # 克隆启用cask 字体仓库，仅需启用一次
 brew cask install font-fira-code # 安装某个字体
 </code></pre><h3 id="其他使用">其他使用</h3>
-<pre><code>brew install --build-from-source /Path/to/formula.rb # 本地编译
+<pre tabindex="0"><code>brew install --build-from-source /Path/to/formula.rb # 本地编译
 
 brew ls --full-name | cat # 单行列出所有的软件及其所属仓库
-brew ls --full-name | grep '^your/tap/' | xargs brew uninstall # 删除某个在某仓库里安装的所有软件
+brew ls --full-name | grep &#39;^your/tap/&#39; | xargs brew uninstall # 删除某个在某仓库里安装的所有软件
 </code></pre>
 
   <footer>

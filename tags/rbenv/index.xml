@@ -13,7 +13,7 @@
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2021-11-25/rbenv-ruby/</guid>
-      <description>安装 rbenv brew update brew install rbenv 将以下代码添加到 ~/.zshrc 文件中，补全 PATH 变量及初始化 eval &amp;quot;$(rbenv init -)&amp;quot; export PATH=&amp;quot;$HOME/.rbenv/bin:$PATH&amp;quot; 使用 rbenv 查看所有可安装的 ruby 版本 rbenv install --list 2.6.9 2.7.5 3.0.3 jruby-9.3.1.0 mruby-3.0.0 rbx-5.0 truffleruby-21.3.0 truffleruby+graalvm-21.3.0 安装及查看版本 rbenv install</description>
+      <description>安装 rbenv brew update brew install rbenv 将以下代码添加到 ~/.zshrc 文件中，补全 PATH 变量及初始化 eval &amp;#34;$(rbenv init -)&amp;#34; export PATH=&amp;#34;$HOME/.rbenv/bin:$PATH&amp;#34; 使用 rbenv 查看所有可安装的 ruby 版本 rbenv install --list 2.6.9 2.7.5 3.0.3 jruby-9.3.1.0 mruby-3.0.0 rbx-5.0 truffleruby-21.3.0 truffleruby+graalvm-21.3.0 安装及查看版本 rbenv install</description>
     </item>
     
   </channel>

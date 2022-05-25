@@ -157,9 +157,8 @@ pre code {
 }
 
 blockquote {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  font-size: 16px;
+/*  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;*/
 }
 
 .hljs-comment {
@@ -179,23 +178,31 @@ img[src$='#border'] {
   box-shadow: 5px 5px 5px #eee;
 }
 .cn del {
-  background-color: #414141 /*#202020*/;
+  background-color: #000000 /*#202020*/;
+  color: #000000;
 }
 .cn del:hover {
-  background-color: inherit;
-  text-decoration: inherit;
+  background-color: #191919;
+  /*text-decoration: inherit;*/
+  color: #d6d6d6;
 }
 
 blockquote {
-    margin: 1em 0;
+    /*margin: 1em 0;*/
+    margin: 1em auto;
     padding: 0 2em;
-    border-left: 3px solid #d6d6d6;
+    font-size: 16px;
+    /*border-left: 3px solid #d6d6d6;*/
+    position: relative;
+    /*display: inline-block;*/
+    text-align: left;
+    border-left: none;
 }
 
-.home blockquote,
+/*.home blockquote,
 .cn blockquote:not(:hover) {
   border-left-color: #d6d6d6;
-}
+}*/
 .anchor {
   display: none;
 }

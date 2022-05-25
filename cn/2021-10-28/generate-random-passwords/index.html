@@ -113,12 +113,13 @@ brew install pwgen 使用：
 
 
 
+<h2 id="完全随机密码生成">完全随机密码生成</h2>
 <p>在 Terminal 中生成指定特征的随机密码。</p>
 <h3 id="pwgen1"><a href="https://pwgen.sourceforge.io/">pwgen</a></h3>
 <p>安装：</p>
-<pre><code>brew install pwgen
+<pre tabindex="0"><code>brew install pwgen
 </code></pre><p><a href="http://linux.51yip.com/search/pwgen">使用</a>：</p>
-<pre><code>语法：
+<pre tabindex="0"><code>语法：
 pwgen [OPTION] [pw_length] [num_pw]
 
 OPTIONS： 
@@ -134,28 +135,31 @@ OPTIONS：
 -1                      不要在列中打印生成的密码，即一行一个密码
 -v or –no-vowels        不要使用任何元音，以避免偶然的脏话
 </code></pre><p>示例：</p>
-<pre><code>pwgen -nAB 16 1 #生成长度为 16，含有数字，含有小写字母，不包含歧义的密码 1 个
+<pre tabindex="0"><code>pwgen -nAB 16 1 #生成长度为 16，含有数字，含有小写字母，不包含歧义的密码 1 个
 # bengesoamu3sahwi
 
 pwgen -cnysB 16 1 #生成长度为 16，含有数字、大小写字母、特殊字符，不包含歧义的随机密码 1 个
 # x4TU),3z(ub/c$Mb
+</code></pre><p>一个基于 pwgen 的<a href="https://pwgen.io/en/">网站</a>，可以在生成密码时，更直观地对其特征进行调节。</p>
+<p>另外，可利用 pwgen 生成一些有意义但又稍微不同的用户名，譬如：</p>
+<pre tabindex="0"><code>pwgen -nAB 6 10 # 生成 10 个含有六个字符的具有一定意义的用户名（含有数字、不含大写字母与特殊字符，不包含歧义）
 
-</code></pre><p>另外，pwgen 的<a href="https://pwgen.io/en/">网页版本</a>，可以更直观地对密码特征进行调节。</p>
-<h3 id="sf-pwgen4"><a href="https://github.com/anders/pwgen/">sf-pwgen</a></h3>
+imee7u kui9ee eigh7u axei4i ze7iep ohpai3 kee4ef dahqu7 eyeag7 bei4ma
+</code></pre><h3 id="sf-pwgen4"><a href="https://github.com/anders/pwgen/">sf-pwgen</a></h3>
 <p>sf-pwgen 是一个命令行工具，它使用 macOS 中的 SecurityFoundation 框架生成密码。</p>
 <p>安装：</p>
-<pre><code>brew install sf-pwgen
+<pre tabindex="0"><code>brew install sf-pwgen
 </code></pre><p>使用：</p>
-<pre><code>sf-pwgen [options]
+<pre tabindex="0"><code>sf-pwgen [options]
 
 Available options are:
--a, --algorithm    Available algorithms: memorable, random, letters, alphanumeric, numbers. The default is `memorable'.
+-a, --algorithm    Available algorithms: memorable, random, letters, alphanumeric, numbers. The default is `memorable&#39;.
 -c, --count        The number of passwords to generate (default: 5).
 -l, --length       Desired length of the generated passwords (default: 12).
 -L, --language     Generate passwords in a specified language.
                    Languages: en, de, es, fr, it, nl, pt, jp.
 </code></pre><p>示例：</p>
-<pre><code>sf-pwgen -a numbers -c 1 -l 16 # 生成一个 16 位全数字密码
+<pre tabindex="0"><code>sf-pwgen -a numbers -c 1 -l 16 # 生成一个 16 位全数字密码
 # 0705984441692543
 
 sf-pwgen -c 1 -l 16 # 生成一个 16 位便于记忆（默认算法）的密码
@@ -166,10 +170,10 @@ sf-pwgen -a random -c 1 -l 16 # 生成一个 16 位随机密码
 </code></pre><h3 id="openssl5"><a href="https://openssl.org/">OpenSSL</a></h3>
 <p>OpenSSL 是一个套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及 SSL 协议，并提供丰富的应用程序。</p>
 <p>安装：</p>
-<pre><code>brew install openssl
+<pre tabindex="0"><code>brew install openssl
 </code></pre><p><a href="https://wangchujiang.com/linux-command/c/openssl.html">使用</a>：</p>
 <p>OpenSSL 有两种运行模式：交互模式和批处理模式。直接输入 <code>openssl</code> 回车进入交互模式，输入带命令选项的 openssl 进入批处理模式。。</p>
-<pre><code>openssl rand -base64 16 | colrm 17 
+<pre tabindex="0"><code>openssl rand -base64 16 | colrm 17 
 # /dOw/e8IspJ/640E
 
 openssl rand -hex 16 | colrm 17 
@@ -179,9 +183,9 @@ openssl rand -base64 16 |md5 |head -c16; echo
 # 03b325b5eaa5721a
 </code></pre><h3 id="gpg">gpg</h3>
 <p>gpg 是 Gnu Privacy Guard （GnuPG） 中的 OpenPGP 实现部分。它是一个提供 OpenPGP 标准的数字加密与签名服务的工具。gpg 具有完整的密钥管理功能和其他完整 OpenPGP 实现应该具备的全部功能。</p>
-<pre><code>brew install --cask gpg-suite-no-mail
+<pre tabindex="0"><code>brew install --cask gpg-suite-no-mail
 </code></pre><p>使用：</p>
-<pre><code>gpg --help                   
+<pre tabindex="0"><code>gpg --help                   
 gpg (GnuPG/MacGPG2) 2.2.32
 libgcrypt 1.8.8
 Copyright (C) 2021 Free Software Foundation, Inc.
@@ -239,7 +243,7 @@ Commands:
      --import                import/merge keys
      --card-status           print the card status
      --edit-card             change data on a card
-     --change-pin            change a card's PIN
+     --change-pin            change a card&#39;s PIN
      --update-trustdb        update the trust database
      --print-md              print message digests
      --server                run in server mode
@@ -268,13 +272,13 @@ Examples:
  --list-keys [names]        show keys
  --fingerprint [names]      show fingerprints
 </code></pre><p>示例：</p>
-<pre><code>gpg --gen-random --armor 1 16 | colrm 17 # 生成一个 16 位随机密码
+<pre tabindex="0"><code>gpg --gen-random --armor 1 16 | colrm 17 # 生成一个 16 位随机密码
 kSM9OKDxGvNmDipivP8=
 </code></pre><h3 id="md5deep-hashdeep7"><a href="https://github.com/jessek/hashdeep">md5deep hashdeep</a></h3>
 <p>安装：</p>
-<pre><code>brew install md5deep
+<pre tabindex="0"><code>brew install md5deep
 </code></pre><p>使用：</p>
-<pre><code>md5deep --help
+<pre tabindex="0"><code>md5deep --help
 
 md5deep [OPTION]... [FILES]...
 See the man page or README.txt file or use -hh for the full list of options
@@ -298,7 +302,7 @@ See the man page or README.txt file or use -hh for the full list of options
 -j &lt;num&gt;  - use num threads (default 4)
 -Z - triage mode;   -h - help;   -hh - full help
 </code></pre><p>示例：</p>
-<pre><code>date | md5deep | colrm 17
+<pre tabindex="0"><code>date | md5deep | colrm 17
 # 1569c5e0fc5864f1
 
 netstat -an | md5deep | colrm 17

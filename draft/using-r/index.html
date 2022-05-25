@@ -111,7 +111,7 @@ Install Homebrew
 <p>Install <em>Xcode command line tools</em> for using commands like <em>make, GCC, clang, perl, svn, git, size, strip, strings, libtool, cpp&hellip;</em></p>
 <p><code>xcode-select --install</code></p>
 <p>Install <a href="https://brew.sh">Homebrew</a></p>
-<pre><code>- /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+<pre tabindex="0"><code>- /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
 
 brew list --versions
 brew outdated
@@ -120,7 +120,7 @@ brew cleanup
 </code></pre><p>Install Homebrew Cask
 <code>brew install caskroom/cask/brew-cask</code></p>
 <p>ursing <code>brew cask</code> to install and update R and Rstudio:</p>
-<pre><code>brew cask install r
+<pre tabindex="0"><code>brew cask install r
 brew link --overwrite r
 
 brew cask uninstall --force
@@ -129,7 +129,7 @@ brew cask upgrade
 brew update &amp;&amp; brew upgrade &amp;&amp; brew cleanup
 </code></pre><p>During upgrading, If you get an error of the type Error:</p>
 <p><code>Cask 'hex-fiend-beta' definition is invalid: invalid 'depends_on macos' value: &quot;:lion&quot;</code>, where <code>hex-fiend-beta</code> can be any cask name, and<code> :lion</code> any macOS release name, run the following command:</p>
-<pre><code>/usr/bin/find &quot;$(brew --prefix)/Caskroom/&quot;*'/.metadata' -type f -name '*.rb' -print0 | /usr/bin/xargs -0 /usr/bin/perl -i -pe 's/depends_on macos: \[.*?\]//gsm;s/depends_on macos: .*//g'
+<pre tabindex="0"><code>/usr/bin/find &quot;$(brew --prefix)/Caskroom/&quot;*'/.metadata' -type f -name '*.rb' -print0 | /usr/bin/xargs -0 /usr/bin/perl -i -pe 's/depends_on macos: \[.*?\]//gsm;s/depends_on macos: .*//g'
 </code></pre>
 
   <footer>

@@ -108,11 +108,11 @@
 
 
 <h3 id="homebrew-下载龟速的解决方案1">Homebrew 下载龟速的<a href="https://zhuanlan.zhihu.com/p/107469378">解决方案</a></h3>
-<pre><code>brew --cache # 查看 Homebrew 所有下载文件的存放位置 
+<pre tabindex="0"><code>brew --cache # 查看 Homebrew 所有下载文件的存放位置 
 ~/Library/Caches/Homebrew/downloads/ # Homebrew 下载的安装包的存放位置
 </code></pre><h3 id="安装特殊版本软件">安装特殊版本软件</h3>
 <p>通过 Homebrew 安装特殊版本的软件时，可（yī）能（dìng）会遇到 <code>SHA256 mismatch</code> 错误，进而导致无法安装。此时，可直接将 formular 中的的 SHA 无需验证即可。</p>
-<pre><code>Error: SHA256 mismatch
+<pre tabindex="0"><code>Error: SHA256 mismatch
 Expected: 71e11aad1e3ac68d775abe2c488e55484c74e0cd144ab028df63aaa52c611ab2
   Actual: 717cfcd11cea7c770f32aa48c5d1226cb9a9374a2749f43e72deb073e3ec286b
   
@@ -121,7 +121,7 @@ brew edit AppName # 打开 fomular
 sha256 :no_check # 编辑 fomular 中的 SHA 值为不检查
 </code></pre><h3 id="清理工作">清理工作</h3>
 <p>完成安装工作后，可以使用brew cleanup来清理刚刚产生的缓存文件。</p>
-<pre><code>brew cleanup # 清理刚刚产生的下载缓存文件
+<pre tabindex="0"><code>brew cleanup # 清理刚刚产生的下载缓存文件
 
 brew cleanup --prune 0 # 强制清理 n 天以前的缓存文件，包括下载文件以外的缓存
 </code></pre>

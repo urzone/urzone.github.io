@@ -111,19 +111,19 @@
 
 <h3 id="问题r-包-ggalt-无法加载">问题：R 包 ggalt 无法加载</h3>
 <p>R 包 <a href="https://github.com/hrbrmstr/ggalt">ggalt</a> 无法加载，提示找不到 ash 包的镜像。</p>
-<pre><code>&gt; library(ggalt)
+<pre tabindex="0"><code>&gt; library(ggalt)
 Error: package or namespace load failed for ‘ggalt’ in dyn.load(file, DLLpath = DLLpath, ...):
- unable to load shared object '~/Rpackages/ash/libs/ash.so':
+ unable to load shared object &#39;~/Rpackages/ash/libs/ash.so&#39;:
   dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib
   Referenced from: ~/Rpackages/ash/libs/ash.so
   Reason: image not found
 </code></pre><h3 id="尝试重新安装-ggalt">尝试：重新安装 ggalt</h3>
 <p>尝试重新安装 ggalt，依旧提示找不到 ash 包的镜像。</p>
-<pre><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
+<pre tabindex="0"><code>&gt; install.packages(&#34;ggalt&#34;, dependencies = T)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
-trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz'
-Content type 'application/octet-stream' length 2155519 bytes (2.1 MB)
+trying URL &#39;https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz&#39;
+Content type &#39;application/octet-stream&#39; length 2155519 bytes (2.1 MB)
 ==================================================
 downloaded 2.1 MB
 
@@ -134,7 +134,7 @@ downloaded 2.1 MB
 ** inst
 ** byte-compile and prepare package for lazy loading
 Error in dyn.load(file, DLLpath = DLLpath, ...) : 
-  unable to load shared object '~/Rpackages/ash/libs/ash.so':
+  unable to load shared object &#39;~/Rpackages/ash/libs/ash.so&#39;:
   dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib
   Referenced from: ~/Rpackages/ash/libs/ash.so
   Reason: image not found
@@ -149,11 +149,11 @@ Warning in install.packages :
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="尝试重新安装-ash">尝试：重新安装 ash</h3>
-<pre><code>&gt; install.packages(&quot;ash&quot;)
+<pre tabindex="0"><code>&gt; install.packages(&#34;ash&#34;)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
-trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ash_1.0-15.tar.gz'
-Content type 'application/octet-stream' length 7043 bytes
+trying URL &#39;https://mirror.lzu.edu.cn/CRAN/src/contrib/ash_1.0-15.tar.gz&#39;
+Content type &#39;application/octet-stream&#39; length 7043 bytes
 ==================================================
 downloaded 7043 bytes
 
@@ -179,11 +179,11 @@ installing to ~/Rpackages/00LOCK-ash/00new/ash/libs
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="尝试重新安装-ggalt-1">尝试：重新安装 ggalt</h3>
-<pre><code>&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
+<pre tabindex="0"><code>&gt; install.packages(&#34;ggalt&#34;, dependencies = T)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
-trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz'
-Content type 'application/octet-stream' length 2155519 bytes (2.1 MB)
+trying URL &#39;https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz&#39;
+Content type &#39;application/octet-stream&#39; length 2155519 bytes (2.1 MB)
 ==================================================
 downloaded 2.1 MB
 
@@ -194,7 +194,7 @@ downloaded 2.1 MB
 ** inst
 ** byte-compile and prepare package for lazy loading
 Error in dyn.load(file, DLLpath = DLLpath, ...) : 
-  unable to load shared object '~/Rpackages/ash/libs/ash.so':
+  unable to load shared object &#39;~/Rpackages/ash/libs/ash.so&#39;:
   dlopen(~/Rpackages/ash/libs/ash.so, 6): Library not loaded: /usr/local/opt/gcc/lib/gcc/10/libgfortran.5.dylib
   Referenced from: ~/Rpackages/ash/libs/ash.so
   Reason: image not found
@@ -208,11 +208,11 @@ Warning in install.packages :
 
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
-&gt; install.packages(&quot;ash&quot;)
+&gt; install.packages(&#34;ash&#34;)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
-trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ash_1.0-15.tar.gz'
-Content type 'application/octet-stream' length 7043 bytes
+trying URL &#39;https://mirror.lzu.edu.cn/CRAN/src/contrib/ash_1.0-15.tar.gz&#39;
+Content type &#39;application/octet-stream&#39; length 7043 bytes
 ==================================================
 downloaded 7043 bytes
 
@@ -237,11 +237,11 @@ installing to ~/Rpackages/00LOCK-ash/00new/ash/libs
 
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
-&gt; install.packages(&quot;ggalt&quot;, dependencies = T)
+&gt; install.packages(&#34;ggalt&#34;, dependencies = T)
 Installing package into ‘~/Rpackages’
 (as ‘lib’ is unspecified)
-trying URL 'https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz'
-Content type 'application/octet-stream' length 2155519 bytes (2.1 MB)
+trying URL &#39;https://mirror.lzu.edu.cn/CRAN/src/contrib/ggalt_0.4.0.tar.gz&#39;
+Content type &#39;application/octet-stream&#39; length 2155519 bytes (2.1 MB)
 ==================================================
 downloaded 2.1 MB
 
@@ -264,8 +264,8 @@ downloaded 2.1 MB
 The downloaded source packages are in
     ‘/private/var/folders/ws/s7w2_p5j4r162xr_hrn_3tm00000gn/T/RtmpWdDpHo/downloaded_packages’
 </code></pre><h3 id="小结">小结</h3>
-<pre><code>install.packages(&quot;ash&quot;)
-install.packages(&quot;ggalt&quot;, dependencies = T)
+<pre tabindex="0"><code>install.packages(&#34;ash&#34;)
+install.packages(&#34;ggalt&#34;, dependencies = T)
 </code></pre>
 
   <footer>

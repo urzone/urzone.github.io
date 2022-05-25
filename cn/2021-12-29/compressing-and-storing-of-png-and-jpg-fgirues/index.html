@@ -119,7 +119,7 @@ brew install pngquant pngquant input.png --quality 100 --force --strip --skip-if
 <h2 id="png-压缩">PNG 压缩</h2>
 <h3 id="pngquant">pngquant</h3>
 <p>免费开源的无损压缩工具：<a href="https://github.com/kornelski/pngquant">pngquant</a>，专注 PNG 格式，压缩率不错。</p>
-<pre><code>brew install pngquant
+<pre tabindex="0"><code>brew install pngquant
 
 pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.png
 
@@ -144,20 +144,20 @@ pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.pn
 </li>
 <li>将以下代码粘贴到 “run shell script” 的文本框中（删除预置的示例代码）：</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
-
-<span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">do</span>
-    file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
-    file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;png&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-  	  pngquant $f --quality <span style="color:#ae81ff">100</span> --force --strip --skip-if-larger --ext _mini.png
-  	<span style="color:#66d9ef">else</span>
-	  osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a PNG file!&#34; with title &#34;pngquant&#34;&#39;</span>
-	  afplay /System/Library/Sounds/Submarine.aiff
-    <span style="color:#66d9ef">fi</span>
-<span style="color:#66d9ef">done</span>
-</code></pre></div><h2 id="jpg-压缩与存储">JPG 压缩与存储</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;png&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  	  pngquant $f --quality <span style="color:#ae81ff">100</span> --force --strip --skip-if-larger --ext _mini.png
+</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>	  osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a PNG file!&#34; with title &#34;pngquant&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>	  afplay /System/Library/Sounds/Submarine.aiff
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><h2 id="jpg-压缩与存储">JPG 压缩与存储</h2>
 <p>对于 jpg 格式而言，个人并没有找到比较理想的压缩处理工具。其实这里面主要考虑的有如下几个因素；</p>
 <ul>
 <li>压缩率；</li>
@@ -167,35 +167,35 @@ pngquant input.png --quality 100 --force --strip --skip-if-larger --ext _mini.pn
 <p>当然，以上几个要素之间，只能寻得一个平衡，并没有绝对的优解。所以，且试且看吧。</p>
 <h3 id="imageoptim-2"><a href="https://imageoptim.com/">ImageOptim </a></h3>
 <p>ImageOptim 是一款免费开源软件。相比较于 ImageAlpha、pngquant、TinyPNG、JPEGMini、MozJPEG 等默认有损压缩来一定程度缩小文件，ImageOptim 则默认采用无损压缩模式，这也使得 ImageOptim 压缩后的文件相对大一些。如果需要，ImageOptim 也可在选项中直接设置压缩的比率。</p>
-<pre><code>brew install --cask imageoptim
+<pre tabindex="0"><code>brew install --cask imageoptim
 </code></pre><p>另外，可安装非官方 imageoptim-cli 终端工具，进而实现在终端对 ImageOptim 的调用。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 安装</span>
-brew install imageoptim-cli
-
-<span style="color:#75715e"># 查看帮助</span>
-imageoptim -h 
-</code></pre></div><h3 id="lepton">Lepton</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
+</span></span><span style="display:flex;"><span>brew install imageoptim-cli
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看帮助</span>
+</span></span><span style="display:flex;"><span>imageoptim -h 
+</span></span></code></pre></div><h3 id="lepton">Lepton</h3>
 <p>Lepton 可将 JPG 格式照片压缩为 LEP 格式文件，文件体积可减少 20% 以上，适合不常打开的照片的存储。当需要查看的时候，需再次使用 Lepton 对其解码。解码后的文件，除日期与原始文件不同外，其它的 meta 信息与源文件一致。</p>
 <p>故而，个人做法是将照片以拍摄时间命名并压缩为 LEP 格式进行存储。这样做的好处是可以记录拍摄时间，同时，在需要解码的时候，可以直接通过名称大致找到需要的文件。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install lepton
-
-Usage: lepton <span style="color:#f92672">[</span>switches<span style="color:#f92672">]</span> input_file <span style="color:#f92672">[</span>output_file<span style="color:#f92672">]</span>
-</code></pre></div><p>Automator 设置快捷批量处理：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
-
-<span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">do</span>
-  file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
-  file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
-  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPEG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpeg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lep&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-  	lepton $f
-	osascript -e <span style="color:#e6db74">&#39;display notification &#34;Compress complete!&#34; with title &#34;lepton&#34;&#39;</span>
-  <span style="color:#66d9ef">else</span>
-	osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a JPG or LEP file!&#34; with title &#34;lepton&#34;&#39;</span>
-	afplay /System/Library/Sounds/Submarine.aiff
-  <span style="color:#66d9ef">fi</span>
-<span style="color:#66d9ef">done</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install lepton
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Usage: lepton <span style="color:#f92672">[</span>switches<span style="color:#f92672">]</span> input_file <span style="color:#f92672">[</span>output_file<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>Automator 设置快捷批量处理：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JPEG&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jpeg&#34;</span> -o <span style="color:#e6db74">${</span>file_extension<span style="color:#e6db74">}</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lep&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  	lepton $f
+</span></span><span style="display:flex;"><span>	osascript -e <span style="color:#e6db74">&#39;display notification &#34;Compress complete!&#34; with title &#34;lepton&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>	osascript -e <span style="color:#e6db74">&#39;display notification &#34;This is NOT a JPG or LEP file!&#34; with title &#34;lepton&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>	afplay /System/Library/Sounds/Submarine.aiff
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div>
 
   <footer>
   

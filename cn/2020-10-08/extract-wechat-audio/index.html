@@ -115,19 +115,19 @@ git clone https://github.com/kn007/silk-v3-decoder.git silk-v3-decoder 如果转
 
 <p>微信中朋友发送的语音文件（.silk）转码为可播放格式（譬如 mp3、falc 等），转码后的语音文件可转发或者保存之用。</p>
 <p>安装转码依赖工具 gcc 与 ffmpeg</p>
-<pre><code>brew install gcc ffmpeg
+<pre tabindex="0"><code>brew install gcc ffmpeg
 </code></pre><p>下载自动转码工具至根目录</p>
-<pre><code>git clone https://github.com/kn007/silk-v3-decoder.git silk-v3-decoder
+<pre tabindex="0"><code>git clone https://github.com/kn007/silk-v3-decoder.git silk-v3-decoder
 </code></pre><p>如果转码中提示文件权限不够 <code>zsh: permission denied</code></p>
-<pre><code>chmod +x ~/silk-v3-decoder/converter.sh
+<pre tabindex="0"><code>chmod +x ~/silk-v3-decoder/converter.sh
 </code></pre><p>转码单个 silk 文件为 flac, m4a 或者 mp3 格式</p>
-<pre><code>sh ~/silk-v3-decoder/converter.sh PathToFile.silk flac
+<pre tabindex="0"><code>sh ~/silk-v3-decoder/converter.sh PathToFile.silk flac
 sh ~/silk-v3-decoder/converter.sh PathToFile.silk m4a
 sh ~/silk-v3-decoder/converter.sh PathToFile.silk mp3
 </code></pre><p>批量转换某个目录内的所有 silk 文件</p>
-<pre><code>sh ~/silk-v3-decoder/converter.sh input-folder ouput-folder mp3
+<pre tabindex="0"><code>sh ~/silk-v3-decoder/converter.sh input-folder ouput-folder mp3
 </code></pre><p>音频转码与合并：<a href="https://www.jianshu.com/p/be8977de4a6b">SoX</a>（操作比 ffmpeg 简单）</p>
-<pre><code>brew install sox # 安装 SoX
+<pre tabindex="0"><code>brew install sox # 安装 SoX
 sox file.wav file.mp3 # 转码 wav 为 mp3
 sox 1.wav 2.wav Full.wav # 拼接 1 和 2 音频文件
 </code></pre>

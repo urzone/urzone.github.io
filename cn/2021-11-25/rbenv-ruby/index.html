@@ -16,10 +16,10 @@
     
       
       <meta property="description" content="brew update brew install rbenv 将以下代码添加到 ~/.zshrc 文件中，补全 PATH 变量及初始化
-eval &amp;quot;$(rbenv init -)&amp;quot; export PATH=&amp;quot;$HOME/.rbenv/bin:$PATH&amp;quot; 使用 rbenv 查看所有可安装的 ruby 版本
+eval &amp;#34;$(rbenv init -)&amp;#34; export PATH=&amp;#34;$HOME/.rbenv/bin:$PATH&amp;#34; 使用 rbenv 查看所有可安装的 ruby 版本
 rbenv install --list 2.6.9 &amp;hellip;">
       <meta property="og:description" content="brew update brew install rbenv 将以下代码添加到 ~/.zshrc 文件中，补全 PATH 变量及初始化
-eval &amp;quot;$(rbenv init -)&amp;quot; export PATH=&amp;quot;$HOME/.rbenv/bin:$PATH&amp;quot; 使用 rbenv 查看所有可安装的 ruby 版本
+eval &amp;#34;$(rbenv init -)&amp;#34; export PATH=&amp;#34;$HOME/.rbenv/bin:$PATH&amp;#34; 使用 rbenv 查看所有可安装的 ruby 版本
 rbenv install --list 2.6.9 &amp;hellip;">
       
     
@@ -112,14 +112,14 @@ rbenv install --list 2.6.9 &amp;hellip;">
 
 
 <h3 id="安装-rbenv">安装 rbenv</h3>
-<pre><code>brew update
+<pre tabindex="0"><code>brew update
 brew install rbenv
 </code></pre><p>将以下代码添加到 <code>~/.zshrc</code> 文件中，补全 PATH 变量及初始化</p>
-<pre><code>eval &quot;$(rbenv init -)&quot;
-export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;
+<pre tabindex="0"><code>eval &#34;$(rbenv init -)&#34;
+export PATH=&#34;$HOME/.rbenv/bin:$PATH&#34;
 </code></pre><h3 id="使用2-rbenv"><a href="https://ruby-china.org/wiki/rbenv-guide">使用</a> rbenv</h3>
 <p>查看所有可安装的 <a href="https://www.ruby-lang.org/en/downloads/releases/">ruby 版本</a></p>
-<pre><code>rbenv install --list
+<pre tabindex="0"><code>rbenv install --list
 
 2.6.9
 2.7.5
@@ -130,27 +130,27 @@ rbx-5.0
 truffleruby-21.3.0
 truffleruby+graalvm-21.3.0
 </code></pre><p>安装及查看版本</p>
-<pre><code>rbenv install 3.0.3     # 安装 3.0.3 版本
+<pre tabindex="0"><code>rbenv install 3.0.3     # 安装 3.0.3 版本
 
 rbenv versions          # 列出所有安装的版本
 rbenv version           # 列出正在使用的版本
 </code></pre><p><a href="https://gist.github.com/sandyxu/8aceec7e436a6ab9621f">设置</a>版本</p>
-<pre><code>rbenv global 3.0.3      # 默认全局使用 3.0.3
+<pre tabindex="0"><code>rbenv global 3.0.3      # 默认全局使用 3.0.3
 rbenv shell 3.0.3       # 当前的 shell 使用 3.0.3, 会设置一个 `RBENV_VERSION` 环境变量
 rbenv local 2.6.9      # 当前目录使用 2.6.9, 会生成一个 `.rbenv-version` 文件
 </code></pre><p><a href="https://zhangshuo.ink/2020-05-26/ruby-what-is-rbenv-rehash/">rehash</a></p>
-<pre><code>rbenv rehash # rbenv 为所有已安装的 Ruby 版本的所有命令（ruby、irb、rake、gem 等）创建垫片。这个过程被称为 rehash。每当安装一个新的 Ruby 版本或安装一个提供命令的 gem 时，运行 rbenv rehash 以确保任何新的命令都被 shimmed。
+<pre tabindex="0"><code>rbenv rehash # rbenv 为所有已安装的 Ruby 版本的所有命令（ruby、irb、rake、gem 等）创建垫片。这个过程被称为 rehash。每当安装一个新的 Ruby 版本或安装一个提供命令的 gem 时，运行 rbenv rehash 以确保任何新的命令都被 shimmed。
 
 现在 rbenv 可自动执行 rehash
 </code></pre><p>当前使用的 ruby 的路径与版本</p>
-<pre><code>which ruby
+<pre tabindex="0"><code>which ruby
 /Users/xxx/.rbenv/shims/ruby
 ruby -v
 ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-darwin19]
 </code></pre><h3 id="使用相应版本的-ruby-中的-gem-命令管理-jekyll">使用相应版本的 Ruby 中的 <code>gem</code> 命令，管理 jekyll</h3>
-<pre><code>gem install bundler jekyll
+<pre tabindex="0"><code>gem install bundler jekyll
 </code></pre><p>此时安装的工具在相应版本的 ruby 文件夹中。譬如我们使用 3.0.3 版本的 ruby，使用命令 <code>gem</code> 安装的 <code>jekyll</code> 在 <code>~/.rbenv/versions/3.0.3/bin/jekyll</code> 路径中。我们可以使用如下命令查看 gem 的环境配置：</p>
-<pre><code>gem env
+<pre tabindex="0"><code>gem env
 
 RubyGems Environment:
   - RUBYGEMS VERSION: 3.2.32
@@ -191,9 +191,9 @@ RubyGems Environment:
      - /usr/local/MacGPG2/bin
      - /opt/X11/bin
 </code></pre><p>为了是系统其它软件也能调用该 jekyll，将 jekyll <a href="https://stackoverflow.com/questions/8146249/jekyll-command-not-found">软链接</a>到 <code>/usr/local/bin</code> 本地文件夹中：</p>
-<pre><code>cd /usr/local/bin &amp;&amp; ln -s ~/.rbenv/versions/3.0.3/bin/jekyll jekyll
+<pre tabindex="0"><code>cd /usr/local/bin &amp;&amp; ln -s ~/.rbenv/versions/3.0.3/bin/jekyll jekyll
 </code></pre><p>另外，webrick is <a href="https://github.com/jekyll/jekyll/issues/8523">no longer a bundled gem</a> in Ruby 3.0.</p>
-<pre><code>bundle add webrick
+<pre tabindex="0"><code>bundle add webrick
 </code></pre>
 
   <footer>

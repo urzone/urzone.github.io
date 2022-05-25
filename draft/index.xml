@@ -6,7 +6,25 @@
     <description>Recent content in Drafts on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sat, 14 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/draft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PROTAC 技术进展</title>
+      <link>https://urz.one/draft/protac/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/draft/protac/</guid>
+      <description>1. PROTAC 概念</description>
+    </item>
+    
+    <item>
+      <title>靶向“不可成药蛋白”</title>
+      <link>https://urz.one/draft/targeting-to-undruggable-targets/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/draft/targeting-to-undruggable-targets/</guid>
+      <description>不可药物靶点是指具有缺乏明确的配体结合口袋、非催化的蛋白‑蛋白相互作用结合区域和蛋白晶体结构研究极少等特点且通过传统方法“难以成药”或“尚未</description>
+    </item>
+    
     <item>
       <title>分子结构</title>
       <link>https://urz.one/draft/molecular-structure/</link>

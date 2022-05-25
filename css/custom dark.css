@@ -8,7 +8,7 @@
     /*background: #fafafa;*/
     width: 200px;
     padding: 2em 1em;
-    background-color: #202020;
+    background-color: #191919 /*#202020*/;
   }
   .main {
     margin-left: calc(50% - 250px);
@@ -22,11 +22,11 @@
 body {
   width: auto;
   padding: 0;
-  background-color: #202020 /*#f5f1e9*/ /*#edeae0*/;
+  background-color: #191919 /*#202020*/ /*#f5f1e9*/ /*#edeae0*/;
   font-size: 16px;
   /*font-weight: 300;*/
   line-height: 2;
-  color: #b8b8b8; 
+  color: #d6d6d6; 
   word-spacing: 0px;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: 'kern' 1;
@@ -40,8 +40,12 @@ body {
 }
 strong {
   color: #cc342c;
-  font-weight: bold;
+  font-weight: normal;
 }
+
+/*strong:before, strong:after {
+  content: ' ';
+}*/
 
 h1,
 h2,
@@ -49,13 +53,23 @@ h3,
 h4,
 h5,
 h6 {
-  color: #FFFFFF /*#e5e5e5*/;
-}
-a {
-  color: #b8b8b8;
-  border-bottom: 1px solid #cc342c;
+  color: #f5f5f5 /*#e5e5e5*/;
 }
 
+/*h2:before,h3:before {
+  content: '\2134  ';
+  color: #f5f5f5;
+}*/
+
+/*h2:after,h3:after {
+  content: '  \2134';
+  color: #f5f5f5;
+}*/
+
+a {
+  color: #d6d6d6;
+  border-bottom: 1px solid #cc342c;
+}
 a:hover {
   border-bottom: 2px solid #cc342c;
 }
@@ -64,7 +78,7 @@ a:hover {
   padding: 2em 40px;
   hyphens: manual;
   border-left: none;
-  background-color: #202020;
+  background-color: #191919 /*#202020*/;
   /*text-align: justify;*/
   /*  background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
   background-size: 20px 20px;
@@ -91,8 +105,17 @@ a:hover,
 }
 code {
   hyphens: none;
-  background: #202020;
+  background: #121212;
+  color: #cc342c;
+  border-radius: 5px;
+  border-color: #474747;
+  /*border-style: double;*/
 }
+
+/*code:before, code:after  {
+  content: ' ';
+}*/
+
 iframe,
 twitterwidget,
 video {
@@ -101,7 +124,7 @@ video {
   margin: auto;
 }
 #TableOfContents {
-  background-color: #202020 /*#f8f8f8*/;
+  background-color: #191919 /*#202020*/ /*#f8f8f8*/;
   padding: 0.5em;
 }
 table {
@@ -114,9 +137,11 @@ pre .nohighlight {
   background: #e5ddc8;
 }
 pre code {
-  background: none;
-  color: #b8b8b8;
-  border: none;
+  color: #d6d6d6;
+  border: solid;
+  border-color: #474747;
+  border-style: double;
+  border-radius: 10px;
   box-shadow: none;
   /*  margin-right: -40px;
   margin-left: -40px;*/
@@ -132,9 +157,8 @@ pre code {
 }
 
 blockquote {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  font-size: 16px;
+/*  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;*/
 }
 
 .hljs-comment {
@@ -154,16 +178,31 @@ img[src$='#border'] {
   box-shadow: 5px 5px 5px #eee;
 }
 .cn del {
-  background-color: #414141 /*#202020*/;
+  background-color: #000000 /*#202020*/;
+  color: #000000;
 }
 .cn del:hover {
-  background-color: inherit;
-  text-decoration: inherit;
+  background-color: #191919;
+  /*text-decoration: inherit;*/
+  color: #d6d6d6;
 }
-.home blockquote,
+
+blockquote {
+    /*margin: 1em 0;*/
+    margin: 1em auto;
+    padding: 0 2em;
+    font-size: 16px;
+    /*border-left: 3px solid #d6d6d6;*/
+    position: relative;
+    /*display: inline-block;*/
+    text-align: left;
+    border-left: none;
+}
+
+/*.home blockquote,
 .cn blockquote:not(:hover) {
-  border-left-color: transparent;
-}
+  border-left-color: #d6d6d6;
+}*/
 .anchor {
   display: none;
 }
@@ -182,12 +221,12 @@ img[src$='#border'] {
   h5,
   h6 {
     margin: 2em auto 1.5em auto;
-    color: #FFFFFF;
+    color: #f5f5f5;
   }
 
 strong {
   color: #cc342c;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 
@@ -206,12 +245,13 @@ body {
   padding: 25px;
   hyphens: manual;
   border-left: none;
-  background-color: #202020;
+  background-color: #191919 /*#202020*/;
 }
   .title h2,
   .title h3 {
     margin: 1.5em auto;
   }
+
   .main .title h1 {
     margin: 1em auto 0 auto;
   }
@@ -224,6 +264,7 @@ body {
   }
   .masthead .menu {
     max-width: inherit;
+    font-size: 16px;
   }
   .masthead h1 {
     margin-bottom: 10px;
@@ -234,13 +275,13 @@ body {
   .masthead .menu a {
     display: inline-block;
     padding: 5px 10px;
-    background: #202020;
+    background: #191919;
     color: #fff;
     border-radius: 5px;
   }
   .masthead .menu .active a {
     background: none;
-    border: 1px solid #202020;
+    border: 1px solid #191919;
     color: #cc342c;
   }
   .masthead .menu li,
@@ -278,5 +319,5 @@ ul ul {
 
 th,
 td {
-  background-color: #202020;
+  background-color: #191919 /*#202020*/;
 }

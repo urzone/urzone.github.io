@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>brew switch - XiaO | 缄默之语</title>
+    <meta property="og:title" content="brew switch - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="当需要在软件的不同版本之间快速切换时，brew switch formula version，用起来着实方便。然而，Homebrew 更新至 2.6.0 版本后，brew switch 命令被抛弃，其相应的功能也一同死翘翘了。
+官方对一些事物的抛弃有其「正当」的理由，而「愚众」对自己的需求有自己的定义。
+那么，在 brew switch 被抛弃而官方又没有给出一个更好的方案时，就只能想办法「恢复」 &amp;hellip;">
+      <meta property="og:description" content="当需要在软件的不同版本之间快速切换时，brew switch formula version，用起来着实方便。然而，Homebrew 更新至 2.6.0 版本后，brew switch 命令被抛弃，其相应的功能也一同死翘翘了。
+官方对一些事物的抛弃有其「正当」的理由，而「愚众」对自己的需求有自己的定义。
+那么，在 brew switch 被抛弃而官方又没有给出一个更好的方案时，就只能想办法「恢复」 &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>brew switch</h1>
+
+
+<h3>XiaO / 
+2022-01-21</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>当需要在软件的不同版本之间快速切换时，<code>brew switch formula version</code>，用起来着实方便。然而，Homebrew 更新至 2.6.0 版本后，<code>brew switch</code> 命令被抛弃，其相应的功能也一同<a href="https://github.com/Homebrew/discussions/discussions/339">死翘翘</a>了。</p>
+<p>官方对一些事物的抛弃有其「正当」的理由，而「愚众」对自己的需求有自己的定义。</p>
+<p>那么，在 <code>brew switch</code> 被抛弃而官方又没有给出一个更好的方案时，就只能想办法「恢复」该命令了。用时下流行的话说，就是「又不是不能用」。借用网友维护的包含旧版本 Homebrew 内核命令的仓库 <a href="https://github.com/laggardkernel/homebrew-tap/">laggardkernel/homebrew-tap</a>。</p>
+<h3 id="安装-tap-源httpsdocsbrewshhow-to-create-and-maintain-a-tap"><a href="https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap">安装 tap 源</a></h3>
+<pre tabindex="0"><code>% brew tap user/repo # install a given tap, repo should be named with homebrew-repo
+% brew untap user/repo # removes the given tap
+
+% brew tap laggardkernel/tap # 安装 laggardkernel/tap 源
+
+% brew switch --help # 查看命令
+</code></pre><p><a href="https://docs.brew.sh/Taps">tap 源</a> 可简单理解为 GitHub 上的维护者，不同的 tap 源安装在 <code>/usr/local/Homebrew/Library/Taps/</code> 文件夹中，譬如，如下我所用到的 tap 源</p>
+<pre tabindex="0"><code>├── beeftornado
+│  └── homebrew-rmtree
+├── brewsci
+│   └── homebrew-bio
+├── buo
+│   └── homebrew-cask-upgrade
+├── emeryberger
+│   └── homebrew-hoard
+├── homebrew
+│   ├── homebrew-bundle
+│   ├── homebrew-cask
+│   ├── homebrew-cask-fonts
+│   ├── homebrew-cask-versions
+│   └── homebrew-core
+├── laggardkernel # 新安装的 tap 源
+│   └── homebrew-tap
+└── yt-dlp
+    └── homebrew-taps
+</code></pre><h3 id="安装特定版本软件">安装特定版本软件</h3>
+<pre tabindex="0"><code>% brew edit AppName # 打开 formula
+
+sha256 :no_check # 编辑 formula 中的 SHA 值为 no_check
+</code></pre><p>安装 0.89.4 版本的 Hugo</p>
+<pre tabindex="0"><code>% brew edit hugo
+
+# 修改之前的版本 0.92.0
+url &#34;https://github.com/gohugoio/hugo/archive/v0.92.0.tar.gz&#34;
+sha256 &#34;3ac140757a7322f0a7511d75fb3b1e77e6a0f0c6e4ea1b0afdbebc00e0d0a7d1&#34;
+
+# 修改之后的版本 0.89.4
+url https://github.com/gohugoio/hugo/archive/refs/tags/v0.89.4.tar.gz
+sha256 :no_check 
+
+% brew unlink hugo # unlink 目前已安装的 Hugo 版本 0.92.0
+% brew install --build-from-source hugo # 通过本地源代码编译的方式安装修改之后的版本 0.89.4
+% brew pin hugo # 锁定该版本，防止其更新
+
+% brew unpin hugo # 解除锁定
+</code></pre><h3 id="软件版本切换">软件版本切换</h3>
+<pre tabindex="0"><code>% brew list --versions hugo  # 查看现在所有已安装的 Hugo 版本
+hugo 0.89.4 0.92.0
+
+% brew switch hugo 0.92.0 # 切换到 0.92.0 版
+% brew switch hugo 0.89.4 # 切换到 0.89.4 版
+
+% hugo version # 查看现在使用的版本
+</code></pre><h3 id="homebrew-cheatsheet">Homebrew cheatsheet</h3>
+<pre tabindex="0"><code>% brew install hugo         # Install a package
+% brew uninstall hugo       # Remove/Uninstall a package
+% brew upgrade hugo         # Upgrade a package
+% brew unlink hugo          # Unlink
+% brew link hugo            # Link
+% brew list --versions hugo # See what versions are installed
+% brew switch hugo 0.89.4   # Change versions
+
+% brew info hugo            # List versions, caveats, etc
+% brew cleanup hugo         # Remove old versions
+% brew edit hugo            # Edit this formula
+% brew cat hugo             # Print this formula
+% brew home hugo            # Open homepage
+% brew search hugo          # Search for formulas
+
+% brew install --cask librewolf # Install the LibreWolf browser
+% brew list --cask              # List installed applications
+
+% brew update           # Update brew and cask
+% brew upgrade          # Upgrade all packages
+% brew list             # List installed
+% brew outdated         # What’s due for upgrades?
+% brew doctor           # Diagnose brew issues
+</code></pre>
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2022-01-21/a-love-letter-to-scammers/">来自 Revolut 的情书</a></span>
+  <span class="nav-next"><a href="/cn/2022-01-22/storage-of-memory/">记忆是物质的吗？</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2022-01-21\/a-love-letter-to-scammers\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/cn\/2022-01-22\/storage-of-memory\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2021</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

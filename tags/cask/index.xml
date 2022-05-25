@@ -13,7 +13,7 @@
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-06-11/homebrew/</guid>
-      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
+      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
     </item>
     
   </channel>

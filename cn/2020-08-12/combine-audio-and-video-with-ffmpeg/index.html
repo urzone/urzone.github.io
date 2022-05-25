@@ -116,11 +116,11 @@ ffmpeg -i video.gif -i &amp;hellip;">
 <p>最近下载了一个适合网络传输的视频文件，却是没有声音的。
 遂又单独下载音频文件，而后祭出音视频处理神器 <a href="https://www.ffmpeg.org/">ffmpeg</a></p>
 <p>用 ffmpeg 合并 mp4 和 m4a 文件：</p>
-<pre><code>ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4
+<pre tabindex="0"><code>ffmpeg -i video.mp4 -i audio.m4a -c:v copy -c:a copy output.mp4
 </code></pre><p>用 ffmpeg 合并 GIF 和 m4a 文件：</p>
-<pre><code>ffmpeg -i video.gif -i audio.m4a -c:v copy -c:a copy output.mp4
+<pre tabindex="0"><code>ffmpeg -i video.gif -i audio.m4a -c:v copy -c:a copy output.mp4
 </code></pre><p>用 ffmpeg 从输入文件中截取一段 20 秒到 40 秒的片段文件：</p>
-<pre><code>ffmpeg -i input.m4a -ss 20 -to 40 -c copy output.m4a
+<pre tabindex="0"><code>ffmpeg -i input.m4a -ss 20 -to 40 -c copy output.m4a
 ffmpeg -i input.mkv -ss 00:00:20 -to 00:00:40 -c copy output.mkv
 </code></pre>
 

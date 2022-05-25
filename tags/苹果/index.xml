@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>苹果 on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/%E8%8B%B9%E6%9E%9C/</link>
+    <description>Recent content in 苹果 on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/%E8%8B%B9%E6%9E%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SwitchHosts</title>
+      <link>https://urz.one/cn/2022-02-11/switchhosts/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-02-11/switchhosts/</guid>
+      <description>搬了新住址，买了旧路由，网络还未联通。于是乎，家里的机器之间就名副其实地变成了局域网。 然而，联上该并未联接互联网的局域网时，启动第三方软件变</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wowchemy on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/wowchemy/</link>
+    <description>Recent content in wowchemy on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/wowchemy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wowchemy 网站建立</title>
+      <link>https://urz.one/cn/2022-01-25/wowchemy-website/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-01-25/wowchemy-website/</guid>
+      <description>安装 hugo v0.89.4+extended 克隆网站模板与生成器模块 replace 将模板本地化 图片快速背景处理 第三方js css 本地化 网站内嵌 &amp;ldquo;EB Garamond&amp;rdquo; 字体 字体放置在 &amp;lt;WebsiteDir&amp;gt;/static/fonts 文件夹中： WebsiteDir/static/fonts/ ├── EBGaramond-Bold.eot ├── EBGaramond-Bold.svg ├─</description>
+    </item>
+    
+  </channel>
+</rss>

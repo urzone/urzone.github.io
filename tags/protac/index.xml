@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PROTAC on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/protac/</link>
+    <description>Recent content in PROTAC on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/protac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PROTAC 技术进展</title>
+      <link>https://urz.one/draft/protac/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/draft/protac/</guid>
+      <description>1. PROTAC 概念</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -31,7 +31,7 @@
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-06-11/homebrew/</guid>
-      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
+      <description>安装 xcode-select —install # 安装 macOS 上的集成开发工具 /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; # 安装 homebrew 基础使用 brew update # 更新 homebrew 各个 tap 中的 formulae 信息 brew install wget # 安装 homebrew/core 的软件 brew uninstall wget # 卸载 homebrew/core 的软件</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-05-16/homebrew-softwares/</guid>
-      <description>自用 Mac 软件记录 Homebrew xcode-select —-install /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; brew tap homebrew/core brew tap homebrew/cask brew tap homebrew/cask-versions brew tap homebrew/cask-fonts brew tap brewsci/bio brew tap buo/cask-upgrade # 替代 `brew cask upgrade`，更直观，可交互更新； brew tap homebrew/bundle # 软</description>
+      <description>自用 Mac 软件记录 Homebrew xcode-select —-install /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; brew tap homebrew/core brew tap homebrew/cask brew tap homebrew/cask-versions brew tap homebrew/cask-fonts brew tap brewsci/bio brew tap buo/cask-upgrade # 替代 `brew cask upgrade`，更直观，可交互更新； brew tap homebrew/bundle # 软</description>
     </item>
     
   </channel>
