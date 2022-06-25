@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>小工具集 - XiaO | 缄默之语</title>
-    <meta property="og:title" content="小工具集 - XiaO | 缄默之语">
+    <title>macOS 下 Sourcetree 关联 Github 账号 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="macOS 下 Sourcetree 关联 Github 账号 - XiaO | 缄默之语">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,14 +15,12 @@
 
     
       
-      <meta property="description" content="日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
-pdf2ps
-brew install ghostscript Automator 中设置快捷动作如下
-#!/bin/zsh export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do File=&amp;#34;$1&amp;#34; &amp;hellip;">
-      <meta property="og:description" content="日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
-pdf2ps
-brew install ghostscript Automator 中设置快捷动作如下
-#!/bin/zsh export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do File=&amp;#34;$1&amp;#34; &amp;hellip;">
+      <meta property="description" content="GitHub 抛弃了传统的用户名&#43;密码的鉴权方式，改用 SSH Key 认证，此处记录使用 HTTPS &#43; Token 在第三方软件登录 GitHub。
+[&amp;hellip;] 按 Command &#43; Q 彻底关闭 Sourcetree，并在终端下执行命令：
+rm -rf ~/Library/Application\ Support/SourceTree/*github.com* &amp;hellip;">
+      <meta property="og:description" content="GitHub 抛弃了传统的用户名&#43;密码的鉴权方式，改用 SSH Key 认证，此处记录使用 HTTPS &#43; Token 在第三方软件登录 GitHub。
+[&amp;hellip;] 按 Command &#43; Q 彻底关闭 Sourcetree，并在终端下执行命令：
+rm -rf ~/Library/Application\ Support/SourceTree/*github.com* &amp;hellip;">
       
     
 
@@ -100,11 +98,11 @@ brew install ghostscript Automator 中设置快捷动作如下
     <article class="main">
       <header class="title">
       
-<h1>小工具集</h1>
+<h1>macOS 下 Sourcetree 关联 Github 账号</h1>
 
 
 <h3>XiaO / 
-2022-06-12</h3>
+2022-06-25</h3>
 
 <hr>
 
@@ -113,42 +111,36 @@ brew install ghostscript Automator 中设置快捷动作如下
 
 
 
-<h3 id="flatten-pdf">Flatten PDF</h3>
-<p>日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 <code>Flatten</code>。</p>
-<p><a href="https://command-not-found.com/pdf2ps">pdf2ps</a></p>
-<pre tabindex="0"><code>brew install ghostscript
-</code></pre><p>Automator 中设置<a href="https://gist.github.com/searls/7162798">快捷动作</a>如下</p>
-<pre tabindex="0"><code>#!/bin/zsh
-export PATH=/usr/local/bin:$PATH
-for f in &#34;$@&#34;
-do
-	File=&#34;$1&#34;
-	OldFile=&#34;$1-Og.pdf&#34;
+<p>GitHub 抛弃了传统的用户名+密码的鉴权方式，改用 SSH Key 认证，此处记录使用 <code>HTTPS + Token</code> 在第三方软件登录 GitHub。</p>
+<h3 id="清除无用的-oauth-凭据">清除无用的 OAuth 凭据</h3>
+<p>按 <code>Command + Q</code> 彻底关闭 Sourcetree，并在终端下执行命令：</p>
+<pre tabindex="0"><code>rm -rf ~/Library/Application\ Support/SourceTree/*github.com*
+</code></pre><h3 id="修改全局-gitconfig-配置">修改全局 .gitconfig 配置</h3>
+<p>在 .gitconfig 配置文件中添加如下信息：</p>
+<pre tabindex="0"><code>[credential]
+        helper = osxkeychain
+[user]
+        name = 你的 git 提交名
+        email = 你的邮箱
+[http]
+        proxy = 127.0.0.1:7890 # 如果没有可用的 proxy，删除 [http] 段
+</code></pre><h3 id="申请-github-personal-access-tokens">申请 GitHub Personal Access Tokens</h3>
+<pre tabindex="0"><code>登录 GitHub -&gt; Settings -&gt; Developer Settings -&gt; Personal access tokens -&gt; Generate New Token -&gt; No expiration (底下权限根据自己的需要勾选，不懂就全勾上) -&gt; Generate Token
 
-	mv &#34;$File&#34; &#34;$OldFile&#34;
-	pdf2ps &#34;$OldFile&#34; - | ps2pdf - &#34;$File&#34;
-done
-</code></pre><h3 id="开放中文字体转换">开放中文字体转换</h3>
-<p>中文简繁转换开源项目，支持词汇级别的转换、异体字转换和地区习惯用词转换（中国大陆、台湾、香港、日本新字体）。不提供普通话与粤语的转换。</p>
-<pre tabindex="0"><code>brew install opencc 
-</code></pre><p>使用 <a href="https://github.com/amowu/alfred-chinese-converter">Alfred 的工作流</a> 插件，则可进一步简化操作。</p>
-<h3 id="inkscape-svg2pdf">Inkscape SVG2PDF</h3>
-<p>Mac 上的字体包括存储在不同位置的用户字体或系统字体，而 inkscape 所能取用的字体只有用户字体。</p>
-<pre tabindex="0"><code>~/Library/Fonts/SomeFont.ttc #用户字体文件夹
-</code></pre><p>Automator 快捷动作设置如下：</p>
-<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
-for f in &#34;$@&#34;
-do
-	inkscape --pdf-poppler --export-dpi=600 --export-type=pdf &#34;$f&#34;
-done
-</code></pre><p>当使用 Inkscape 将包含某些字体信息的 SVG 转换为 PDF 时，可能遭遇字体丢失的情况。此时，只需将相应的字体，添加到用户字体即可。</p>
+ghp_FTVMxKkp2ywQTVMxKkp2n7ywQ # 复制并保存该字段
+</code></pre><h3 id="在-sourcetree-中进行账号关联">在 Sourcetree 中进行账号关联</h3>
+<pre tabindex="0"><code>Sourcetree -&gt; Accounts -&gt; Add -&gt; GitHub -&gt; Basic -&gt; Username -&gt; Password -&gt; HTTPS -&gt; Save
+
+Username：GitHub 用户名
+Password：前面申请的 GitHub Personal Access Token
+</code></pre><p>如此，便可方便地在 Sourcetree 中管理远程仓库了。</p>
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev">&larr; <a href="/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/">Homebrew 多版本安装与切换</a></span>
-  <span class="nav-next"><a href="/cn/2022-06-25/macos-sourcetree-github/">macOS 下 Sourcetree 关联 Github 账号</a> &rarr;</span>
+  <span class="nav-prev">&larr; <a href="/cn/2022-06-12/tools/">小工具集</a></span>
+  <span class="nav-next"></span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -156,11 +148,9 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/cn\/2022-05-31\/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew\/';
+    url = '\/cn\/2022-06-12\/tools\/';
     
   } else if (e.which == 39) {  
-    
-    url = '\/cn\/2022-06-25\/macos-sourcetree-github\/';
     
   }
   if (url) window.location = url;
