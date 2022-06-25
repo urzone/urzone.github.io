@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ultrasound on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/ultrasound/</link>
+    <description>Recent content in Ultrasound on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/ultrasound/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ultrasound Physics</title>
+      <link>https://urz.one/en/2022-06-24/ultrasound-physics/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/en/2022-06-24/ultrasound-physics/</guid>
+      <description>Pulse Echo Principles Pulse:
+A pulse is a group of ultrasound waves that travel together. Each ultrasound pulse has a beginning and an end and has certain characteristics. In pulsed ultrasound the same piezoelectric crystal is used to send the ultrasound pulse and receive the returning echoes. Components of a pulse:
+The transmit time which is also called the on time. During this time the ultrasound machine is on and short bursts of ultrasound pulses are produced and transmitted.</description>
+    </item>
+    
+  </channel>
+</rss>

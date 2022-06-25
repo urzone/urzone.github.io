@@ -6,7 +6,16 @@
     <description>Recent content in Homebrew on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Sun, 10 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homebrew 多版本安装与切换</title>
+      <link>https://urz.one/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/</guid>
+      <description>如下以 Hugo 的安装为例，演示如何安装该软件的不同版本，并在不同版本之间切换使用。 安装最新版本的 Hugo： brew install hugo 编辑 Hugo 的 formula brew eitd hugo # 使用编辑器打开 hugo</description>
+    </item>
+    
     <item>
       <title>PDF 字体</title>
       <link>https://urz.one/cn/2021-10-10/pdffonts/</link>

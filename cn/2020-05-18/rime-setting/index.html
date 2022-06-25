@@ -17,12 +17,10 @@
       
       <meta property="description" content="现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下：
 [&amp;hellip;] 某惯用小鹤双拼 &#43; 系统英文输入法。
-[&amp;hellip;] brew cask install squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：~/Library/Rime/，其中文件结构如下：
-├── &amp;hellip;">
+[&amp;hellip;] brew install --cask squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：~/Library/Rime/，其中文件结构如下： &amp;hellip;">
       <meta property="og:description" content="现在越来越觉得，好像做什么事情都需要理由。那好吧，某使用 Rime 的理由如下：
 [&amp;hellip;] 某惯用小鹤双拼 &#43; 系统英文输入法。
-[&amp;hellip;] brew cask install squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：~/Library/Rime/，其中文件结构如下：
-├── &amp;hellip;">
+[&amp;hellip;] brew install --cask squirrel Rime 配置文件 说明 1 说明 2 配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：~/Library/Rime/，其中文件结构如下： &amp;hellip;">
       
     
 
@@ -122,7 +120,7 @@
 </ul>
 <p><strong>某</strong>惯用<strong>小鹤双拼 + 系统英文输入法</strong>。</p>
 <h3 id="安装">安装</h3>
-<pre tabindex="0"><code>brew cask install squirrel
+<pre tabindex="0"><code>brew install --cask squirrel
 </code></pre><h3 id="rime-配置文件httpsgithubcomrimehomewikirimewithschemata-说明-1httpsblogdwxiomy-rime-说明-2httpswwwdreamxucominstall-config-squirrel">Rime <a href="https://github.com/rime/home/wiki/RimeWithSchemata">配置文件</a> <a href="https://blog.dwx.io/my-rime/">说明 1</a> <a href="https://www.dreamxu.com/install-config-squirrel/">说明 2</a></h3>
 <p>配置文件采用 UTF-8 编码，格式为 YAML 文本。Mac 下文件夹所在地址：<code>~/Library/Rime/</code>，其中文件结构如下：</p>
 <pre tabindex="0"><code>├── default.custom.yaml # 全局配置
@@ -163,13 +161,13 @@ patch:
   menu/page_size: 5 # 定制每页候选数
   # 更改切换中西文的快捷键
   ascii_composer:
-    good_old_caps_lock: false
+    good_old_caps_lock: true
     switch_key:
-      Shift_L: noop
+      Shift_L: noop # 关闭 Shift_L 的中英文切换。需开启输入方案中处理西文模式及中西文切换功能 - ascii_composer
+      Caps_Lock: commit_code # 开启大写字母直接上屏。需开启输入方案中处理西文模式及中西文切换功能 - ascii_composer
       Shift_R: noop
       Control_L: noop
       Control_R: noop
-      Caps_Lock: commit_code
       Eisu_toggle: clear
 </code></pre><h3 id="外观配置httpsplacelessnetblogrime-squirrel-customization-2019-squirrelcustomyaml-"><a href="https://placeless.net/blog/rime-squirrel-customization-2019">外观配置</a> (squirrel.custom.yaml )</h3>
 <pre tabindex="0"><code>patch:

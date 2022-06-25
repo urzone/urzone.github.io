@@ -14,7 +14,7 @@
       
       <guid>https://urz.one/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
       <description>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.
-library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite)  theme_xiao &amp;lt;- function () {  theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure  theme(  # Background of the entire plot  plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA),   # Background of plotting area  panel.</description>
+library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite) theme_xiao &amp;lt;- function () { theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure theme( # Background of the entire plot plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA), # Background of plotting area panel.</description>
     </item>
     
   </channel>

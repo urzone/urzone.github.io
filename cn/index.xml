@@ -8,6 +8,24 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>小工具集</title>
+      <link>https://urz.one/cn/2022-06-12/tools/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-06-12/tools/</guid>
+      <description>Flatten PDF 日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。 pdf2ps brew install ghostscript Automator 中设置快捷动作如下 #!/bin/zsh export PATH=/usr/local/bin:$PATH for</description>
+    </item>
+    
+    <item>
+      <title>Homebrew 多版本安装与切换</title>
+      <link>https://urz.one/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/</link>
+      <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/</guid>
+      <description>如下以 Hugo 的安装为例，演示如何安装该软件的不同版本，并在不同版本之间切换使用。 安装最新版本的 Hugo： brew install hugo 编辑 Hugo 的 formula brew eitd hugo # 使用编辑器打开 hugo</description>
+    </item>
+    
+    <item>
       <title>灯下漫笔</title>
       <link>https://urz.one/cn/2022-04-29/writing-under-the-lights/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
@@ -887,24 +905,6 @@
       
       <guid>https://urz.one/cn/2020-09-09/adorable/</guid>
       <description>可爱。 无从说起，不知道自己是否具备这个属性。也或者说，自己并不清楚所谓可爱到底意味着什么，就像自己并不能理解自己一样。 《恋人絮语》中有关于可</description>
-    </item>
-    
-    <item>
-      <title>郑州</title>
-      <link>https://urz.one/cn/2020-09-07/2-be/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-07/2-be/</guid>
-      <description>关于郑州，我所知道的寥寥无几，除了那个冬日里挂在天空的大红橘子。关于这座城市，我甚至都不知道自己是否曾路过那里。所以，一定程度上来说，这个城</description>
-    </item>
-    
-    <item>
-      <title>挪威的森林</title>
-      <link>https://urz.one/cn/2020-08-31/the-lake-in-norway/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-08-31/the-lake-in-norway/</guid>
-      <description>我不知道一首歌曲会以怎样一种形式留在一个人的记忆里。挪威的森林，于我而言，却终究是有着别样的意义的。我知道，如果用&amp;quot;一生&amp;quot</description>
     </item>
     
   </channel>

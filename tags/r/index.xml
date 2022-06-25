@@ -13,7 +13,7 @@
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2020-06-07/r-rstudio/</guid>
-      <description>安装 R，RStudio 与 pandoc brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 brew install --cask pandoc-citeproc # pandoc 的引文格式。 Pandoc 默认管理引文的方法是使用 pando</description>
+      <description>安装 R，RStudio 与 pandoc brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 本机安装的 rstudio 版本为 [2021.09.0,351](https://dailies.rstudio.com/version/2021.09.0+351.pro6/) brew install pandoc https://cran.r-project.org/src/base/R-4/ # R 4.0 语言安装包（可查看到不同的</description>
     </item>
     
   </channel>

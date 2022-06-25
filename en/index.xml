@@ -8,13 +8,24 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ultrasound Physics</title>
+      <link>https://urz.one/en/2022-06-24/ultrasound-physics/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/en/2022-06-24/ultrasound-physics/</guid>
+      <description>Pulse Echo Principles Pulse:
+A pulse is a group of ultrasound waves that travel together. Each ultrasound pulse has a beginning and an end and has certain characteristics. In pulsed ultrasound the same piezoelectric crystal is used to send the ultrasound pulse and receive the returning echoes. Components of a pulse:
+The transmit time which is also called the on time. During this time the ultrasound machine is on and short bursts of ultrasound pulses are produced and transmitted.</description>
+    </item>
+    
+    <item>
       <title>Using ggplot2 to do an analysis of Nobel Prize Laureates</title>
       <link>https://urz.one/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/en/2020-04-23/using-ggplot2-to-do-an-analysis-of-nobel-prize-laureates/</guid>
       <description>First, let us load all the libraries needed and set a tansparent theme which can be used for all the plots generated.
-library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite)  theme_xiao &amp;lt;- function () {  theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure  theme(  # Background of the entire plot  plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA),   # Background of plotting area  panel.</description>
+library(tidyverse) library(lubridate) # to handal dates easily library(viridisLite) theme_xiao &amp;lt;- function () { theme_light(base_size=12, base_family=&amp;#34;Avenir Next&amp;#34;) %+replace% # Here you need to define the font you may use in your figure theme( # Background of the entire plot plot.background = element_rect(fill=&amp;#34;transparent&amp;#34;, colour = NA), # Background of plotting area panel.</description>
     </item>
     
     <item>
@@ -54,8 +65,7 @@ Principle Pyrene, a hydrophobic fluorescent dye, could be used as a microenviron
       <pubDate>Tue, 18 Feb 2014 18:16:28 +0000</pubDate>
       
       <guid>https://urz.one/en/2014-02-18/polymer-synthesis/</guid>
-      <description>Synthesis of mPEG-SS-NH2 
-Under a nitrogen atmosphere, N-hydroxy succinimide (NHS, 0.07 g, 0.6 mmol), N,N -dicyclohexylcarbodiimide (DCC, 0.12 g, 0.6 mmol) and mPEG-COOH (1.0 g, 0.5 mmol) were suspended in dichloromethane (30 mL) at 0°C for 5 h. Then a dry solution of cysteamine (0.5 g, 3.5 mmol) in 5 mL dichloromethane was dropwise added, and the reaction mixture was maintained at room temperature for another 24 h. The resulting product was isolated by filtration to remove insoluble byproducts, precipitated in cold diethyl ether twice and then purified by dialysis using a membrane (MWCO 1000 Da) for 24 h.</description>
+      <description>Synthesis of mPEG-SS-NH2 Under a nitrogen atmosphere, N-hydroxy succinimide (NHS, 0.07 g, 0.6 mmol), N,N -dicyclohexylcarbodiimide (DCC, 0.12 g, 0.6 mmol) and mPEG-COOH (1.0 g, 0.5 mmol) were suspended in dichloromethane (30 mL) at 0°C for 5 h. Then a dry solution of cysteamine (0.5 g, 3.5 mmol) in 5 mL dichloromethane was dropwise added, and the reaction mixture was maintained at room temperature for another 24 h. The resulting product was isolated by filtration to remove insoluble byproducts, precipitated in cold diethyl ether twice and then purified by dialysis using a membrane (MWCO 1000 Da) for 24 h.</description>
     </item>
     
     <item>
@@ -73,14 +83,13 @@ Under a nitrogen atmosphere, N-hydroxy succinimide (NHS, 0.07 g, 0.6 mmol), N,N 
       <pubDate>Fri, 25 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/en/2011-11-25/on-the-left--by-your-side/</guid>
-      <description> U know, sometimes, the world sucks!
+      <description>U know, sometimes, the world sucks!
 Don&amp;rsquo;t waste time bothering each other.
 That&amp;rsquo;s the thing I got from u. Everything would be all right and ran as it should.
 Wish u got your dream.
 Farewell.
 On the left side of your desk.
-  From:a little pink flower from one summer.
- </description>
+From:a little pink flower from one summer.</description>
     </item>
     
   </channel>

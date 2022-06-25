@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SVG2PDF on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/svg2pdf/</link>
+    <description>Recent content in SVG2PDF on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/svg2pdf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小工具集</title>
+      <link>https://urz.one/cn/2022-06-12/tools/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-06-12/tools/</guid>
+      <description>Flatten PDF 日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。 pdf2ps brew install ghostscript Automator 中设置快捷动作如下 #!/bin/zsh export PATH=/usr/local/bin:$PATH for</description>
+    </item>
+    
+  </channel>
+</rss>

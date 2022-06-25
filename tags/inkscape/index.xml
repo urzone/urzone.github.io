@@ -6,7 +6,16 @@
     <description>Recent content in inkscape on XiaO | 缄默之语</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cmn-Hans-CN</language>
-    <lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小工具集</title>
+      <link>https://urz.one/cn/2022-06-12/tools/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-06-12/tools/</guid>
+      <description>Flatten PDF 日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。 pdf2ps brew install ghostscript Automator 中设置快捷动作如下 #!/bin/zsh export PATH=/usr/local/bin:$PATH for</description>
+    </item>
+    
     <item>
       <title>inkscape 转换 emf 图片格式</title>
       <link>https://urz.one/cn/2020-05-29/inkscape/</link>

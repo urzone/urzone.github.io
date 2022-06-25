@@ -15,8 +15,8 @@
 
     
       
-      <meta property="description" content="brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 brew install --cask pandoc-citeproc # pandoc 的引文格式。 Pandoc 默认管理引文的方法是 &amp;hellip;">
-      <meta property="og:description" content="brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 brew install --cask pandoc-citeproc # pandoc 的引文格式。 Pandoc 默认管理引文的方法是 &amp;hellip;">
+      <meta property="description" content="brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 本机安装的 rstudio &amp;hellip;">
+      <meta property="og:description" content="brew install r brew install --cask rstudio # 稳定版 brew install --cask rstudio-preview # 预览版 brew install --cask rstudio-daily # 日更版 本机安装的 rstudio &amp;hellip;">
       
     
 
@@ -114,7 +114,32 @@ brew install --cask rstudio # 稳定版
 brew install --cask rstudio-preview # 预览版
 brew install --cask rstudio-daily # 日更版
 
-brew install --cask pandoc-citeproc # 
+本机安装的 rstudio 版本为 [2021.09.0,351](https://dailies.rstudio.com/version/2021.09.0+351.pro6/)
+
+brew install pandoc
+</code></pre><pre tabindex="0"><code>https://cran.r-project.org/src/base/R-4/ # R 4.0 语言安装包（可查看到不同的版本号以及源码）
+
+  R-4.0.0.tar.gz  2020-04-24 09:05  32M  
+[   ] R-4.0.1.tar.gz  2020-06-06 09:05  32M  
+[   ] R-4.0.2.tar.gz  2020-06-22 09:05  32M  
+[   ] R-4.0.3.tar.gz  2020-10-10 09:05  32M
+[   ] R-4.0.4.tar.gz  2021-02-15 09:05  32M  
+[   ] R-4.0.5.tar.gz  2021-03-31 09:05  31M 
+[   ] R-4.1.0.tar.gz  2021-05-18 09:05  32M  
+[   ] R-4.1.1.tar.gz  2021-08-10 09:05  32M  
+[   ] R-4.1.2.tar.gz  2021-11-01 09:05  32M  
+[   ] R-4.1.3.tar.gz  2022-03-10 09:05  33M  
+[   ] R-4.2.0.tar.gz  2022-04-22 09:05  36M  
+
+brew install --build-from-source r
+</code></pre><pre tabindex="0"><code>https://hackage.haskell.org/package/pandoc # Pandoc 安装包（可查看到不同的版本号以及源码）
+
+https://github.com/jgm/pandoc/tags
+</code></pre><h3 id="设置-sublime-texthttpswwwsublimetextcomdownload-为-terminal-默认编辑器httpsdevto10xlearnerhow-to-set-up-sublime-text-command-line-on-osx-quick-tip-52ld">设置 <a href="https://www.sublimetext.com/download">Sublime Text</a> <a href="https://dev.to/10xlearner/how-to-set-up-sublime-text-command-line-on-osx-quick-tip-52ld">为 Terminal 默认编辑器</a></h3>
+<p>在 <code>~/.zshrc</code> 配置文件中添加如下一条语句即可，即将 Sublime Text 的命令行快捷方式添加到 PATH 中。</p>
+<pre tabindex="0"><code># Adding Sublime Text as the default efitor for Terminal
+
+export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 </code></pre><h4 id="pandoc-的引文格式4">pandoc 的<a href="https://bookdown.org/yihui/bookdown/citations.html">引文格式</a>。</h4>
 <p>Pandoc 默认管理引文的方法是使用 <code>pandoc-citeproc</code>。该工具依据 <a href="http://docs.citationstyles.org/en/1.0.1/specification.html">Citation Style Language (CSL)</a> 规范管理文献，其中各个杂志的引文格式，可从 <a href="https://www.zotero.org/styles/">Zotero Style Repository</a> 下载。</p>
 <p>Terminal 中启动 R 后提示</p>
@@ -135,12 +160,52 @@ export LC_ALL=en_GB.UTF-8
 <p>更新 R 以后，可以找到该文件，把上述包的位置重新写入即可，不必重新下载安装所有包，省事不少。</p>
 <pre tabindex="0"><code># Rprofile.site
 .libPaths( c( &#34;~/Rpackages&#34;, .libPaths()))
+</code></pre><p>为进一步简化配置，可以添加 <code>~/.Rprofile</code>  文件，该文件为 R 全局配置文件，每次启动将自动加载该文件。</p>
+<pre tabindex="0"><code># Rprofile.site
+.libPaths(c(&#34;~/Rpackages&#34;, .libPaths()))
+</code></pre><p>还可在每个 R 项目中 <code>*.Rproj</code> 所在位置添加单独的项目级 <code>.Rprofile</code> 文件，为每个项目单独添加相应的启动项，譬如：</p>
+<pre tabindex="0"><code>if (file.exists(&#34;~/.Rprofile&#34;)) {
+  base::sys.source(&#34;~/.Rprofile&#34;, envir = environment())
+}
+
+# Load library
+library(viridis, quietly=TRUE, warn.conflicts=FALSE)
+library(cowplot)
+library(stats)
+library(tidyverse)
 </code></pre><h3 id="安装-r-包">安装 R 包</h3>
 <p>启动 RStudio，安装 R 包。</p>
-<pre tabindex="0"><code>install.packages(c(&#34;tidyverse&#34;,&#34;reshape2&#34;,&#34;svglite&#34;,&#34;ggalt&#34;)) # 用 R 画图
-install.packages(c(&#34;blogdown&#34;, rmarkdown&#34;,&#34;bookdown&#34;,&#34;tufte&#34;, &#34;tinytex&#34;,&#34;miniUI&#34;,&#34;rticles&#34;,&#34;kableExtra&#34;)) # 生成网站或论文
-</code></pre><h3 id="利用-tinytex-包来安装--latex-发行版-tinytex">利用 tinytex 包来安装  LaTeX 发行版 TinyTeX</h3>
+<pre tabindex="0"><code>install.packages(c(&#34;tidyverse&#34;,&#34;svglite&#34;)) # 用 R 画图
+install.packages(c(&#34;blogdown&#34;, &#34;rmarkdown&#34;,&#34;bookdown&#34;, &#34;tinytex&#34;,&#34;rticles&#34;,&#34;kableExtra&#34;)) # 生成网站或论文
+</code></pre><p><a href="https://github.com/paleolimbot/rbbt">包 rbbt</a> 版本更新比 R 慢，导致其和 R 有匹配问题。如果使用 rbbt，可能需要安装较旧版本的 r。</p>
+<h3 id="利用-tinytex-包来安装--latex-发行版-tinytex">利用 tinytex 包来安装  LaTeX 发行版 TinyTeX</h3>
 <pre tabindex="0"><code>tinytex::install_tinytex()
+
+tinytex::install_tinytex()
+Error in curlGetHeaders(&#34;https://mirror.ctan.org/systems/texlive/tlnet&#34;) : 
+  libcurl error code 60:
+	SSL certificate problem: certificate has expired
+	
+tinytex::install_tinytex(repository = &#34;http://mirrors.tuna.tsinghua.edu.cn/CTAN/&#34;, version = &#34;latest&#34;)
+trying URL &#39;https://github.com/rstudio/tinytex-releases/releases/download/v2022.05/TinyTeX-1-v2022.05.tgz&#39;
+Content type &#39;application/octet-stream&#39; length 88404844 bytes (84.3 MB)
+==================================================
+downloaded 84.3 MB
+
+tlmgr option repository &#39;http://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet&#39;
+tlmgr: setting default package repository to http://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+tlmgr: updating ~/Library/TinyTeX/tlpkg/texlive.tlpdb
+tlmgr update --list
+tlmgr: package repository http://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet (not verified: gpg unavailable)
+update:   babel              [186k]: local:    63189, source:    63498
+update:   fancyvrb            [12k]: local:    63012, source:    63496
+update:   fontspec            [27k]: local:    61617, source:    63386
+update:   hyperref            [89k]: local:    62142, source:    63323
+update:   l3kernel           [169k]: local:    63177, source:    63476
+update:   l3packages          [22k]: local:    61588, source:    63505
+update:   latex-amsmath-dev   [31k]: local:    62725, source:    63339
+update:   latex-tools-dev     [43k]: local:    62725, source:    63339
+update:   texlive-scripts    [108k]: local:    63172, source:    63503
 </code></pre><h3 id="安装-hugo-v0850-静态博客生成器">安装 hugo v0.85.0 （静态博客生成器）</h3>
 <p>新版 hugo v0.89.4 与 blogdown 的 Addins 有冲突，在使用 <code>blogdown:::new_post_addin()</code> 时，无法生成并打开新的文件。</p>
 <pre tabindex="0"><code>brew install hugo
@@ -220,6 +285,8 @@ document.addEventListener('keyup', function(e) {
 
 
 
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>

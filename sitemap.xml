@@ -2,13 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://urz.one/tags/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/ultrasound/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/en/2022-06-24/ultrasound-physics/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/flatten-pdf/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/inkscape/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/mac/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/svg2pdf/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/%E5%AD%97%E4%BD%93%E4%B8%A2%E5%A4%B1/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2022-06-12/tools/</loc>
+    <lastmod>2022-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/homebrew/</loc>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/</loc>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://urz.one/tags/%E7%89%88%E6%9C%AC%E5%88%87%E6%8D%A2/</loc>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://urz.one/cn/2022-04-29/writing-under-the-lights/</loc>
     <lastmod>2022-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/tags/gpower/</loc>
-    <lastmod>2022-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://urz.one/tags/</loc>
     <lastmod>2022-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/cn/2022-03-16/animal-sample-size/</loc>
@@ -167,9 +200,6 @@
     <loc>https://urz.one/tags/google-hit-hider-by-domain/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/tags/homebrew/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://urz.one/tags/pdf/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -219,9 +249,6 @@
     <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/cn/2021-09-29/iptv/</loc>
-    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://urz.one/tags/mac/</loc>
     <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://urz.one/cn/2021-09-29/%E6%9C%88%E4%BD%99/</loc>
@@ -833,9 +860,6 @@
     <loc>https://urz.one/tags/emf/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urz.one/tags/inkscape/</loc>
-    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://urz.one/cn/2020-05-29/inkscape/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -1291,6 +1315,8 @@
     <loc>https://urz.one/categories/</loc>
   </url><url>
     <loc>https://urz.one/en/vitae/</loc>
+  </url><url>
+    <loc>https://urz.one/yx/</loc>
   </url><url>
     <loc>https://urz.one/cn/about/</loc>
   </url><url>

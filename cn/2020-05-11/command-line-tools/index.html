@@ -128,12 +128,22 @@
 gcc
 swift
 ...
+</code></pre><h3 id="mac-显示隐藏的文件">Mac 显示隐藏的文件</h3>
+<p>在一个打开的文件夹界面直接按 <code>command ⌘</code> + <code>shift ⇧</code> + <code>period .</code> 即可显示隐藏的文件。</p>
+<h3 id="允许-mac-安装第三方来源的应用">允许 Mac 安装第三方来源的应用</h3>
+<pre tabindex="0"><code>sudo spctl --master-disable
 </code></pre><h3 id="移除-quarantine-标签">移除 &ldquo;quarantine&rdquo; 标签</h3>
 <p>软件由于 &ldquo;quarantine attribute&rdquo; 显示被破坏而无法打开，可通过移除 &ldquo;quarantine&rdquo; 标签解决问题。具体分析可参见博文 <a href="http://www.engineering.union.edu/howto/damaged.html">How to deal with damaged downloads in OSX</a></p>
 <pre tabindex="0"><code>xattr -r -d com.apple.quarantine /path/to/app
 </code></pre><h3 id="重新签名软件">重新签名软件</h3>
 <p>一些软件在 MacOS Catalina 系统下打开闪退，可能需要对软件重新签名。关于签名，具体可参见博文 <a href="https://blog.0x5e.cn/2016/09/25/ios-codesign-things/">iOS 代码签名与重签名</a></p>
 <pre tabindex="0"><code>codesign --force --deep --sign - /path/to/app
+</code></pre><h3 id="sublime-text-4126">Sublime text 4126</h3>
+<pre tabindex="0"><code>brew install --cask hex-fiend sublime-text
+
+/Applications/Sublime Text.app/Contents/MacOS/sublime_text # Edit the file with Hex Fiend
+</code></pre><p>Replace <code>80 78 05 00 0f 94 c1</code> with <code>c6 40 05 01 48 85 c9</code> and save it.</p>
+<pre tabindex="0"><code>codesign --force --deep --sign - /Applications/Sublime Text.app
 </code></pre>
 
   <footer>
