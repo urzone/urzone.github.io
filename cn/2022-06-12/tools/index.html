@@ -142,7 +142,120 @@ do
 	inkscape --pdf-poppler --export-dpi=600 --export-type=pdf &#34;$f&#34;
 done
 </code></pre><p>当使用 Inkscape 将包含某些字体信息的 SVG 转换为 PDF 时，可能遭遇字体丢失的情况。此时，只需将相应的字体，添加到用户字体即可。</p>
+<h3 id="万能转换工具httpsgithubcombiati-digitalalfred-calculate-anything"><a href="https://github.com/biati-digital/alfred-calculate-anything">万能转换工具</a></h3>
+<pre tabindex="0"><code>brew install php
+</code></pre><p><a href="https://github.com/biati-digital/alfred-calculate-anything/releases/">Alfred 的工作流</a> 插件使用：</p>
+<pre tabindex="0"><code>- 100 us dollars in mexican pesos
+- 100 canadian dollars in argentinian peso
+- 100 euros to dollars
+- 100 euros in dollars
+- 100 euros as dollars
+- 100 euros a dolares (you can also write it in your own language)
+- 100 usd to mxn
+- 100 usd mxn
+- 100usd yen
+- 100€ to $
+- 100 ¥ in €
+- 100¥ €
+- 100eur (if no target the currency will be converted to the base currencies that you configured)
 
+- 2 bitcoins to dollars
+- 0.1 bitcoin in dollars
+- 5 bitcoins in ethereum
+- 1 ethereum to ¥
+- 10 ethereum in mxn
+- 1eth btc
+- 1btc (if no target currency is provided, the configured base currency will be used)
+
+- 100 kilometers to meters
+- 100 km in meters
+- 100 km m
+- 100km m
+
+- 100 miles as meters
+- 100miles in meters
+- 100 miles to m
+
+- 100 ounces to kilograms
+- 100oz to kg
+- 100oz = kg
+- 100oz kg
+
+- 10 years to months
+- 10years to seconds
+- 10 years hr
+- 1 year to sec
+- 1hr secods
+- 1hr s
+- 10 days hr
+- 10 días a horas (use your own language)
+
+- 100 gigabytes in megabytes
+- 100 gigas in megas
+- 100 Mebibytes in Kibibytes
+- 100 gb to mb
+- 100gb to kb
+- 100gb mb
+- 400MiB in kib
+- 2tb gb
+- 1b kb
+
+- 40 as a % of 50  // 40 is 80% of 50
+- 20 is what % of 50 // 20 is 40% of 50
+- 15% of 50 = 7.50  // 7.5 equals to 15% of 50
+- 120 + 30% = 156  // 120 plus the 30% of 120
+- 120 plus 30% = 156  // 120 plus the 30% of 120
+- 120 - 30% = 84  // 120 minus the 30% of 120
+- 120 minus 30% = 84  // 120 minus the 30% of 120
+- 30 % 40 = 75%  // 30 is 75% of 40
+
+Translations and natural language can also be used
+- 120 más 30% = 156
+- 120 menos 10% = 108
+- 40 como % de 50 = // 40 es 80% de 50
+
+# converts the timestamp to a regular date
+- time 1577836800
+
+# gives you the time from now plus 15 days
+- time +15 days
+- time now plus 3 days
+
+# gives you the time from now plus 3 working days
+- time today + 3 workdays
+- time now + 3 workdays
+- time + 3 workdays
+
+# number of days until specified date
+- time days until 31 december
+
+# the start date of current year
+- time start of year
+
+# the start date of specified year
+- time start of 2021
+
+# the end date of current year
+- time end of year
+
+# the end date of specified year
+- time end of 2021
+
+# it also works in your language
+- time inicio de 2020
+- time fin de 2020
+- time dias hasta 31 diciembre
+
+# get information about date
+- time 31 December, 2021 18:00:00
+- time 31/12/2021 18:00:00
+- time 12/31/2021 18:00:00
+
+# calculate the difference between two dates
+- time 25 December, 2021 - 31 December, 2021
+- time 31-11-2019 - 21-11-2019
+- time 11/31/2019 - 11/21/2019
+</code></pre>
 
   <footer>
   
