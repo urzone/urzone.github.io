@@ -15,14 +15,12 @@
 
     
       
-      <meta property="description" content="日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
-pdf2ps
-brew install ghostscript Automator 中设置快捷动作如下
-#!/bin/zsh export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do File=&amp;#34;$1&amp;#34; &amp;hellip;">
-      <meta property="og:description" content="日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
-pdf2ps
-brew install ghostscript Automator 中设置快捷动作如下
-#!/bin/zsh export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do File=&amp;#34;$1&amp;#34; &amp;hellip;">
+      <meta property="description" content="将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
+brew install qpdf Automator 中设置快捷动作如下：
+export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do file_path=${f%/*} file=$(basename $f) file_name=${file%.*} qpdf &amp;hellip;">
+      <meta property="og:description" content="将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。
+brew install qpdf Automator 中设置快捷动作如下：
+export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do file_path=${f%/*} file=$(basename $f) file_name=${file%.*} qpdf &amp;hellip;">
       
     
 
@@ -114,7 +112,18 @@ brew install ghostscript Automator 中设置快捷动作如下
 
 
 <h3 id="flatten-pdf">Flatten PDF</h3>
-<p>日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 <code>Flatten</code>。</p>
+<p>将 PDF 文件的多层信息压缩至一层，即所谓 <code>Flatten</code>。</p>
+<pre tabindex="0"><code>brew install qpdf
+</code></pre><p>Automator 中设置快捷动作如下：</p>
+<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
+for f in &#34;$@&#34;
+do
+  file_path=${f%/*}
+  file=$(basename $f)
+  file_name=${file%.*}
+  qpdf --flatten-annotations=all $f $file_path/${file_name}_flattened.pdf
+done
+</code></pre><p>某些文件需以不可复制的方式呈现。通过如下方式生成的 PDF 文件，文件中的文字如同图片中的文字一般，不再具备拷贝复制性质，但所生成文件的体积也相对更大。</p>
 <p><a href="https://command-not-found.com/pdf2ps">pdf2ps</a></p>
 <pre tabindex="0"><code>brew install ghostscript
 </code></pre><p>Automator 中设置<a href="https://gist.github.com/searls/7162798">快捷动作</a>如下</p>
@@ -122,13 +131,12 @@ brew install ghostscript Automator 中设置快捷动作如下
 export PATH=/usr/local/bin:$PATH
 for f in &#34;$@&#34;
 do
-	File=&#34;$1&#34;
-	OldFile=&#34;$1-Og.pdf&#34;
-
-	mv &#34;$File&#34; &#34;$OldFile&#34;
-	pdf2ps &#34;$OldFile&#34; - | ps2pdf - &#34;$File&#34;
+  file_path=${f%/*}
+  file=$(basename $f)
+  file_name=${file%.*}
+  pdf2ps $f - | ps2pdf - $file_path/${file_name}_Uncopied.pdf
 done
-</code></pre><h3 id="开放中文字体转换">开放中文字体转换</h3>
+</code></pre><h3 id="中文字体转换httpsgithubcombyvoidopencc"><a href="https://github.com/BYVoid/OpenCC">中文字体转换</a></h3>
 <p>中文简繁转换开源项目，支持词汇级别的转换、异体字转换和地区习惯用词转换（中国大陆、台湾、香港、日本新字体）。不提供普通话与粤语的转换。</p>
 <pre tabindex="0"><code>brew install opencc 
 </code></pre><p>使用 <a href="https://github.com/amowu/alfred-chinese-converter">Alfred 的工作流</a> 插件，则可进一步简化操作。</p>
@@ -255,13 +263,92 @@ Translations and natural language can also be used
 - time 25 December, 2021 - 31 December, 2021
 - time 31-11-2019 - 21-11-2019
 - time 11/31/2019 - 11/21/2019
+</code></pre><h3 id="pdf-压缩httpsgistgithubcomahmed-musallam27de7d7c5ac68ecbd1ed65b6b48416f9"><a href="https://gist.github.com/ahmed-musallam/27de7d7c5ac68ecbd1ed65b6b48416f9">PDF 压缩</a></h3>
+<pre tabindex="0"><code>brew install ghostscript
+</code></pre><p>Automator 添加如下代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  gs -q -dNOPAUSE -dBATCH -dSAFER -sDEVICE<span style="color:#f92672">=</span>pdfwrite -dCompatibilityLevel<span style="color:#f92672">=</span>1.4 -dPDFSETTINGS<span style="color:#f92672">=</span>/screen -dEmbedAllFonts<span style="color:#f92672">=</span>true -dSubsetFonts<span style="color:#f92672">=</span>true -dColorImageDownsampleType<span style="color:#f92672">=</span>/Bicubic -dColorImageResolution<span style="color:#f92672">=</span><span style="color:#ae81ff">144</span> -dGrayImageDownsampleType<span style="color:#f92672">=</span>/Bicubic -dGrayImageResolution<span style="color:#f92672">=</span><span style="color:#ae81ff">144</span> -dMonoImageDownsampleType<span style="color:#f92672">=</span>/Bicubic -dMonoImageResolution<span style="color:#f92672">=</span><span style="color:#ae81ff">144</span> -sOutputFile<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>f%.*<span style="color:#e6db74">}</span>.mini.pdf $f;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Summary of -dPDFSETTINGS:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -dPDFSETTINGS=/screen lower quality, smaller size. (72 dpi)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -dPDFSETTINGS=/ebook for better quality, but slightly larger pdfs. (150 dpi)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -dPDFSETTINGS=/prepress output similar to Acrobat Distiller &#34;Prepress Optimized&#34; setting (300 dpi)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -dPDFSETTINGS=/printer selects output similar to the Acrobat Distiller &#34;Print Optimized&#34; setting (300 dpi)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -dPDFSETTINGS=/default selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file</span>
+</span></span></code></pre></div><h3 id="to-list-a-pakage-dependencies">To list a pakage dependencies</h3>
+<pre tabindex="0"><code># For all packages
+brew deps --tree --installed
+
+# For one package only
+brew deps --tree --installed poppler
+brew info poppler
+</code></pre><h3 id="extracting-pdf-raster-imagehttpswwwscivisiondevextracting-raw-image-from-pdf-光栅图"><a href="https://www.scivision.dev/extracting-raw-image-from-pdf/">Extracting PDF Raster Image</a> (光栅图)</h3>
+<p><a href="http://poppler.freedesktop.org">poppler</a> 的安装以及<a href="https://www.mankier.com/package/poppler-utils">相关的命令</a></p>
+<pre tabindex="0"><code>brew install poppler
+
+General Commands
+pdfattach   PDF document embedded file creator (version 3.03)
+pdfdetach   PDF document embedded file extractor (version 3.03)
+pdffonts    PDF font analyzer (version 3.03)
+pdfimages   PDF image extractor (version 3.03) # https://www.mankier.com/1/pdfimages
+pdfinfo     PDF document information extractor (version 3.03)
+pdfseparate PDF page extractor
+pdfsig      PDF digital signatures tool
+pdftocairo  PDF to PNG/JPEG/TIFF/PDF/PS/EPS/SVG using cairo # https://www.mankier.com/1/pdftocairo
+pdftohtml   program to convert PDF files into HTML, XML and PNG images
+pdftoppm    PDF to Portable Pixmap (PPM) converter (version 3.03)
+pdftops     PDF to PostScript converter (version 3.03)
+pdftotext   PDF to text converter (version 3.03)
+pdfunite    PDF page merger
+</code></pre><p><a href="https://www.mankier.com/1/pdfimages">使用说明</a></p>
+<pre tabindex="0"><code>Usage: pdfimages [options] &lt;PDF-file&gt; &lt;image-root&gt;
+  -f &lt;int&gt;       : first page to convert
+  -l &lt;int&gt;       : last page to convert
+  -png           : change the default output format to PNG
+  -tiff          : change the default output format to TIFF
+  -j             : write JPEG images as JPEG files
+  -jp2           : write JPEG2000 images as JP2 files
+  -jbig2         : write JBIG2 images as JBIG2 files
+  -ccitt         : write CCITT images as CCITT files
+  -all           : equivalent to -png -tiff -j -jp2 -jbig2 -ccitt
+  -list          : print list of images instead of saving
+  -opw &lt;string&gt;  : owner password (for encrypted files)
+  -upw &lt;string&gt;  : user password (for encrypted files)
+  -p             : include page numbers in output file names
+  -q             : don&#39;t print any messages or errors
+  -v             : print copyright and version info
+  -h             : print usage information
+  -help          : print usage information
+  --help         : print usage information
+  -?             : print usage information
+
+# List all PDF images
+pdfimages -list in.pdf 
+
+pdfimages -all in.pdf out # 以 out 为前缀导出所有图片文件
+</code></pre><p>Automator 添加如下代码：</p>
+<pre tabindex="0"><code>export PATH=/usr/local/bin:$PATH
+
+for f in &#34;$@&#34;
+do
+  file_path=${f%/*}
+  file=$(basename $f)
+  file_name=${file%.*}
+  pdfimages -all $f $file_path/${file_name}
+done
 </code></pre>
 
   <footer>
   
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="/cn/2022-05-31/installing-and-switching-between-multiple-versions-of-softwares-in-homebrew/">Homebrew 多版本安装与切换</a></span>
-  <span class="nav-next"><a href="/cn/2022-06-25/macos-sourcetree-github/">macOS 下 Sourcetree 关联 Github</a> &rarr;</span>
+  <span class="nav-next"><a href="/cn/2022-06-25/macos-sourcetree-github/">Sourcetree 关联 Github</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {

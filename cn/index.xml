@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>macOS 下 Sourcetree 关联 Github</title>
+      <title>Sourcetree 关联 Github</title>
       <link>https://urz.one/cn/2022-06-25/macos-sourcetree-github/</link>
       <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
       
@@ -31,7 +31,7 @@
       <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://urz.one/cn/2022-06-12/tools/</guid>
-      <description>Flatten PDF 日常某些文件需要以不可复制的方式呈现，此时则需要将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。 pdf2ps brew install ghostscript Automator 中设置快捷动作如下 #!/bin/zsh export PATH=/usr/local/bin:$PATH for</description>
+      <description>Flatten PDF 将 PDF 文件的多层信息压缩至一层，即所谓 Flatten。 brew install qpdf Automator 中设置快捷动作如下： export PATH=/usr/local/bin:$PATH for f in &amp;#34;$@&amp;#34; do file_path=${f%/*} file=$(basename $f) file_name=${file%.*} qpdf --flatten-annotations=all $f $file_path/${file_name}_flattened.pdf done 某些文件需以不可复制的方</description>
     </item>
     
     <item>
