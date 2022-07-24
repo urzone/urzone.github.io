@@ -137,7 +137,8 @@ brew install --build-from-source r
 https://github.com/jgm/pandoc/tags
 </code></pre><h3 id="设置-sublime-texthttpswwwsublimetextcomdownload-为-terminal-默认编辑器httpsdevto10xlearnerhow-to-set-up-sublime-text-command-line-on-osx-quick-tip-52ld">设置 <a href="https://www.sublimetext.com/download">Sublime Text</a> <a href="https://dev.to/10xlearner/how-to-set-up-sublime-text-command-line-on-osx-quick-tip-52ld">为 Terminal 默认编辑器</a></h3>
 <p>在 <code>~/.zshrc</code> 配置文件中添加如下一条语句即可，即将 Sublime Text 的命令行快捷方式添加到 PATH 中。</p>
-<pre tabindex="0"><code># Adding Sublime Text as the default efitor for Terminal
+<pre tabindex="0"><code># Adding Sublime Text as the default efitor for Terminal, 似乎不同版本或安装方式的配置会不同
+export EDITOR=&#39;subl -w&#39; # brew --cask 版本可正常打开。
 
 export PATH=$PATH:/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 </code></pre><h4 id="pandoc-的引文格式4">pandoc 的<a href="https://bookdown.org/yihui/bookdown/citations.html">引文格式</a>。</h4>

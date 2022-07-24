@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>R 绘图排版</title>
+      <link>https://urz.one/cn/2022-07-20/r-drafting-and-layout/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-07-20/r-drafting-and-layout/</guid>
+      <description>多图排版在视觉上产生的审美效果，并不亚于绘制单张图片的作用。用 R 绘制图片时，尤其如此。在曾经的一段时间里，自己发现，单张图片看起来还是不错的</description>
+    </item>
+    
+    <item>
       <title>Tello</title>
       <link>https://urz.one/cn/2022-06-26/tello/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-09-16/skin/</guid>
       <description>一个滞于己见的人，其实是看不清楚事物的。这多少都有些像漩涡里的一叶舟。谓之，着相。 一张皮，一面相。皮相之下，所匿者何？着于相，心迷。匿于相者</description>
-    </item>
-    
-    <item>
-      <title>国风・卫风・淇奥</title>
-      <link>https://urz.one/cn/2020-09-11/gentleman/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-11/gentleman/</guid>
-      <description>瞻彼淇奥1（yù）， 绿竹猗猗2（yī）。有匪3君子，如切如磋4，如琢如磨5。瑟兮僩6（xiàn）兮，赫（hè）兮咺7（xuān）兮。有匪君子</description>
     </item>
     
   </channel>

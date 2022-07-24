@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>排版 on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/%E6%8E%92%E7%89%88/</link>
+    <description>Recent content in 排版 on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/%E6%8E%92%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R 绘图排版</title>
+      <link>https://urz.one/cn/2022-07-20/r-drafting-and-layout/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-07-20/r-drafting-and-layout/</guid>
+      <description>多图排版在视觉上产生的审美效果，并不亚于绘制单张图片的作用。用 R 绘制图片时，尤其如此。在曾经的一段时间里，自己发现，单张图片看起来还是不错的</description>
+    </item>
+    
+  </channel>
+</rss>
