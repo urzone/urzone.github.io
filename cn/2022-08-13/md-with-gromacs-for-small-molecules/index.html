@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>基于 GROMACS 的小分子分子动力学模拟 - XiaO | 缄默之语</title>
+    <meta property="og:title" content="基于 GROMACS 的小分子分子动力学模拟 - XiaO | 缄默之语">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="GROMACS 分子动力学模拟的输入文件：
+[&amp;hellip;] GROMACS 分子动力学模拟的输出文件：
+[&amp;hellip;] 在终端中安装 GROMACS：
+brew install gromacs 分子结构转换工具 在终端中安装 open-babel：
+[&amp;hellip;] brew install open-babel 在终端中转换 SMILES 格式：
+obabel &amp;hellip;">
+      <meta property="og:description" content="GROMACS 分子动力学模拟的输入文件：
+[&amp;hellip;] GROMACS 分子动力学模拟的输出文件：
+[&amp;hellip;] 在终端中安装 GROMACS：
+brew install gromacs 分子结构转换工具 在终端中安装 open-babel：
+[&amp;hellip;] brew install open-babel 在终端中转换 SMILES 格式：
+obabel &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://urz.one/images/logo.png">
+    
+    
+
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+
+
+
+<link rel="stylesheet" href="/css/custom.css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/images/icons/manifest.json">
+<link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#cc342c">
+<link rel="shortcut icon" href="/images/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaO">
+<meta name="application-name" content="XiaO">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+  </head>
+
+  
+  <body class="cn">
+    <header class="masthead">
+      
+
+<h1><a href="/"><img src="/images/logo.svg" alt="XiaO" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/">首页</a></li>
+  
+  <li><a href="/cn/">日志</a></li>
+  
+  <li><a href="/cn/note/">缄语</a></li>
+  
+  <li><a href="/en/">En</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/cn/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">版权</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>基于 GROMACS 的小分子分子动力学模拟</h1>
+
+
+<h3>XiaO / 
+2022-08-13</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<p>GROMACS 分子动力学模拟的输入文件：</p>
+<ul>
+<li>描述分子结构的文件，PDB、mol2、gro。</li>
+<li>描述分子力场的文件：<strong>*.top</strong> 文件，其包含了模拟所需的所有力场信息，还可包含对 <strong>*.itp</strong> 文件的引用，<strong>*.itp</strong> 文件描述了某种特定分子所使用的力场。</li>
+<li>执行何种模拟的任务描述文件，*.mdp。</li>
+<li>汇总以上所有文件的 <strong>*.tpr</strong> 文件。</li>
+</ul>
+<p>GROMACS 分子动力学模拟的输出文件：</p>
+<ul>
+<li>trr: 轨迹文件 (分子座标与速度信息)</li>
+<li>xtc: 轨迹文件 (只含有分子座标信息)</li>
+<li>edr: 轨迹文件 (能量变化信息)</li>
+<li>log: CPU time, MFLOP, etc.</li>
+</ul>
+<h3 id="安装-gromacs">安装 GROMACS</h3>
+<p>在终端中安装 <a href="https://www.gromacs.org/">GROMACS</a>：</p>
+<pre tabindex="0"><code>brew install gromacs
+</code></pre><h3 id="分子结构转换工具">分子结构转换工具</h3>
+<p>在终端中安装 <a href="https://buildmedia.readthedocs.org/media/pdf/open-babel/latest/open-babel.pdf">open-babel</a>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>brew install open-babel
+</span></span></code></pre></div><p>在终端中<a href="https://openbabel.org/docs/dev/Command-line_tools/babel.html">转换 SMILES 格式</a>：</p>
+<pre tabindex="0"><code>obabel -:&#34;C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2&#34; -O pyrene.pdb --gen3D
+</code></pre><p>Automator 快捷转换不同文件（pdb, mol2, sdf, mol），适合转换大量的结构：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>/usr/local/bin:$PATH
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> f in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>	file_path<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>f%/*<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  	file<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $f<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  	file_name<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file%.*<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  	file_extension<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>file##*.<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $file_extension <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;sdf&#34;</span> <span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		obabel -h -isdf $f -omol &gt; $file_path/$file_name.mol
+</span></span><span style="display:flex;"><span>		obabel -h -isdf $f -opdb &gt; $file_path/$file_name.pdb
+</span></span><span style="display:flex;"><span>		obabel -h -isdf $f -omol2 &gt; $file_path/$file_name.mol2
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> $file_extension <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pdb&#34;</span> <span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		obabel -h -ipdb $f -omol &gt; $file_path/$file_name.mol
+</span></span><span style="display:flex;"><span>		obabel -h -ipdb $f -omol2 &gt; $file_path/$file_name.mol2
+</span></span><span style="display:flex;"><span>		obabel -h -ipdb $f -osdf &gt; $file_path/$file_name.sdf
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> $file_extension <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;mol&#34;</span> <span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		obabel -h --gen3d -imol $f -omol2 &gt; $file_path/$file_name.mol2
+</span></span><span style="display:flex;"><span>		obabel -h --gen3d -imol $f -opdb &gt; $file_path/$file_name.pdb
+</span></span><span style="display:flex;"><span>		obabel -h --gen3d -imol $f -osdf &gt; $file_path/$file_name.sdf
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> $file_extension <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;mol2&#34;</span> <span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		obabel -h -imol2 $f -omol &gt; $file_path/$file_name.mol
+</span></span><span style="display:flex;"><span>		obabel -h -imol2 $f -opdb &gt; $file_path/$file_name.pdb
+</span></span><span style="display:flex;"><span>		obabel -h -imol2 $f -osdf &gt; $file_path/$file_name.sdf
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>也可利用<a href="https://www.novoprolabs.com/tools/smiles2pdb">网络服务器</a>进行结构转换。</p>
+<p>该案例中，我们将模拟 pyrene 在水中的聚集行为，故在根目录下新建文件夹 <code>pyrene</code>。</p>
+<h3 id="力场文件">力场文件</h3>
+<p>用于描述小分子的力场各不相同，譬如 <a href="http://mackerell.umaryland.edu/charmm_ff.shtml#gromacs">CHARMM36</a>，<a href="https://ambermd.org/antechamber/gaff.html">GAFF</a>。</p>
+<ul>
+<li>此处下载适用于 GROMACS 的最新版 CHARMM36 力场，即 <a href="http://mackerell.umaryland.edu/download.php?filename=CHARMM_ff_params_files/charmm36-jul2021.ff.tgz">charmm36-jul2021.ff.tgz</a></li>
+<li>解压缩得到一个名为 <code>charmm36-jul2021.ff</code> 的文件夹，将其移入工作文件目录中 <code>pyrene</code>。</li>
+</ul>
+<h3 id="准备小分子">准备小分子</h3>
+<p>下载 pyrne 的结构文件，将其放入工作目录文件夹 <code>pyrene</code> 中，并使用 open-babel 将其转换为 mol2 格式。亦可在终端中将其 SMILES 格式直接转换为 mol2 格式：</p>
+<pre tabindex="0"><code>obabel -:&#34;C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2&#34; -O pyrene.mol2 --gen3D
+</code></pre><ul>
+<li>使用文本编辑器打开该 mol2 文件（文本如下），将 <strong>@&lt;TRIPOS&gt;MOLECULE 下面第一行的 <code>*****</code> 改为 <code>pyrene</code></strong>。<a href="https://gromacs.bioexcel.eu/t/cgenff-error-specified-residue-name-does-not-match-between-str-and-mol2-files/1190">这一步非常的重要</a>，否则后续处处是坑，别问我是怎知道的 :(。</li>
+</ul>
+<pre tabindex="0"><code>@&lt;TRIPOS&gt;MOLECULE
+pyrene
+ 26 29 0 0 0
+SMALL
+GASTEIGER
+
+@&lt;TRIPOS&gt;ATOM
+      1 C          -3.5106   -0.0399    0.0067 C.ar    1  UNL1       -0.0606
+      2 C          -2.8279    1.1762    0.0094 C.ar    1  UNL1       -0.0540
+      3 C          -1.4250    1.2088    0.0017 C.ar    1  UNL1       -0.0167
+      4 C          -0.7054   -0.0086   -0.0013 C.ar    1  UNL1       -0.0025
+      5 C          -1.3990   -1.2410   -0.0029 C.ar    1  UNL1       -0.0167
+      6 C          -2.8013   -1.2403   -0.0021 C.ar    1  UNL1       -0.0540
+      7 C          -0.6705   -2.4378   -0.0058 C.ar    1  UNL1       -0.0534
+      8 C           0.7264   -2.4237   -0.0048 C.ar    1  UNL1       -0.0534
+      9 C           1.4301   -1.2119   -0.0024 C.ar    1  UNL1       -0.0167
+     10 C           2.8323   -1.1829   -0.0014 C.ar    1  UNL1       -0.0540
+     11 C           3.5168    0.0315    0.0012 C.ar    1  UNL1       -0.0606
+     12 C           2.8093    1.2334    0.0002 C.ar    1  UNL1       -0.0540
+     13 C           1.4064    1.2373   -0.0022 C.ar    1  UNL1       -0.0167
+     14 C           0.7114    0.0058   -0.0023 C.ar    1  UNL1       -0.0025
+     15 C           0.6770    2.4345   -0.0062 C.ar    1  UNL1       -0.0534
+     16 C          -0.7204    2.4205   -0.0041 C.ar    1  UNL1       -0.0534
+     17 H          -4.5976   -0.0525    0.0110 H       1  UNL1        0.0618
+     18 H          -3.4004    2.1011    0.0180 H       1  UNL1        0.0624
+     19 H          -3.3523   -2.1781   -0.0069 H       1  UNL1        0.0624
+     20 H          -1.1853   -3.3959   -0.0074 H       1  UNL1        0.0624
+     21 H           1.2607   -3.3710   -0.0058 H       1  UNL1        0.0624
+     22 H           3.4024   -2.1092   -0.0019 H       1  UNL1        0.0624
+     23 H           4.6035    0.0418    0.0032 H       1  UNL1        0.0618
+     24 H           3.3626    2.1700    0.0029 H       1  UNL1        0.0624
+     25 H           1.1922    3.3926   -0.0110 H       1  UNL1        0.0624
+     26 H          -1.2548    3.3679   -0.0081 H       1  UNL1        0.0624
+@&lt;TRIPOS&gt;BOND
+     1     1     2   ar
+     2     2     3   ar
+     3     3     4   ar
+     4     4     5   ar
+     5     5     6   ar
+     6     1     6   ar
+     7     5     7   ar
+     8     7     8   ar
+     9     8     9   ar
+    10     9    10   ar
+    11    10    11   ar
+    12    11    12   ar
+    13    12    13   ar
+    14    13    14   ar
+    15     9    14   ar
+    16     4    14   ar
+    17    13    15   ar
+    18    15    16   ar
+    19     3    16   ar
+    20     1    17    1
+    21     2    18    1
+    22     6    19    1
+    23     7    20    1
+    24     8    21    1
+    25    10    22    1
+    26    11    23    1
+    27    12    24    1
+    28    15    25    1
+    29    16    26    1
+</code></pre><p>其实，亦可在生成 mol2 文件时，即将其名字 pyrene 放在引号内，如下：</p>
+<pre tabindex="0"><code>obabel -:&#34;C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2 pyrene&#34; -O pyrene.mol2 --gen3D
+</code></pre><ul>
+<li>下载该 <a href="http://www.mdtutorials.com/gmx/complex/Files/sort_mol2_bonds.pl">Perl 脚本</a>，将其放入我们的工作目录中，用该脚本对 mol2 文件中分子的键 @&lt;TRIPOS&gt;BOND 重新排序，此时我们得到 <code>pyrene_clean.mol2</code> 文件。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>perl sort_mol2_bonds<span style="color:#f92672">.</span>pl pyrene<span style="color:#f92672">.</span>mol2 pyrene_clean<span style="color:#f92672">.</span>mol2
+</span></span></code></pre></div><h3 id="生成分子的力场文件-top">生成分子的力场文件 *.top</h3>
+<p>根据选择力场的不同，用于生成分子力场文件的工具也不同。该案例中我们使用  CHARMM36 力场，可选用 <a href="https://cgenff.umaryland.edu/">CGenff 网络服务器</a> 生成 CHARMM 格式的力场文件。在 CGenFF 服务器上注册并创建一个免费帐户，上传我们整理好的 pyrene_clean.mol2 文件，它会生成 pyrene_clean.str 文件，该文件即是 CHARMM 格式的力场文件，下载该文件。</p>
+<p>因为我们需在 GROMACS 中进行分子动力学模拟，故需要将上述 CHARMM 格式的力场文件转换为 GROMACS 格式的力场文件。下载<a href="https://github.com/Bioinformatics-Review/MD-simulation-files/blob/master/cgenff_charmm2gmx.py">该 python2 脚本</a>，放入我们的工作目录中。创建一个适合该文件运行 python2 环境：</p>
+<pre tabindex="0"><code># 创建虚拟环境
+conda create cgenff_charmm2gmx
+conda activate cgenff_charmm2gmx
+
+# 安装相应的包（注意版本）
+conda install python==2.7
+conda install numpy==1.12.1
+pip install networkx==1.11 
+pip install decorator==3.4.2
+
+# 执行力场文件的格式转换
+python cgenff_charmm2gmx.py pyrene pyrene_clean.mol2 pyrene.str charmm36-jul2021.ff
+</code></pre><p>成功运行后，我们即可得到 pyrene 小分子的力场文件 <code>pyrene.top</code>，该分子单独的力场文件为 <code>pyrene.itp</code>，并被引入到 <code>pyrene.top</code> 中，该分子所需的其他参数被写入 <code>pyrene.prm</code> 文件中，一并被引入到 <code>pyrene.top</code> 中。</p>
+<pre tabindex="0"><code>NOTE1: Code tested with python 2.7.3. Your version: 2.7.18 |Anaconda, Inc.| (default, Apr 23 2020, 17:44:47) 
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
+
+NOTE2: Please be sure to use the same version of CGenFF in your simulations that was used during parameter generation:
+--Version of CGenFF detected in  pyrene.str : 4.6
+--Version of CGenFF detected in  charmm36-jul2021.ff/forcefield.doc : 4.6
+
+NOTE3: In order to avoid duplicated parameters, do NOT select the &#39;Include parameters that are already in CGenFF&#39; option when uploading a molecule into CGenFF.
+============ DONE ============
+Conversion complete.
+The molecule topology has been written to pyrene.itp
+Additional parameters needed by the molecule are written to pyrene.prm, which needs to be included in the system .top
+============ DONE ============
+</code></pre><h3 id="定义溶剂盒分子座标gro">定义溶剂盒（分子座标，*.gro）</h3>
+<p>我们将需要模拟的分子和溶剂一并放入某个盒子（边界），以便观测分子在该体系（溶剂，离子，浓度）下的运动轨迹。</p>
+<p>为此，我们需要格式为 pdb 的分子结构文件：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 将前述处理好的 pyrene_clean.mol2 文件通过 open-barbel 转换为 pdb 格式；</li>
+<li><input checked="" disabled="" type="checkbox"> 使用前面 cgenff_charmm2gmx.py 处理时得到的 pyrene_ini.pdb 文件；</li>
+</ul>
+<p>然后在终端执行如下代码，如此，我们便得到一个长宽高均为 3 nm 且仅含有一个小分子座标信息文件 <code>pyrene.gro</code>。</p>
+<pre tabindex="0"><code>gmx editconf -f pyrene_clean.pdb -o pyrene.gro -box 3 3 3
+OR
+gmx editconf -f pyrene_ini.pdb   -o pyrene.gro -box 3 3 3
+
+Read 26 atoms
+No velocities found
+    system size :  0.920  0.679  0.003 (nm)
+    center      :  0.000 -0.000 -0.000 (nm)
+    box vectors :  0.000  0.000  0.000 (nm)
+    box angles  :   0.00   0.00   0.00 (degrees)
+    box volume  :   0.00               (nm^3)
+    shift       :  1.500  1.500  1.500 (nm)
+new center      :  1.500  1.500  1.500 (nm)
+new box vectors :  3.000  3.000  3.000 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  :  27.00               (nm^3)
+</code></pre><h3 id="向盒子中添加更多的分子分子浓度">向盒子中添加更多的分子（分子浓度）</h3>
+<p>向该分子座标文件 <code>pyrene.gro</code> 中随机添加 30 个相同的分子，得到一个含有 31 个小分子的座标文件 <code>pyrene_num.gro</code>。<strong>注意修改 <code>pyrene.top</code> 文件中， [ molecules ] 项下的分子数量，1 ==&gt; 31</strong>。</p>
+<pre tabindex="0"><code>gmx insert-molecules -f pyrene.gro -ci pyrene.gro -o pyrene_num.gro -nmol 30 -rot xyz -try 100
+
+Reading solute configuration
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx insert-molecules uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Using random seed -219709635
+Try 1 success (now 52 atoms)!
+Try 2 success (now 78 atoms)!
+Try 3 success (now 104 atoms)!
+Try 4 success (now 130 atoms)!
+Try 5 success (now 156 atoms)!
+Try 7 success (now 182 atoms)!
+Try 8 success (now 208 atoms)!
+Try 12 success (now 234 atoms)!
+Try 13 success (now 260 atoms)!
+Try 14 success (now 286 atoms)!
+Try 15 success (now 312 atoms)!
+Try 16 success (now 338 atoms)!
+Try 19 success (now 364 atoms)!
+Try 22 success (now 390 atoms)!
+Try 25 success (now 416 atoms)!
+Try 30 success (now 442 atoms)!
+Try 32 success (now 468 atoms)!
+Try 34 success (now 494 atoms)!
+Try 40 success (now 520 atoms)!
+Try 44 success (now 546 atoms)!
+Try 49 success (now 572 atoms)!
+Try 59 success (now 598 atoms)!
+Try 61 success (now 624 atoms)!
+Try 62 success (now 650 atoms)!
+Try 65 success (now 676 atoms)!
+Try 66 success (now 702 atoms)!
+Try 67 success (now 728 atoms)!
+Try 75 success (now 754 atoms)!
+Try 82 success (now 780 atoms)!
+Try 83 success (now 806 atoms)!
+
+Added 30 molecules (out of 30 requested)
+Writing generated configuration to pyrene_num.gro
+
+Output configuration contains 806 atoms in 31 residues
+</code></pre><h3 id="向盒子中添加溶剂">向盒子中添加溶剂</h3>
+<pre tabindex="0"><code>gmx solvate -cp pyrene_num.gro -cs spc216.gro -o pyrene_num_solv.gro -p pyrene.top
+
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 2x2x2 boxes
+Solvent box contains 3618 atoms in 1206 residues
+Removed 966 solvent atoms due to solvent-solvent overlap
+Removed 942 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms):   570 residues
+Generated solvent containing 1710 atoms in 570 residues
+Writing generated configuration to pyrene_num_solv.gro
+
+Output configuration contains 2516 atoms in 601 residues
+Volume                 :          27 (nm^3)
+Density                :     1017.14 (g/l)
+Number of solvent molecules:    570   
+
+Processing topology
+Adding line for 570 solvent molecules with resname (SOL) to topology file (pyrene.top)
+
+Back Off! I just backed up pyrene.top to ./#pyrene.top.1#
+</code></pre><p>如此，我们便得到一个包含了 570 个溶剂分子，31 个溶质分子的立方体座标体系，<code>pyrene_num_solv.gro</code>，其相应的分子信息以可在其力场文件中查看到。</p>
+<h3 id="能量最小化测试">能量最小化测试</h3>
+<p>此时，我们需要一个任务描述文件 *.mdp，即告诉 GROMACS 执行何种任务，以及如何执行，其我们在该任务文件中设定需要的参数。</p>
+<p>譬如我们此时需要做一个能量最小化的模拟，Energy Minimization (em.mdp) 需要一个任务文件，该文件可在<a href="https://github.com/Bioinformatics-Review/MD-simulation-files/blob/fe6a57da10345b18f746c5e33d92aa0594875e75/em.mdp">此处下载</a>，其中参数可自行设定。而后执行如下命令，得到 ``</p>
+<pre tabindex="0"><code>gmx grompp -f em.mdp -c pyrene_num_solv.gro -p pyrene.top
+</code></pre><p>即可快速验证系统是否正确。</p>
+<p>准备输入文件的代码集合：</p>
+<pre tabindex="0"><code>perl sort_mol2_bonds.pl pyrene.mol2 pyrene_clean.mol2
+
+python cgenff_charmm2gmx.py pyrene pyrene_clean.mol2 pyrene.str charmm36-jul2021.ff
+
+gmx editconf -f pyrene_clean.pdb -o pyrene.gro -box 3 3 3
+
+gmx insert-molecules -f pyrene.gro -ci pyrene.gro -o pyrene_num.gro -nmol 30 -rot xyz -try 100
+
+gmx solvate -cp pyrene_num.gro -cs spc216.gro -o pyrene_num_solv.gro -p pyrene.top
+
+gmx grompp -f em.mdp -c pyrene_num_solv.gro -p pyrene.top
+gmx mdrun -v
+</code></pre><h3 id="在本地-openmm-中设定运行参数">在本地 openmm 中设定运行参数</h3>
+<pre tabindex="0"><code>conda install -c conda-forge openmm
+conda activate openmm
+
+openmm-setup
+</code></pre><h3 id="在-google-colab-中运行模拟">在 google colab 中运行模拟</h3>
+<ul>
+<li>将 gromacs 的力场文件导出来，gromacs/2022.2_1/share/gromacs/top 放入谷歌网盘。</li>
+<li>将小分子的力场描述文件，pyrene.itp 与 pyrene.prm 放入上述文件</li>
+<li>将小分子的 top 文件，gro 文件放入谷歌网盘。</li>
+</ul>
+<pre tabindex="0"><code>#@title  Install Dependencies
+! wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.2-Linux-x86_64.sh
+! chmod +x Miniconda3-py37_4.8.2-Linux-x86_64.sh
+! bash ./Miniconda3-py37_4.8.2-Linux-x86_64.sh -b -f -p /usr/local
+
+import sys
+sys.path.append(&#39;/usr/local/lib/python3.7/site-packages/&#39;)
+
+#@title Install OpenMM
+!yes|conda install -c conda-forge openmm
+</code></pre><p>修改如下代码的相关地址，在 openmm 运行模拟。</p>
+<pre tabindex="0"><code>#@title This script was generated by OpenMM-Setup on 2022-08-11.
+%cd /content/drive/MyDrive/DSDS/openmm_gromacs/MolecularTOPGRO/pyrene
+
+# This script was generated by OpenMM-Setup on 2022-08-14.
+
+from openmm import *
+from openmm.app import *
+from openmm.unit import *
+
+# Input Files
+
+gro = GromacsGroFile(&#39;/content/drive/MyDrive/DSDS/openmm_gromacs/MolecularTOPGRO/pyrene/confout.gro&#39;)
+top = GromacsTopFile(&#39;/content/drive/MyDrive/DSDS/openmm_gromacs/MolecularTOPGRO/pyrene/pyrene.top&#39;, includeDir=&#39;/content/drive/MyDrive/DSDS/openmm_gromacs/ForceFieldTOP&#39;,
+    periodicBoxVectors=gro.getPeriodicBoxVectors())
+
+# System Configuration
+
+nonbondedMethod = PME
+nonbondedCutoff = 1.0*nanometers
+ewaldErrorTolerance = 0.0005
+constraints = HBonds
+rigidWater = True
+constraintTolerance = 0.000001
+hydrogenMass = 1.5*amu
+
+# Integration Options
+
+dt = 0.004*picoseconds
+temperature = 300*kelvin
+friction = 1.0/picosecond
+pressure = 1.0*atmospheres
+barostatInterval = 25
+
+# Simulation Options
+
+steps = 500000
+equilibrationSteps = 1000
+platform = Platform.getPlatformByName(&#39;CPU&#39;)
+dcdReporter = DCDReporter(&#39;trajectory.dcd&#39;, 10000)
+dataReporter = StateDataReporter(&#39;log.txt&#39;, 1000, totalSteps=steps,
+    step=True, time=True, speed=True, progress=True, elapsedTime=True, remainingTime=True, potentialEnergy=True, kineticEnergy=True, totalEnergy=True, temperature=True, volume=True, density=True, separator=&#39;\t&#39;)
+checkpointReporter = CheckpointReporter(&#39;checkpoint.chk&#39;, 10000)
+
+# Prepare the Simulation
+
+print(&#39;Building system...&#39;)
+topology = top.topology
+positions = gro.positions
+system = top.createSystem(nonbondedMethod=nonbondedMethod, nonbondedCutoff=nonbondedCutoff,
+    constraints=constraints, rigidWater=rigidWater, ewaldErrorTolerance=ewaldErrorTolerance, hydrogenMass=hydrogenMass)
+system.addForce(MonteCarloBarostat(pressure, temperature, barostatInterval))
+integrator = LangevinMiddleIntegrator(temperature, friction, dt)
+integrator.setConstraintTolerance(constraintTolerance)
+simulation = Simulation(topology, system, integrator, platform)
+simulation.context.setPositions(positions)
+
+# Minimize and Equilibrate
+
+print(&#39;Performing energy minimization...&#39;)
+simulation.minimizeEnergy()
+print(&#39;Equilibrating...&#39;)
+simulation.context.setVelocitiesToTemperature(temperature)
+simulation.step(equilibrationSteps)
+
+# Simulate
+
+print(&#39;Simulating...&#39;)
+simulation.reporters.append(dcdReporter)
+simulation.reporters.append(dataReporter)
+simulation.reporters.append(checkpointReporter)
+simulation.currentStep = 0
+simulation.step(steps)
+</code></pre><h3 id="模拟结果分析">模拟结果分析</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>可视化
+</span></span><span style="display:flex;"><span>gmx trjconv -f traj.trr -o system.pdb -pbc whole
+</span></span><span style="display:flex;"><span>gmx trjconv -f traj.trr -o system.pdb -pbc whole -b <span style="color:#ae81ff">100</span> -e <span style="color:#ae81ff">300</span> -skip <span style="color:#ae81ff">5</span> -sep
+</span></span></code></pre></div><hr>
+<p>参考目录：</p>
+<ul>
+<li><a href="https://bioinformaticsreview.com/20210211/tutorial-md-simulation-of-small-organic-molecules-using-gromacs/">MD Simulation of small organic molecules using GROMACS</a></li>
+<li><a href="https://gcm.upc.edu/en/members/luis-carlos/molecular-dynamics">MD with GROMACS for SMALL molecules</a></li>
+<li><a href="https://gcm.upc.edu/en/members/luis-carlos/molecular-dynamics/analyzing-md-from-gromacs">Analyzing MD from GROMACS</a></li>
+</ul>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/cn/2022-08-09/ambertools-openmm-md/">分子动力学模拟蛋白与小分子相互作用</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/cn\/2022-08-09\/ambertools-openmm-md\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+
+
+
+<script async src="/js/fix-toc.js"></script>
+
+
+<script async src="/js/center-img.js"></script>
+
+
+<script async src="/js/right-quote.js"></script>
+
+
+<script async src="/js/fix-footnote.js"></script>
+
+
+<script async src="/js/math-code.js"></script>
+
+
+<script async src="/js/external-link.js"></script>
+
+
+<script async src="/js/alt-title.js"></script>
+
+
+<script async src="/js/header-link.js"></script>
+
+
+
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+  
+  <hr>
+  <div class="copyright">© <a href="/">XiaO</a> 2006 - 2022</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -8,6 +8,42 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>基于 GROMACS 的小分子分子动力学模拟</title>
+      <link>https://urz.one/cn/2022-08-13/md-with-gromacs-for-small-molecules/</link>
+      <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-08-13/md-with-gromacs-for-small-molecules/</guid>
+      <description>GROMACS 分子动力学模拟的输入文件： 描述分子结构的文件，PDB、mol2、gro。 描述分子力场的文件：*.top 文件，其包含了模拟所需的所有力场信息</description>
+    </item>
+    
+    <item>
+      <title>分子动力学模拟蛋白与小分子相互作用</title>
+      <link>https://urz.one/cn/2022-08-09/ambertools-openmm-md/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-08-09/ambertools-openmm-md/</guid>
+      <description>介绍 AMBER 是辅助模型构建和能量精化 (Assisted Model Building and Energy Refinement) 的首字母缩写, 它既指代分子动力学程序，也指代一组描述了生物分子相互作用的势能函数和参数的力场。 准备</description>
+    </item>
+    
+    <item>
+      <title>化学分子的 3D 渲染</title>
+      <link>https://urz.one/cn/2022-08-06/draws-chemicals-in-blender-using-common-input-chemical-formats/</link>
+      <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-08-06/draws-chemicals-in-blender-using-common-input-chemical-formats/</guid>
+      <description>关于几个 python 工具的简要解释如下： pip: The Python Package Manager pip3: The updated version of pip, especially designed for python3 pyenv: Python Version Manager virtualenv: Python Environment Manager. Anaconda: Package Manager + Environment Manager + Additional Scientific Libraries. Conda 的常用命令 conda 的安装与删除： # 安装迷你版的 conda</description>
+    </item>
+    
+    <item>
+      <title>ESP_DNN</title>
+      <link>https://urz.one/cn/2022-08-03/esp-dnn/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-08-03/esp-dnn/</guid>
+      <description>静电势（ESP） 化合物表面静电势计算是一个很耗时耗力的过程，即使是基于更加便于处理的密度泛函理论 （DFT），即用电子密度取代波函数做为研究的</description>
+    </item>
+    
+    <item>
       <title>R 绘图排版</title>
       <link>https://urz.one/cn/2022-07-20/r-drafting-and-layout/</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
@@ -869,42 +905,6 @@
       
       <guid>https://urz.one/cn/2020-10-01/arrogant/</guid>
       <description>轻落的雨滴， 湿润了所有的青绿。 过往的风里， 你是我仅有的涟漪。 向阳走的那天，天空阴郁，所有的话都哽咽在嗓子眼里，却又不知道从哪句说起。窗外雨声</description>
-    </item>
-    
-    <item>
-      <title>九月</title>
-      <link>https://urz.one/cn/2020-09-28/septermber/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-28/septermber/</guid>
-      <description>九月，末。时如往常。 又到了小镇阴雨的时节，天空静默，散落的水汽四下弥漫。不时，雨滴轻落，一切也只隐没在浅浅的滴答里。人说，真正的相遇，其实都</description>
-    </item>
-    
-    <item>
-      <title>代价</title>
-      <link>https://urz.one/cn/2020-09-25/trade/</link>
-      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-25/trade/</guid>
-      <description>卧榻而下的木阶，拢共十级。忘了从什么时候开始，失眠似乎成了生活的一部分，就像这木阶，可能一切皆有定数。如此，时间倒也似拉长一般，却并不见得让</description>
-    </item>
-    
-    <item>
-      <title>我想和你一起生活</title>
-      <link>https://urz.one/cn/2020-09-17/wanna-be-with-you/</link>
-      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-17/wanna-be-with-you/</guid>
-      <description>我想和你一起生活 在某个小镇， 共享无尽的黄昏 和绵绵不绝的钟声。 在这个小镇的旅店里—— 古老时钟敲出的 微弱响声 像时间轻轻滴落。 有时候，在黄昏，自顶</description>
-    </item>
-    
-    <item>
-      <title>相心</title>
-      <link>https://urz.one/cn/2020-09-16/skin/</link>
-      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-09-16/skin/</guid>
-      <description>一个滞于己见的人，其实是看不清楚事物的。这多少都有些像漩涡里的一叶舟。谓之，着相。 一张皮，一面相。皮相之下，所匿者何？着于相，心迷。匿于相者</description>
     </item>
     
   </channel>
