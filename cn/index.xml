@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2022 年终总结</title>
+      <link>https://urz.one/cn/2022-12-31/annual-review/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2022-12-31/annual-review/</guid>
+      <description>一月： 每当我要离开的时候，才发现自己并没有好好看过一座城市，也唯独这样的时刻，才会在心底默念著，似乎想要留下些什么。不知道这终究能否算作一种</description>
+    </item>
+    
+    <item>
       <title>基于 GROMACS 的小分子分子动力学模拟</title>
       <link>https://urz.one/cn/2022-08-13/md-with-gromacs-for-small-molecules/</link>
       <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-10-08/extract-wechat-audio/</guid>
       <description>微信中朋友发送的语音文件（.silk）转码为可播放格式（譬如 mp3、falc 等），转码后的语音文件可转发或者保存之用。 安装转码依赖工具 gcc 与 ffmpeg</description>
-    </item>
-    
-    <item>
-      <title>向阳</title>
-      <link>https://urz.one/cn/2020-10-01/arrogant/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-10-01/arrogant/</guid>
-      <description>轻落的雨滴， 湿润了所有的青绿。 过往的风里， 你是我仅有的涟漪。 向阳走的那天，天空阴郁，所有的话都哽咽在嗓子眼里，却又不知道从哪句说起。窗外雨声</description>
     </item>
     
   </channel>
