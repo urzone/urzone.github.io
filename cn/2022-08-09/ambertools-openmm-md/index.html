@@ -212,10 +212,11 @@ quit                                      # Quit tleap program
 <li><a href="http://ambermd.org/antechamber/gaff.html">适用小分子的 GAFF 力场</a></li>
 </ul>
 <p>本地安装并启动 openmm-setup</p>
-<pre tabindex="0"><code>conda deactivate
-conda install -c conda-forge openmm-setup
-conda activate openmm-setup
-openmm-setup
+<pre tabindex="0"><code>conda deactivate # deactivate all virtual environments 
+conda create -name openmm python=3 # create a virtual environment named openmm based on pyhton 3
+conda activate openmm # # activate the openmm virtual environment
+conda install -c conda-forge openmm-setup # install openmm 
+openmm-setup # run openmm
 </code></pre><p>对模拟条件进行设置：</p>
 <ul>
 <li>选择 Amber 文件，上传 prmtop inpcrd 两个文件</li>

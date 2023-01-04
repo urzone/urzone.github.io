@@ -436,11 +436,12 @@ gmx solvate -cp pyrene_num.gro -cs spc216.gro -o pyrene_num_solv.gro -p pyrene.t
 
 gmx grompp -f em.mdp -c pyrene_num_solv.gro -p pyrene.top
 gmx mdrun -v
-</code></pre><h3 id="在本地-openmm-中设定运行参数">在本地 openmm 中设定运行参数</h3>
-<pre tabindex="0"><code>conda install -c conda-forge openmm
-conda activate openmm
-
-openmm-setup
+</code></pre><h3 id="本地安装并启动-openmm-setup">本地安装并启动 openmm-setup</h3>
+<pre tabindex="0"><code>conda deactivate # deactivate all virtual environments 
+conda create -name openmm python=3 # create a virtual environment named openmm based on pyhton 3
+conda activate openmm # # activate the openmm virtual environment
+conda install -c conda-forge openmm-setup # install openmm 
+openmm-setup # run openmm
 </code></pre><h3 id="在-google-colab-中运行模拟">在 google colab 中运行模拟</h3>
 <ul>
 <li>将 gromacs 的力场文件导出来，gromacs/2022.2_1/share/gromacs/top 放入谷歌网盘。</li>
