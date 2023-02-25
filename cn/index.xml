@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>USPS 更新地址</title>
+      <link>https://urz.one/cn/2023-01-28/usps-address-update/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2023-01-28/usps-address-update/</guid>
+      <description>新搬住所。 &amp;ldquo;新搬住所&amp;rdquo;，原本敲出来的字是 &amp;ldquo;新搬家&amp;rdquo;。但我想了一下，这似乎距离其被称为家还有距</description>
+    </item>
+    
+    <item>
       <title>2022 年终总结</title>
       <link>https://urz.one/cn/2022-12-31/annual-review/</link>
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
@@ -17,12 +26,12 @@
     </item>
     
     <item>
-      <title>基于 GROMACS 的小分子分子动力学模拟</title>
-      <link>https://urz.one/cn/2022-08-13/md-with-gromacs-for-small-molecules/</link>
+      <title>基于 Gromacs 和 OpenMM 的小分子分子动力学模拟</title>
+      <link>https://urz.one/cn/2022-08-13/md-with-gromacs-and-openmm-for-small-molecules/</link>
       <pubDate>Sat, 13 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://urz.one/cn/2022-08-13/md-with-gromacs-for-small-molecules/</guid>
-      <description>GROMACS 分子动力学模拟的输入文件： 描述分子结构的文件，PDB、mol2、gro。 描述分子力场的文件：*.top 文件，其包含了模拟所需的所有力场信息</description>
+      <guid>https://urz.one/cn/2022-08-13/md-with-gromacs-and-openmm-for-small-molecules/</guid>
+      <description>Gromacs 分子动力学模拟的输入文件： 描述分子结构的文件，mol2、pdb、gro。 描述分子力场的文件：*.top 文件，其包含了模拟所需的所有力场信息</description>
     </item>
     
     <item>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-10-14/mood/</guid>
       <description>是否， 我们都只是情绪的奴隶？ 不知道人类的情绪波动是否遵循着某种函数规则，如果是的话，我想它的方程式也一定是出奇复杂的。我猜想，即使将方程式赤</description>
-    </item>
-    
-    <item>
-      <title>微信语音转码</title>
-      <link>https://urz.one/cn/2020-10-08/extract-wechat-audio/</link>
-      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-10-08/extract-wechat-audio/</guid>
-      <description>微信中朋友发送的语音文件（.silk）转码为可播放格式（譬如 mp3、falc 等），转码后的语音文件可转发或者保存之用。 安装转码依赖工具 gcc 与 ffmpeg</description>
     </item>
     
   </channel>
