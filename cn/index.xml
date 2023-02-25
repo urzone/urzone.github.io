@@ -8,6 +8,15 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>手机漫游</title>
+      <link>https://urz.one/cn/2023-02-25/phone-roaming-and-wifi-calling/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2023-02-25/phone-roaming-and-wifi-calling/</guid>
+      <description>我们常说的手机信号指的是手机网络运营商所建立的手机信号基站所发出的无线电信号（蜂窝移动网络）。这些信号可以被手机接收并转换为通话、短信和数据</description>
+    </item>
+    
+    <item>
       <title>USPS 更新地址</title>
       <link>https://urz.one/cn/2023-01-28/usps-address-update/</link>
       <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
@@ -896,15 +905,6 @@
       
       <guid>https://urz.one/cn/2020-10-15/love/</guid>
       <description>中学语文老师是一个顶有趣味的人。多年前的一堂作文课上，语文老师在讲议论文论点的时候，举例说了一句&amp;quot;论我爱你与你无关&amp;quot;，引</description>
-    </item>
-    
-    <item>
-      <title>情绪</title>
-      <link>https://urz.one/cn/2020-10-14/mood/</link>
-      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-10-14/mood/</guid>
-      <description>是否， 我们都只是情绪的奴隶？ 不知道人类的情绪波动是否遵循着某种函数规则，如果是的话，我想它的方程式也一定是出奇复杂的。我猜想，即使将方程式赤</description>
     </item>
     
   </channel>

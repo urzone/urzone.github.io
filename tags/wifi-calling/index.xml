@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WiFi calling on XiaO | 缄默之语</title>
+    <link>https://urz.one/tags/wifi-calling/</link>
+    <description>Recent content in WiFi calling on XiaO | 缄默之语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cmn-Hans-CN</language>
+    <lastBuildDate>Sat, 25 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/tags/wifi-calling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手机漫游</title>
+      <link>https://urz.one/cn/2023-02-25/phone-roaming-and-wifi-calling/</link>
+      <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2023-02-25/phone-roaming-and-wifi-calling/</guid>
+      <description>我们常说的手机信号指的是手机网络运营商所建立的手机信号基站所发出的无线电信号（蜂窝移动网络）。这些信号可以被手机接收并转换为通话、短信和数据</description>
+    </item>
+    
+  </channel>
+</rss>
