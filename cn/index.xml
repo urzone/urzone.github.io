@@ -8,6 +8,24 @@
     <language>cmn-Hans-CN</language>
     <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://urz.one/cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GPT4All</title>
+      <link>https://urz.one/cn/2023-04-04/gpt4all/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2023-04-04/gpt4all/</guid>
+      <description>GPT4All，一个使用 GPT-3.5-Turbo 生成的语料库在 LLaMa 的基础上进行训练而来的助手式的大语言模型。 从 Direct Link 或 [Torrent-Magnet] 下载 gpt4all-lora-quantized.bin 文件； 下载此仓库，并将前面下载的文件放在</description>
+    </item>
+    
+    <item>
+      <title>自由与巧合</title>
+      <link>https://urz.one/cn/2023-03-28/freedom-and-coincidence/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://urz.one/cn/2023-03-28/freedom-and-coincidence/</guid>
+      <description>记录与大语言模型的对话。另外，这个话题的出现，于我而言，似乎并不是巧合。 [Claud 是一个话痨，还会自问自答！] GPT 3.5 Xiao: 你知道萨特么？ GPT: 萨特（Jean-</description>
+    </item>
+    
+    <item>
       <title>ChatGPT</title>
       <link>https://urz.one/cn/2023-03-02/chatgpt/</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
@@ -887,24 +905,6 @@
       
       <guid>https://urz.one/cn/2020-10-29/green-yellow/</guid>
       <description>十月末，小镇的雨季进入尾声。数日连绵小雨的天空收住了哭泣，树叶也透出了新的黄绿。风吹过，满地落叶打起了转地舞蹈着，像极了回光反照般最后的欲求</description>
-    </item>
-    
-    <item>
-      <title>关东煮的汤汁</title>
-      <link>https://urz.one/cn/2020-10-28/kanto-cooking/</link>
-      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-10-28/kanto-cooking/</guid>
-      <description>关东煮（おでん）的汤汁在日本叫做【つゆ】、或者是【出汁】（だし）。出汁可以做为面食的汤底，也可以用来煮饭，煮菜等。关东煮的汤汁类似国内高汤，</description>
-    </item>
-    
-    <item>
-      <title>你是我心中的 🌹</title>
-      <link>https://urz.one/cn/2020-10-19/rose/</link>
-      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://urz.one/cn/2020-10-19/rose/</guid>
-      <description>小王子与玫瑰花的故事。 小王子喜欢那朵玫瑰花，那是他的星球上唯一一朵玫瑰花。小王子陪着她看日出，看日落，起风了为她挡风，生虫了为她抓虫，一直用</description>
     </item>
     
   </channel>
