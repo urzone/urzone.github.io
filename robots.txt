@@ -1,6 +1,5 @@
 # robotstxt.org
 
 User-agent: *
-Disallow: /images/
-Disallow: /blog/img/
-Disallow: /blog/images/
+Disallow: /icons/
+Disallow: /assets/

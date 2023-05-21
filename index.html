@@ -7,29 +7,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="google-site-verification" content="8H1x27NnePVJbxZNl-eqxRxKAHJmxQugvNVFtsyPRYA" />
     <title>XiaO</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/web/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/loading/loading.css">
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://urz.one/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://urz.one/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://urz.one/icons/favicon-16x16.png">
-<link rel="manifest" href="https://urz.one/icons/manifest.json">
-<link rel="mask-icon" href="https://urz.one/icons/safari-pinned-tab.svg" color="#cc342c">
-<link rel="shortcut icon" href="https://urz.one/icons/favicon.ico">
-<meta name="apple-mobile-web-app-title" content="XiaO">
-<meta name="application-name" content="XiaO">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="msapplication-TileImage" content="https://urz.one/icons/mstile-144x144.png">
-<meta name="msapplication-config" content="https://urz.one/icons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://urz.one/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://urz.one/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://urz.one/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://urz.one/icons/manifest.json">
+    <link rel="mask-icon" href="https://urz.one/icons/safari-pinned-tab.svg" color="#cc342c">
+    <link rel="shortcut icon" href="https://urz.one/icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="XiaO">
+    <meta name="application-name" content="XiaO">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="https://urz.one/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="https://urz.one/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification" content="3C4lz-WqreDsFFohPRed1rO14aKeEDmTbw2lfIHN6og" />
 </head>
 
 <body>
+    <div id="loading-container">
+      <div class="loading-bar"></div>
+    </div>
     <div class="vi">
         <div class="sidebar">
             <div class="header">
                 <h1 class="animate-init" align="center">XiaO<img src="favicon.svg" alt="XiaO" style="width:28px;height:28px;"></h1>
-                <div class="quote">
+                <!-- <h1 class="animate-init" align="center">XiaO</h1> -->
+                <div class="quote animate-init">
                     <p class="quote-text animate-init">Life is too short to not do Right.</p>
                     <p class="quote-author animate-init"> — XiaO</p>
                 </div>
@@ -37,7 +42,7 @@
             <div class="menu">
                 <a href="https://blog.urz.one/" class="animate-init" target="_blank"><i class="animate-init"></i>Blog</a>
                 <a href="https://chat.4cu.org/" class="animate-init" target="_blank"><i class="animate-init"></i>Chat</a>
-                <a href="https://lizhi.urz.one/" class="animate-init" target="_blank"><i class="animate-init"></i>Li Zhi</a>
+                <a href="https://music.urz.one/" class="animate-init" target="_blank"><i class="animate-init"></i>Music</a>
                 <a href="https://cv.urz.one" class="animate-init" target="_blank"><i class="animate-init"></i>C.V.</a>
                 <!-- <a href="https://urz.one/blog/files/FB944B8B.asc" class="animate-init" target="_blank"><i class=" animate-init"></i> PGP Key</a> -->
                 <a href="mailto:web@urz.one" class="animate-init" target="_blank"><i class="animate-init"></i> Mail</a>   
@@ -48,7 +53,8 @@
         </div>
         <div class="content"> <span class="close">close</span></div>
     </div>
-    <script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
+    <script type="text/javascript" src="assets/web/jquery.js"></script>
+    <script type="text/javascript" src="assets/loading/loading.js"></script>
     <script>
         $(document).ready(function() {
             function e() {
