@@ -56,6 +56,34 @@
     <!-- <script type="text/javascript" src="assets/web/jquery.js"></script> -->
     <script type="text/javascript" src="assets/web/animation.js"></script> <!-- to replace jquery -->
     <script type="text/javascript" src="assets/loading/loading.js"></script>
+<!--     <script>
+        $(document).ready(function() {
+            function e() {
+                var e = $.Deferred(),
+                    i = $(".animate-init"),
+                    n = i.size();
+                return i.each(function(i, c) {
+                    o++, $(c).delay(i * a).animate(t), n - 1 === i && e.resolve()
+                }), e.promise()
+            }
+
+            function i() {
+                $(".location-icon").delay(o * a).animate({
+                    opacity: 1,
+                    top: 0
+                }).promise().done(n)
+            }
+
+            function n() {}
+            var o = 1,
+                a = 200,
+                t = {
+                    opacity: 1,
+                    top: 0
+                };
+            $("h1").animate(t).promise().pipe(e).pipe(i)
+        })
+    </script> -->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 
